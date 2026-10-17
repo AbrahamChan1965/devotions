@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>週一 Lectio：愛的總綱｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/index.html">首頁</a> ／ <a href="/year-a/proper-25/index.html">PROPER 25</a> ／ <b>週一 誦讀</b></div>
+<h1>週一 Lectio：愛的總綱</h1>
+<div class="sub sans">週一誦讀 · MONDAY Lectio</div>
+<hr class="goldrule">
+<div class="meta sans"><div>本週經課｜RCL Proper 25——聖靈降臨後第二十二主日（2026年10月25日）</div><div>今日｜2026年10月19日，週一 · 正走向十月二十五日的主日</div></div>
+<article><p>如果把整本聖經濃縮成兩句話，會是什麼？十月二十五日這主日的經課，把散落在不同時空的信息編成了一條繩。</p><p>先站在尼波山上。申命記三十四章，摩西登山，耶和華把應許之地指給他看——然後他死在那裡，「耶和華將他埋葬」，無人知道墳墓在哪裡。「以後以色列中再沒有興起先知像摩西的，他是耶和華面對面所認識的。」頒布律法的人，倒在應許之地的門口。</p><p>而這主日的詩篇第九十篇，傳統上正是摩西的禱告。兩種聲音在此對話：申命記說「摩西死在那裡」，詩篇說「求你指教我們怎樣數算自己的日子」——數算日子的摩西，終於數完了自己的一生；他留下的最後一句是：「主啊，你世世代代作我們的居所。」死亡沒有把他帶離居所，反而把他送回了居所。</p><p>把時間拉回西奈山下的法典。利未記十九章：「你們要聖潔，因為我耶和華你們的神是聖潔的……要愛人如己，我是耶和華。」注意反覆出現的「我是耶和華」——聖潔不是一套規條，而是一位有位格的神；愛人如己之所以可能，因為有「我是耶和華」在托底。</p><p>一千多年後，在加利利，有人試探耶穌：「哪一條誡命最大？」耶穌答：愛神（申六5），愛人如己（利十九18）——逐字引用利未記。藏在法典深處的一句話，被親口拾起，放在律法的最高處。「這兩條誡命是律法和先知一切道理的總綱」——「總綱」原文是「懸掛」：整部律法像外衣，掛在愛神、愛人兩根釘子上。奧古斯丁（Augustine）說，這就是全部聖經的終點（《論基督教教義》）。</p><p>但耶穌沒有停。祂反問：「基督是誰的子孫？」「大衛的子孫。」「大衛被聖靈感動，怎麼稱他為主？」全場沉默。這裡有暗線指回申命記：摩西「面對面」認識耶和華，卻未曾見過祂的面（「人見我的面不能存活」，出三十三20）；而這一位說「除了父，沒有人知道子」（太十一27）——祂才是真正面對面認識父的。屈梭多模（Chrysostom）說，這是耶穌親自啟示其神性。</p><p>時間再跳到帖撒羅尼迦。保羅寫道：「我們在你們中間存心溫柔，如同乳母撫育自己的孩子……連自己的性命也樂意給你們。」原文「溫柔」有古卷作「嬰孩」——使徒柔軟得像個孩子。利未記的「愛人如己」在這裡長出血肉：不是原則，是乳母的懷抱；不是口號，是把自己給出去。</p><p>現在，讓這些經文光照我們的處境。我們中間，有多少人正站在自己的尼波山上——望見異象，卻走得疲憊？有多少事工，悄悄把「愛神、愛人」這兩根釘子換成了數字和 KPI？摩西數算日子，不是為了焦慮，而是要在有限的日子裡，只做那兩件托得住一切的事。保羅則提醒我們：真正的權柄不是剛強，是溫柔——像乳母一樣的溫柔，才養得大孩子。</p></article>
+<div class="prayer"><h2 class="sans">禱告 PRAYER</h2><p>禱告：主啊，你世世代代作我們的居所。我們像摩西一樣數算自己的日子，求你賜下智慧的心；你說「我是耶和華」，求你在聖潔中教我們愛人如己；主耶穌，大衛稱你為主，我們也稱你為主；求你使我們像保羅一樣溫柔，把自己給出去。堅立我們手所做的工。阿們。</p></div>
+<div class="daynav sans"><a href="/year-a/proper-25/index.html">← 週匯總 WEEK</a><a href="/year-a/proper-25/index.html">本週釘子 →</a></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuesday Meditatio: The Man Who Counted His Days｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/en/index.html">HOME</a> ／ <a href="/en/year-a/proper-25/index.html">PROPER 25</a> ／ <b>TUESDAY Meditatio</b></div>
+<h1>Tuesday Meditatio: The Man Who Counted His Days</h1>
+<div class="sub sans">TUESDAY Meditatio · 週二 默想</div>
+<hr class="goldrule">
+<div class="meta sans"><div>This week's lectionary: RCL Proper 25 — the Twenty-Second Sunday after Pentecost (October 25, 2026)</div><div>Today: Tuesday, October 20, 2026 · moving toward Sunday, October 25</div></div>
+<article><p>Yesterday we stood on Mount Nebo and watched Moses finish his life. Today we slow down and sit with Deuteronomy 34 — the death of Moses.</p><p>&quot;The LORD buried him in the land of Moab... but no one knows his burial place to this day&quot; (Deut 34:6). This is the quietest funeral in Scripture: no procession, no monument — God Himself digs the grave. Why the secrecy? Perhaps precisely because Moses was so great. If Israel knew where the tomb was, it would become a shrine, then an idol. With one &quot;no one knows,&quot; God protected Moses — and protected Israel from Moses. Even Moses must not be worshiped. Only God is worthy. We live in an age obsessed with being remembered: published, followed, celebrated, eulogized in style. God hid Moses instead. He seems to say: My remembering you matters more than their remembering you. A man buried by God Himself needs no monument from men. Meditate on this: what kind of &quot;being remembered&quot; are you anxious about? Can you hand that anxiety to the God who personally buried Moses?</p><p>&quot;Never since has there arisen a prophet in Israel like Moses, whom the LORD knew face to face&quot; (v. 10). &quot;Face to face&quot; — said of no one else in the entire Old Testament. Yet even Moses, the face-to-face friend of God, was told, &quot;You shall see my back, but my face shall not be seen&quot; (Exod 33:23). The greatest intimacy in the old covenant still saw only partially — a holy hint that Someone greater was coming, the One of whom John would write, &quot;No one has ever seen God; the only Son, who is close to the Father&#x27;s heart, has made him known&quot; (John 1:18). Moses&#x27; &quot;face to face&quot; was real, and it was a shadow. Hold both.</p><p>But notice: the man who knew God face to face still fell at the doorway of the promise. The most intimate person in Israel had places he could not enter. This isn&#x27;t failure; it&#x27;s a boundary. Even Moses had to learn it: the promise belongs to God, Moses belongs to God — but the land did not belong to Moses.</p><p>Meditate with me: where is your Mount Nebo? Is there a promise you can see but cannot enter? A vision prayed over for years, still unfulfilled? A relationship at its end, a ministry ready to be handed on? Perhaps the student you mentored for a decade who never bore fruit. The child you wept over who never came home. The church you planted with your own hands that you must now release to another&#x27;s leadership. Moses uttered no complaint on that mountain — Scripture records not one bitter word. He looked, he saw, and he handed the people to Joshua. Some roads God lets you see not so you can finish them, but so you can bless those who will. Blessing was Moses&#x27; last gift to Joshua; it can be yours to the next generation too.</p><p>Don&#x27;t miss the other track today, either. Leviticus 19:18 says, &quot;You shall love your neighbor as yourself.&quot; The Law Moses delivered has love for a heart. And a man who lived that heart died in its shape: he blessed the people, then quietly left the stage. Tomorrow we step into Moses&#x27; own prayer — Psalm 90 — and let the man who counted his days teach us to pray.</p><p>Prayer guidance: find a quiet corner and read Deuteronomy 34:1–12 slowly, twice. The first time, notice which sentence catches you. The second time, turn that sentence into your prayer. Then sit in silence for three minutes and ask the Lord: &quot;What are the promises in my life that I cannot enter, and need to entrust to You?&quot; Lay down the names, one by one, in His hands — and don&#x27;t rush to pick them back up. If grief surfaces — grief for the land you won&#x27;t enter, the role you won&#x27;t keep, the recognition that won&#x27;t come — don&#x27;t theologize it away. Moses grieved too; the whole nation wept for him thirty days (v. 8). Tears are not unbelief. They are the doorway through which entrusting becomes real. Let the tears come, and then let the blessing come after them: speak aloud a blessing over the person who will walk where you cannot.</p><p>Pray with me: Lord, You are Moses&#x27; God, and You are mine. You let Moses see, and You let him stop; grant me the same rest — gratitude when I see, surrender when I stop. Teach me to count my days, and in the places I cannot enter, teach me to bless those who go on. For the grave no one knows, and the God no one forgets — to You alone be all the glory. Amen.</p></article>
+
+<div class="daynav sans"><a href="/en/year-a/proper-25/index.html">← WEEK</a><a href="/en/year-a/proper-25/index.html">WEEK'S NAIL →</a></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>主日講章：君王回來之前｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/index.html">首頁</a> ／ <a href="/year-a/proper-25/index.html">PROPER 25</a> ／ <b>主日講章</b></div>
+<h1>主日講章：君王回來之前</h1>
+<div class="sub sans">主日講章 · 2026年10月25日</div>
+<hr class="goldrule">
+<div class="nailbox"><span class="n-label sans">本週釘子</span><div class="n-text">兩根釘子，托住一切；一位君王，正在回來。</div></div>
+<div class="meta sans"><div>經文：馬太福音 22:34-46（RCL Proper 25）</div><div>日期：2026年10月25日，主日</div><div>教會年曆位置：常年期尾聲，距將臨期四週</div><div>本週記憶經文：馬太福音 22:37-40</div></div>
+<article><p>弟兄姊妹平安。今天開講前，先記住今天整篇的釘子句——聽完這篇講道，如果只記得一句，記這一句：</p><p><strong>兩根釘子，托住一切；一位君王，正在回來。</strong></p><p><strong>引言：今天在年曆的哪裡？</strong></p><p>我們站在常年期的尾巴上。四週後，11月29日，將臨期第一主日，教會要點起第一根蠟燭。教會年曆的年底，不是跨年倒數，是君王降臨的倒數。</p><p>回看過去五週的馬太福音：九月二十日葡萄園的工人（太二十1-16）；九月二十七日兩個兒子（太二十一23-32）；十月四日兇惡的園戶（太二十一33-46）；十月十一日婚宴的筵席（太二十二1-14）；十月十八日該撒的物（太二十二15-22）；今天，最大誡命（太二十二34-46）。全部出自馬太福音二十至二十二章——耶穌走上耶路撒冷，騎驢進城，進聖殿，與宗教領袖正面交鋒的<strong>最後一週</strong>。每一週，十字架近一天。今天這段，是君王在十字架前幾天，在聖殿裡的最後公開講話之一。讀的時候，要聽出倒數的聲音。</p><p><strong>一、最後一週的總綱</strong></p><p><strong>【釘子】要走的人，說最重要的話。</strong></p><p>法利賽人派律法專家來「試探」耶穌——原文是設圈套。猶太律法有六百一十三條，答「這條最大」就得罪其餘的，答不出就原形畢露。</p><p>耶穌只用兩句話：「你要盡心、盡性、盡意愛主你的神」（申六5）；「其次也相倣，就是要愛人如己」（利十九18）。「這兩條誡命是律法和先知一切道理的總綱。」（40節）「總綱」原文是「懸掛」——整部律法像外衣，掛在愛神、愛人兩根釘子上。</p><p>一個人要離開的時候，說的都是最重要的話。耶穌在生命的最後一週，把一切濃縮成兩句話——這不是入門課，是遺言級別的教導。奧古斯丁（Augustine）說，全部聖經的終點就是這兩件事（《論基督教教義》）。</p><p><strong>要走的人，說最重要的話。</strong> 耶穌把最重要的話留給了我們。今天，祂也把這兩句話交在你手裡。</p><p><strong>二、基督是誰：來的那位君王</strong></p><p><strong>【釘子】大衛的主，就是要來的君王。</strong></p><p>耶穌反問：「論到基督，你們的意見如何？他是誰的子孫？」「大衛的子孫。」「大衛被聖靈感動，怎麼還稱他為主呢？」（42-45節，引用詩一一〇1）全場沉默，「從那日以後，也沒有人敢再問他什麼。」（46節）</p><p>放回年曆看：四週後就是將臨期——紀念祂第一次降臨，等候祂第二次降臨（Parousia，主再來）。今天經文裡那位「大衛的主」，就是將臨期要等候的君王。今天在這裡認祂為主，將來見祂才不至於羞愧（約壹二28）。</p><p><strong>大衛的主，就是要來的君王。</strong> 教會年曆把這段放在年底，是要在迎接君王之前，先逼我們回答：祂是誰？是你的主嗎？</p><p><strong>三、保羅：在君王回來的語境中牧養</strong></p><p><strong>【釘子】溫柔，是末世論的形狀。</strong></p><p>帖撒羅尼迦前書二章一至八節，保羅「存心溫柔，如同乳母撫育自己的孩子」，「連自己的性命也樂意給你們」。但不要讀成一般的溫柔——要讀出它的處境。</p><p>帖前是新約最著名的末世論書卷之一。保羅只用三個安息日就建立了教會（徒十七2），靠的不是口才，是「神的全能和聖靈的工作」（帖前一5）。而整封信是在「主將要再來」的語境中展開的：兩週後（十一月八日）是帖前四章十三至十八節——主降臨、死人復活；再下一週（十一月十五日）是五章一至十一節——主的日子如夜間的賊來到。</p><p>所以第二章的溫柔，是末世性的溫柔：正因為知道君王要回來，才用永恆的眼光待人；正因為日子有限，才把「自己」都給出去。保羅為父為母的心，不是性格好，是末世論長出了形狀。呼應這週的靈修：摩西數算日子（詩九十），保羅在 Parousia 之前數算靈魂。</p><p><strong>溫柔，是末世論的形狀。</strong> 知道君王要回來的人，待人不會一樣。</p><p><strong>四、主的日子：嚴肅的</strong></p><p><strong>【釘子】那日，存得住的只有愛。</strong></p><p>舊約的「主的日子」從來不是溫馨的詞。約珥書說那日「大而可畏」（珥二31）；阿摩司警告「想望主日子來到的人有禍了」（摩五18）；兩週後（十一月十五日）的經課西番雅書一章十四至十八節，正是主日子審判的經文——年曆一路把我們帶向那裡。</p><p>所以「愛的總綱」不是心靈小品，是末日的考題。那日，神不看你的神學考卷，看你的生命掛在哪兩根釘子上。保羅說：「如今常存的有信，有望，有愛」（林前十三13）——在主的日子裡，存得住的，只有愛。</p><p><strong>那日，存得住的只有愛。</strong> 今天掛對釘子，那日才站立得住。</p><p><strong>本週記憶操練</strong></p><p>本週經文：馬太福音 22:37-40。四拍背誦法，帶著家人一起做：</p><p>- 第一拍（週一）：「你要盡心、盡性、盡意愛主你的神。」 - 第二拍（週二）：「其次也相倣，就是要愛人如己。」 - 第三拍（週三）：「這兩條誡命是律法和先知一切道理的總綱。」 - 第四拍（週四）：四句連起來背；週五默寫一遍；週六為家人背一遍；主日我們齊誦。</p><p>口訣只有六個字：<strong>愛神，愛人，總綱。</strong> 兩根釘子，托住一切。</p><p><strong>結語：在君王回來之前</strong></p><p>四週後，將臨期的第一根蠟燭點起，教會要唱「主啊，願你來」。今天，祂在聖殿裡問：「你們以為基督是誰？」四週後，我們用整個將臨期回答。</p><p>兩件具體的回應：第一，今天回家，找一個最難去愛的人，為他做一件不讓人知道的小事——在君王回來之前，把愛存起來。第二，每天早上問：「今天，我的『盡心、盡性、盡意』要給誰？」晚上回來檢查。</p><p>記住今天的釘子：<strong>兩根釘子，托住一切；一位君王，正在回來。</strong></p></article>
+<div class="prayer"><h2 class="sans">禱告 PRAYER</h2><p>禱告：主耶穌，大衛稱你為主，我們也稱你為主。你在十字架前把愛的總綱留給我們，在將臨期前問我們你是誰。求你赦免我們把生命掛錯了釘子；在君王回來之前，教我們數算日子，只做那兩件托得住一切的事——愛你，愛人。阿們。</p></div>
+<div class="daynav sans"><a href="/year-a/proper-25/index.html">← 週匯總 WEEK</a><a href="/year-a/proper-25/index.html">本週詩歌 →</a></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>
