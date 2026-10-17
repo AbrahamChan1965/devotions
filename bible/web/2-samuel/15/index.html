@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>撒母耳記下 15 · WEB｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/web/index.html">聖經 WEB</a> ／ <a href="/bible/web/2-samuel/index.html">撒母耳記下</a> ／ <b>15</b></div>
+<h1>撒母耳記下 15</h1>
+<div class="sub sans">2 Samuel 15 · WEB</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">WEB</a><a href="/bible/cuv/2-samuel/15/index.html">和合本</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>After this, Absalom prepared a chariot and horses for himself, and fifty men to run before him.</p><p class="v" id="v2"><span class="vn sans">2</span>Absalom rose up early, and stood beside the way of the gate. When any man had a suit which should come to the king for judgment, then Absalom called to him, and said, “What city are you from?” He said, “Your servant is of one of the tribes of Israel.”</p><p class="v" id="v3"><span class="vn sans">3</span>Absalom said to him, “Behold, your matters are good and right; but there is no man deputized by the king to hear you.”</p><p class="v" id="v4"><span class="vn sans">4</span>Absalom said moreover, “Oh that I were made judge in the land, that every man who has any suit or cause might come to me, and I would do him justice!”</p><p class="v" id="v5"><span class="vn sans">5</span>It was so, that when any man came near to bow down to him, he stretched out his hand, took hold of him, and kissed him.</p><p class="v" id="v6"><span class="vn sans">6</span>Absalom did this sort of thing to all Israel who came to the king for judgment. So Absalom stole the hearts of the men of Israel.</p><p class="v" id="v7"><span class="vn sans">7</span>At the end of forty years, Absalom said to the king, “Please let me go and pay my vow, which I have vowed to the LORD, in Hebron.</p><p class="v" id="v8"><span class="vn sans">8</span>For your servant vowed a vow while I stayed at Geshur in Syria, saying, ‘If the LORD shall indeed bring me again to Jerusalem, then I will serve the LORD.’”</p><p class="v" id="v9"><span class="vn sans">9</span>The king said to him, “Go in peace.” So he arose and went to Hebron.</p><p class="v" id="v10"><span class="vn sans">10</span>But Absalom sent spies throughout all the tribes of Israel, saying, “As soon as you hear the sound of the trumpet, then you shall say, ‘Absalom is king in Hebron!’”</p><p class="v" id="v11"><span class="vn sans">11</span>Two hundred men went with Absalom out of Jerusalem, who were invited, and went in their simplicity; and they didn’t know anything.</p><p class="v" id="v12"><span class="vn sans">12</span>Absalom sent for Ahithophel the Gilonite, David’s counselor, from his city, even from Giloh, while he was offering the sacrifices. The conspiracy was strong, for the people increased continually with Absalom.</p><p class="v" id="v13"><span class="vn sans">13</span>A messenger came to David, saying, “The hearts of the men of Israel are after Absalom.”</p><p class="v" id="v14"><span class="vn sans">14</span>David said to all his servants who were with him at Jerusalem, “Arise! Let’s flee, or else none of us will escape from Absalom. Hurry to depart, lest he overtake us quickly and bring down evil on us, and strike the city with the edge of the sword.”</p><p class="v" id="v15"><span class="vn sans">15</span>The king’s servants said to the king, “Behold, your servants are ready to do whatever my lord the king chooses.”</p><p class="v" id="v16"><span class="vn sans">16</span>The king went out, and all his household after him. The king left ten women, who were concubines, to keep the house.</p><p class="v" id="v17"><span class="vn sans">17</span>The king went out, and all the people after him; and they stayed in Beth Merhak.</p><p class="v" id="v18"><span class="vn sans">18</span>All his servants passed on beside him; and all the Cherethites, and all the Pelethites, and all the Gittites, six hundred men who came after him from Gath, passed on before the king.</p><p class="v" id="v19"><span class="vn sans">19</span>Then the king said to Ittai the Gittite, “Why do you also go with us? Return, and stay with the king; for you are a foreigner and also an exile. Return to your own place.</p><p class="v" id="v20"><span class="vn sans">20</span>Whereas you came but yesterday, should I today make you go up and down with us, since I go where I may? Return, and take back your brothers. Mercy and truth be with you.”</p><p class="v" id="v21"><span class="vn sans">21</span>Ittai answered the king and said, “As the LORD lives, and as my lord the king lives, surely in what place my lord the king is, whether for death or for life, your servant will be there also.”</p><p class="v" id="v22"><span class="vn sans">22</span>David said to Ittai, “Go and pass over.” Ittai the Gittite passed over, and all his men, and all the little ones who were with him.</p><p class="v" id="v23"><span class="vn sans">23</span>All the country wept with a loud voice, and all the people passed over. The king also himself passed over the brook Kidron, and all the people passed over toward the way of the wilderness.</p><p class="v" id="v24"><span class="vn sans">24</span>Behold, Zadok also came, and all the Levites with him, bearing the ark of the covenant of God; and they set down God’s ark; and Abiathar went up until all the people finished passing out of the city.</p><p class="v" id="v25"><span class="vn sans">25</span>The king said to Zadok, “Carry God’s ark back into the city. If I find favor in the LORD’s eyes, he will bring me again, and show me both it and his habitation;</p><p class="v" id="v26"><span class="vn sans">26</span>but if he says, ‘I have no delight in you,’ behold, here I am. Let him do to me as seems good to him.”</p><p class="v" id="v27"><span class="vn sans">27</span>The king said also to Zadok the priest, “Aren’t you a seer? Return into the city in peace, and your two sons with you, Ahimaaz your son and Jonathan the son of Abiathar.</p><p class="v" id="v28"><span class="vn sans">28</span>Behold, I will stay at the fords of the wilderness until word comes from you to inform me.”</p><p class="v" id="v29"><span class="vn sans">29</span>Zadok therefore and Abiathar carried God’s ark to Jerusalem again; and they stayed there.</p><p class="v" id="v30"><span class="vn sans">30</span>David went up by the ascent of the Mount of Olives, and wept as he went up; and he had his head covered and went barefoot. All the people who were with him each covered his head, and they went up, weeping as they went up.</p><p class="v" id="v31"><span class="vn sans">31</span>Someone told David, saying, “Ahithophel is among the conspirators with Absalom.” David said, “LORD, please turn the counsel of Ahithophel into foolishness.”</p><p class="v" id="v32"><span class="vn sans">32</span>When David had come to the top, where God was worshiped, behold, Hushai the Archite came to meet him with his tunic torn and earth on his head.</p><p class="v" id="v33"><span class="vn sans">33</span>David said to him, “If you pass on with me, then you will be a burden to me;</p><p class="v" id="v34"><span class="vn sans">34</span>but if you return to the city, and tell Absalom, ‘I will be your servant, O king. As I have been your father’s servant in time past, so I will now be your servant; then you will defeat for me the counsel of Ahithophel.’</p><p class="v" id="v35"><span class="vn sans">35</span>Don’t you have Zadok and Abiathar the priests there with you? Therefore whatever you hear out of the king’s house, tell it to Zadok and Abiathar the priests.</p><p class="v" id="v36"><span class="vn sans">36</span>Behold, they have there with them their two sons, Ahimaaz, Zadok’s son, and Jonathan, Abiathar’s son. Send to me everything that you shall hear by them.”</p><p class="v" id="v37"><span class="vn sans">37</span>So Hushai, David’s friend, came into the city; and Absalom came into Jerusalem.</p></article>
+<div class="daynav sans"><a href="/bible/web/2-samuel/14/index.html">← 14</a><a href="/bible/web/2-samuel/16/index.html">16 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/web/2-samuel/index.html">← 撒母耳記下</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

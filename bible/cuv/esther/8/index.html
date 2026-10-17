@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>以斯帖記 8 · 和合本｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/cuv/index.html">聖經 和合本</a> ／ <a href="/bible/cuv/esther/index.html">以斯帖記</a> ／ <b>8章</b></div>
+<h1>以斯帖記 8</h1>
+<div class="sub sans">Esther 8 · 和合本</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">和合本</a><a href="/bible/web/esther/8/index.html">WEB</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>當日，亞哈隨魯王把猶大人仇敵哈曼的家產賜給王后以斯帖。末底改也來到王面前，因為以斯帖已經告訴王，末底改是她的親屬。</p><p class="v" id="v2"><span class="vn sans">2</span>王摘下自己的戒指，就是從哈曼追回的，給了末底改。以斯帖派末底改管理哈曼的家產。</p><p class="v" id="v3"><span class="vn sans">3</span>以斯帖又俯伏在王腳前，流淚哀告，求他除掉亞甲族哈曼害猶大人的惡謀。</p><p class="v" id="v4"><span class="vn sans">4</span>王向以斯帖伸出金杖；以斯帖就起來，站在王前，</p><p class="v" id="v5"><span class="vn sans">5</span>說：「亞甲族哈米大他的兒子哈曼設謀傳旨，要殺滅在王各省的猶大人。現今王若願意，我若在王眼前蒙恩，王若以為美，若喜悅我，請王另下旨意，廢除哈曼所傳的那旨意。</p><p class="v" id="v6"><span class="vn sans">6</span>我何忍見我本族的人受害？何忍見我同宗的人被滅呢？」</p><p class="v" id="v7"><span class="vn sans">7</span>亞哈隨魯王對王后以斯帖和猶大人末底改說：「因哈曼要下手害猶大人，我已將他的家產賜給以斯帖，人也將哈曼掛在木架上。</p><p class="v" id="v8"><span class="vn sans">8</span>現在你們可以隨意奉王的名寫諭旨給猶大人，用王的戒指蓋印；因為奉王名所寫、用王戒指蓋印的諭旨，人都不能廢除。」</p><p class="v" id="v9"><span class="vn sans">9</span>三月，就是西彎月二十三日，將王的書記召來，按着末底改所吩咐的，用各省的文字、各族的方言，並猶大人的文字方言寫諭旨，傳給那從印度直到古實一百二十七省的猶大人和總督省長首領。</p><p class="v" id="v10"><span class="vn sans">10</span>末底改奉亞哈隨魯王的名寫諭旨，用王的戒指蓋印，交給騎御馬圈快馬的驛卒，傳[到各處]。</p><p class="v" id="v11"><span class="vn sans">11</span>諭旨中，王准各省各城的猶大人在一日之間，十二月，就是亞達月十三日，聚集保護性命，剪除殺戮滅絕那要攻擊猶大人的一切仇敵和他們的妻子兒女，奪取他們的財為掠物。</p><p class="v" id="v13"><span class="vn sans">13</span>抄錄這諭旨，頒行各省，宣告各族，使猶大人預備等候那日，在仇敵身上報仇。</p><p class="v" id="v14"><span class="vn sans">14</span>於是騎快馬的驛卒被王命催促，急忙起行；諭旨也傳遍書珊城。</p><p class="v" id="v15"><span class="vn sans">15</span>末底改穿着藍色白色的朝服，頭戴大金冠冕，又穿紫色細麻布的外袍，從王面前出來；書珊城的人民都歡呼快樂。</p><p class="v" id="v16"><span class="vn sans">16</span>猶大人有光榮，歡喜快樂而得尊貴。</p><p class="v" id="v17"><span class="vn sans">17</span>王的諭旨所到的各省各城，猶大人都歡喜快樂，設擺筵宴，以那日為吉日。那國的人民，有許多因懼怕猶大人，就入了猶大籍。</p></article>
+<div class="daynav sans"><a href="/bible/cuv/esther/7/index.html">← 7章</a><a href="/bible/cuv/esther/9/index.html">9章 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/cuv/esther/index.html">← 以斯帖記目錄</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

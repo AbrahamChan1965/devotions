@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>出埃及記 21 · WEB｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/web/index.html">聖經 WEB</a> ／ <a href="/bible/web/exodus/index.html">出埃及記</a> ／ <b>21</b></div>
+<h1>出埃及記 21</h1>
+<div class="sub sans">Exodus 21 · WEB</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">WEB</a><a href="/bible/cuv/exodus/21/index.html">和合本</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>“Now these are the ordinances which you shall set before them:</p><p class="v" id="v2"><span class="vn sans">2</span>“If you buy a Hebrew servant, he shall serve six years, and in the seventh he shall go out free without paying anything.</p><p class="v" id="v3"><span class="vn sans">3</span>If he comes in by himself, he shall go out by himself. If he is married, then his wife shall go out with him.</p><p class="v" id="v4"><span class="vn sans">4</span>If his master gives him a wife and she bears him sons or daughters, the wife and her children shall be her master’s, and he shall go out by himself.</p><p class="v" id="v5"><span class="vn sans">5</span>But if the servant shall plainly say, ‘I love my master, my wife, and my children. I will not go out free;’</p><p class="v" id="v6"><span class="vn sans">6</span>then his master shall bring him to God, and shall bring him to the door or to the doorpost, and his master shall bore his ear through with an awl, and he shall serve him forever.</p><p class="v" id="v7"><span class="vn sans">7</span>“If a man sells his daughter to be a female servant, she shall not go out as the male servants do.</p><p class="v" id="v8"><span class="vn sans">8</span>If she doesn’t please her master, who has married her to himself, then he shall let her be redeemed. He shall have no right to sell her to a foreign people, since he has dealt deceitfully with her.</p><p class="v" id="v9"><span class="vn sans">9</span>If he marries her to his son, he shall deal with her as a daughter.</p><p class="v" id="v10"><span class="vn sans">10</span>If he takes another wife to himself, he shall not diminish her food, her clothing, and her marital rights.</p><p class="v" id="v11"><span class="vn sans">11</span>If he doesn’t do these three things for her, she may go free without paying any money.</p><p class="v" id="v12"><span class="vn sans">12</span>“One who strikes a man so that he dies shall surely be put to death,</p><p class="v" id="v13"><span class="vn sans">13</span>but not if it is unintentional, but God allows it to happen; then I will appoint you a place where he shall flee.</p><p class="v" id="v14"><span class="vn sans">14</span>If a man schemes and comes presumptuously on his neighbor to kill him, you shall take him from my altar, that he may die.</p><p class="v" id="v15"><span class="vn sans">15</span>“Anyone who attacks his father or his mother shall be surely put to death.</p><p class="v" id="v16"><span class="vn sans">16</span>“Anyone who kidnaps someone and sells him, or if he is found in his hand, he shall surely be put to death.</p><p class="v" id="v17"><span class="vn sans">17</span>“Anyone who curses his father or his mother shall surely be put to death.</p><p class="v" id="v18"><span class="vn sans">18</span>“If men quarrel and one strikes the other with a stone, or with his fist, and he doesn’t die, but is confined to bed;</p><p class="v" id="v19"><span class="vn sans">19</span>if he rises again and walks around with his staff, then he who struck him shall be cleared; only he shall pay for the loss of his time, and shall provide for his healing until he is thoroughly healed.</p><p class="v" id="v20"><span class="vn sans">20</span>“If a man strikes his servant or his maid with a rod, and he dies under his hand, the man shall surely be punished.</p><p class="v" id="v21"><span class="vn sans">21</span>Notwithstanding, if his servant gets up after a day or two, he shall not be punished, for the servant is his property.</p><p class="v" id="v22"><span class="vn sans">22</span>“If men fight and hurt a pregnant woman so that she gives birth prematurely, and yet no harm follows, he shall be surely fined as much as the woman’s husband demands and the judges allow.</p><p class="v" id="v23"><span class="vn sans">23</span>But if any harm follows, then you must take life for life,</p><p class="v" id="v24"><span class="vn sans">24</span>eye for eye, tooth for tooth, hand for hand, foot for foot,</p><p class="v" id="v25"><span class="vn sans">25</span>burning for burning, wound for wound, and bruise for bruise.</p><p class="v" id="v26"><span class="vn sans">26</span>“If a man strikes his servant’s eye, or his maid’s eye, and destroys it, he shall let him go free for his eye’s sake.</p><p class="v" id="v27"><span class="vn sans">27</span>If he strikes out his male servant’s tooth, or his female servant’s tooth, he shall let the servant go free for his tooth’s sake.</p><p class="v" id="v28"><span class="vn sans">28</span>“If a bull gores a man or a woman to death, the bull shall surely be stoned, and its meat shall not be eaten; but the owner of the bull shall not be held responsible.</p><p class="v" id="v29"><span class="vn sans">29</span>But if the bull had a habit of goring in the past, and this has been testified to its owner, and he has not kept it in, but it has killed a man or a woman, the bull shall be stoned, and its owner shall also be put to death.</p><p class="v" id="v30"><span class="vn sans">30</span>If a ransom is imposed on him, then he shall give for the redemption of his life whatever is imposed.</p><p class="v" id="v31"><span class="vn sans">31</span>Whether it has gored a son or has gored a daughter, according to this judgment it shall be done to him.</p><p class="v" id="v32"><span class="vn sans">32</span>If the bull gores a male servant or a female servant, thirty shekels of silver shall be given to their master, and the ox shall be stoned.</p><p class="v" id="v33"><span class="vn sans">33</span>“If a man opens a pit, or if a man digs a pit and doesn’t cover it, and a bull or a donkey falls into it,</p><p class="v" id="v34"><span class="vn sans">34</span>the owner of the pit shall make it good. He shall give money to its owner, and the dead animal shall be his.</p><p class="v" id="v35"><span class="vn sans">35</span>“If one man’s bull injures another’s, so that it dies, then they shall sell the live bull, and divide its price; and they shall also divide the dead animal.</p><p class="v" id="v36"><span class="vn sans">36</span>Or if it is known that the bull was in the habit of goring in the past, and its owner has not kept it in, he shall surely pay bull for bull, and the dead animal shall be his own.</p></article>
+<div class="daynav sans"><a href="/bible/web/exodus/20/index.html">← 20</a><a href="/bible/web/exodus/22/index.html">22 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/web/exodus/index.html">← 出埃及記</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

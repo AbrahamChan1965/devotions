@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>哥林多後書 12 · 和合本｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/cuv/index.html">聖經 和合本</a> ／ <a href="/bible/cuv/2-corinthians/index.html">哥林多後書</a> ／ <b>12章</b></div>
+<h1>哥林多後書 12</h1>
+<div class="sub sans">2 Corinthians 12 · 和合本</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">和合本</a><a href="/bible/web/2-corinthians/12/index.html">WEB</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>我自誇固然無益，但我是不得已的。如今我要說到主的顯現和啟示。</p><p class="v" id="v2"><span class="vn sans">2</span>我認得一個在基督裏的人，他前十四年被提到第三層天上去；（或在身內，我不知道；或在身外，我也不知道；只有上帝知道。）</p><p class="v" id="v3"><span class="vn sans">3</span>我認得這人；（或在身內，或在身外，我都不知道，只有上帝知道。）</p><p class="v" id="v4"><span class="vn sans">4</span>他被提到樂園裏，聽見隱祕的言語，是人不可說的。</p><p class="v" id="v5"><span class="vn sans">5</span>為這人，我要誇口；但是為我自己，除了[我的]軟弱以外，我並不誇口。</p><p class="v" id="v6"><span class="vn sans">6</span>我就是願意誇口也不算狂，因為我必說實話；只是我禁止不說，恐怕有人把我看高了，過於他在我身上所看見、所聽見的。</p><p class="v" id="v7"><span class="vn sans">7</span>又恐怕我因所得的啟示甚大，就過於自高，所以有一根刺加在我肉體上，就是撒但的差役要攻擊我，免得我過於自高。</p><p class="v" id="v8"><span class="vn sans">8</span>為這事，我三次求過主，叫這刺離開我。</p><p class="v" id="v9"><span class="vn sans">9</span>他對我說：「我的恩典夠你用的，因為我的能力是在人的軟弱上顯得完全。」所以，我更喜歡誇自己的軟弱，好叫基督的能力覆庇我。</p><p class="v" id="v10"><span class="vn sans">10</span>我為基督的緣故，就以軟弱、凌辱、急難、逼迫、困苦為可喜樂的；因我甚麼時候軟弱，甚麼時候就剛強了。</p><p class="v" id="v11"><span class="vn sans">11</span>我成了愚妄人，是被你們強逼的。我本該被你們稱許才是。我雖算不了甚麼，卻沒有一件事在那些最大的使徒以下。</p><p class="v" id="v12"><span class="vn sans">12</span>我在你們中間，用百般的忍耐，藉着神蹟、奇事、異能顯出使徒的憑據來。</p><p class="v" id="v13"><span class="vn sans">13</span>除了我不累着你們這一件事，你們還有甚麼事不及別的教會呢？這不公之處，求你們饒恕我吧。</p><p class="v" id="v14"><span class="vn sans">14</span>如今，我打算第三次到你們那裏去，也必不累着你們；因我所求的是你們，不是你們的[財物]。兒女不該為父母積財，父母該為兒女積財。</p><p class="v" id="v15"><span class="vn sans">15</span>我也甘心樂意為你們的靈魂費財費力。難道我越發愛你們，就越發少得你們的愛嗎？</p><p class="v" id="v16"><span class="vn sans">16</span>罷了，我自己並沒有累着你們，[你們卻有人說]，我是詭詐，用心計牢籠你們。</p><p class="v" id="v17"><span class="vn sans">17</span>我所差到你們那裏去的人，我藉着他們一個人佔過你們的便宜嗎？</p><p class="v" id="v18"><span class="vn sans">18</span>我勸了提多[到你們那裏去]，又差那位兄弟與他同去。提多佔過你們的便宜嗎？我們行事，不同是一個心靈嗎？不同是一個腳蹤嗎？</p><p class="v" id="v19"><span class="vn sans">19</span>你們到如今，還想我們是向你們分訴；我們本是在基督裏當上帝面前說話。親愛的[弟兄]啊，一切的事都是為造就你們。</p><p class="v" id="v20"><span class="vn sans">20</span>我怕我再來的時候，見你們不合我所想望的，你們見我也不合你們所想望的；又怕有紛爭、嫉妒、惱怒、結黨、毀謗、讒言、狂傲、混亂的事。</p><p class="v" id="v21"><span class="vn sans">21</span>且怕我來的時候，我的上帝叫我在你們面前慚愧，又因許多人從前犯罪，行污穢、姦淫、邪蕩的事不肯悔改，我就憂愁。</p></article>
+<div class="daynav sans"><a href="/bible/cuv/2-corinthians/11/index.html">← 11章</a><a href="/bible/cuv/2-corinthians/13/index.html">13章 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/cuv/2-corinthians/index.html">← 哥林多後書目錄</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

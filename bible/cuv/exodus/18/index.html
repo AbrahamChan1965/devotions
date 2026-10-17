@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>出埃及記 18 · 和合本｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/cuv/index.html">聖經 和合本</a> ／ <a href="/bible/cuv/exodus/index.html">出埃及記</a> ／ <b>18章</b></div>
+<h1>出埃及記 18</h1>
+<div class="sub sans">Exodus 18 · 和合本</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">和合本</a><a href="/bible/web/exodus/18/index.html">WEB</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>摩西的岳父，米甸祭司葉忒羅，聽見上帝為摩西和上帝的百姓以色列所行的一切事，就是耶和華將以色列從埃及領出來的事，</p><p class="v" id="v2"><span class="vn sans">2</span>便帶着摩西的妻子西坡拉，就是摩西從前打發回去的，</p><p class="v" id="v3"><span class="vn sans">3</span>又帶着西坡拉的兩個兒子，一個名叫革舜，因為摩西說：「我在外邦作了寄居的」；</p><p class="v" id="v4"><span class="vn sans">4</span>一個名叫以利以謝，因為[他說]：「我父親的上帝幫助了我，救我脫離法老的刀。」</p><p class="v" id="v5"><span class="vn sans">5</span>摩西的岳父葉忒羅帶着摩西的妻子和兩個兒子來到上帝的山，就是摩西在曠野安營的地方。</p><p class="v" id="v6"><span class="vn sans">6</span>他對摩西說：「我是你岳父葉忒羅，帶着你的妻子和兩個兒子來到你這裏。」</p><p class="v" id="v7"><span class="vn sans">7</span>摩西迎接他的岳父，向他下拜，與他親嘴，彼此問安，都進了帳棚。</p><p class="v" id="v8"><span class="vn sans">8</span>摩西將耶和華為以色列的緣故向法老和埃及人所行的一切事，以及路上所遭遇的一切艱難，並耶和華怎樣搭救他們，都述說與他岳父聽。</p><p class="v" id="v9"><span class="vn sans">9</span>葉忒羅因耶和華待以色列的一切好處，就是拯救他們脫離埃及人的手，便甚歡喜。</p><p class="v" id="v10"><span class="vn sans">10</span>葉忒羅說：「耶和華是應當稱頌的；他救了你們脫離埃及人和法老的手，將這百姓從埃及人的手下救出來。</p><p class="v" id="v11"><span class="vn sans">11</span>我現今在埃及人向這百姓發狂傲的事上得知，耶和華比萬神都大。」</p><p class="v" id="v12"><span class="vn sans">12</span>摩西的岳父葉忒羅把燔祭和[平安]祭獻給上帝。亞倫和以色列的眾長老都來了，與摩西的岳父在上帝面前吃飯。</p><p class="v" id="v13"><span class="vn sans">13</span>第二天，摩西坐着審判百姓，百姓從早到晚都站在摩西的左右。</p><p class="v" id="v14"><span class="vn sans">14</span>摩西的岳父看見他向百姓所做的一切事，就說：「你向百姓做的是甚麼事呢？你為甚麼獨自坐着，眾百姓從早到晚都站在你的左右呢？」</p><p class="v" id="v15"><span class="vn sans">15</span>摩西對岳父說：「這是因百姓到我這裏來求問上帝。</p><p class="v" id="v16"><span class="vn sans">16</span>他們有事的時候就到我這裏來，我便在兩造之間施行審判；我又叫他們知道上帝的律例和法度。」</p><p class="v" id="v17"><span class="vn sans">17</span>摩西的岳父說：「你這做的不好。</p><p class="v" id="v18"><span class="vn sans">18</span>你和這些百姓必都疲憊；因為這事太重，你獨自一人辦理不了。</p><p class="v" id="v19"><span class="vn sans">19</span>現在你要聽我的話。我為你出個主意，願上帝與你同在。你要替百姓到上帝面前，將案件奏告上帝；</p><p class="v" id="v20"><span class="vn sans">20</span>又要將律例和法度教訓他們，指示他們當行的道，當做的事；</p><p class="v" id="v21"><span class="vn sans">21</span>並要從百姓中揀選有才能的人，就是敬畏上帝、誠實無妄、恨不義之財的人，派他們作千夫長、百夫長、五十夫長、十夫長，管理百姓，</p><p class="v" id="v22"><span class="vn sans">22</span>叫他們隨時審判百姓，大事都要呈到你這裏，小事他們自己可以審判。這樣，你就輕省些，他們也可以同當此任。</p><p class="v" id="v23"><span class="vn sans">23</span>你若這樣行，上帝也這樣吩咐你，你就能受得住，這百姓也都平平安安歸回他們的住處。」</p><p class="v" id="v24"><span class="vn sans">24</span>於是，摩西聽從他岳父的話，按着他所說的去行。</p><p class="v" id="v25"><span class="vn sans">25</span>摩西從以色列人中揀選了有才能的人，立他們為百姓的首領，作千夫長、百夫長、五十夫長、十夫長。</p><p class="v" id="v26"><span class="vn sans">26</span>他們隨時審判百姓，有難斷的案件就呈到摩西那裏，但各樣小事他們自己審判。</p><p class="v" id="v27"><span class="vn sans">27</span>此後，摩西讓他的岳父去，他就往本地去了。</p></article>
+<div class="daynav sans"><a href="/bible/cuv/exodus/17/index.html">← 17章</a><a href="/bible/cuv/exodus/19/index.html">19章 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/cuv/exodus/index.html">← 出埃及記目錄</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

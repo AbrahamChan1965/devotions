@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>使徒行傳 15 · WEB｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/web/index.html">聖經 WEB</a> ／ <a href="/bible/web/acts/index.html">使徒行傳</a> ／ <b>15</b></div>
+<h1>使徒行傳 15</h1>
+<div class="sub sans">Acts 15 · WEB</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">WEB</a><a href="/bible/cuv/acts/15/index.html">和合本</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>Some men came down from Judea and taught the brothers, “Unless you are circumcised after the custom of Moses, you can’t be saved.”</p><p class="v" id="v2"><span class="vn sans">2</span>Therefore when Paul and Barnabas had no small discord and discussion with them, they appointed Paul, Barnabas, and some others of them to go up to Jerusalem to the apostles and elders about this question.</p><p class="v" id="v3"><span class="vn sans">3</span>They, being sent on their way by the assembly, passed through both Phoenicia and Samaria, declaring the conversion of the Gentiles. They caused great joy to all the brothers.</p><p class="v" id="v4"><span class="vn sans">4</span>When they had come to Jerusalem, they were received by the assembly and the apostles and the elders, and they reported everything that God had done with them.</p><p class="v" id="v5"><span class="vn sans">5</span>But some of the sect of the Pharisees who believed rose up, saying, “It is necessary to circumcise them, and to command them to keep the law of Moses.”</p><p class="v" id="v6"><span class="vn sans">6</span>The apostles and the elders were gathered together to see about this matter.</p><p class="v" id="v7"><span class="vn sans">7</span>When there had been much discussion, Peter rose up and said to them, “Brothers, you know that a good while ago God made a choice among you that by my mouth the nations should hear the word of the Good News and believe.</p><p class="v" id="v8"><span class="vn sans">8</span>God, who knows the heart, testified about them, giving them the Holy Spirit, just like he did to us.</p><p class="v" id="v9"><span class="vn sans">9</span>He made no distinction between us and them, cleansing their hearts by faith.</p><p class="v" id="v10"><span class="vn sans">10</span>Now therefore why do you tempt God, that you should put a yoke on the neck of the disciples which neither our fathers nor we were able to bear?</p><p class="v" id="v11"><span class="vn sans">11</span>But we believe that we are saved through the grace of the Lord Jesus, just as they are.”</p><p class="v" id="v12"><span class="vn sans">12</span>All the multitude kept silence, and they listened to Barnabas and Paul reporting what signs and wonders God had done among the nations through them.</p><p class="v" id="v13"><span class="vn sans">13</span>After they were silent, James answered, “Brothers, listen to me.</p><p class="v" id="v14"><span class="vn sans">14</span>Simeon has reported how God first visited the nations to take out of them a people for his name.</p><p class="v" id="v15"><span class="vn sans">15</span>This agrees with the words of the prophets. As it is written,</p><p class="v" id="v16"><span class="vn sans">16</span>‘After these things I will return. I will again build the tabernacle of David, which has fallen. I will again build its ruins. I will set it up</p><p class="v" id="v17"><span class="vn sans">17</span>that the rest of men may seek after the Lord: all the Gentiles who are called by my name, says the Lord, who does all these things.’</p><p class="v" id="v18"><span class="vn sans">18</span>“All of God’s works are known to him from eternity.</p><p class="v" id="v19"><span class="vn sans">19</span>Therefore my judgment is that we don’t trouble those from among the Gentiles who turn to God,</p><p class="v" id="v20"><span class="vn sans">20</span>but that we write to them that they abstain from the pollution of idols, from sexual immorality, from what is strangled, and from blood.</p><p class="v" id="v21"><span class="vn sans">21</span>For Moses from generations of old has in every city those who preach him, being read in the synagogues every Sabbath.”</p><p class="v" id="v22"><span class="vn sans">22</span>Then it seemed good to the apostles and the elders, with the whole assembly, to choose men out of their company, and send them to Antioch with Paul and Barnabas: Judas called Barsabbas, and Silas, chief men among the brothers.</p><p class="v" id="v23"><span class="vn sans">23</span>They wrote these things by their hand: “The apostles, the elders, and the brothers, to the brothers who are of the Gentiles in Antioch, Syria, and Cilicia: greetings.</p><p class="v" id="v24"><span class="vn sans">24</span>Because we have heard that some who went out from us have troubled you with words, unsettling your souls, saying, ‘You must be circumcised and keep the law,’ to whom we gave no commandment;</p><p class="v" id="v25"><span class="vn sans">25</span>it seemed good to us, having come to one accord, to choose out men and send them to you with our beloved Barnabas and Paul,</p><p class="v" id="v26"><span class="vn sans">26</span>men who have risked their lives for the name of our Lord Jesus Christ.</p><p class="v" id="v27"><span class="vn sans">27</span>We have sent therefore Judas and Silas, who themselves will also tell you the same things by word of mouth.</p><p class="v" id="v28"><span class="vn sans">28</span>For it seemed good to the Holy Spirit, and to us, to lay no greater burden on you than these necessary things:</p><p class="v" id="v29"><span class="vn sans">29</span>that you abstain from things sacrificed to idols, from blood, from things strangled, and from sexual immorality, from which if you keep yourselves, it will be well with you. Farewell.”</p><p class="v" id="v30"><span class="vn sans">30</span>So, when they were sent off, they came to Antioch. Having gathered the multitude together, they delivered the letter.</p><p class="v" id="v31"><span class="vn sans">31</span>When they had read it, they rejoiced over the encouragement.</p><p class="v" id="v32"><span class="vn sans">32</span>Judas and Silas, also being prophets themselves, encouraged the brothers with many words and strengthened them.</p><p class="v" id="v33"><span class="vn sans">33</span>After they had spent some time there, they were dismissed in peace from the brothers to the apostles.</p><p class="v" id="v34"><span class="vn sans">34</span></p><p class="v" id="v35"><span class="vn sans">35</span>But Paul and Barnabas stayed in Antioch, teaching and preaching the word of the Lord, with many others also.</p><p class="v" id="v36"><span class="vn sans">36</span>After some days Paul said to Barnabas, “Let’s return now and visit our brothers in every city in which we proclaimed the word of the Lord, to see how they are doing.”</p><p class="v" id="v37"><span class="vn sans">37</span>Barnabas planned to take John, who was called Mark, with them also.</p><p class="v" id="v38"><span class="vn sans">38</span>But Paul didn’t think that it was a good idea to take with them someone who had withdrawn from them in Pamphylia, and didn’t go with them to do the work.</p><p class="v" id="v39"><span class="vn sans">39</span>Then the contention grew so sharp that they separated from each other. Barnabas took Mark with him and sailed away to Cyprus,</p><p class="v" id="v40"><span class="vn sans">40</span>but Paul chose Silas and went out, being commended by the brothers to the grace of God.</p><p class="v" id="v41"><span class="vn sans">41</span>He went through Syria and Cilicia, strengthening the assemblies.</p></article>
+<div class="daynav sans"><a href="/bible/web/acts/14/index.html">← 14</a><a href="/bible/web/acts/16/index.html">16 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/web/acts/index.html">← 使徒行傳</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

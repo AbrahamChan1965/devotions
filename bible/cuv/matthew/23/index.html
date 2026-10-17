@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>馬太福音 23 · 和合本｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/cuv/index.html">聖經 和合本</a> ／ <a href="/bible/cuv/matthew/index.html">馬太福音</a> ／ <b>23章</b></div>
+<h1>馬太福音 23</h1>
+<div class="sub sans">Matthew 23 · 和合本</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">和合本</a><a href="/bible/web/matthew/23/index.html">WEB</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>那時，耶穌對眾人和門徒講論，</p><p class="v" id="v2"><span class="vn sans">2</span>說：「文士和法利賽人坐在摩西的位上，</p><p class="v" id="v3"><span class="vn sans">3</span>凡他們所吩咐你們的，你們都要謹守遵行。但不要效法他們的行為；因為他們能說，不能行。</p><p class="v" id="v4"><span class="vn sans">4</span>他們把難擔的重擔捆起來，擱在人的肩上，但自己一個指頭也不肯動。</p><p class="v" id="v5"><span class="vn sans">5</span>他們一切所做的事都是要叫人看見，所以將佩戴的經文做寬了，[衣裳的]繸子做長了，</p><p class="v" id="v6"><span class="vn sans">6</span>喜愛筵席上的首座，會堂裏的高位，</p><p class="v" id="v7"><span class="vn sans">7</span>又喜愛人在街市上問他安，稱呼他拉比 。</p><p class="v" id="v8"><span class="vn sans">8</span>但你們不要受拉比的稱呼，因為只有一位是你們的夫子；你們都是弟兄。</p><p class="v" id="v9"><span class="vn sans">9</span>也不要稱呼地上的人為父，因為只有一位是你們的父，就是在天上的父。</p><p class="v" id="v10"><span class="vn sans">10</span>也不要受師尊的稱呼，因為只有一位是你們的師尊，就是基督。</p><p class="v" id="v11"><span class="vn sans">11</span>你們中間誰為大，誰就要作你們的用人。</p><p class="v" id="v12"><span class="vn sans">12</span>凡自高的，必降為卑；自卑的，必升為高。</p><p class="v" id="v13"><span class="vn sans">13</span>「你們這假冒為善的文士和法利賽人有禍了！因為你們正當人前，把天國[的門]關了，自己不進去，正要進去的人，你們也不容他們進去。</p><p class="v" id="v15"><span class="vn sans">15</span>「你們這假冒為善的文士和法利賽人有禍了！因為你們走遍洋海陸地，勾引一個人入教，既入了教，卻使他作地獄之子，比你們還加倍。</p><p class="v" id="v16"><span class="vn sans">16</span>「你們這瞎眼領路的有禍了！你們說：『凡指着殿起誓的，這算不得甚麼；只是凡指着殿中金子起誓的，他就該謹守。』</p><p class="v" id="v17"><span class="vn sans">17</span>你們這無知瞎眼的人哪，甚麼是大的？是金子呢？還是叫金子成聖的殿呢？</p><p class="v" id="v18"><span class="vn sans">18</span>你們又說：『凡指着壇起誓的，這算不得甚麼；只是凡指着壇上禮物起誓的，他就該謹守。』</p><p class="v" id="v19"><span class="vn sans">19</span>你們這瞎眼的人哪，甚麼是大的？是禮物呢？還是叫禮物成聖的壇呢？</p><p class="v" id="v20"><span class="vn sans">20</span>所以，人指着壇起誓，就是指着壇和壇上一切所有的起誓；</p><p class="v" id="v21"><span class="vn sans">21</span>人指着殿起誓，就是指着殿和那住在殿裏的起誓；</p><p class="v" id="v22"><span class="vn sans">22</span>人指着天起誓，就是指着上帝的寶座和那坐在上面的起誓。</p><p class="v" id="v23"><span class="vn sans">23</span>「你們這假冒為善的文士和法利賽人有禍了！因為你們將薄荷、茴香、芹菜獻上十分之一，那律法上更重的事，就是公義、憐憫、信實，反倒不行了。這[更重的]是你們當行的；那也是不可不行的。</p><p class="v" id="v24"><span class="vn sans">24</span>你們這瞎眼領路的，蠓蟲你們就濾出來，駱駝你們倒吞下去。</p><p class="v" id="v25"><span class="vn sans">25</span>「你們這假冒為善的文士和法利賽人有禍了！因為你們洗淨杯盤的外面，裏面卻盛滿了勒索和放蕩。</p><p class="v" id="v26"><span class="vn sans">26</span>你這瞎眼的法利賽人，先洗淨杯盤的裏面，好叫外面也乾淨了。</p><p class="v" id="v27"><span class="vn sans">27</span>「你們這假冒為善的文士和法利賽人有禍了！因為你們好像粉飾的墳墓，外面好看，裏面卻裝滿了死人的骨頭和一切的污穢。</p><p class="v" id="v28"><span class="vn sans">28</span>你們也是如此，在人前，外面顯出公義來，裏面卻裝滿了假善和不法的事。</p><p class="v" id="v29"><span class="vn sans">29</span>「你們這假冒為善的文士和法利賽人有禍了！因為你們建造先知的墳，修飾義人的墓，說：</p><p class="v" id="v30"><span class="vn sans">30</span>『若是我們在我們祖宗的時候，必不和他們同流先知的血。』</p><p class="v" id="v31"><span class="vn sans">31</span>這就是你們自己證明是殺害先知者的子孫了。</p><p class="v" id="v32"><span class="vn sans">32</span>你們去充滿你們祖宗的惡貫吧！</p><p class="v" id="v33"><span class="vn sans">33</span>你們這些蛇類、毒蛇之種啊，怎能逃脫地獄的刑罰呢？</p><p class="v" id="v34"><span class="vn sans">34</span>所以我差遣先知和智慧人並文士到你們這裏來，有的你們要殺害，要釘十字架；有的你們要在會堂裏鞭打，從這城追逼到那城，</p><p class="v" id="v35"><span class="vn sans">35</span>叫世上所流義人的血都歸到你們身上，從義人亞伯的血起，直到你們在殿和壇中間所殺的巴拉加的兒子撒迦利亞的血為止。</p><p class="v" id="v36"><span class="vn sans">36</span>我實在告訴你們，這一切的罪都要歸到這世代了。」</p><p class="v" id="v37"><span class="vn sans">37</span>「耶路撒冷啊，耶路撒冷啊，你常殺害先知，又用石頭打死那奉差遣到你這裏來的人。我多次願意聚集你的兒女，好像母雞把小雞聚集在翅膀底下，只是你們不願意。</p><p class="v" id="v38"><span class="vn sans">38</span>看哪，你們的家成為荒場留給你們。</p><p class="v" id="v39"><span class="vn sans">39</span>我告訴你們，從今以後，你們不得再見我，直等到你們說：『奉主名來的是應當稱頌的。』」</p></article>
+<div class="daynav sans"><a href="/bible/cuv/matthew/22/index.html">← 22章</a><a href="/bible/cuv/matthew/24/index.html">24章 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/cuv/matthew/index.html">← 馬太福音目錄</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

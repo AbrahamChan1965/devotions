@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>撒母耳記下 17 · WEB｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/web/index.html">聖經 WEB</a> ／ <a href="/bible/web/2-samuel/index.html">撒母耳記下</a> ／ <b>17</b></div>
+<h1>撒母耳記下 17</h1>
+<div class="sub sans">2 Samuel 17 · WEB</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">WEB</a><a href="/bible/cuv/2-samuel/17/index.html">和合本</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>Moreover Ahithophel said to Absalom, “Let me now choose twelve thousand men, and I will arise and pursue after David tonight.</p><p class="v" id="v2"><span class="vn sans">2</span>I will come on him while he is weary and exhausted, and will make him afraid. All the people who are with him will flee. I will strike the king only,</p><p class="v" id="v3"><span class="vn sans">3</span>and I will bring back all the people to you. The man whom you seek is as if all returned. All the people shall be in peace.”</p><p class="v" id="v4"><span class="vn sans">4</span>The saying pleased Absalom well, and all the elders of Israel.</p><p class="v" id="v5"><span class="vn sans">5</span>Then Absalom said, “Now call Hushai the Archite also, and let’s hear likewise what he says.”</p><p class="v" id="v6"><span class="vn sans">6</span>When Hushai had come to Absalom, Absalom spoke to him, saying, “Ahithophel has spoken like this. Shall we do what he says? If not, speak up.”</p><p class="v" id="v7"><span class="vn sans">7</span>Hushai said to Absalom, “The counsel that Ahithophel has given this time is not good.”</p><p class="v" id="v8"><span class="vn sans">8</span>Hushai said moreover, “You know your father and his men, that they are mighty men, and they are fierce in their minds, like a bear robbed of her cubs in the field. Your father is a man of war, and will not lodge with the people.</p><p class="v" id="v9"><span class="vn sans">9</span>Behold, he is now hidden in some pit, or in some other place. It will happen, when some of them have fallen at the first, that whoever hears it will say, ‘There is a slaughter among the people who follow Absalom!’</p><p class="v" id="v10"><span class="vn sans">10</span>Even he who is valiant, whose heart is as the heart of a lion, will utterly melt; for all Israel knows that your father is a mighty man, and those who are with him are valiant men.</p><p class="v" id="v11"><span class="vn sans">11</span>But I counsel that all Israel be gathered together to you, from Dan even to Beersheba, as the sand that is by the sea for multitude; and that you go to battle in your own person.</p><p class="v" id="v12"><span class="vn sans">12</span>So we will come on him in some place where he will be found, and we will light on him as the dew falls on the ground, then we will not leave so much as one of him and of all the men who are with him.</p><p class="v" id="v13"><span class="vn sans">13</span>Moreover, if he has gone into a city, then all Israel will bring ropes to that city, and we will draw it into the river, until there isn’t one small stone found there.”</p><p class="v" id="v14"><span class="vn sans">14</span>Absalom and all the men of Israel said, “The counsel of Hushai the Archite is better than the counsel of Ahithophel.” For the LORD had ordained to defeat the good counsel of Ahithophel, to the intent that the LORD might bring evil on Absalom.</p><p class="v" id="v15"><span class="vn sans">15</span>Then Hushai said to Zadok and to Abiathar the priests, “Ahithophel counseled Absalom and the elders of Israel that way; and I have counseled this way.</p><p class="v" id="v16"><span class="vn sans">16</span>Now therefore send quickly, and tell David, saying, ‘Don’t lodge tonight at the fords of the wilderness, but by all means pass over, lest the king be swallowed up, and all the people who are with him.’”</p><p class="v" id="v17"><span class="vn sans">17</span>Now Jonathan and Ahimaaz were staying by En Rogel; and a female servant used to go and report to them, and they went and told King David; for they couldn’t risk being seen coming into the city.</p><p class="v" id="v18"><span class="vn sans">18</span>But a boy saw them, and told Absalom. Then they both went away quickly and came to the house of a man in Bahurim, who had a well in his court; and they went down there.</p><p class="v" id="v19"><span class="vn sans">19</span>The woman took and spread the covering over the well’s mouth, and spread out crushed grain on it; and nothing was known.</p><p class="v" id="v20"><span class="vn sans">20</span>Absalom’s servants came to the woman to the house; and they said, “Where are Ahimaaz and Jonathan?” The woman said to them, “They have gone over the brook of water.” When they had sought and could not find them, they returned to Jerusalem.</p><p class="v" id="v21"><span class="vn sans">21</span>After they had departed, they came up out of the well and went and told King David; and they said to David, “Arise and pass quickly over the water; for thus has Ahithophel counseled against you.”</p><p class="v" id="v22"><span class="vn sans">22</span>Then David arose, and all the people who were with him, and they passed over the Jordan. By the morning light there lacked not one of them who had not gone over the Jordan.</p><p class="v" id="v23"><span class="vn sans">23</span>When Ahithophel saw that his counsel was not followed, he saddled his donkey, arose, and went home to his city, set his house in order, and hanged himself; and he died, and was buried in the tomb of his father.</p><p class="v" id="v24"><span class="vn sans">24</span>Then David came to Mahanaim. Absalom passed over the Jordan, he and all the men of Israel with him.</p><p class="v" id="v25"><span class="vn sans">25</span>Absalom set Amasa over the army instead of Joab. Now Amasa was the son of a man whose name was Ithra the Israelite, who went in to Abigail the daughter of Nahash, sister to Zeruiah, Joab’s mother.</p><p class="v" id="v26"><span class="vn sans">26</span>Israel and Absalom encamped in the land of Gilead.</p><p class="v" id="v27"><span class="vn sans">27</span>When David had come to Mahanaim, Shobi the son of Nahash of Rabbah of the children of Ammon, and Machir the son of Ammiel of Lodebar, and Barzillai the Gileadite of Rogelim,</p><p class="v" id="v28"><span class="vn sans">28</span>brought beds, basins, earthen vessels, wheat, barley, meal, parched grain, beans, lentils, roasted grain,</p><p class="v" id="v29"><span class="vn sans">29</span>honey, butter, sheep, and cheese of the herd, for David and for the people who were with him to eat; for they said, “The people are hungry, weary, and thirsty in the wilderness.”</p></article>
+<div class="daynav sans"><a href="/bible/web/2-samuel/16/index.html">← 16</a><a href="/bible/web/2-samuel/18/index.html">18 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/web/2-samuel/index.html">← 撒母耳記下</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

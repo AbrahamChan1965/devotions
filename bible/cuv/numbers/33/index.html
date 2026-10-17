@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民數記 33 · 和合本｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/cuv/index.html">聖經 和合本</a> ／ <a href="/bible/cuv/numbers/index.html">民數記</a> ／ <b>33章</b></div>
+<h1>民數記 33</h1>
+<div class="sub sans">Numbers 33 · 和合本</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">和合本</a><a href="/bible/web/numbers/33/index.html">WEB</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>以色列人按着軍隊，在摩西、亞倫的手下出埃及地所行的路程記在下面。</p><p class="v" id="v2"><span class="vn sans">2</span>摩西遵着耶和華的吩咐記載他們所行的路程，其路程乃是這樣：</p><p class="v" id="v3"><span class="vn sans">3</span>正月十五日，就是逾越節的次日，以色列人從蘭塞起行，在一切埃及人眼前昂然無懼地出去。</p><p class="v" id="v4"><span class="vn sans">4</span>那時，埃及人正葬埋他們的長子，就是耶和華在他們中間所擊殺的；耶和華也敗壞他們的神。</p><p class="v" id="v5"><span class="vn sans">5</span>以色列人從蘭塞起行，安營在疏割。</p><p class="v" id="v6"><span class="vn sans">6</span>從疏割起行，安營在曠野邊的以倘。</p><p class="v" id="v7"><span class="vn sans">7</span>從以倘起行，轉到比‧哈希錄，是在巴力‧洗分對面，就在密奪安營。</p><p class="v" id="v8"><span class="vn sans">8</span>從比‧哈希錄對面起行，經過海中到了[書珥]曠野，又在伊坦的曠野走了三天的路程，就安營在瑪拉。</p><p class="v" id="v9"><span class="vn sans">9</span>從瑪拉起行，來到以琳（以琳有十二股水泉，七十棵棕樹），就在那裏安營。</p><p class="v" id="v10"><span class="vn sans">10</span>從以琳起行，安營在紅海邊。</p><p class="v" id="v11"><span class="vn sans">11</span>從紅海邊起行，安營在汛的曠野。</p><p class="v" id="v12"><span class="vn sans">12</span>從汛的曠野起行，安營在脫加。</p><p class="v" id="v13"><span class="vn sans">13</span>從脫加起行，安營在亞錄。</p><p class="v" id="v14"><span class="vn sans">14</span>從亞錄起行，安營在利非訂；在那裏，百姓沒有水喝。</p><p class="v" id="v15"><span class="vn sans">15</span>從利非訂起行，安營在西奈的曠野。</p><p class="v" id="v16"><span class="vn sans">16</span>從西奈的曠野起行，安營在基博羅‧哈他瓦。</p><p class="v" id="v17"><span class="vn sans">17</span>從基博羅‧哈他瓦起行，安營在哈洗錄。</p><p class="v" id="v18"><span class="vn sans">18</span>從哈洗錄起行，安營在利提瑪。</p><p class="v" id="v19"><span class="vn sans">19</span>從利提瑪起行，安營在臨門‧帕烈。</p><p class="v" id="v20"><span class="vn sans">20</span>從臨門‧帕烈起行，安營在立拿。</p><p class="v" id="v21"><span class="vn sans">21</span>從立拿起行，安營在勒撒。</p><p class="v" id="v22"><span class="vn sans">22</span>從勒撒起行，安營在基希拉他。</p><p class="v" id="v23"><span class="vn sans">23</span>從基希拉他起行，安營在沙斐山。</p><p class="v" id="v24"><span class="vn sans">24</span>從沙斐山起行，安營在哈拉大。</p><p class="v" id="v25"><span class="vn sans">25</span>從哈拉大起行，安營在瑪吉希錄。</p><p class="v" id="v26"><span class="vn sans">26</span>從瑪吉希錄起行，安營在他哈。</p><p class="v" id="v27"><span class="vn sans">27</span>從他哈起行，安營在他拉。</p><p class="v" id="v28"><span class="vn sans">28</span>從他拉起行，安營在密加。</p><p class="v" id="v29"><span class="vn sans">29</span>從密加起行，安營在哈摩拿。</p><p class="v" id="v30"><span class="vn sans">30</span>從哈摩拿起行，安營在摩西錄。</p><p class="v" id="v31"><span class="vn sans">31</span>從摩西錄起行，安營在比尼‧亞干。</p><p class="v" id="v32"><span class="vn sans">32</span>從比尼‧亞干起行，安營在曷‧哈及甲。</p><p class="v" id="v33"><span class="vn sans">33</span>從曷‧哈及甲起行，安營在約巴他。</p><p class="v" id="v34"><span class="vn sans">34</span>從約巴他起行，安營在阿博拿。</p><p class="v" id="v35"><span class="vn sans">35</span>從阿博拿起行，安營在以旬‧迦別。</p><p class="v" id="v36"><span class="vn sans">36</span>從以旬‧迦別起行，安營在尋的曠野，就是加低斯。</p><p class="v" id="v37"><span class="vn sans">37</span>從加低斯起行，安營在何珥山，以東地的邊界。</p><p class="v" id="v38"><span class="vn sans">38</span>以色列人出了埃及地後四十年，五月初一日，祭司亞倫遵着耶和華的吩咐上何珥山，就死在那裏。</p><p class="v" id="v39"><span class="vn sans">39</span>亞倫死在何珥山的時候年一百二十三歲。</p><p class="v" id="v40"><span class="vn sans">40</span>住在迦南南地的迦南人亞拉得王聽說以色列人來了。</p><p class="v" id="v41"><span class="vn sans">41</span>以色列人從何珥山起行，安營在撒摩拿。</p><p class="v" id="v42"><span class="vn sans">42</span>從撒摩拿起行，安營在普嫩。</p><p class="v" id="v43"><span class="vn sans">43</span>從普嫩起行，安營在阿伯。</p><p class="v" id="v44"><span class="vn sans">44</span>從阿伯起行，安營在以耶‧亞巴琳，摩押的邊界。</p><p class="v" id="v45"><span class="vn sans">45</span>從以耶‧亞巴琳起行，安營在底本‧迦得。</p><p class="v" id="v46"><span class="vn sans">46</span>從底本‧迦得起行，安營在亞門‧低比拉太音。</p><p class="v" id="v47"><span class="vn sans">47</span>從亞門‧低比拉太音起行，安營在尼波對面的亞巴琳山裏。</p><p class="v" id="v48"><span class="vn sans">48</span>從亞巴琳山起行，安營在摩押平原－約旦河邊、耶利哥對面。</p><p class="v" id="v49"><span class="vn sans">49</span>他們在摩押平原沿約旦河邊安營，從伯‧耶施末直到亞伯‧什亭。</p><p class="v" id="v50"><span class="vn sans">50</span>耶和華在摩押平原－約旦河邊、耶利哥對面曉諭摩西說：</p><p class="v" id="v51"><span class="vn sans">51</span>「你吩咐以色列人說：你們過約旦河進迦南地的時候，</p><p class="v" id="v52"><span class="vn sans">52</span>就要從你們面前趕出那裏所有的居民，毀滅他們一切鏨成的[石]像和他們一切鑄成的偶像，又拆毀他們一切的邱壇。</p><p class="v" id="v53"><span class="vn sans">53</span>你們要奪那地，住在其中，因我把那地賜給你們為業。</p><p class="v" id="v54"><span class="vn sans">54</span>你們要按家室拈鬮，承受那地；人多的，要把產業多分給他們；人少的，要把產業少分給他們。拈出何地給何人，就要歸何人。你們要按宗族的支派承受。</p><p class="v" id="v55"><span class="vn sans">55</span>倘若你們不趕出那地的居民，所容留的居民就必作你們眼中的刺，肋下的荊棘，也必在你們所住的地上擾害你們。</p><p class="v" id="v56"><span class="vn sans">56</span>而且我素常有意怎樣待他們，也必照樣待你們。」</p></article>
+<div class="daynav sans"><a href="/bible/cuv/numbers/32/index.html">← 32章</a><a href="/bible/cuv/numbers/34/index.html">34章 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/cuv/numbers/index.html">← 民數記目錄</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>出埃及記 12 · 和合本｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/cuv/index.html">聖經 和合本</a> ／ <a href="/bible/cuv/exodus/index.html">出埃及記</a> ／ <b>12章</b></div>
+<h1>出埃及記 12</h1>
+<div class="sub sans">Exodus 12 · 和合本</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">和合本</a><a href="/bible/web/exodus/12/index.html">WEB</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>耶和華在埃及地曉諭摩西、亞倫說：</p><p class="v" id="v2"><span class="vn sans">2</span>「你們要以本月為正月，為一年之首。</p><p class="v" id="v3"><span class="vn sans">3</span>你們吩咐以色列全會眾說：本月初十日，各人要按着父家取羊羔，一家一隻。</p><p class="v" id="v4"><span class="vn sans">4</span>若是一家的人太少，吃不了一隻羊羔，本人就要和他隔壁的鄰舍共取一隻。你們預備羊羔，要按着人數和飯量計算。</p><p class="v" id="v5"><span class="vn sans">5</span>要無殘疾、一歲的公羊羔，你們或從綿羊裏取，或從山羊裏取，都可以。</p><p class="v" id="v6"><span class="vn sans">6</span>要留到本月十四日，在黃昏的時候，以色列全會眾把羊羔宰了。</p><p class="v" id="v7"><span class="vn sans">7</span>各家要取點血，塗在吃羊羔的房屋左右的門框上和門楣上。</p><p class="v" id="v8"><span class="vn sans">8</span>當夜要吃羊羔的肉；用火烤了，與無酵餅和苦菜同吃。</p><p class="v" id="v9"><span class="vn sans">9</span>不可吃生的，斷不可吃水煮的，要帶着頭、腿、五臟，用火烤了吃。</p><p class="v" id="v10"><span class="vn sans">10</span>不可剩下一點留到早晨；若留到早晨，要用火燒了。</p><p class="v" id="v11"><span class="vn sans">11</span>你們吃羊羔當腰間束帶，腳上穿鞋，手中拿杖，趕緊地吃；這是耶和華的逾越節。</p><p class="v" id="v12"><span class="vn sans">12</span>因為那夜我要巡行埃及地，把埃及地一切頭生的，無論是人是牲畜，都擊殺了，又要敗壞埃及一切的神。我是耶和華。</p><p class="v" id="v13"><span class="vn sans">13</span>這血要在你們所住的房屋上作記號；我一見這血，就越過你們去。我擊殺埃及地[頭生]的時候，災殃必不臨到你們身上滅你們。」</p><p class="v" id="v14"><span class="vn sans">14</span>「你們要記念這日，守為耶和華的節，作為你們世世代代永遠的定例。</p><p class="v" id="v15"><span class="vn sans">15</span>你們要吃無酵餅七日。頭一日要把酵從你們各家中除去；因為從頭一日起，到第七日為止，凡吃有酵之餅的，必從以色列中剪除。</p><p class="v" id="v16"><span class="vn sans">16</span>頭一日你們當有聖會，第七日也當有聖會。這兩日之內，除了預備各人所要吃的以外，無論何工都不可做。</p><p class="v" id="v17"><span class="vn sans">17</span>你們要守無酵節，因為我正當這日把你們的軍隊從埃及地領出來。所以，你們要守這日，作為世世代代永遠的定例。</p><p class="v" id="v18"><span class="vn sans">18</span>從正月十四日晚上，直到二十一日晚上，你們要吃無酵餅。</p><p class="v" id="v19"><span class="vn sans">19</span>在你們各家中，七日之內不可有酵；因為凡吃有酵之物的，無論是寄居的，是本地的，必從以色列的會中剪除。</p><p class="v" id="v20"><span class="vn sans">20</span>有酵的物，你們都不可吃；在你們一切住處要吃無酵餅。」</p><p class="v" id="v21"><span class="vn sans">21</span>於是，摩西召了以色列的眾長老來，對他們說：「你們要按着家口取出羊羔，把這逾越節[的羊羔]宰了。</p><p class="v" id="v22"><span class="vn sans">22</span>拿一把牛膝草，蘸盆裏的血，打在門楣上和左右的門框上。你們誰也不可出自己的房門，直到早晨。</p><p class="v" id="v23"><span class="vn sans">23</span>因為耶和華要巡行擊殺埃及人，他看見血在門楣上和左右的門框上，就必越過那門，不容滅命的進你們的房屋，擊殺你們。</p><p class="v" id="v24"><span class="vn sans">24</span>這例，你們要守着，作為你們和你們子孫永遠的定例。</p><p class="v" id="v25"><span class="vn sans">25</span>日後，你們到了耶和華按着所應許賜給你們的那地，就要守這禮。</p><p class="v" id="v26"><span class="vn sans">26</span>你們的兒女問你們說：『行這禮是甚麼意思？』</p><p class="v" id="v27"><span class="vn sans">27</span>你們就說：『這是獻給耶和華逾越節的祭。當以色列人在埃及的時候，他擊殺埃及人，越過以色列人的房屋，救了我們各家。』」於是百姓低頭下拜。</p><p class="v" id="v28"><span class="vn sans">28</span>耶和華怎樣吩咐摩西、亞倫，以色列人就怎樣行。</p><p class="v" id="v29"><span class="vn sans">29</span>到了半夜，耶和華把埃及地所有的長子，就是從坐寶座的法老，直到被擄囚在監裏之人的長子，以及一切頭生的牲畜，盡都殺了。</p><p class="v" id="v30"><span class="vn sans">30</span>法老和一切臣僕，並埃及眾人，夜間都起來了。在埃及有大哀號，無一家不死一個人的。</p><p class="v" id="v31"><span class="vn sans">31</span>夜間，法老召了摩西、亞倫來，說：「起來！連你們帶以色列人，從我民中出去，依你們所說的，去事奉耶和華吧！</p><p class="v" id="v32"><span class="vn sans">32</span>也依你們所說的，連羊群牛群帶着走吧！並要為我祝福。」</p><p class="v" id="v33"><span class="vn sans">33</span>埃及人催促百姓，打發他們快快出離那地，因為埃及人說：「我們都要死了。」</p><p class="v" id="v34"><span class="vn sans">34</span>百姓就拿着沒有酵的生麵，把摶麵盆包在衣服中，扛在肩頭上。</p><p class="v" id="v35"><span class="vn sans">35</span>以色列人照着摩西的話行，向埃及人要金器、銀器，和衣裳。</p><p class="v" id="v36"><span class="vn sans">36</span>耶和華叫百姓在埃及人眼前蒙恩，以致埃及人給他們所要的。他們就把埃及人的[財物]奪去了。</p><p class="v" id="v37"><span class="vn sans">37</span>以色列人從蘭塞起行，往疏割去；除了[婦人]孩子，步行的男人約有六十萬。</p><p class="v" id="v38"><span class="vn sans">38</span>又有許多閒雜人，並有羊群牛群，和他們一同上去。</p><p class="v" id="v39"><span class="vn sans">39</span>他們用埃及帶出來的生麵烤成無酵餅。這生麵原沒有發起；因為他們被催逼離開埃及，不能耽延，也沒有為自己預備甚麼食物。</p><p class="v" id="v40"><span class="vn sans">40</span>以色列人住在埃及共有四百三十年。</p><p class="v" id="v41"><span class="vn sans">41</span>正滿了四百三十年的那一天，耶和華的軍隊都從埃及地出來了。</p><p class="v" id="v42"><span class="vn sans">42</span>這夜是耶和華的夜；因耶和華領他們出了埃及地，所以當向耶和華謹守，是以色列眾人世世代代該謹守的。</p><p class="v" id="v43"><span class="vn sans">43</span>耶和華對摩西、亞倫說：「逾越節的例是這樣：外邦人都不可吃這羊羔。</p><p class="v" id="v44"><span class="vn sans">44</span>但各人用銀子買的奴僕，既受了割禮就可以吃。</p><p class="v" id="v45"><span class="vn sans">45</span>寄居的和雇工人都不可吃。</p><p class="v" id="v46"><span class="vn sans">46</span>應當在一個房子裏吃；不可把一點肉從房子裏帶到外頭去。羊羔的骨頭一根也不可折斷。</p><p class="v" id="v47"><span class="vn sans">47</span>以色列全會眾都要守這禮。</p><p class="v" id="v48"><span class="vn sans">48</span>若有外人寄居在你們中間，願向耶和華守逾越節，他所有的男子務要受割禮，然後才容他前來遵守，他也就像本地人一樣；但未受割禮的，都不可吃這羊羔。</p><p class="v" id="v49"><span class="vn sans">49</span>本地人和寄居在你們中間的外人同歸一例。」</p><p class="v" id="v50"><span class="vn sans">50</span>耶和華怎樣吩咐摩西、亞倫，以色列眾人就怎樣行了。</p><p class="v" id="v51"><span class="vn sans">51</span>正當那日，耶和華將以色列人按着他們的軍隊，從埃及地領出來。</p></article>
+<div class="daynav sans"><a href="/bible/cuv/exodus/11/index.html">← 11章</a><a href="/bible/cuv/exodus/13/index.html">13章 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/cuv/exodus/index.html">← 出埃及記目錄</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

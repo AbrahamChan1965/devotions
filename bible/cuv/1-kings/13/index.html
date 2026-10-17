@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>列王紀上 13 · 和合本｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/cuv/index.html">聖經 和合本</a> ／ <a href="/bible/cuv/1-kings/index.html">列王紀上</a> ／ <b>13章</b></div>
+<h1>列王紀上 13</h1>
+<div class="sub sans">1 Kings 13 · 和合本</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">和合本</a><a href="/bible/web/1-kings/13/index.html">WEB</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>那時，有一個神人奉耶和華的命從猶大來到伯特利。耶羅波安正站在壇旁要燒香；</p><p class="v" id="v2"><span class="vn sans">2</span>神人奉耶和華的命向壇呼叫，說：「壇哪，壇哪！耶和華如此說：大衛家裏必生一個兒子，名叫約西亞，他必將邱壇的祭司，就是在你上面燒香的，殺在你上面，人的骨頭也必燒在你上面。」</p><p class="v" id="v3"><span class="vn sans">3</span>當日，神人設個預兆，說：「這壇必破裂，壇上的灰必傾撒，這是耶和華說的預兆。」</p><p class="v" id="v4"><span class="vn sans">4</span>耶羅波安王聽見神人向伯特利的壇所呼叫的話，就從壇上伸手，說：「拿住他吧！」王向神人所伸的手就枯乾了，不能彎回；</p><p class="v" id="v5"><span class="vn sans">5</span>壇也破裂了，壇上的灰傾撒了，正如神人奉耶和華的命所設的預兆。</p><p class="v" id="v6"><span class="vn sans">6</span>王對神人說：「請你為我禱告，求耶和華－你上帝的恩典使我的手復原。」於是神人祈禱耶和華，王的手就復了原，仍如尋常一樣。</p><p class="v" id="v7"><span class="vn sans">7</span>王對神人說：「請你同我回去[吃飯]，加添心力，我也必給你賞賜。」</p><p class="v" id="v8"><span class="vn sans">8</span>神人對王說：「你就是把你的宮一半給我，我也不同你進去，也不在這地方吃飯喝水；</p><p class="v" id="v9"><span class="vn sans">9</span>因為有耶和華的話囑咐我，說不可在伯特利吃飯喝水，也不可從你去的原路回來。」</p><p class="v" id="v10"><span class="vn sans">10</span>於是神人從別的路回去，不從伯特利來的原路回去。</p><p class="v" id="v11"><span class="vn sans">11</span>有一個老先知住在伯特利，他兒子們來，將神人當日在伯特利所行的一切事和向王所說的話都告訴了父親。</p><p class="v" id="v12"><span class="vn sans">12</span>父親問他們說：「神人從哪條路去了呢？」兒子們[就告訴他]；原來他們看見那從猶大來的神人所去的路。</p><p class="v" id="v13"><span class="vn sans">13</span>老先知就吩咐他兒子們說：「你們為我備驢。」他們備好了驢，他就騎上，</p><p class="v" id="v14"><span class="vn sans">14</span>去追趕神人，遇見他坐在橡樹底下，就問他說：「你是從猶大來的神人不是？」他說：「是。」</p><p class="v" id="v15"><span class="vn sans">15</span>老先知對他說：「請你同我回家吃飯。」</p><p class="v" id="v16"><span class="vn sans">16</span>神人說：「我不可同你回去進你的家，也不可在這裏同你吃飯喝水；</p><p class="v" id="v17"><span class="vn sans">17</span>因為有耶和華的話囑咐我說：『你在那裏不可吃飯喝水，也不可從你去的原路回來。』」</p><p class="v" id="v18"><span class="vn sans">18</span>老先知對他說：「我也是先知，和你一樣。有天使奉耶和華的命對我說：『你去把他帶回你的家，叫他吃飯喝水。』」這都是老先知誆哄他。</p><p class="v" id="v19"><span class="vn sans">19</span>於是神人同老先知回去，在他家裏吃飯喝水。</p><p class="v" id="v20"><span class="vn sans">20</span>二人坐席的時候，耶和華的話臨到那帶神人回來的先知，</p><p class="v" id="v21"><span class="vn sans">21</span>他就對那從猶大來的神人說：「耶和華如此說：你既違背耶和華的話，不遵守耶和華－你上帝的命令，</p><p class="v" id="v22"><span class="vn sans">22</span>反倒回來，在耶和華禁止你吃飯喝水的地方吃了喝了，因此你的屍身不得入你列祖的墳墓。」</p><p class="v" id="v23"><span class="vn sans">23</span>吃喝完了，老先知為所帶回來的先知備驢。</p><p class="v" id="v24"><span class="vn sans">24</span>他就去了，在路上有個獅子遇見他，將他咬死，屍身倒在路上，驢站在屍身旁邊，獅子也站在屍身旁邊。</p><p class="v" id="v25"><span class="vn sans">25</span>有人從那裏經過，看見屍身倒在路上，獅子站在屍身旁邊，就來到老先知所住的城裏述說這事。</p><p class="v" id="v26"><span class="vn sans">26</span>那帶神人回來的先知聽見這事，就說：「這是那違背了耶和華命令的神人，所以耶和華把他交給獅子；獅子抓傷他，咬死他，是應驗耶和華對他說的話。」</p><p class="v" id="v27"><span class="vn sans">27</span>老先知就吩咐他兒子們說：「你們為我備驢。」他們就備了驢。</p><p class="v" id="v28"><span class="vn sans">28</span>他去了，看見神人的屍身倒在路上，驢和獅子站在屍身旁邊，獅子卻沒有吃屍身，也沒有抓傷驢。</p><p class="v" id="v29"><span class="vn sans">29</span>老先知就把神人的屍身馱在驢上，帶回自己的城裏，要哀哭他，葬埋他；</p><p class="v" id="v30"><span class="vn sans">30</span>就把他的屍身葬在自己的墳墓裏，哀哭他，[說]：「哀哉！我兄啊。」</p><p class="v" id="v31"><span class="vn sans">31</span>安葬之後，老先知對他兒子們說：「我死了，你們要葬我在神人的墳墓裏，使我的屍骨靠近他的屍骨，</p><p class="v" id="v32"><span class="vn sans">32</span>因為他奉耶和華的命指着伯特利的壇和撒馬利亞各城有邱壇之殿所說的話必定應驗。」</p><p class="v" id="v33"><span class="vn sans">33</span>這事以後，耶羅波安仍不離開他的惡道，將凡民立為邱壇的祭司；凡願意的，他都分別為聖，立為邱壇的祭司。</p><p class="v" id="v34"><span class="vn sans">34</span>這事叫耶羅波安的家陷在罪裏，甚至他的家從地上除滅了。</p></article>
+<div class="daynav sans"><a href="/bible/cuv/1-kings/12/index.html">← 12章</a><a href="/bible/cuv/1-kings/14/index.html">14章 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/cuv/1-kings/index.html">← 列王紀上目錄</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

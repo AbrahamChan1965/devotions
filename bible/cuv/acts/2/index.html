@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>使徒行傳 2 · 和合本｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/cuv/index.html">聖經 和合本</a> ／ <a href="/bible/cuv/acts/index.html">使徒行傳</a> ／ <b>2章</b></div>
+<h1>使徒行傳 2</h1>
+<div class="sub sans">Acts 2 · 和合本</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">和合本</a><a href="/bible/web/acts/2/index.html">WEB</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>五旬節到了，門徒都聚集在一處。</p><p class="v" id="v2"><span class="vn sans">2</span>忽然，從天上有響聲下來，好像一陣大風吹過，充滿了他們所坐的屋子，</p><p class="v" id="v3"><span class="vn sans">3</span>又有舌頭如火焰顯現出來，分開落在他們各人頭上。</p><p class="v" id="v4"><span class="vn sans">4</span>他們就都被聖靈充滿，按着[聖]靈所賜的口才說起別國的話來。</p><p class="v" id="v5"><span class="vn sans">5</span>那時，有虔誠的猶太人從天下各國來，住在耶路撒冷。</p><p class="v" id="v6"><span class="vn sans">6</span>這聲音一響，眾人都來聚集，各人聽見門徒用眾人的鄉談說話，就甚納悶；</p><p class="v" id="v7"><span class="vn sans">7</span>都驚訝希奇說：「看哪，這說話的不都是加利利人嗎？</p><p class="v" id="v8"><span class="vn sans">8</span>我們各人怎麼聽見他們說我們生來所用的鄉談呢？</p><p class="v" id="v9"><span class="vn sans">9</span>我們帕提亞人、米底亞人、以攔人，和住在美索不達米亞、猶太、加帕多家、本都、亞細亞、</p><p class="v" id="v10"><span class="vn sans">10</span>弗呂家、旁非利亞、埃及的人，並靠近古利奈的利比亞一帶地方的人，從羅馬來的客旅中，或是猶太人，或是進[猶太]教的人，</p><p class="v" id="v11"><span class="vn sans">11</span>克里特和阿拉伯人，都聽見他們用我們的鄉談，講說上帝的大作為。」</p><p class="v" id="v12"><span class="vn sans">12</span>眾人就都驚訝猜疑，彼此說：「這是甚麼意思呢？」</p><p class="v" id="v13"><span class="vn sans">13</span>還有人譏誚說：「他們無非是新酒灌滿了。」</p><p class="v" id="v14"><span class="vn sans">14</span>彼得和十一個使徒站起，高聲說：「猶太人和一切住在耶路撒冷的人哪，這件事你們當知道，也當側耳聽我的話。</p><p class="v" id="v15"><span class="vn sans">15</span>你們想這些人是醉了；其實不是醉了，因為時候剛到巳初。</p><p class="v" id="v16"><span class="vn sans">16</span>這正是先知約珥所說的：</p><p class="v" id="v17"><span class="vn sans">17</span>上帝說：在末後的日子， 我要將我的靈澆灌凡有血氣的。 你們的兒女要說預言； 你們的少年人要見異象； 老年人要做異夢。</p><p class="v" id="v18"><span class="vn sans">18</span>在那些日子， 我要將我的靈澆灌我的僕人和使女， 他們就要說預言。</p><p class="v" id="v19"><span class="vn sans">19</span>在天上，我要顯出奇事； 在地下， 我要顯出神蹟； 有血，有火，有煙霧。</p><p class="v" id="v20"><span class="vn sans">20</span>日頭要變為黑暗， 月亮要變為血； 這都在主大而明顯的日子未到以前。</p><p class="v" id="v21"><span class="vn sans">21</span>到那時候， 凡求告主名的，就必得救。</p><p class="v" id="v22"><span class="vn sans">22</span>「以色列人哪，請聽我的話：上帝藉着拿撒勒人耶穌在你們中間施行異能、奇事、神蹟，將他證明出來，這是你們自己知道的。</p><p class="v" id="v23"><span class="vn sans">23</span>他既按着上帝的定旨先見被交與人，你們就藉着無法之人的手，把他釘在十字架上，殺了。</p><p class="v" id="v24"><span class="vn sans">24</span>上帝卻將死的痛苦解釋了，叫他復活，因為他原不能被死拘禁。</p><p class="v" id="v25"><span class="vn sans">25</span>大衛指着他說： 我看見主常在我眼前； 他在我右邊，叫我不至於搖動。</p><p class="v" id="v26"><span class="vn sans">26</span>所以，我心裏歡喜， 我的靈快樂； 並且我的肉身要安居在指望中。</p><p class="v" id="v27"><span class="vn sans">27</span>因你必不將我的靈魂撇在陰間， 也不叫你的聖者見朽壞。</p><p class="v" id="v28"><span class="vn sans">28</span>你已將生命的道路指示我， 必叫我因見你的面 得着滿足的快樂。</p><p class="v" id="v29"><span class="vn sans">29</span>「弟兄們！先祖大衛的事，我可以明明地對你們說：他死了，也葬埋了，並且他的墳墓直到今日還在我們這裏。</p><p class="v" id="v30"><span class="vn sans">30</span>大衛既是先知，又曉得上帝曾向他起誓，要從他的後裔中立一位坐在他的寶座上，</p><p class="v" id="v31"><span class="vn sans">31</span>就預先看明這事，講論基督復活說： 他的靈魂不撇在陰間； 他的肉身也不見朽壞。</p><p class="v" id="v32"><span class="vn sans">32</span>這耶穌，上帝已經叫他復活了，我們都為這事作見證。</p><p class="v" id="v33"><span class="vn sans">33</span>他既被上帝的右手高舉，又從父受了所應許的聖靈，就把你們所看見所聽見的，澆灌下來。</p><p class="v" id="v34"><span class="vn sans">34</span>大衛並沒有升到天上，但自己說： 主對我主說： 你坐在我的右邊，</p><p class="v" id="v35"><span class="vn sans">35</span>等我使你仇敵作你的腳凳。</p><p class="v" id="v36"><span class="vn sans">36</span>「故此，以色列全家當確實地知道，你們釘在十字架上的這位耶穌，上帝已經立他為主，為基督了。」</p><p class="v" id="v37"><span class="vn sans">37</span>眾人聽見這話，覺得扎心，就對彼得和其餘的使徒說：「弟兄們，我們當怎樣行？」</p><p class="v" id="v38"><span class="vn sans">38</span>彼得說：「你們各人要悔改，奉耶穌基督的名受洗，叫你們的罪得赦，就必領受所賜的聖靈；</p><p class="v" id="v39"><span class="vn sans">39</span>因為這應許是給你們和你們的兒女，並一切在遠方的人，就是主－我們上帝所召來的。」</p><p class="v" id="v40"><span class="vn sans">40</span>彼得還用許多話作見證，勸勉他們說：「你們當救自己脫離這彎曲的世代。」</p><p class="v" id="v41"><span class="vn sans">41</span>於是領受他話的人就受了洗。那一天，[門徒]約添了三千人，</p><p class="v" id="v42"><span class="vn sans">42</span>都恆心遵守使徒的教訓，彼此交接，擘餅，祈禱。</p><p class="v" id="v43"><span class="vn sans">43</span>眾人都懼怕；使徒又行了許多奇事神蹟。</p><p class="v" id="v44"><span class="vn sans">44</span>信的人都在一處，凡物公用，</p><p class="v" id="v45"><span class="vn sans">45</span>並且賣了田產、家業，照各人所需用的分給各人。</p><p class="v" id="v46"><span class="vn sans">46</span>他們天天同心合意恆切地在殿裏，且在家中擘餅，存着歡喜、誠實的心用飯，</p><p class="v" id="v47"><span class="vn sans">47</span>讚美上帝，得眾民的喜愛。主將得救的人天天加給他們。</p></article>
+<div class="daynav sans"><a href="/bible/cuv/acts/1/index.html">← 1章</a><a href="/bible/cuv/acts/3/index.html">3章 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/cuv/acts/index.html">← 使徒行傳目錄</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

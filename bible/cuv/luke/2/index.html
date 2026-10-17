@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>路加福音 2 · 和合本｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/cuv/index.html">聖經 和合本</a> ／ <a href="/bible/cuv/luke/index.html">路加福音</a> ／ <b>2章</b></div>
+<h1>路加福音 2</h1>
+<div class="sub sans">Luke 2 · 和合本</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">和合本</a><a href="/bible/web/luke/2/index.html">WEB</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>當那些日子，凱撒奧古斯都有旨意下來，叫天下人民都報名上冊。</p><p class="v" id="v2"><span class="vn sans">2</span>這是居里扭作敘利亞巡撫的時候，頭一次行報名上冊的事。</p><p class="v" id="v3"><span class="vn sans">3</span>眾人各歸各城，報名上冊。</p><p class="v" id="v4"><span class="vn sans">4</span>約瑟也從加利利的拿撒勒城上猶太去，到了大衛的城，名叫伯利恆，因他本是大衛一族一家的人，</p><p class="v" id="v5"><span class="vn sans">5</span>要和他所聘之妻馬利亞一同報名上冊。那時馬利亞的身孕已經重了。</p><p class="v" id="v6"><span class="vn sans">6</span>他們在那裏的時候，馬利亞的產期到了，</p><p class="v" id="v7"><span class="vn sans">7</span>就生了頭胎的兒子，用布包起來，放在馬槽裏，因為客店裏沒有地方。</p><p class="v" id="v8"><span class="vn sans">8</span>在伯利恆之野地裏有牧羊的人，夜間按着更次看守羊群。</p><p class="v" id="v9"><span class="vn sans">9</span>有主的使者站在他們旁邊，主的榮光四面照着他們；牧羊的人就甚懼怕。</p><p class="v" id="v10"><span class="vn sans">10</span>那天使對他們說：「不要懼怕！我報給你們大喜的信息，是關乎萬民的；</p><p class="v" id="v11"><span class="vn sans">11</span>因今天在大衛的城裏，為你們生了救主，就是主基督。</p><p class="v" id="v12"><span class="vn sans">12</span>你們要看見一個嬰孩，包着布，臥在[馬]槽裏，那就是記號了。」</p><p class="v" id="v13"><span class="vn sans">13</span>忽然，有一大隊天兵同那天使讚美上帝說：</p><p class="v" id="v14"><span class="vn sans">14</span>在至高之處榮耀歸與上帝！ 在地上平安歸與他所喜悅的人 ！</p><p class="v" id="v15"><span class="vn sans">15</span>眾天使離開他們，升天去了。牧羊的人彼此說：「我們往伯利恆去，看看所成的事，就是主所指示我們的。」</p><p class="v" id="v16"><span class="vn sans">16</span>他們急忙去了，就尋見馬利亞和約瑟，又有那嬰孩臥在[馬]槽裏；</p><p class="v" id="v17"><span class="vn sans">17</span>既然看見，就把天使論這孩子的話傳開了。</p><p class="v" id="v18"><span class="vn sans">18</span>凡聽見的，就詫異牧羊之人對他們所說的話。</p><p class="v" id="v19"><span class="vn sans">19</span>馬利亞卻把這一切的事存在心裏，反覆思想。</p><p class="v" id="v20"><span class="vn sans">20</span>牧羊的人回去了，因所聽見所看見的一切事，正如[天使]向他們所說的，就歸榮耀與上帝，讚美他。</p><p class="v" id="v21"><span class="vn sans">21</span>滿了八天，就給孩子行割禮，與他起名叫耶穌；這就是沒有成胎以前，天使所起的名。</p><p class="v" id="v22"><span class="vn sans">22</span>按摩西律法滿了潔淨的日子，他們帶着孩子上耶路撒冷去，要把他獻與主，（</p><p class="v" id="v23"><span class="vn sans">23</span>正如主的律法上所記：「凡頭生的男子必稱聖歸主。」）</p><p class="v" id="v24"><span class="vn sans">24</span>又要照主的律法上所說，或用一對斑鳩，或用兩隻雛鴿獻祭。</p><p class="v" id="v25"><span class="vn sans">25</span>在耶路撒冷有一個人，名叫西面；這人又公義又虔誠，素常盼望以色列的安慰[者]來到，又有聖靈在他身上。</p><p class="v" id="v26"><span class="vn sans">26</span>他得了聖靈的啟示，知道自己未死以前，必看見主所立的基督。</p><p class="v" id="v27"><span class="vn sans">27</span>他受了[聖]靈的感動，進入聖殿，正遇見耶穌的父母抱着孩子進來，要照律法的規矩辦理。</p><p class="v" id="v28"><span class="vn sans">28</span>西面就用手接過他來，稱頌上帝說：</p><p class="v" id="v29"><span class="vn sans">29</span>主啊！如今可以照你的話， 釋放僕人安然去世；</p><p class="v" id="v30"><span class="vn sans">30</span>因為我的眼睛已經看見你的救恩－</p><p class="v" id="v31"><span class="vn sans">31</span>就是你在萬民面前所預備的：</p><p class="v" id="v32"><span class="vn sans">32</span>是照亮外邦人的光， 又是你民以色列的榮耀。</p><p class="v" id="v33"><span class="vn sans">33</span>孩子的父母因這論耶穌的話就希奇。</p><p class="v" id="v34"><span class="vn sans">34</span>西面給他們祝福，又對孩子的母親馬利亞說：「這[孩子]被立，是要叫以色列中許多人跌倒，許多人興起；又要作毀謗的話柄，叫許多人心裏的意念顯露出來；你自己的心也要被刀刺透。」</p><p class="v" id="v36"><span class="vn sans">36</span>又有女先知，名叫亞拿，是亞設支派法內力的女兒，年紀已經老邁，從作童女出嫁的時候，同丈夫住了七年就寡居了，</p><p class="v" id="v37"><span class="vn sans">37</span>現在已經八十四歲，並不離開聖殿，禁食祈求，晝夜事奉上帝。</p><p class="v" id="v38"><span class="vn sans">38</span>正當那時，她進前來稱謝上帝，將孩子的事對一切盼望耶路撒冷得救贖的人講說。</p><p class="v" id="v39"><span class="vn sans">39</span>約瑟和馬利亞照主的律法辦完了一切的事，就回加利利，到自己的城拿撒勒去了。</p><p class="v" id="v40"><span class="vn sans">40</span>孩子漸漸長大，強健起來，充滿智慧，又有上帝的恩在他身上。</p><p class="v" id="v41"><span class="vn sans">41</span>每年到逾越節，他父母就上耶路撒冷去。</p><p class="v" id="v42"><span class="vn sans">42</span>當他十二歲的時候，他們按着節期的規矩上去。</p><p class="v" id="v43"><span class="vn sans">43</span>守滿了節期，他們回去，孩童耶穌仍舊在耶路撒冷。他的父母並不知道，</p><p class="v" id="v44"><span class="vn sans">44</span>以為他在同行的人中間，走了一天的路程，就在親族和熟識的人中找他，</p><p class="v" id="v45"><span class="vn sans">45</span>既找不着，就回耶路撒冷去找他。</p><p class="v" id="v46"><span class="vn sans">46</span>過了三天，就遇見他在殿裏，坐在教師中間，一面聽，一面問。</p><p class="v" id="v47"><span class="vn sans">47</span>凡聽見他的，都希奇他的聰明和他的應對。</p><p class="v" id="v48"><span class="vn sans">48</span>他父母看見就很希奇。他母親對他說：「我兒！為甚麼向我們這樣行呢？看哪，你父親和我傷心來找你！」</p><p class="v" id="v49"><span class="vn sans">49</span>耶穌說：「為甚麼找我呢？豈不知我應當以我父的事為念嗎 ？」</p><p class="v" id="v50"><span class="vn sans">50</span>他所說的這話，他們不明白。</p><p class="v" id="v51"><span class="vn sans">51</span>他就同他們下去，回到拿撒勒，並且順從他們。他母親把這一切的事都存在心裏。</p><p class="v" id="v52"><span class="vn sans">52</span>耶穌的智慧和身量，並上帝和人喜愛他的心，都一齊增長。</p></article>
+<div class="daynav sans"><a href="/bible/cuv/luke/1/index.html">← 1章</a><a href="/bible/cuv/luke/3/index.html">3章 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/cuv/luke/index.html">← 路加福音目錄</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

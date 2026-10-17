@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>加拉太書 3 · 和合本｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/cuv/index.html">聖經 和合本</a> ／ <a href="/bible/cuv/galatians/index.html">加拉太書</a> ／ <b>3章</b></div>
+<h1>加拉太書 3</h1>
+<div class="sub sans">Galatians 3 · 和合本</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">和合本</a><a href="/bible/web/galatians/3/index.html">WEB</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>無知的加拉太人哪，耶穌基督釘十字架，已經活畫在你們眼前，誰又迷惑了你們呢？</p><p class="v" id="v2"><span class="vn sans">2</span>我只要問你們這一件：你們受了[聖]靈，是因行律法呢？是因聽信[福音]呢？</p><p class="v" id="v3"><span class="vn sans">3</span>你們既靠[聖]靈入門，如今還靠肉身成全嗎？你們是這樣的無知嗎？</p><p class="v" id="v4"><span class="vn sans">4</span>你們受苦如此之多，都是徒然的嗎？難道果真是徒然的嗎？</p><p class="v" id="v5"><span class="vn sans">5</span>那賜給你們[聖]靈，又在你們中間行異能的，是因你們行律法呢？是因你們聽信[福音]呢？</p><p class="v" id="v6"><span class="vn sans">6</span>正如「亞伯拉罕信上帝，這就算為他的義」。</p><p class="v" id="v7"><span class="vn sans">7</span>所以，你們要知道：那以信為本的人，就是亞伯拉罕的子孫。</p><p class="v" id="v8"><span class="vn sans">8</span>並且聖經既然預先看明，上帝要叫外邦人因信稱義，就早已傳福音給亞伯拉罕，[說]：「萬國都必因你得福。」</p><p class="v" id="v9"><span class="vn sans">9</span>可見那以信為本的人和有信心的亞伯拉罕一同得福。</p><p class="v" id="v10"><span class="vn sans">10</span>凡以行律法為本的，都是被咒詛的；因為[經上]記着：「凡不常照律法書上所記一切之事去行的，就被咒詛。」</p><p class="v" id="v11"><span class="vn sans">11</span>沒有一個人靠着律法在上帝面前稱義，這是明顯的；因為[經上]說：「義人必因信得生。」</p><p class="v" id="v12"><span class="vn sans">12</span>律法原不本乎信，只[說]：「行這些事的，就必因此活着。」</p><p class="v" id="v13"><span class="vn sans">13</span>基督既為我們受了咒詛，就贖出我們脫離律法的咒詛；因為[經上]記着：「凡掛在木頭上都是被咒詛的。」</p><p class="v" id="v14"><span class="vn sans">14</span>這便叫亞伯拉罕的福，因基督耶穌可以臨到外邦人，使我們因信得着所應許的[聖]靈。</p><p class="v" id="v15"><span class="vn sans">15</span>弟兄們，我且照着人的常話說：雖然是人的文約，若已經立定了，就沒有能廢棄或加增的。</p><p class="v" id="v16"><span class="vn sans">16</span>所應許的原是向亞伯拉罕和他子孫說的。上帝並不是說「眾子孫」，指着許多人，乃是說「你那一個子孫」，指着一個人，就是基督。</p><p class="v" id="v17"><span class="vn sans">17</span>我是這麼說，上帝預先所立的約，不能被那四百三十年以後的律法廢掉，叫應許歸於虛空。</p><p class="v" id="v18"><span class="vn sans">18</span>因為承受產業，若本乎律法，就不本乎應許；但上帝是憑着應許把產業賜給亞伯拉罕。</p><p class="v" id="v19"><span class="vn sans">19</span>這樣說來，律法是為甚麼有的呢？原是為過犯添上的，等候那蒙應許的子孫來到，並且是藉天使經中保之手設立的。</p><p class="v" id="v20"><span class="vn sans">20</span>但中保本不是為一面作的；上帝卻是一位。</p><p class="v" id="v21"><span class="vn sans">21</span>這樣，律法是與上帝的應許反對嗎？斷乎不是！若曾傳一個能叫人得生的律法，義就誠然本乎律法了。</p><p class="v" id="v22"><span class="vn sans">22</span>但聖經把眾人都圈在罪裏，使所應許的[福]因信耶穌基督，歸給那信的人。</p><p class="v" id="v23"><span class="vn sans">23</span>但這[因]信[得救的理]還未來以先，我們被看守在律法之下，直圈到那將來的真道顯明出來。</p><p class="v" id="v24"><span class="vn sans">24</span>這樣，律法是我們訓蒙的師傅，[引我們]到基督那裏，使我們因信稱義。</p><p class="v" id="v25"><span class="vn sans">25</span>但這[因]信[得救的理]既然來到，我們從此就不在師傅的手下了。</p><p class="v" id="v26"><span class="vn sans">26</span>所以，你們因信基督耶穌都是上帝的兒子。</p><p class="v" id="v27"><span class="vn sans">27</span>你們受洗歸入基督的都是披戴基督了。</p><p class="v" id="v28"><span class="vn sans">28</span>並不分猶太人、希臘人，自主的、為奴的，或男或女，因為你們在基督耶穌裏都成為一了。</p><p class="v" id="v29"><span class="vn sans">29</span>你們既屬乎基督，就是亞伯拉罕的後裔，是照着應許承受產業的了。</p></article>
+<div class="daynav sans"><a href="/bible/cuv/galatians/2/index.html">← 2章</a><a href="/bible/cuv/galatians/4/index.html">4章 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/cuv/galatians/index.html">← 加拉太書目錄</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

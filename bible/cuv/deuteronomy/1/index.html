@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>申命記 1 · 和合本｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/cuv/index.html">聖經 和合本</a> ／ <a href="/bible/cuv/deuteronomy/index.html">申命記</a> ／ <b>1章</b></div>
+<h1>申命記 1</h1>
+<div class="sub sans">Deuteronomy 1 · 和合本</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">和合本</a><a href="/bible/web/deuteronomy/1/index.html">WEB</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>以下所記的是摩西在約旦河東的曠野、疏弗對面的亞拉巴－就是巴蘭、陀弗、拉班、哈洗錄、底撒哈中間－向以色列眾人所說的話。（</p><p class="v" id="v2"><span class="vn sans">2</span>從何烈山經過西珥山到加低斯‧巴尼亞有十一天的[路程]。）</p><p class="v" id="v3"><span class="vn sans">3</span>出埃及第四十年十一月初一日，摩西照耶和華藉着他所吩咐以色列人的話都曉諭他們。</p><p class="v" id="v4"><span class="vn sans">4</span>那時，他已經擊殺了住希實本的亞摩利王西宏和住以得來、亞斯他錄的巴珊王噩。</p><p class="v" id="v5"><span class="vn sans">5</span>摩西在約旦河東的摩押地講律法說：</p><p class="v" id="v6"><span class="vn sans">6</span>「耶和華－我們的上帝在何烈山曉諭我們說：你們在這山上住的日子夠了；</p><p class="v" id="v7"><span class="vn sans">7</span>要起行轉到亞摩利人的山地和靠近這山地的各處，就是亞拉巴、山地、高原、南地，沿海一帶迦南人的地，並黎巴嫩山又到幼發拉底大河。</p><p class="v" id="v8"><span class="vn sans">8</span>如今我將這地擺在你們面前；你們要進去得這地，就是耶和華向你們列祖亞伯拉罕、以撒、雅各起誓應許賜給他們和他們後裔為業之地。」</p><p class="v" id="v9"><span class="vn sans">9</span>「那時，我對你們說：『管理你們的重任，我獨自擔當不起。</p><p class="v" id="v10"><span class="vn sans">10</span>耶和華－你們的上帝使你們多起來。看哪，你們今日像天上的星那樣多。</p><p class="v" id="v11"><span class="vn sans">11</span>惟願耶和華－你們列祖的上帝使你們比如今更多千倍，照他所應許你們的話賜福與你們。</p><p class="v" id="v12"><span class="vn sans">12</span>但你們的麻煩，和管理你們的重任，並你們的爭訟，我獨自一人怎能擔當得起呢？</p><p class="v" id="v13"><span class="vn sans">13</span>你們要按着各支派選舉有智慧、有見識、為眾人所認識的，我立他們為你們的首領。』</p><p class="v" id="v14"><span class="vn sans">14</span>你們回答我說：『照你所說的行了為妙。』</p><p class="v" id="v15"><span class="vn sans">15</span>我便將你們各支派的首領，有智慧、為眾人所認識的，照你們的支派，立他們為官長、千夫長、百夫長、五十夫長、十夫長，管理你們。</p><p class="v" id="v16"><span class="vn sans">16</span>「當時，我囑咐你們的審判官說：『你們聽訟，無論是弟兄彼此爭訟，是與同居的外人爭訟，都要按公義判斷。</p><p class="v" id="v17"><span class="vn sans">17</span>審判的時候，不可看人的外貌；聽訟不可分貴賤，不可懼怕人，因為審判是屬乎上帝的。若有難斷的案件，可以呈到我這裏，我就判斷。』</p><p class="v" id="v18"><span class="vn sans">18</span>那時，我將你們所當行的事都吩咐你們了。」</p><p class="v" id="v19"><span class="vn sans">19</span>「我們照着耶和華－我們上帝所吩咐的從何烈山起行，經過你們所看見那大而可怕的曠野，往亞摩利人的山地去，到了加低斯‧巴尼亞。</p><p class="v" id="v20"><span class="vn sans">20</span>我對你們說：『你們已經到了耶和華－我們上帝所賜給我們的亞摩利人之山地。</p><p class="v" id="v21"><span class="vn sans">21</span>看哪，耶和華－你的上帝已將那地擺在你面前，你要照耶和華－你列祖的上帝所說的上去得那地為業；不要懼怕，也不要驚惶。』</p><p class="v" id="v22"><span class="vn sans">22</span>你們都就近我來說：『我們要先打發人去，為我們窺探那地，將我們上去該走何道，必進何城，都回報我們。』</p><p class="v" id="v23"><span class="vn sans">23</span>這話我以為美，就從你們中間選了十二個人，每支派一人。</p><p class="v" id="v24"><span class="vn sans">24</span>於是他們起身上山地去，到以實各谷，窺探那地。</p><p class="v" id="v25"><span class="vn sans">25</span>他們手裏拿着那地的果子下來，到我們那裏，回報說：『耶和華－我們的上帝所賜給我們的是美地。』</p><p class="v" id="v26"><span class="vn sans">26</span>「你們卻不肯上去，竟違背了耶和華－你們上帝的命令，</p><p class="v" id="v27"><span class="vn sans">27</span>在帳棚內發怨言說：『耶和華因為恨我們，所以將我們從埃及地領出來，要交在亞摩利人手中，除滅我們。</p><p class="v" id="v28"><span class="vn sans">28</span>我們上哪裏去呢？我們的弟兄使我們的心消化，說那[地的]民比我們又大又高，城邑又廣大又堅固，高得頂天，並且我們在那裏看見亞衲族的人。』</p><p class="v" id="v29"><span class="vn sans">29</span>我就對你們說：『不要驚恐，也不要怕他們。</p><p class="v" id="v30"><span class="vn sans">30</span>在你們前面行的耶和華－你們的上帝必為你們爭戰，正如他在埃及和曠野，在你們眼前所行的一樣。</p><p class="v" id="v31"><span class="vn sans">31</span>你們在曠野所行的路上，也曾見耶和華－你們的上帝撫養你們，如同人撫養兒子一般，直等你們來到這地方。』</p><p class="v" id="v32"><span class="vn sans">32</span>你們在這事上卻不信耶和華－你們的上帝。</p><p class="v" id="v33"><span class="vn sans">33</span>他在路上，在你們前面行，為你們找安營的地方；夜間在火[柱]裏，日間在雲[柱]裏，指示你們所當行的路。」</p><p class="v" id="v34"><span class="vn sans">34</span>「耶和華聽見你們這話，就發怒，起誓說：</p><p class="v" id="v35"><span class="vn sans">35</span>『這惡世代的人，連一個也不得見我起誓應許賜給你們列祖的美地；</p><p class="v" id="v36"><span class="vn sans">36</span>惟有耶孚尼的兒子迦勒必得看見，並且我要將他所踏過的地賜給他和他的子孫，因為他專心跟從我。』</p><p class="v" id="v37"><span class="vn sans">37</span>耶和華為你的緣故也向我發怒，說：『你必不得進入那地。</p><p class="v" id="v38"><span class="vn sans">38</span>伺候你、嫩的兒子約書亞，他必得進入那地；你要勉勵他，因為他要使以色列人承受那地為業。</p><p class="v" id="v39"><span class="vn sans">39</span>並且你們的[婦人]孩子，就是你們所說、必被擄掠的，和今日不知善惡的兒女，必進入那地。我要將那地賜給他們，他們必得為業。</p><p class="v" id="v40"><span class="vn sans">40</span>至於你們，要轉回，從紅海的路往曠野去。』</p><p class="v" id="v41"><span class="vn sans">41</span>「那時，你們回答我說：『我們得罪了耶和華，情願照耶和華－我們上帝一切所吩咐的上去爭戰。』於是你們各人帶着兵器，爭先上山地去了。</p><p class="v" id="v42"><span class="vn sans">42</span>耶和華吩咐我說：『你對他們說：不要上去，也不要爭戰；因我不在你們中間，恐怕你們被仇敵殺敗了。』</p><p class="v" id="v43"><span class="vn sans">43</span>我就告訴了你們，你們卻不聽從，竟違背耶和華的命令，擅自上山地去了。</p><p class="v" id="v44"><span class="vn sans">44</span>住那山地的亞摩利人就出來攻擊你們，追趕你們，如蜂擁一般，在西珥殺退你們，直到何珥瑪。</p><p class="v" id="v45"><span class="vn sans">45</span>你們便回來，在耶和華面前哭號；耶和華卻不聽你們的聲音，也不向你們側耳。</p><p class="v" id="v46"><span class="vn sans">46</span>於是你們在加低斯住了許多日子。」</p></article>
+<div class="daynav sans"><span></span><a href="/bible/cuv/deuteronomy/2/index.html">2章 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/cuv/deuteronomy/index.html">← 申命記目錄</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

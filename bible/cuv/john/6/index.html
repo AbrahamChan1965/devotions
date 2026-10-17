@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>約翰福音 6 · 和合本｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/cuv/index.html">聖經 和合本</a> ／ <a href="/bible/cuv/john/index.html">約翰福音</a> ／ <b>6章</b></div>
+<h1>約翰福音 6</h1>
+<div class="sub sans">John 6 · 和合本</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">和合本</a><a href="/bible/web/john/6/index.html">WEB</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>這事以後，耶穌渡過加利利海，就是提比哩亞海。</p><p class="v" id="v2"><span class="vn sans">2</span>有許多人因為看見他在病人身上所行的神蹟，就跟隨他。</p><p class="v" id="v3"><span class="vn sans">3</span>耶穌上了山，和門徒一同坐在那裏。</p><p class="v" id="v4"><span class="vn sans">4</span>那時猶太人的逾越節近了。</p><p class="v" id="v5"><span class="vn sans">5</span>耶穌舉目看見許多人來，就對腓力說：「我們從哪裏買餅叫這些人吃呢？」（</p><p class="v" id="v6"><span class="vn sans">6</span>他說這話是要試驗腓力；他自己原知道要怎樣行。）</p><p class="v" id="v7"><span class="vn sans">7</span>腓力回答說：「就是二十兩銀子的餅，叫他們各人吃一點也是不夠的。」</p><p class="v" id="v8"><span class="vn sans">8</span>有一個門徒，就是西門‧彼得的兄弟安得烈，對耶穌說：</p><p class="v" id="v9"><span class="vn sans">9</span>「在這裏有一個孩童，帶着五個大麥餅、兩條魚，只是分給這許多人還算甚麼呢？」</p><p class="v" id="v10"><span class="vn sans">10</span>耶穌說：「你們叫眾人坐下。」原來那地方的草多，眾人就坐下，數目約有五千。</p><p class="v" id="v11"><span class="vn sans">11</span>耶穌拿起餅來，祝謝了，就分給那坐着的人；分魚也是這樣，都隨着他們所要的。</p><p class="v" id="v12"><span class="vn sans">12</span>他們吃飽了，耶穌對門徒說：「把剩下的零碎收拾起來，免得有糟蹋的。」</p><p class="v" id="v13"><span class="vn sans">13</span>他們便將那五個大麥餅的零碎，就是眾人吃了剩下的，收拾起來，裝滿了十二個籃子。</p><p class="v" id="v14"><span class="vn sans">14</span>眾人看見耶穌所行的神蹟，就說：「這真是那要到世間來的先知！」</p><p class="v" id="v15"><span class="vn sans">15</span>耶穌既知道眾人要來強逼他作王，就獨自又退到山上去了。</p><p class="v" id="v16"><span class="vn sans">16</span>到了晚上，他的門徒下海邊去，</p><p class="v" id="v17"><span class="vn sans">17</span>上了船，要過海往迦百農去。天已經黑了，耶穌還沒有來到他們那裏。</p><p class="v" id="v18"><span class="vn sans">18</span>忽然狂風大作，海就翻騰起來。</p><p class="v" id="v19"><span class="vn sans">19</span>門徒搖櫓，約行了十里多路，看見耶穌在海面上走，漸漸近了船，他們就害怕。</p><p class="v" id="v20"><span class="vn sans">20</span>耶穌對他們說：「是我，不要怕！」</p><p class="v" id="v21"><span class="vn sans">21</span>門徒就喜歡接他上船，船立時到了他們所要去的地方。</p><p class="v" id="v22"><span class="vn sans">22</span>第二日，站在海那邊的眾人知道那裏沒有別的船，只有一隻小船，又知道耶穌沒有同他的門徒上船，乃是門徒自己去的。</p><p class="v" id="v23"><span class="vn sans">23</span>然而，有幾隻小船從提比哩亞來，靠近主祝謝後[分餅給人]吃的地方。</p><p class="v" id="v24"><span class="vn sans">24</span>眾人見耶穌和門徒都不在那裏，就上了船，往迦百農去找耶穌。</p><p class="v" id="v25"><span class="vn sans">25</span>既在海那邊找着了，就對他說：「拉比，是幾時到這裏來的？」</p><p class="v" id="v26"><span class="vn sans">26</span>耶穌回答說：「我實實在在地告訴你們，你們找我，並不是因見了神蹟，乃是因吃餅得飽。</p><p class="v" id="v27"><span class="vn sans">27</span>不要為那必壞的食物勞力，要為那存到永生的食物勞力，就是人子要賜給你們的，因為人子是父上帝所印證的。」</p><p class="v" id="v28"><span class="vn sans">28</span>眾人問他說：「我們當行甚麼才算做上帝的工呢？」</p><p class="v" id="v29"><span class="vn sans">29</span>耶穌回答說：「信上帝所差來的，這就是做上帝的工。」</p><p class="v" id="v30"><span class="vn sans">30</span>他們又說：「你行甚麼神蹟，叫我們看見就信你；你到底做甚麼事呢？</p><p class="v" id="v31"><span class="vn sans">31</span>我們的祖宗在曠野吃過嗎哪，如[經上]寫着說：『他從天上賜下糧來給他們吃。』」</p><p class="v" id="v32"><span class="vn sans">32</span>耶穌說：「我實實在在地告訴你們，那從天上來的糧不是摩西賜給你們的，乃是我父將天上來的真糧賜給你們。</p><p class="v" id="v33"><span class="vn sans">33</span>因為上帝的糧就是那從天上降下來、賜生命給世界的。」</p><p class="v" id="v34"><span class="vn sans">34</span>他們說：「主啊，常將這糧賜給我們！」</p><p class="v" id="v35"><span class="vn sans">35</span>耶穌說：「我就是生命的糧。到我這裏來的，必定不餓；信我的，永遠不渴。</p><p class="v" id="v36"><span class="vn sans">36</span>只是我對你們說過，你們已經看見我，還是不信。</p><p class="v" id="v37"><span class="vn sans">37</span>凡父所賜給我的人必到我這裏來；到我這裏來的，我總不丟棄他。</p><p class="v" id="v38"><span class="vn sans">38</span>因為我從天上降下來，不是要按自己的意思行，乃是要按那差我來者的意思行。</p><p class="v" id="v39"><span class="vn sans">39</span>差我來者的意思就是：他所賜給我的，叫我一個也不失落，在末日卻叫他復活。</p><p class="v" id="v40"><span class="vn sans">40</span>因為我父的意思是叫一切見子而信的人得永生，並且在末日我要叫他復活。」</p><p class="v" id="v41"><span class="vn sans">41</span>猶太人因為耶穌說「我是從天上降下來的糧」，就私下議論他，</p><p class="v" id="v42"><span class="vn sans">42</span>說：「這不是約瑟的兒子耶穌嗎？他的父母我們豈不認得嗎？他如今怎麼說『我是從天上降下來的』呢？」</p><p class="v" id="v43"><span class="vn sans">43</span>耶穌回答說：「你們不要大家議論。</p><p class="v" id="v44"><span class="vn sans">44</span>若不是差我來的父吸引人，就沒有能到我這裏來的；[到我這裏來的]，在末日我要叫他復活。</p><p class="v" id="v45"><span class="vn sans">45</span>在先知書上寫着說：『他們都要蒙上帝的教訓。』凡聽見父[之教訓]又學習的，就到我這裏來。</p><p class="v" id="v46"><span class="vn sans">46</span>這不是說有人看見過父，惟獨從上帝來的，他看見過父。</p><p class="v" id="v47"><span class="vn sans">47</span>我實實在在地告訴你們，信的人有永生。</p><p class="v" id="v48"><span class="vn sans">48</span>我就是生命的糧。</p><p class="v" id="v49"><span class="vn sans">49</span>你們的祖宗在曠野吃過嗎哪，還是死了。</p><p class="v" id="v50"><span class="vn sans">50</span>這是從天上降下來的糧，叫人吃了就不死。</p><p class="v" id="v51"><span class="vn sans">51</span>我是從天上降下來生命的糧；人若吃這糧，就必永遠活着。我所要賜的糧就是我的肉，為世人之生命所賜的。」</p><p class="v" id="v52"><span class="vn sans">52</span>因此，猶太人彼此爭論說：「這個人怎能把他的肉給我們吃呢？」</p><p class="v" id="v53"><span class="vn sans">53</span>耶穌說：「我實實在在地告訴你們，你們若不吃人子的肉，不喝人子的血，就沒有生命在你們裏面。</p><p class="v" id="v54"><span class="vn sans">54</span>吃我肉、喝我血的人就有永生，在末日我要叫他復活。</p><p class="v" id="v55"><span class="vn sans">55</span>我的肉真是可吃的，我的血真是可喝的。</p><p class="v" id="v56"><span class="vn sans">56</span>吃我肉、喝我血的人常在我裏面，我也常在他裏面。</p><p class="v" id="v57"><span class="vn sans">57</span>永活的父怎樣差我來，我又因父活着；照樣，吃我[肉]的人也要因我活着。</p><p class="v" id="v58"><span class="vn sans">58</span>這就是從天上降下來的糧。吃這糧的人就永遠活着，不像[你們的]祖宗吃過[嗎哪]還是死了。」</p><p class="v" id="v59"><span class="vn sans">59</span>這些話是耶穌在迦百農會堂裏教訓人說的。</p><p class="v" id="v60"><span class="vn sans">60</span>他的門徒中有好些人聽見了，就說：「這話甚難，誰能聽呢？」</p><p class="v" id="v61"><span class="vn sans">61</span>耶穌心裏知道門徒為這話議論，就對他們說：「這話是叫你們厭棄嗎？</p><p class="v" id="v62"><span class="vn sans">62</span>倘或你們看見人子升到他原來所在之處，怎麼樣呢？</p><p class="v" id="v63"><span class="vn sans">63</span>叫人活着的乃是靈，肉體是無益的。我對你們所說的話就是靈，就是生命。</p><p class="v" id="v64"><span class="vn sans">64</span>只是你們中間有不信的人。」耶穌從起頭就知道誰不信他，誰要賣他。</p><p class="v" id="v65"><span class="vn sans">65</span>耶穌又說：「所以我對你們說過，若不是蒙我父的恩賜，沒有人能到我這裏來。」</p><p class="v" id="v66"><span class="vn sans">66</span>從此，他門徒中多有退去的，不再和他同行。</p><p class="v" id="v67"><span class="vn sans">67</span>耶穌就對那十二個門徒說：「你們也要去嗎？」</p><p class="v" id="v68"><span class="vn sans">68</span>西門‧彼得回答說：「主啊，你有永生之道，我們還歸從誰呢？</p><p class="v" id="v69"><span class="vn sans">69</span>我們已經信了，又知道你是上帝的聖者。」</p><p class="v" id="v70"><span class="vn sans">70</span>耶穌說：「我不是揀選了你們十二個門徒嗎？但你們中間有一個是魔鬼。」</p><p class="v" id="v71"><span class="vn sans">71</span>耶穌這話是指着加略人西門的兒子猶大說的；他本是十二個門徒裏的一個，後來要賣耶穌的。</p></article>
+<div class="daynav sans"><a href="/bible/cuv/john/5/index.html">← 5章</a><a href="/bible/cuv/john/7/index.html">7章 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/cuv/john/index.html">← 約翰福音目錄</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

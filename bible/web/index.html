@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>聖經 · WEB｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/index.html">首頁</a> ／ <b>聖經 WEB</b></div>
+<h1>WEB</h1>
+<div class="sub sans">World English Bible</div><hr class="goldrule">
+<div class="kairos"><span class="k-label sans">關於譯本</span>現代英文公有領域譯本（2000）。經文為本站自託管，海內海外皆可讀。</div>
+<div class="ver-toggle sans"><a class="on">WEB</a><a href="/bible/cuv/index.html">和合本</a></div>
+<div class="section"><h2 class="sans">舊約 OLD TESTAMENT</h2><div class="bible-grid"><a href="/bible/web/genesis/index.html">創世記<span class="en sans">Genesis</span></a><a href="/bible/web/exodus/index.html">出埃及記<span class="en sans">Exodus</span></a><a href="/bible/web/leviticus/index.html">利未記<span class="en sans">Leviticus</span></a><a href="/bible/web/numbers/index.html">民數記<span class="en sans">Numbers</span></a><a href="/bible/web/deuteronomy/index.html">申命記<span class="en sans">Deuteronomy</span></a><a href="/bible/web/joshua/index.html">約書亞記<span class="en sans">Joshua</span></a><a href="/bible/web/judges/index.html">士師記<span class="en sans">Judges</span></a><a href="/bible/web/ruth/index.html">路得記<span class="en sans">Ruth</span></a><a href="/bible/web/1-samuel/index.html">撒母耳記上<span class="en sans">1 Samuel</span></a><a href="/bible/web/2-samuel/index.html">撒母耳記下<span class="en sans">2 Samuel</span></a><a href="/bible/web/1-kings/index.html">列王紀上<span class="en sans">1 Kings</span></a><a href="/bible/web/2-kings/index.html">列王紀下<span class="en sans">2 Kings</span></a><a href="/bible/web/1-chronicles/index.html">歷代志上<span class="en sans">1 Chronicles</span></a><a href="/bible/web/2-chronicles/index.html">歷代志下<span class="en sans">2 Chronicles</span></a><a href="/bible/web/ezra/index.html">以斯拉記<span class="en sans">Ezra</span></a><a href="/bible/web/nehemiah/index.html">尼希米記<span class="en sans">Nehemiah</span></a><a href="/bible/web/esther/index.html">以斯帖記<span class="en sans">Esther</span></a><a href="/bible/web/job/index.html">約伯記<span class="en sans">Job</span></a><a href="/bible/web/psalms/index.html">詩篇<span class="en sans">Psalms</span></a><a href="/bible/web/proverbs/index.html">箴言<span class="en sans">Proverbs</span></a><a href="/bible/web/ecclesiastes/index.html">傳道書<span class="en sans">Ecclesiastes</span></a><a href="/bible/web/song-of-songs/index.html">雅歌<span class="en sans">Song of Songs</span></a><a href="/bible/web/isaiah/index.html">以賽亞書<span class="en sans">Isaiah</span></a><a href="/bible/web/jeremiah/index.html">耶利米書<span class="en sans">Jeremiah</span></a><a href="/bible/web/lamentations/index.html">耶利米哀歌<span class="en sans">Lamentations</span></a><a href="/bible/web/ezekiel/index.html">以西結書<span class="en sans">Ezekiel</span></a><a href="/bible/web/daniel/index.html">但以理書<span class="en sans">Daniel</span></a><a href="/bible/web/hosea/index.html">何西阿書<span class="en sans">Hosea</span></a><a href="/bible/web/joel/index.html">約珥書<span class="en sans">Joel</span></a><a href="/bible/web/amos/index.html">阿摩司書<span class="en sans">Amos</span></a><a href="/bible/web/obadiah/index.html">俄巴底亞書<span class="en sans">Obadiah</span></a><a href="/bible/web/jonah/index.html">約拿書<span class="en sans">Jonah</span></a><a href="/bible/web/micah/index.html">彌迦書<span class="en sans">Micah</span></a><a href="/bible/web/nahum/index.html">那鴻書<span class="en sans">Nahum</span></a><a href="/bible/web/habakkuk/index.html">哈巴谷書<span class="en sans">Habakkuk</span></a><a href="/bible/web/zephaniah/index.html">西番雅書<span class="en sans">Zephaniah</span></a><a href="/bible/web/haggai/index.html">哈該書<span class="en sans">Haggai</span></a><a href="/bible/web/zechariah/index.html">撒迦利亞書<span class="en sans">Zechariah</span></a><a href="/bible/web/malachi/index.html">瑪拉基書<span class="en sans">Malachi</span></a></div></div>
+<div class="section"><h2 class="sans">新約 NEW TESTAMENT</h2><div class="bible-grid"><a href="/bible/web/matthew/index.html">馬太福音<span class="en sans">Matthew</span></a><a href="/bible/web/mark/index.html">馬可福音<span class="en sans">Mark</span></a><a href="/bible/web/luke/index.html">路加福音<span class="en sans">Luke</span></a><a href="/bible/web/john/index.html">約翰福音<span class="en sans">John</span></a><a href="/bible/web/acts/index.html">使徒行傳<span class="en sans">Acts</span></a><a href="/bible/web/romans/index.html">羅馬書<span class="en sans">Romans</span></a><a href="/bible/web/1-corinthians/index.html">哥林多前書<span class="en sans">1 Corinthians</span></a><a href="/bible/web/2-corinthians/index.html">哥林多後書<span class="en sans">2 Corinthians</span></a><a href="/bible/web/galatians/index.html">加拉太書<span class="en sans">Galatians</span></a><a href="/bible/web/ephesians/index.html">以弗所書<span class="en sans">Ephesians</span></a><a href="/bible/web/philippians/index.html">腓立比書<span class="en sans">Philippians</span></a><a href="/bible/web/colossians/index.html">歌羅西書<span class="en sans">Colossians</span></a><a href="/bible/web/1-thessalonians/index.html">帖撒羅尼迦前書<span class="en sans">1 Thessalonians</span></a><a href="/bible/web/2-thessalonians/index.html">帖撒羅尼迦後書<span class="en sans">2 Thessalonians</span></a><a href="/bible/web/1-timothy/index.html">提摩太前書<span class="en sans">1 Timothy</span></a><a href="/bible/web/2-timothy/index.html">提摩太後書<span class="en sans">2 Timothy</span></a><a href="/bible/web/titus/index.html">提多書<span class="en sans">Titus</span></a><a href="/bible/web/philemon/index.html">腓利門書<span class="en sans">Philemon</span></a><a href="/bible/web/hebrews/index.html">希伯來書<span class="en sans">Hebrews</span></a><a href="/bible/web/james/index.html">雅各書<span class="en sans">James</span></a><a href="/bible/web/1-peter/index.html">彼得前書<span class="en sans">1 Peter</span></a><a href="/bible/web/2-peter/index.html">彼得後書<span class="en sans">2 Peter</span></a><a href="/bible/web/1-john/index.html">約翰一書<span class="en sans">1 John</span></a><a href="/bible/web/2-john/index.html">約翰二書<span class="en sans">2 John</span></a><a href="/bible/web/3-john/index.html">約翰三書<span class="en sans">3 John</span></a><a href="/bible/web/jude/index.html">猶大書<span class="en sans">Jude</span></a><a href="/bible/web/revelation/index.html">啟示錄<span class="en sans">Revelation</span></a></div></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

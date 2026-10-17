@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>創世記 19 · 和合本｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/cuv/index.html">聖經 和合本</a> ／ <a href="/bible/cuv/genesis/index.html">創世記</a> ／ <b>19章</b></div>
+<h1>創世記 19</h1>
+<div class="sub sans">Genesis 19 · 和合本</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">和合本</a><a href="/bible/web/genesis/19/index.html">WEB</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>那兩個天使晚上到了所多瑪；羅得正坐在所多瑪城門口，看見他們，就起來迎接，臉伏於地下拜，</p><p class="v" id="v2"><span class="vn sans">2</span>說：「我主啊，請你們到僕人家裏洗洗腳，住一夜，清早起來再走。」他們說：「不！我們要在街上過夜。」</p><p class="v" id="v3"><span class="vn sans">3</span>羅得切切地請他們，他們這才進去，到他屋裏。羅得為他們預備筵席，烤無酵餅，他們就吃了。</p><p class="v" id="v4"><span class="vn sans">4</span>他們還沒有躺下，所多瑪城裏各處的人，連老帶少，都來圍住那房子，</p><p class="v" id="v5"><span class="vn sans">5</span>呼叫羅得說：「今日晚上到你這裏來的人在哪裏呢？把他們帶出來，任我們所為。」</p><p class="v" id="v6"><span class="vn sans">6</span>羅得出來，把門關上，到眾人那裏，</p><p class="v" id="v7"><span class="vn sans">7</span>說：「眾弟兄，請你們不要做這惡事。</p><p class="v" id="v8"><span class="vn sans">8</span>我有兩個女兒，還是處女，容我領出來，任憑你們的心願而行；只是這兩個人既然到我舍下，不要向他們做甚麼。」</p><p class="v" id="v9"><span class="vn sans">9</span>眾人說：「退去吧！」又說：「這個人來寄居，還想要作官哪！現在我們要害你比害他們更甚。」眾人就向前擁擠羅得，要攻破房門。</p><p class="v" id="v10"><span class="vn sans">10</span>只是那二人伸出手來，將羅得拉進屋去，把門關上，</p><p class="v" id="v11"><span class="vn sans">11</span>並且使門外的人，無論老少，眼都昏迷；他們摸來摸去，總尋不着房門。</p><p class="v" id="v12"><span class="vn sans">12</span>二人對羅得說：「你這裏還有甚麼人嗎？無論是女婿是兒女，和這城中一切屬你的人，你都要將他們從這地方帶出去。</p><p class="v" id="v13"><span class="vn sans">13</span>我們要毀滅這地方；因為城內罪惡的聲音在耶和華面前甚大，耶和華差我們來，要毀滅這地方。」</p><p class="v" id="v14"><span class="vn sans">14</span>羅得就出去，告訴娶了他女兒的女婿們說：「你們起來離開這地方，因為耶和華要毀滅這城。」他女婿們卻以為他說的是戲言。</p><p class="v" id="v15"><span class="vn sans">15</span>天明了，天使催逼羅得說：「起來！帶着你的妻子和你在這裏的兩個女兒出去，免得你因這城裏的罪惡同被剿滅。」</p><p class="v" id="v16"><span class="vn sans">16</span>但羅得遲延不走。二人因為耶和華憐恤羅得，就拉着他的手和他妻子的手，並他兩個女兒的手，把他們領出來，安置在城外；</p><p class="v" id="v17"><span class="vn sans">17</span>領他們出來以後，就說：「逃命吧！不可回頭看，也不可在平原站住。要往山上逃跑，免得你被剿滅。」</p><p class="v" id="v18"><span class="vn sans">18</span>羅得對他們說：「我主啊，不要如此！</p><p class="v" id="v19"><span class="vn sans">19</span>你僕人已經在你眼前蒙恩；你又向我顯出莫大的慈愛，救我的性命。我不能逃到山上去，恐怕這災禍臨到我，我便死了。</p><p class="v" id="v20"><span class="vn sans">20</span>看哪，這座城又小又近，容易逃到，這不是一個小的嗎？求你容我逃到那裏，我的性命就得存活。」</p><p class="v" id="v21"><span class="vn sans">21</span>天使對他說：「這事我也應允你；我不傾覆你所說的這城。</p><p class="v" id="v22"><span class="vn sans">22</span>你要速速地逃到那城；因為你還沒有到那裏，我不能做甚麼。」因此那城名叫瑣珥。</p><p class="v" id="v23"><span class="vn sans">23</span>羅得到了瑣珥，日頭已經出來了。</p><p class="v" id="v24"><span class="vn sans">24</span>當時，耶和華將硫磺與火從天上耶和華那裏降與所多瑪和蛾摩拉，</p><p class="v" id="v25"><span class="vn sans">25</span>把那些城和全平原，並城裏所有的居民，連地上生長的，都毀滅了。</p><p class="v" id="v26"><span class="vn sans">26</span>羅得的妻子在後邊回頭一看，就變成了一根鹽柱。</p><p class="v" id="v27"><span class="vn sans">27</span>亞伯拉罕清早起來，到了他從前站在耶和華面前的地方，</p><p class="v" id="v28"><span class="vn sans">28</span>向所多瑪和蛾摩拉與平原的全地觀看，不料，那地方煙氣上騰，如同燒窯一般。</p><p class="v" id="v29"><span class="vn sans">29</span>當上帝毀滅平原諸城的時候，他記念亞伯拉罕，正在傾覆羅得所住之城的時候，就打發羅得從傾覆之中出來。</p><p class="v" id="v30"><span class="vn sans">30</span>羅得因為怕住在瑣珥，就同他兩個女兒從瑣珥上去，住在山裏；他和兩個女兒住在一個洞裏。</p><p class="v" id="v31"><span class="vn sans">31</span>大女兒對小女兒說：「我們的父親老了，地上又無人按着世上的常規進到我們這裏。</p><p class="v" id="v32"><span class="vn sans">32</span>來！我們可以叫父親喝酒，與他同寢。這樣，我們好從他存留後裔。」</p><p class="v" id="v33"><span class="vn sans">33</span>於是，那夜她們叫父親喝酒，大女兒就進去和她父親同寢；她幾時躺下，幾時起來，父親都不知道。</p><p class="v" id="v34"><span class="vn sans">34</span>第二天，大女兒對小女兒說：「我昨夜與父親同寢。今夜我們再叫他喝酒，你可以進去與他同寢。這樣，我們好從父親存留後裔。」</p><p class="v" id="v35"><span class="vn sans">35</span>於是，那夜她們又叫父親喝酒，小女兒起來與她父親同寢；她幾時躺下，幾時起來，父親都不知道。</p><p class="v" id="v36"><span class="vn sans">36</span>這樣，羅得的兩個女兒都從她父親懷了孕。</p><p class="v" id="v37"><span class="vn sans">37</span>大女兒生了兒子，給他起名叫摩押，就是現今摩押人的始祖。</p><p class="v" id="v38"><span class="vn sans">38</span>小女兒也生了兒子，給他起名叫便‧亞米，就是現今亞捫人的始祖。</p></article>
+<div class="daynav sans"><a href="/bible/cuv/genesis/18/index.html">← 18章</a><a href="/bible/cuv/genesis/20/index.html">20章 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/cuv/genesis/index.html">← 創世記目錄</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>耶利米書 6 · WEB｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:var(--gold-soft,#f5edd9);margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/web/index.html">聖經 WEB</a> ／ <a href="/bible/web/jeremiah/index.html">耶利米書</a> ／ <b>6</b></div>
+<h1>耶利米書 6</h1>
+<div class="sub sans">Jeremiah 6 · WEB</div><hr class="goldrule">
+<div class="ver-toggle sans"><a class="on">WEB</a><a href="/bible/cuv/jeremiah/6/index.html">和合本</a></div>
+<article><p class="v" id="v1"><span class="vn sans">1</span>“Flee for safety, you children of Benjamin, out of the middle of Jerusalem! Blow the trumpet in Tekoa and raise up a signal on Beth Haccherem, for evil looks out from the north with a great destruction.</p><p class="v" id="v2"><span class="vn sans">2</span>I will cut off the beautiful and delicate one, the daughter of Zion.</p><p class="v" id="v3"><span class="vn sans">3</span>Shepherds with their flocks will come to her. They will pitch their tents against her all around. They will feed everyone in his place.”</p><p class="v" id="v4"><span class="vn sans">4</span>“Prepare war against her! Arise! Let’s go up at noon. Woe to us! For the day declines, for the shadows of the evening are stretched out.</p><p class="v" id="v5"><span class="vn sans">5</span>Arise! Let’s go up by night, and let’s destroy her palaces.”</p><p class="v" id="v6"><span class="vn sans">6</span>For the LORD of Armies said, “Cut down trees, and cast up a mound against Jerusalem. This is the city to be visited. She is filled with oppression within herself.</p><p class="v" id="v7"><span class="vn sans">7</span>As a well produces its waters, so she produces her wickedness. Violence and destruction is heard in her. Sickness and wounds are continually before me.</p><p class="v" id="v8"><span class="vn sans">8</span>Be instructed, Jerusalem, lest my soul be alienated from you, lest I make you a desolation, an uninhabited land.”</p><p class="v" id="v9"><span class="vn sans">9</span>The LORD of Armies says, “They will thoroughly glean the remnant of Israel like a vine. Turn again your hand as a grape gatherer into the baskets.”</p><p class="v" id="v10"><span class="vn sans">10</span>To whom should I speak and testify, that they may hear? Behold, their ear is uncircumcised, and they can’t listen. Behold, the LORD’s word has become a reproach to them. They have no delight in it.</p><p class="v" id="v11"><span class="vn sans">11</span>Therefore I am full of the LORD’s wrath. I am weary with holding it in. “Pour it out on the children in the street, and on the assembly of young men together; for even the husband with the wife will be taken, the aged with him who is full of days.</p><p class="v" id="v12"><span class="vn sans">12</span>Their houses will be turned to others, their fields and their wives together; for I will stretch out my hand on the inhabitants of the land, says the LORD.”</p><p class="v" id="v13"><span class="vn sans">13</span>“For from their least even to their greatest, everyone is given to covetousness. From the prophet even to the priest, everyone deals falsely.</p><p class="v" id="v14"><span class="vn sans">14</span>They have healed also the hurt of my people superficially, saying, ‘Peace, peace!’ when there is no peace.</p><p class="v" id="v15"><span class="vn sans">15</span>Were they ashamed when they had committed abomination? No, they were not at all ashamed, neither could they blush. Therefore they will fall among those who fall. When I visit them, they will be cast down,” says the LORD.</p><p class="v" id="v16"><span class="vn sans">16</span>The LORD says, “Stand in the ways and see, and ask for the old paths, ‘Where is the good way?’ and walk in it, and you will find rest for your souls. But they said, ‘We will not walk in it.’</p><p class="v" id="v17"><span class="vn sans">17</span>I set watchmen over you, saying, ‘Listen to the sound of the trumpet!’ But they said, ‘We will not listen!’</p><p class="v" id="v18"><span class="vn sans">18</span>Therefore hear, you nations, and know, congregation, what is among them.</p><p class="v" id="v19"><span class="vn sans">19</span>Hear, earth! Behold, I will bring evil on this people, even the fruit of their thoughts, because they have not listened to my words; and as for my law, they have rejected it.</p><p class="v" id="v20"><span class="vn sans">20</span>To what purpose does frankincense from Sheba come to me, and the sweet cane from a far country? Your burnt offerings are not acceptable, and your sacrifices are not pleasing to me.”</p><p class="v" id="v21"><span class="vn sans">21</span>Therefore the LORD says, “Behold, I will lay stumbling blocks before this people. The fathers and the sons together will stumble against them. The neighbor and his friend will perish.”</p><p class="v" id="v22"><span class="vn sans">22</span>The LORD says, “Behold, a people comes from the north country. A great nation will be stirred up from the uttermost parts of the earth.</p><p class="v" id="v23"><span class="vn sans">23</span>They take hold of bow and spear. They are cruel, and have no mercy. Their voice roars like the sea, and they ride on horses, everyone set in array, as a man to the battle, against you, daughter of Zion.”</p><p class="v" id="v24"><span class="vn sans">24</span>We have heard its report. Our hands become feeble. Anguish has taken hold of us, and pains as of a woman in labor.</p><p class="v" id="v25"><span class="vn sans">25</span>Don’t go out into the field or walk by the way; for the sword of the enemy and terror are on every side.</p><p class="v" id="v26"><span class="vn sans">26</span>Daughter of my people, clothe yourself with sackcloth, and wallow in ashes! Mourn, as for an only son, most bitter lamentation, for the destroyer will suddenly come on us.</p><p class="v" id="v27"><span class="vn sans">27</span>“I have made you a tester of metals and a fortress among my people, that you may know and try their way.</p><p class="v" id="v28"><span class="vn sans">28</span>They are all grievous rebels, going around to slander. They are bronze and iron. All of them deal corruptly.</p><p class="v" id="v29"><span class="vn sans">29</span>The bellows blow fiercely. The lead is consumed in the fire. In vain they go on refining, for the wicked are not plucked away.</p><p class="v" id="v30"><span class="vn sans">30</span>Men will call them rejected silver, because the LORD has rejected them.”</p></article>
+<div class="daynav sans"><a href="/bible/web/jeremiah/5/index.html">← 5</a><a href="/bible/web/jeremiah/7/index.html">7 →</a></div>
+<div class="daynav sans" style="margin-top:0"><a href="/bible/web/jeremiah/index.html">← 耶利米書</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>
