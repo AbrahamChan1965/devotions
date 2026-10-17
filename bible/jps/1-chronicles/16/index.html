@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>歷代志上 16 · JPS 1917｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f5edd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0;flex-wrap:wrap}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/jps/index.html">聖經 JPS 1917</a> ／ <a href="/bible/jps/1-chronicles/index.html">歷代志上</a> ／ <b>16</b></div>
+<h1>歷代志上 16</h1><div class="sub sans">1 Chronicles 16 · JPS 1917</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">JPS 1917</a><a href="/bible/cuv/1-chronicles/16/index.html">和合本</a><a href="/bible/web/1-chronicles/16/index.html">WEB</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>And they brought in the ark of God, and set it in the midst of the tent that David had pitched for it, and they offered burnt-offerings and peace-offerings before God.</p><p class="v" id="v2"><span class="vn sans">2</span>And when David had made an end of offering the burnt-offering and the peace-offerings, he blessed the people in the name of the LORD.</p><p class="v" id="v3"><span class="vn sans">3</span>And he dealt to every one of Israel, both man and woman, to every one a loaf of bread, and a cake made in a pan, and a sweet cake.</p><p class="v" id="v4"><span class="vn sans">4</span>And he appointed certain of the Levites to minister before the ark of the LORD, and to celebrate and to thank and praise the LORD, the God of Israel:</p><p class="v" id="v5"><span class="vn sans">5</span>Asaph the chief, and second to him Zechariah, Jeiel, and Shemiramoth, and Jehiel, and Mattithiah, and Eliab, and Benaiah, and Obed-edom, and Jeiel, with psalteries and with harps; and Asaph with cymbals, sounding aloud;</p><p class="v" id="v6"><span class="vn sans">6</span>and Benaiah and Jahaziel the priests with trumpets continually, before the ark of the covenant of God.</p><p class="v" id="v7"><span class="vn sans">7</span>Then on that day did David first ordain to give thanks unto the LORD, by the hand of Asaph and his brethren.</p><p class="v" id="v8"><span class="vn sans">8</span>O give thanks unto the LORD, call upon His name; make known His doings among the peoples.</p><p class="v" id="v9"><span class="vn sans">9</span>Sing unto Him, sing praises unto Him; speak ye of all His marvellous works.</p><p class="v" id="v10"><span class="vn sans">10</span>Glory ye in His holy name; let the heart of them rejoice that seek the LORD.</p><p class="v" id="v11"><span class="vn sans">11</span>Seek ye the LORD and His strength; seek His face continually.</p><p class="v" id="v12"><span class="vn sans">12</span>Remember His marvellous works that He hath done, His wonders, and the judgments of His mouth;</p><p class="v" id="v13"><span class="vn sans">13</span>O ye seed of Israel His servant, ye children of Jacob, His chosen ones.</p><p class="v" id="v14"><span class="vn sans">14</span>He is the LORD our God; His judgments are in all the earth.</p><p class="v" id="v15"><span class="vn sans">15</span>Remember His covenant for ever, the word which He commanded to a thousand generations;</p><p class="v" id="v16"><span class="vn sans">16</span>The covenant which He made with Abraham, and His oath unto Isaac;</p><p class="v" id="v17"><span class="vn sans">17</span>And He established it unto Jacob for a statute, to Israel for an everlasting covenant;</p><p class="v" id="v18"><span class="vn sans">18</span>Saying: &#x27;Unto thee will I give the land of Canaan, the lot of your inheritance.&#x27;</p><p class="v" id="v19"><span class="vn sans">19</span>When ye were but a few men in number, yea, very few, and sojourners in it,</p><p class="v" id="v20"><span class="vn sans">20</span>And when they went about from nation to nation, and from one kingdom to another people,</p><p class="v" id="v21"><span class="vn sans">21</span>He suffered no man to do them wrong, yea, for their sake He reproved kings:</p><p class="v" id="v22"><span class="vn sans">22</span>&#x27;Touch not Mine anointed ones, and do My prophets no harm.&#x27;</p><p class="v" id="v23"><span class="vn sans">23</span>Sing unto the LORD, all the earth; proclaim His salvation from day to day.</p><p class="v" id="v24"><span class="vn sans">24</span>Declare His glory among the nations, His marvellous works among all the peoples.</p><p class="v" id="v25"><span class="vn sans">25</span>For great is the LORD, and highly to be praised; He also is to be feared above all gods.</p><p class="v" id="v26"><span class="vn sans">26</span>For all the gods of the peoples are things of nought; but the LORD made the heavens.</p><p class="v" id="v27"><span class="vn sans">27</span>Honour and majesty are before Him; strength and gladness are in His place.</p><p class="v" id="v28"><span class="vn sans">28</span>Ascribe unto the LORD, ye kindreds of the peoples, ascribe unto the LORD glory and strength.</p><p class="v" id="v29"><span class="vn sans">29</span>Ascribe unto the LORD the glory due unto His name; bring an offering, and come before Him; worship the LORD in the beauty of holiness.</p><p class="v" id="v30"><span class="vn sans">30</span>Tremble before Him, all the earth; the world also is established that it cannot be moved.</p><p class="v" id="v31"><span class="vn sans">31</span>Let the heavens be glad, and let the earth rejoice; and let them say among the nations: &#x27;The LORD reigneth.&#x27;</p><p class="v" id="v32"><span class="vn sans">32</span>Let the sea roar, and the fulness thereof; let the field exult, and all that is therein;</p><p class="v" id="v33"><span class="vn sans">33</span>Then shall the trees of the wood sing for joy, before the LORD, for He is come to judge the earth.</p><p class="v" id="v34"><span class="vn sans">34</span>O give thanks unto the LORD; for He is good; for His mercy endureth for ever.</p><p class="v" id="v35"><span class="vn sans">35</span>And say ye: &#x27;Save us, O God of our salvation, and gather us together and deliver us from the nations, that we may give thanks unto Thy holy name, that we may triumph in Thy praise.&#x27;</p><p class="v" id="v36"><span class="vn sans">36</span>Blessed be the LORD, the God of Israel, from everlasting even to everlasting. And all the people said: &#x27;Amen,&#x27; and praised the LORD.</p><p class="v" id="v37"><span class="vn sans">37</span>So he left there, before the ark of the covenant of the LORD, Asaph and his brethren, to minister before the ark continually, as every day&#x27;s work required;</p><p class="v" id="v38"><span class="vn sans">38</span>and Obed-edom with their brethren, threescore and eight; Obed-edom also the son of Jedithun and Hosah to be door-keepers;</p><p class="v" id="v39"><span class="vn sans">39</span>and Zadok the priest, and his brethren the priests, before the tabernacle of the LORD in the high place that was at Gibeon,</p><p class="v" id="v40"><span class="vn sans">40</span>to offer burnt-offerings unto the LORD upon the altar of burnt-offering continually morning and evening, even according to all that is written in the Law of the LORD, which He commanded unto Israel;</p><p class="v" id="v41"><span class="vn sans">41</span>and with them Heman and Jeduthun, and the rest that were chosen, who were mentioned by name, to give thanks to the LORD, because His mercy endureth for ever;</p><p class="v" id="v42"><span class="vn sans">42</span>and with them Heman and Jeduthun, to sound aloud with trumpets and cymbals, and with instruments for the songs of God; and the sons of Jeduthun to be at the gate.</p><p class="v" id="v43"><span class="vn sans">43</span>And all the people departed every man to his house; and David returned to bless his house.</p></article><div class="daynav sans"><a href="/bible/jps/1-chronicles/15/index.html">← 15</a><a href="/bible/jps/1-chronicles/17/index.html">17 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/jps/1-chronicles/index.html">← 歷代志上</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

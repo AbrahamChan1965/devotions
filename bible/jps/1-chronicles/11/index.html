@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>歷代志上 11 · JPS 1917｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f5edd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0;flex-wrap:wrap}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/jps/index.html">聖經 JPS 1917</a> ／ <a href="/bible/jps/1-chronicles/index.html">歷代志上</a> ／ <b>11</b></div>
+<h1>歷代志上 11</h1><div class="sub sans">1 Chronicles 11 · JPS 1917</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">JPS 1917</a><a href="/bible/cuv/1-chronicles/11/index.html">和合本</a><a href="/bible/web/1-chronicles/11/index.html">WEB</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>Then all Israel gathered themselves to David unto Hebron, saying: &#x27;Behold, we are thy bone and thy flesh.</p><p class="v" id="v2"><span class="vn sans">2</span>In times past, even when Saul was king, it was thou that didst lead out and bring in Israel; and the LORD thy God said unto thee: Thou shalt feed My people Israel, and thou shalt be prince over My people Israel.&#x27;</p><p class="v" id="v3"><span class="vn sans">3</span>So all the elders of Israel came to the king to Hebron; and David made a covenant with them in Hebron before the LORD; and they anointed David king over Israel, according to the word of the LORD by the hand of Samuel.</p><p class="v" id="v4"><span class="vn sans">4</span>And David and all Israel went to Jerusalem — the same is Jebus — and the Jebusites, the inhabitants of the land, were there.</p><p class="v" id="v5"><span class="vn sans">5</span>And the inhabitants of Jebus said to David: &#x27;Thou shalt not come in hither.&#x27; Nevertheless David took the stronghold of Zion; the same is the city of David.</p><p class="v" id="v6"><span class="vn sans">6</span>And David said: &#x27;Whosoever smiteth the Jebusites first shall be chief and captain.&#x27; And Joab the son of Zeruiah went up first, and was made chief.</p><p class="v" id="v7"><span class="vn sans">7</span>And David dwelt in the stronghold; therefore they called it the city of David.</p><p class="v" id="v8"><span class="vn sans">8</span>And he built the city round about, from Millo even round about; and Joab repaired the rest of the city.</p><p class="v" id="v9"><span class="vn sans">9</span>And David waxed greater and greater; for the LORD of hosts was with him.</p><p class="v" id="v10"><span class="vn sans">10</span>Now these are the chief of the mighty men whom David had, who held strongly with him in his kingdom, together with all Israel, to make him king, according to the word of the LORD concerning Israel.</p><p class="v" id="v11"><span class="vn sans">11</span>And this is the number of the mighty men whom David had: Jashobeam, the son of a Hachmonite, the chief of the captains; he lifted up his spear against three hundred and slew them at one time.</p><p class="v" id="v12"><span class="vn sans">12</span>And after him was Eleazar the son of Dodo, the Ahohite, who was one of the three mighty men.</p><p class="v" id="v13"><span class="vn sans">13</span>He was with David at Pas-dammim, and there the Philistines were gathered together to battle, where was a plot of ground full of barley; and the people fled from before the Philistines.</p><p class="v" id="v14"><span class="vn sans">14</span>But they stood in the midst of the plot, and defended it, and slew the Philistines; and the LORD saved them by a great victory.</p><p class="v" id="v15"><span class="vn sans">15</span>And three of the thirty chiefs went down to the rock to David, unto the cave of Adullam; and the host of the Philistines were encamped in the valley of Rephaim.</p><p class="v" id="v16"><span class="vn sans">16</span>And David was then in the stronghold, and the garrison of the Philistines was then in Beth-lehem.</p><p class="v" id="v17"><span class="vn sans">17</span>And David longed, and said: &#x27;Oh that one would give me water to drink of the well of Beth-lehem, which is by the gate!&#x27;</p><p class="v" id="v18"><span class="vn sans">18</span>And the three broke through the host of the Philistines, and drew water out of the well of Beth-lehem, that was by the gate, and took it, and brought it to David; but David would not drink thereof, but poured it out unto the LORD,</p><p class="v" id="v19"><span class="vn sans">19</span>and said: &#x27;My God forbid it me, that I should do this; shall I drink the blood of these men that have put their lives in jeopardy? for with the jeopardy of their lives they brought it.&#x27; Therefore he would not drink it. These things did the three mighty men.</p><p class="v" id="v20"><span class="vn sans">20</span>And Abishai, the brother of Joab, he was chief of the three; for he lifted up his spear against three hundred and slew them, and had a name among the three.</p><p class="v" id="v21"><span class="vn sans">21</span>Of the three in the second rank he was the most honourable, and was made their captain; howbeit he attained not to the first three.</p><p class="v" id="v22"><span class="vn sans">22</span>Beniah the son of Jehoiada, the son of a valiant man of Kabzeel, who had done mighty deeds, he smote the two altar-hearths of Moab; he went down also and slew a lion in the midst of a pit in time of snow.</p><p class="v" id="v23"><span class="vn sans">23</span>And he slew an Egyptian, a man of great stature, five cubits high; and in the Egyptian&#x27;s hand was a spear like a weaver&#x27;s beam; and he went down to him with a staff, and plucked the spear out of the Egyptian&#x27;s hand, and slew him with his own spear.</p><p class="v" id="v24"><span class="vn sans">24</span>These things did Benaiah the son of Jehoiada, and had a name among the three mighty men.</p><p class="v" id="v25"><span class="vn sans">25</span>Behold, he was more honourable than the thirty, but he attained not to the first three; and David set him over his guard.</p><p class="v" id="v26"><span class="vn sans">26</span>Also the mighty men of valour: Asahel the brother of Joab, Elhanan the son of Dodo of Beth-lehem;</p><p class="v" id="v27"><span class="vn sans">27</span>Shammoth the Harorite, Helez the Pelonite;</p><p class="v" id="v28"><span class="vn sans">28</span>Ira the son of Ikkesh the Tekoite, Abiezer the Anathothite;</p><p class="v" id="v29"><span class="vn sans">29</span>Sibbecai the Hushathite, Ilai the Ahohite;</p><p class="v" id="v30"><span class="vn sans">30</span>Mahrai the Netophathite, Heled the son of Baanah the Netophathite;</p><p class="v" id="v31"><span class="vn sans">31</span>Ithai the son of Ribai of Gibeah of the children of Benjamin, Benaiah the Pirathonite;</p><p class="v" id="v32"><span class="vn sans">32</span>Hurai of Nahale-gaash, Abiel the Arbathite;</p><p class="v" id="v33"><span class="vn sans">33</span>Azmaveth the Baharumite, Eliahba the Shaalbonite;</p><p class="v" id="v34"><span class="vn sans">34</span>the sons of Hashem the Gizonite, Jonathan the son of Shageh the Hararite;</p><p class="v" id="v35"><span class="vn sans">35</span>Ahiam the son of Sacar the Hararite, Eliphal the son of Ur;</p><p class="v" id="v36"><span class="vn sans">36</span>Hepher the Mecherathite, Ahijah the Pelonite;</p><p class="v" id="v37"><span class="vn sans">37</span>Hezro the Carmelite, Naarai the son of Ezbai;</p><p class="v" id="v38"><span class="vn sans">38</span>Joel the brother of Nathan, Mibhar the son of Hagri;</p><p class="v" id="v39"><span class="vn sans">39</span>Zelek the Ammonite, Nahrai the Berothite, the armour-bearer of Joab the son of Zeruiah;</p><p class="v" id="v40"><span class="vn sans">40</span>Ira the Ithrite, Gareb the Ithrite;</p><p class="v" id="v41"><span class="vn sans">41</span>Uriah the Hittite, Zabad the son of Ahlai;</p><p class="v" id="v42"><span class="vn sans">42</span>Adina the son of Shiza the Reubenite, a chief of the Reubenites, and thirty with him;</p><p class="v" id="v43"><span class="vn sans">43</span>Hanan the son of Maacah, and Joshaphat the Mithnite;</p><p class="v" id="v44"><span class="vn sans">44</span>Uzzia the Ashterathite, Shama and Jeiel the sons of Hotham the Aroerite;</p><p class="v" id="v45"><span class="vn sans">45</span>Jediael the son of Shimri, and Joha his brother, the Tizite;</p><p class="v" id="v46"><span class="vn sans">46</span>Eliel the Mahavite, and Jeribai, and Joshaviah, the sons of Elnaam, and Ithmah the Moabite;</p><p class="v" id="v47"><span class="vn sans">47</span>Eliel, and Obed, and Jaasiel the Mezobaite.</p></article><div class="daynav sans"><a href="/bible/jps/1-chronicles/10/index.html">← 10</a><a href="/bible/jps/1-chronicles/12/index.html">12 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/jps/1-chronicles/index.html">← 歷代志上</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

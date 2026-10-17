@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>申命記 28 · JPS 1917｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f5edd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0;flex-wrap:wrap}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/jps/index.html">聖經 JPS 1917</a> ／ <a href="/bible/jps/deuteronomy/index.html">申命記</a> ／ <b>28</b></div>
+<h1>申命記 28</h1><div class="sub sans">Deuteronomy 28 · JPS 1917</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">JPS 1917</a><a href="/bible/cuv/deuteronomy/28/index.html">和合本</a><a href="/bible/web/deuteronomy/28/index.html">WEB</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>And it shall come to pass, if thou shalt hearken diligently unto the voice of the LORD thy God, to observe to do all His commandments which I command thee this day, that the LORD thy God will set thee on high above all the nations of the earth.</p><p class="v" id="v2"><span class="vn sans">2</span>And all these blessings shall come upon thee, and overtake thee, if thou shalt hearken unto the voice of the LORD thy God.</p><p class="v" id="v3"><span class="vn sans">3</span>Blessed shalt thou be in the city, and blessed shalt thou be in the field.</p><p class="v" id="v4"><span class="vn sans">4</span>Blessed shall be the fruit of thy body, and the fruit of thy land, and the fruit of thy cattle, the increase of thy kine, and the young of thy flock.</p><p class="v" id="v5"><span class="vn sans">5</span>Blessed shall be thy basket and thy kneading-trough.</p><p class="v" id="v6"><span class="vn sans">6</span>Blessed shalt thou be when thou comest in, and blessed shalt thou be when thou goest out.</p><p class="v" id="v7"><span class="vn sans">7</span>The LORD will cause thine enemies that rise up against thee to be smitten before thee; they shall come out against thee one way, and shall flee before thee seven ways.</p><p class="v" id="v8"><span class="vn sans">8</span>The LORD will command the blessing with thee in thy barns, and in all that thou puttest thy hand unto; and He will bless thee in the land which the LORD thy God giveth thee.</p><p class="v" id="v9"><span class="vn sans">9</span>The LORD will establish thee for a holy people unto Himself, as He hath sworn unto thee; if thou shalt keep the commandments of the LORD thy God, and walk in His ways.</p><p class="v" id="v10"><span class="vn sans">10</span>And all the peoples of the earth shall see that the name of the LORD is called upon thee; and they shall be afraid of thee.</p><p class="v" id="v11"><span class="vn sans">11</span>And the LORD will make thee over-abundant for good, in the fruit of thy body, and in the fruit of thy cattle, and in the fruit of thy land, in the land which the LORD swore unto thy fathers to give thee.</p><p class="v" id="v12"><span class="vn sans">12</span>The LORD will open unto thee His good treasure the heaven to give the rain of thy land in its season, and to bless all the work of thy hand; and thou shalt lend unto many nations, but thou shalt not borrow.</p><p class="v" id="v13"><span class="vn sans">13</span>And the LORD will make thee the head, and not the tail; and thou shalt be above only, and thou shalt not be beneath; if thou shalt hearken unto the commandments of the LORD thy God, which I command thee this day, to observe and to do them;</p><p class="v" id="v14"><span class="vn sans">14</span>and shalt not turn aside from any of the words which I command you this day, to the right hand, or to the left, to go after other gods to serve them.</p><p class="v" id="v15"><span class="vn sans">15</span>But it shall come to pass, if thou wilt not hearken unto the voice of the LORD thy God, to observe to do all His commandments and His statutes which I command thee this day; that all these curses shall come upon thee, and overtake thee.</p><p class="v" id="v16"><span class="vn sans">16</span>Cursed shalt thou be in the city, and cursed shalt thou be in the field.</p><p class="v" id="v17"><span class="vn sans">17</span>Cursed shall be thy basket and thy kneading-trough.</p><p class="v" id="v18"><span class="vn sans">18</span>Cursed shall be the fruit of thy body, and the fruit of thy land, the increase of thy kine, and the young of thy flock.</p><p class="v" id="v19"><span class="vn sans">19</span>Cursed shalt thou be when thou comest in, and cursed shalt thou be when thou goest out.</p><p class="v" id="v20"><span class="vn sans">20</span>The LORD will send upon thee cursing, discomfiture, and rebuke, in all that thou puttest thy hand unto to do, until thou be destroyed, and until thou perish quickly; because of the evil of thy doings, whereby thou hast forsaken Me.</p><p class="v" id="v21"><span class="vn sans">21</span>The LORD will make the pestilence cleave unto thee, until He have consumed thee from off the land, whither thou goest in to possess it.</p><p class="v" id="v22"><span class="vn sans">22</span>The LORD will smite thee with consumption, and with fever, and with inflammation, and with fiery heat, and with drought, and with blasting, and with mildew; and they shall pursue thee until thou perish.</p><p class="v" id="v23"><span class="vn sans">23</span>And thy heaven that is over thy head shall be brass, and the earth that is under thee shall be iron.</p><p class="v" id="v24"><span class="vn sans">24</span>The LORD will make the rain of thy land powder and dust; from heaven shall it come down upon thee, until thou be destroyed.</p><p class="v" id="v25"><span class="vn sans">25</span>The LORD will cause thee to be smitten before thine enemies; thou shalt go out one way against them, and shalt flee seven ways before them; and thou shalt be a horror unto all the kingdoms of the earth.</p><p class="v" id="v26"><span class="vn sans">26</span>And thy carcasses shall be food unto all fowls of the air, and unto the beasts of the earth, and there shall be none to frighten them away.</p><p class="v" id="v27"><span class="vn sans">27</span>The LORD will smite thee with the boil of Egypt, and with the emerods, and with the scab, and with the itch, whereof thou canst not be healed.</p><p class="v" id="v28"><span class="vn sans">28</span>The LORD will smite thee with madness, and with blindness, and with astonishment of heart.</p><p class="v" id="v29"><span class="vn sans">29</span>And thou shalt grope at noonday, as the blind gropeth in darkness, and thou shalt not make thy ways prosperous; and thou shalt be only oppressed and robbed alway, and there shall be none to save thee.</p><p class="v" id="v30"><span class="vn sans">30</span>Thou shalt betroth a wife, and another man shall lie with her; thou shalt build a house, and thou shalt not dwell therein; thou shalt plant a vineyard, and shalt not use the fruit thereof.</p><p class="v" id="v31"><span class="vn sans">31</span>Thine ox shall be slain before thine eyes, and thou shalt not eat thereof; thine ass shall be violently taken away from before thy face, and shall not be restored to thee; thy sheep shall be given unto thine enemies; and thou shalt have none to save thee.</p><p class="v" id="v32"><span class="vn sans">32</span>Thy sons and thy daughters shall be given unto another people, and thine eyes shall look, and fail with longing for them all the day; and there shall be nought in the power of thy hand.</p><p class="v" id="v33"><span class="vn sans">33</span>The fruit of thy land, and all thy labours, shall a nation which thou knowest not eat up; and thou shalt be only oppressed and crushed away:</p><p class="v" id="v34"><span class="vn sans">34</span>so that thou shalt be mad for the sight of thine eyes which thou shalt see.</p><p class="v" id="v35"><span class="vn sans">35</span>The LORD will smite thee in the knees, and in the legs, with a sore boil, whereof thou canst not be healed, from the sole of thy foot unto the crown of thy head.</p><p class="v" id="v36"><span class="vn sans">36</span>The LORD will bring thee, and thy king whom thou shalt set over thee, unto a nation that thou hast not known, thou nor thy fathers; and there shalt thou serve other gods, wood and stone.</p><p class="v" id="v37"><span class="vn sans">37</span>And thou shalt become an astonishment, a proverb, and a byword, among all the peoples whither the LORD shall lead thee away.</p><p class="v" id="v38"><span class="vn sans">38</span>Thou shalt carry much seed out into the field, and shalt gather little in; for the locust shall consume it.</p><p class="v" id="v39"><span class="vn sans">39</span>Thou shalt plant vineyards and dress them, but thou shalt neither drink of the wine, nor gather the grapes; for the worm shall eat them.</p><p class="v" id="v40"><span class="vn sans">40</span>Thou shalt have olive-trees throughout all thy borders, but thou shalt not anoint thyself with the oil; for thine olives shall drop off.</p><p class="v" id="v41"><span class="vn sans">41</span>Thou shalt beget sons and daughters, but they shall not be thine; for they shall go into captivity.</p><p class="v" id="v42"><span class="vn sans">42</span>All thy trees and the fruit of thy land shall the locust possess.</p><p class="v" id="v43"><span class="vn sans">43</span>The stranger that is in the midst of thee shall mount up above thee higher and higher; and thou shalt come down lower and lower.</p><p class="v" id="v44"><span class="vn sans">44</span>He shall lend to thee, and thou shalt not lend to him; he shall be the head, and thou shalt be the tail.</p><p class="v" id="v45"><span class="vn sans">45</span>And all these curses shall come upon thee, and shall pursue thee, and overtake thee, till thou be destroyed; because thou didst not hearken unto the voice of the LORD thy God, to keep His commandments and His statutes which He commanded thee.</p><p class="v" id="v46"><span class="vn sans">46</span>And they shall be upon thee for a sign and for a wonder, and upon thy seed for ever;</p><p class="v" id="v47"><span class="vn sans">47</span>because thou didst not serve the LORD thy God with joyfulness, and with gladness of heart, by reason of the abundance of all things;</p><p class="v" id="v48"><span class="vn sans">48</span>therefore shalt thou serve thine enemy whom the LORD shall send against thee, in hunger, and in thirst, and in nakedness, and in want of all things; and he shall put a yoke of iron upon thy neck, until he have destroyed thee.</p><p class="v" id="v49"><span class="vn sans">49</span>The LORD will bring a nation against thee from far, from the end of the earth, as the vulture swoopeth down; a nation whose tongue thou shalt not understand;</p><p class="v" id="v50"><span class="vn sans">50</span>a nation of fierce countenance, that shall not regard the person of the old, nor show favour to the young.</p><p class="v" id="v51"><span class="vn sans">51</span>And he shall eat the fruit of thy cattle, and the fruit of thy ground, until thou be destroyed; that also shall not leave thee corn, wine, or oil, the increase of thy kine, or the young of thy flock, until he have caused thee to perish.</p><p class="v" id="v52"><span class="vn sans">52</span>And he shall besiege thee in all thy gates, until thy high and fortified walls come down, wherein thou didst trust, throughout all thy land; and he shall besiege thee in all thy gates throughout all thy land, which the LORD thy God hath given thee.</p><p class="v" id="v53"><span class="vn sans">53</span>And thou shalt eat the fruit of thine own body, the flesh of thy sons and of thy daughters whom the LORD thy God hath given thee; in the siege and in the straitness, wherewith thine enemies shall straiten thee.</p><p class="v" id="v54"><span class="vn sans">54</span>The man that is tender among you, and very delicate, his eye shall be evil against his brother, and against the wife of his bosom, and against the remnant of his children whom he hath remaining;</p><p class="v" id="v55"><span class="vn sans">55</span>so that he will not give to any of them of the flesh of his children whom he shall eat, because he hath nothing left him; in the siege and in the straitness, wherewith thine enemy shall straiten thee in all thy gates.</p><p class="v" id="v56"><span class="vn sans">56</span>The tender and delicate woman among you, who would not adventure to set the sole of her foot upon the ground for delicateness and tenderness, her eye shall be evil against the husband of her bosom, and against her son, and against her daughter;</p><p class="v" id="v57"><span class="vn sans">57</span>and against her afterbirth that cometh out from between her feet, and against her children whom she shall bear; for she shall eat them for want of all things secretly; in the siege and in the straitness, wherewith thine enemy shall straiten thee in thy gates.</p><p class="v" id="v58"><span class="vn sans">58</span>If thou wilt not observe to do all the words of this law that are written in this book, that thou mayest fear this glorious and awful Name, the LORD thy God;</p><p class="v" id="v59"><span class="vn sans">59</span>then the LORD will make thy plagues wonderful, and the plagues of thy seed, even great plagues, and of long continuance, and sore sicknesses, and of long continuance.</p><p class="v" id="v60"><span class="vn sans">60</span>And He will bring back upon thee all the diseases of Egypt, which thou wast in dread of; and they shall cleave unto thee.</p><p class="v" id="v61"><span class="vn sans">61</span>Also every sickness, and every plague, which is not written in the book of this law, them will the LORD bring upon thee, until thou be destroyed.</p><p class="v" id="v62"><span class="vn sans">62</span>And ye shall be left few in number, whereas ye were as the stars of heaven for multitude; because thou didst not hearken unto the voice of the LORD thy God.</p><p class="v" id="v63"><span class="vn sans">63</span>And it shall come to pass, that as the LORD rejoiced over you to do you good, and to multiply you; so the LORD will rejoice over you to cause you to perish, and to destroy you; and ye shall be plucked from off the land whither thou goest in to possess it.</p><p class="v" id="v64"><span class="vn sans">64</span>And the LORD shall scatter thee among all peoples, from the one end of the earth even unto the other end of the earth; and there thou shalt serve other gods, which thou hast not known, thou nor thy fathers, even wood and stone.</p><p class="v" id="v65"><span class="vn sans">65</span>And among these nations shalt thou have no repose, and there shall be no rest for the sole of thy foot; but the LORD shall give thee there a trembling heart, and failing of eyes, and languishing of soul.</p><p class="v" id="v66"><span class="vn sans">66</span>And thy life shall hang in doubt before thee; and thou shalt fear night and day, and shalt have no assurance of thy life.</p><p class="v" id="v67"><span class="vn sans">67</span>In the morning thou shalt say: &#x27;Would it were even!&#x27; and at even thou shalt say: &#x27;Would it were morning!&#x27; for the fear of thy heart which thou shalt fear, and for the sight of thine eyes which thou shalt see.</p><p class="v" id="v68"><span class="vn sans">68</span>And the LORD shall bring thee back into Egypt in ships, by the way whereof I said unto thee: &#x27;Thou shalt see it no more again&#x27;; and there ye shall sell yourselves unto your enemies for bondmen and for bondwoman, and no man shall buy you.</p></article><div class="daynav sans"><a href="/bible/jps/deuteronomy/27/index.html">← 27</a><a href="/bible/jps/deuteronomy/29/index.html">29 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/jps/deuteronomy/index.html">← 申命記</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

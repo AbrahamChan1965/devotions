@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>申命記 32 · JPS 1917｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f5edd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0;flex-wrap:wrap}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/jps/index.html">聖經 JPS 1917</a> ／ <a href="/bible/jps/deuteronomy/index.html">申命記</a> ／ <b>32</b></div>
+<h1>申命記 32</h1><div class="sub sans">Deuteronomy 32 · JPS 1917</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">JPS 1917</a><a href="/bible/cuv/deuteronomy/32/index.html">和合本</a><a href="/bible/web/deuteronomy/32/index.html">WEB</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>Give ear, ye heavens, and I will speak; and let the earth hear the words of my mouth.</p><p class="v" id="v2"><span class="vn sans">2</span>My doctrine shall drop as the rain, my speech shall distil as the dew; as the small rain upon the tender grass, and as the showers upon the herb.</p><p class="v" id="v3"><span class="vn sans">3</span>For I will proclaim the name of the LORD; ascribe ye greatness unto our God.</p><p class="v" id="v4"><span class="vn sans">4</span>The Rock, His work is perfect; for all His ways are justice; a God of faithfulness and without iniquity, just and right is He.</p><p class="v" id="v5"><span class="vn sans">5</span>Is corruption His? No; His children&#x27;s is the blemish; a generation crooked and perverse.</p><p class="v" id="v6"><span class="vn sans">6</span>Do ye thus requite the LORD, O foolish people and unwise? is not He thy father that hath gotten thee? hath He not made thee, and established thee?</p><p class="v" id="v7"><span class="vn sans">7</span>Remember the days of old, consider the years of many generations; ask thy father, and he will declare unto thee, thine elders, and they will tell thee.</p><p class="v" id="v8"><span class="vn sans">8</span>When the Most High gave to the nations their inheritance, when He separated the children of men, He set the borders of the peoples according to the number of the children of Israel.</p><p class="v" id="v9"><span class="vn sans">9</span>For the portion of the LORD is His people, Jacob the lot of His inheritance.</p><p class="v" id="v10"><span class="vn sans">10</span>He found him in a desert land, and in the waste, a howling wilderness; He compassed him about, He cared for him, He kept him as the apple of His eye.</p><p class="v" id="v11"><span class="vn sans">11</span>As an eagle that stirreth up her nest, hovereth over her young, spreadeth abroad her wings, taketh them, beareth them on her pinions —</p><p class="v" id="v12"><span class="vn sans">12</span>The LORD alone did lead him, and there was no strange god with Him.</p><p class="v" id="v13"><span class="vn sans">13</span>He made him ride on the high places of the earth, and he did eat the fruitage of the field; and He made him to suck honey out of the crag, and oil out of the flinty rock;</p><p class="v" id="v14"><span class="vn sans">14</span>Curd of kine, and milk of sheep, with fat of lambs, and rams of the breed of Bashan, and he-goats, with the kidney-fat of wheat; and of the blood of the grape thou drankest foaming wine.</p><p class="v" id="v15"><span class="vn sans">15</span>But Jeshurun waxed fat, and kicked — thou didst wax fat, thou didst grow thick, thou didst become gross — and he forsook God who made him, and contemned the Rock of his salvation.</p><p class="v" id="v16"><span class="vn sans">16</span>They roused Him to jealousy with strange gods, with abominations did they provoke Him.</p><p class="v" id="v17"><span class="vn sans">17</span>They sacrificed unto demons, no-gods, gods that they knew not, new gods that came up of late, which your fathers dreaded not.</p><p class="v" id="v18"><span class="vn sans">18</span>Of the Rock that begot thee thou wast unmindful, and didst forget God that bore thee.</p><p class="v" id="v19"><span class="vn sans">19</span>And the LORD saw, and spurned, because of the provoking of His sons and His daughters.</p><p class="v" id="v20"><span class="vn sans">20</span>And He said: &#x27;I will hide My face from them, I will see what their end shall be; for they are a very froward generation, children in whom is no faithfulness.</p><p class="v" id="v21"><span class="vn sans">21</span>They have roused Me to jealousy with a no-god; they have provoked Me with their vanities; and I will rouse them to jealousy with a no-people; I will provoke them with a vile nation.</p><p class="v" id="v22"><span class="vn sans">22</span>For a fire is kindled in My nostril, and burneth unto the depths of the nether-world, and devoureth the earth with her produce, and setteth ablaze the foundations of the mountains.</p><p class="v" id="v23"><span class="vn sans">23</span>I will heap evils upon them; I will spend Mine arrows upon them;</p><p class="v" id="v24"><span class="vn sans">24</span>The wasting of hunger, and the devouring of the fiery bolt, and bitter destruction; and the teeth of beasts will I send upon them, with the venom of crawling things of the dust.</p><p class="v" id="v25"><span class="vn sans">25</span>Without shall the sword bereave, and in the chambers terror; slaying both young man and virgin, the suckling with the man of gray hairs.</p><p class="v" id="v26"><span class="vn sans">26</span>I thought I would make an end of them, I would make their memory cease from among men;</p><p class="v" id="v27"><span class="vn sans">27</span>Were it not that I dreaded the enemy&#x27;s provocation, lest their adversaries should misdeem, lest they should say: Our hand is exalted, and not the LORD hath wrought all this.&#x27;</p><p class="v" id="v28"><span class="vn sans">28</span>For they are a nation void of counsel, and there is no understanding in them.</p><p class="v" id="v29"><span class="vn sans">29</span>If they were wise, they would understand this, they would discern their latter end.</p><p class="v" id="v30"><span class="vn sans">30</span>How should one chase a thousand, and two put ten thousand to flight, except their Rock had given them over and the LORD had delivered them up?</p><p class="v" id="v31"><span class="vn sans">31</span>For their rock is not as our Rock, even our enemies themselves being judges.</p><p class="v" id="v32"><span class="vn sans">32</span>For their vine is of the vine of Sodom, and of the fields of Gomorrah; their grapes are grapes of gall, their clusters are bitter;</p><p class="v" id="v33"><span class="vn sans">33</span>Their wine is the venom of serpents, and the cruel poison of asps.</p><p class="v" id="v34"><span class="vn sans">34</span>&#x27;Is not this laid up in store with Me, sealed up in My treasuries?</p><p class="v" id="v35"><span class="vn sans">35</span>Vengeance is Mine, and recompense, against the time when their foot shall slip; for the day of their calamity is at hand, and the things that are to come upon them shall make haste.</p><p class="v" id="v36"><span class="vn sans">36</span>For the LORD will judge His people, and repent Himself for His servants; when He seeth that their stay is gone, and there is none remaining, shut up or left at large.</p><p class="v" id="v37"><span class="vn sans">37</span>And it is said: Where are their gods, the rock in whom they trusted;</p><p class="v" id="v38"><span class="vn sans">38</span>Who did eat the fat of their sacrifices, and drank the wine of their drink-offering? let him rise up and help you, let him be your protection.</p><p class="v" id="v39"><span class="vn sans">39</span>See now that I, even I, am He, and there is no god with Me; I kill, and I make alive; I have wounded, and I heal; and there is none that can deliver out of My hand.</p><p class="v" id="v40"><span class="vn sans">40</span>For I lift up My hand to heaven, and say: As I live for ever,</p><p class="v" id="v41"><span class="vn sans">41</span>If I whet My glittering sword, and My hand take hold on judgment; I will render vengeance to Mine adversaries, and will recompense them that hate Me.</p><p class="v" id="v42"><span class="vn sans">42</span>I will make Mine arrows drunk with blood, and My sword shall devour flesh; with the blood of the slain and the captives, from the long-haired heads of the enemy.&#x27;</p><p class="v" id="v43"><span class="vn sans">43</span>Sing aloud, O ye nations, of His people; for He doth avenge the blood of His servants, and doth render vengeance to His adversaries, and doth make expiation for the land of His people.</p><p class="v" id="v44"><span class="vn sans">44</span>And Moses came and spoke all the words of this song in the ears of the people, he, and Hoshea the son of Nun.</p><p class="v" id="v45"><span class="vn sans">45</span>And when Moses made an end of speaking all these words to all Israel,</p><p class="v" id="v46"><span class="vn sans">46</span>he said unto them: &#x27;Set your heart unto all the words wherewith I testify against you this day; that ye may charge your children therewith to observe to do all the words of this law.</p><p class="v" id="v47"><span class="vn sans">47</span>For it is no vain thing for you; because it is your life, and through this thing ye shall prolong your days upon the land, whither ye go over the Jordan to possess it.&#x27;</p><p class="v" id="v48"><span class="vn sans">48</span>And the LORD spoke unto Moses that selfsame day, saying:</p><p class="v" id="v49"><span class="vn sans">49</span>&#x27;Get thee up into this mountain of Abarim, unto mount Nebo, which is in the land of Moab, that is over against Jericho; and behold the land of Canaan, which I give unto the children of Israel for a possession;</p><p class="v" id="v50"><span class="vn sans">50</span>and die in the mount whither thou goest up, and be gathered unto thy people; as Aaron thy brother died in mount Hor, and was gathered unto his people.</p><p class="v" id="v51"><span class="vn sans">51</span>Because ye trespassed against Me in the midst of the children of Israel at the waters of Meribath-kadesh, in the wilderness of Zin; because ye sanctified Me not in the midst of the children of Israel.</p><p class="v" id="v52"><span class="vn sans">52</span>For thou shalt see the land afar off; but thou shalt not go thither into the land which I give the children of Israel.&#x27;</p></article><div class="daynav sans"><a href="/bible/jps/deuteronomy/31/index.html">← 31</a><a href="/bible/jps/deuteronomy/33/index.html">33 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/jps/deuteronomy/index.html">← 申命記</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>

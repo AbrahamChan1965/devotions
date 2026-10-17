@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>創世記 30 · JPS 1917｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
+.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
+.bible-grid a:hover{border-color:var(--purple)}
+.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
+.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
+.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f5edd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0;flex-wrap:wrap}
+.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
+.ver-toggle a.on{background:var(--purple);color:#fff}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/jps/index.html">聖經 JPS 1917</a> ／ <a href="/bible/jps/genesis/index.html">創世記</a> ／ <b>30</b></div>
+<h1>創世記 30</h1><div class="sub sans">Genesis 30 · JPS 1917</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">JPS 1917</a><a href="/bible/cuv/genesis/30/index.html">和合本</a><a href="/bible/web/genesis/30/index.html">WEB</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>And when Rachel saw that she bore Jacob no children, Rachel envied her sister; and she said unto Jacob: &#x27;Give me children, or else I die.&#x27;</p><p class="v" id="v2"><span class="vn sans">2</span>And Jacob&#x27;s anger was kindled against Rachel; and he said: &#x27;Am I in God&#x27;s stead, who hath withheld from thee the fruit of the womb?&#x27;</p><p class="v" id="v3"><span class="vn sans">3</span>And she said: &#x27;Behold my maid Bilhah, go in unto her; that she may bear upon my knees, and I also may be builded up through her.&#x27;</p><p class="v" id="v4"><span class="vn sans">4</span>And she gave him Bilhah her handmaid to wife; and Jacob went in unto her.</p><p class="v" id="v5"><span class="vn sans">5</span>And Bilhah conceived, and bore Jacob a son.</p><p class="v" id="v6"><span class="vn sans">6</span>And Rachel said: &#x27;God hath judged me, and hath also heard my voice, and hath given me a son.&#x27; Therefore called she his name Dan.</p><p class="v" id="v7"><span class="vn sans">7</span>And Bilhah Rachel&#x27;s handmaid conceived again, and bore Jacob a second son.</p><p class="v" id="v8"><span class="vn sans">8</span>And Rachel said: &#x27;With mighty wrestlings have I wrestled with my sister, and have prevailed.&#x27; And she called his name Naphtali.</p><p class="v" id="v9"><span class="vn sans">9</span>When Leah saw that she had left off bearing, she took Zilpah her handmaid, and gave her to Jacob to wife.</p><p class="v" id="v10"><span class="vn sans">10</span>And Zilpah Leah&#x27;s handmaid bore Jacob a son.</p><p class="v" id="v11"><span class="vn sans">11</span>And Leah said: &#x27;Fortune is come!&#x27; And she called his name Gad.</p><p class="v" id="v12"><span class="vn sans">12</span>And Zilpah Leah&#x27;s handmaid bore Jacob a second son.</p><p class="v" id="v13"><span class="vn sans">13</span>And Leah said: &#x27;Happy am I! for the daughters will call me happy.&#x27; And she called his name Asher.</p><p class="v" id="v14"><span class="vn sans">14</span>And Reuben went in the days of wheat harvest, and found mandrakes in the field, and brought them unto his mother Leah. Then Rachel said to Leah: &#x27;Give me, I pray thee, of thy son&#x27;s mandrakes.&#x27;</p><p class="v" id="v15"><span class="vn sans">15</span>And she said unto her: &#x27;Is it a small matter that thou hast taken away my husband? and wouldest thou take away my son&#x27;s mandrakes also?&#x27; And Rachel said: &#x27;Therefore he shall lie with thee to-night for thy son&#x27;s mandrakes.&#x27;</p><p class="v" id="v16"><span class="vn sans">16</span>And Jacob came from the field in the evening, and Leah went out to meet him, and said: &#x27;Thou must come in unto me; for I have surely hired thee with my son&#x27;s mandrakes.&#x27; And he lay with her that night.</p><p class="v" id="v17"><span class="vn sans">17</span>And God hearkened unto Leah, and she conceived, and bore Jacob a fifth son.</p><p class="v" id="v18"><span class="vn sans">18</span>And Leah said: &#x27;God hath given me my hire, because I gave my handmaid to my husband. And she called his name Issachar.</p><p class="v" id="v19"><span class="vn sans">19</span>And Leah conceived again, and bore a sixth son to Jacob.</p><p class="v" id="v20"><span class="vn sans">20</span>And Leah said: &#x27;God hath endowed me with a good dowry; now will my husband dwell with me, because I have borne him six sons.&#x27; And she called his name Zebulun.</p><p class="v" id="v21"><span class="vn sans">21</span>And afterwards she bore a daughter, and called her name Dinah.</p><p class="v" id="v22"><span class="vn sans">22</span>And God remembered Rachel, and God hearkened to her, and opened her womb.</p><p class="v" id="v23"><span class="vn sans">23</span>And she conceived, and bore a son, and said: &#x27;God hath taken away my reproach.&#x27;</p><p class="v" id="v24"><span class="vn sans">24</span>And she called his name Joseph, saying: &#x27;The LORD add to me another son.&#x27;</p><p class="v" id="v25"><span class="vn sans">25</span>And it came to pass, when Rachel had borne Joseph, that Jacob said unto Laban: &#x27;Send me away, that I may go unto mine own place, and to my country.</p><p class="v" id="v26"><span class="vn sans">26</span>Give me my wives and my children for whom I have served thee, and let me go; for thou knowest my service wherewith I have served thee.&#x27;</p><p class="v" id="v27"><span class="vn sans">27</span>And Laban said unto him: &#x27;If now I have found favour in thine eyes — I have observed the signs, and the LORD hath blessed me for thy sake.&#x27;</p><p class="v" id="v28"><span class="vn sans">28</span>And he said: &#x27;Appoint me thy wages, and I will give it.&#x27;</p><p class="v" id="v29"><span class="vn sans">29</span>And he said unto him: &#x27;Thou knowest how I have served thee, and how thy cattle have fared with me.</p><p class="v" id="v30"><span class="vn sans">30</span>For it was little which thou hadst before I came, and it hath increased abundantly; and the LORD hath blessed thee whithersoever I turned. And now when shall I provide for mine own house also?&#x27;</p><p class="v" id="v31"><span class="vn sans">31</span>And he said: &#x27;What shall I give thee?&#x27; And Jacob said: &#x27;Thou shalt not give me aught; if thou wilt do this thing for me, I will again feed thy flock and keep it.</p><p class="v" id="v32"><span class="vn sans">32</span>I will pass through all thy flock to-day, removing from thence every speckled and spotted one, and every dark one among the sheep, and the spotted and speckled among the goats; and of such shall be my hire.</p><p class="v" id="v33"><span class="vn sans">33</span>So shall my righteousness witness against me hereafter, when thou shalt come to look over my hire that is before thee: every one that is not speckled and spotted among the goats, and dark among the sheep, that if found with me shall be counted stolen.&#x27;</p><p class="v" id="v34"><span class="vn sans">34</span>And Laban said: &#x27;Behold, would it might be according to thy word.&#x27;</p><p class="v" id="v35"><span class="vn sans">35</span>And he removed that day the he-goats that were streaked and spotted, and all the she-goats that were speckled and spotted, every one that had white in it, and all the dark ones among the sheep, and gave them into the hand of his sons.</p><p class="v" id="v36"><span class="vn sans">36</span>And he set three days&#x27; journey betwixt himself and Jacob. And Jacob fed the rest of Laban&#x27;s flocks.</p><p class="v" id="v37"><span class="vn sans">37</span>And Jacob took him rods of fresh poplar, and of the almond and of the plane-tree; and peeled white streaks in them, making the white appear which was in the rods.</p><p class="v" id="v38"><span class="vn sans">38</span>And he set the rods which he had peeled over against the flocks in the gutters in the watering-troughs where the flocks came to drink; and they conceived when they came to drink.</p><p class="v" id="v39"><span class="vn sans">39</span>And the flocks conceived at the sight of the rods, and the flocks brought forth streaked, speckled, and spotted.</p><p class="v" id="v40"><span class="vn sans">40</span>And Jacob separated the lambs — he also set the faces of the flocks toward the streaked and all the dark in the flock of Laban — and put his own droves apart, and put them not unto Laban&#x27;s flock.</p><p class="v" id="v41"><span class="vn sans">41</span>And it came to pass, whensoever the stronger of the flock did conceive, that Jacob laid the rods before the eyes of the flock in the gutters, that they might conceive among the rods;</p><p class="v" id="v42"><span class="vn sans">42</span>but when the flock were feeble, he put them not in; so the feebler were Laban&#x27;s, and the stronger Jacob&#x27;s.</p><p class="v" id="v43"><span class="vn sans">43</span>And the man increased exceedingly, and had large flocks, and maid-servants and men-servants, and camels and asses.</p></article><div class="daynav sans"><a href="/bible/jps/genesis/29/index.html">← 29</a><a href="/bible/jps/genesis/31/index.html">31 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/jps/genesis/index.html">← 創世記</a><span></span></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>
