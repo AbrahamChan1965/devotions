@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>週五 Instructio：放下自我，晝夜勞苦｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
+--white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
+.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{height:6px;background:var(--purple)}
+.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
+letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+.masthead .brand{font-weight:700}
+.masthead a{color:var(--purple);text-decoration:none}
+.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb b{color:var(--purple);font-weight:600}
+.crumb a{color:var(--purple);text-decoration:none}
+h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
+.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
+.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
+margin:0 0 3rem;font-size:1rem;line-height:1.9}
+.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem}
+.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
+font-size:.92rem;line-height:2;color:var(--gray)}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
+padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article strong{color:var(--purple-deep)}
+.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
+.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
+.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
+.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
+.card:hover{border-color:var(--purple)}
+.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
+.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
+.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
+.card.gold{border-top:4px solid var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.daynav a{color:var(--purple);text-decoration:none;font-weight:600}
+.hero{padding:5rem 0 3.5rem}
+.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
+.hero h1{font-size:3.6rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
+text-decoration:none;font-weight:700}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
+.section{margin:4.5rem 0}
+.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
+border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
+font-size:1rem;letter-spacing:.1em}
+.season.now{color:var(--purple-deep);font-weight:900}
+.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--line)}
+.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a:hover{color:var(--purple)}
+.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
+padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
+.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--purple)}
+@media (prefers-color-scheme:dark){
+body{background:var(--black);color:#f2f2f2}
+.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
+.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
+article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
+@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}}
+/* ---- Mobile reading type scale (2026-10-16 評估) ----
+   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
+   小寫字母 x-height 小，需比中文大兩號。
+   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
+   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/index.html">首頁</a> ／ <a href="/year-a/proper-26/index.html">PROPER 26</a> ／ <b>週五 訓誨</b></div>
+<h1>週五 Instructio：放下自我，晝夜勞苦</h1>
+<div class="sub sans">週五訓誨 · FRIDAY Instructio</div>
+<hr class="goldrule">
+<div class="meta sans"><div>本週經課｜RCL Proper 26（2026年11月1日）</div><div>今日｜2026年10月30日，週五 · 正走向十一月一日的主日</div></div>
+<div class="section" style="margin:0 0 2.2rem"><h2 class="sans">今日經課 · TODAY'S READINGS</h2><div class="reading"><span class="r-label sans">書信</span><span class="r-refs">帖撒羅尼迦前書 2:9–13 <a href="/bible/cuv/1-thessalonians/2/index.html#v9">讀經</a><span class="ver sans">和合本</span> <a href="/bible/web/1-thessalonians/2/index.html#v9">Read</a><span class="ver sans">WEB</span></span></div></div>
+<article><p>「弟兄們，你們記念我們的辛苦勞碌，晝夜做工，傳神的福音給你們，免得叫你們一人受累。」（帖前二9）</p><p>本週，法利賽人把重擔擱在人肩上，自己一個指頭也不動；保羅把重擔擱在自己肩上，不叫人受累。一個搶業權，一個放下自我。同一週，兩種人，正面交鋒。</p><p>先看「放下自我」。保羅本有權利——他在哥林多前書九章說得清楚：傳福音的靠福音養生，是主規定的。但他說：「我們沒有用過這權柄，倒凡事忍受，免得基督的福音被阻隔。」（林前九12）權利是真的，放下也是真的。搶業權者的本質，是抓住一切應得的；保羅的本質，是放下一切可得的。他織帳棚，白天做工，晚上講道。腓立比書二章那首詩，是他的人生：「他本有神的形像……反倒虛己，取了奴僕的形像。」（腓二6-7）虛己（kenosis）——倒空自己。保羅的晝夜勞苦，是基督虛己的翻版。</p><p>再看法利賽人。他們的問題，恰恰是「放不下」：放不下首座，放不下問安，放不下「拉比」的稱呼，放不下經文盒的寬度。放不下，就只好把重擔給別人。一個放不下自我的人，一定會把重量轉移給別人——這是屬靈物理學。本週的兩種宗教，公式很簡單：搶業權的，轉移重擔；放下自我的，承擔重擔。</p><p>然後看「為主晝夜勞苦」。注意保羅勞苦的對象：不是為自己的產業，是「傳神的福音給你們」。他的晝夜，有方向。很多人也晝夜勞苦——為房貸，為升職，為人設。但保羅的晝夜是為「你們」：為那些還沒過河的人。這就是分別：同樣是熬夜，有人熬成業主，有人熬成用人。</p><p>這段的高峰在第十三節：「你們聽見我們所傳神的道就領受了；不以為是人的道，乃以為是神的道。這道實在是神的，並且運行在你們信主的人心中。」（帖前二13）「運行」——原文 energeō，能量、發動。神的道不是資訊，是能量；進到人裡面，自己會動。法利賽人的經文盒裡，裝的也是神的話——申命記六章，真經文。但同樣的道，在法利賽人身上運行不出來，在帖撒羅尼迦人身上運行起來了。差別不在道，在人：一個把道當首飾戴（戴給人看），一個把道當種子種（種下去會死）。「一粒麥子不落在地裡死了，仍舊是一粒。」（約十二24）首飾是業主的，種子是園戶的——而保羅，是把自己當種子種下去的那個人。</p><p>金口約翰（Chrysostom）說，保羅立了榜樣：傳道不只是口的事，是命的事——「他把自己的靈魂都給了他們」（參帖前二8）。</p><p>明天是週六，與我們在舊約中的兄長對話；主日，講章回到約書亞記三章。保羅晝夜勞苦，為的是什麼？為的是有一天，看見那些領受了道、道在心裡運行的人，穿上白衣，站在羔羊面前。他勞苦的終點，是白衣的群眾。今天問自己：你在為什麼晝夜？為自己的業權，還是為別人的白衣？</p></article>
+<div class="prayer"><h2 class="sans">禱告 PRAYER</h2><p>禱告：虛己的主啊，你本有神的形像，反倒虛己，取了奴僕的形像。我們承認，我們抓住一切應得的：應得的尊重，應得的回報，應得的首座；放不下的，全是自己。求你赦免；求你給我們保羅的心——放下自我，為你晝夜勞苦；給我們保羅的手——承擔重擔，不叫人受累；給我們帖撒羅尼迦人的耳朵——聽見你的道，就認出是你的聲音。讓你的道在我們心裡運行，直到我們也穿上白衣。阿們。</p></div>
+<div class="daynav sans"><a href="/year-a/proper-26/index.html">← 週匯總 WEEK</a><a href="/year-a/proper-26/index.html">本週釘子 →</a></div>
+</div>
+<footer>
+<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
+</footer>
+</body>
+</html>
