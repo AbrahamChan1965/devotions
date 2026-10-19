@@ -5,95 +5,122 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>耶利米書 51 · JPS 1917｜Devotions</title>
 <style>
-:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
---white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
-.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
-.toprule{height:6px;background:var(--purple)}
-.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
-.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
-letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
 .masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--purple);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
 .masthead a{color:var(--purple);text-decoration:none}
-.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
 .crumb b{color:var(--purple);font-weight:600}
 .crumb a{color:var(--purple);text-decoration:none}
-h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
-.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
-.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
-.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
-margin:0 0 3rem;font-size:1rem;line-height:1.9}
-.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
-display:block;margin-bottom:.6rem}
-.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
-font-size:.92rem;line-height:2;color:var(--gray)}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
 article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
-article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
-padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
 article strong{color:var(--purple-deep)}
-.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
-.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
-.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
-.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
 padding:2rem 2.2rem;margin:3rem 0}
-.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--purple);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
 .prayer p{font-size:1.08rem;line-height:2;margin:0}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
-.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
-@media (hover:hover){.card:hover{border-color:var(--purple)}}
-.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
-.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
-.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
-.card.gold{border-top:4px solid var(--gold)}
-.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
-margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--purple)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--purple);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
 .daynav a{color:var(--purple);text-decoration:none;font-weight:600}
-.hero{padding:5rem 0 3.5rem}
-.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
-.hero h1{font-size:3.6rem}
-.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
-.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
-.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
-.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
-text-decoration:none;font-weight:700}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--purple);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
 .btn.primary{background:var(--purple);color:#fff}
-.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
-.section{margin:4.5rem 0}
-.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
-border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
-.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
-font-size:1rem;letter-spacing:.1em}
-.season.now{color:var(--purple-deep);font-weight:900}
-.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.btn.ghost{border:1px solid var(--purple);color:var(--purple)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--purple-deep);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
 .reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
-padding:1rem .2rem;border-bottom:1px solid var(--line)}
-.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--purple);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
 .reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
-.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
 @media (hover:hover){.reading .r-refs a:hover{color:var(--purple)}}
-.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
-padding:.1em .5em;margin-left:.4em;white-space:nowrap}
-.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
-.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
-footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
-footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
 footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
 footer a{color:var(--purple)}
 @media (prefers-color-scheme:dark){
-body{background:var(--black);color:#f2f2f2}
-.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
-.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
-article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
-@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}}
+@media (max-width:640px){h1{font-size:2.1rem}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
 /* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
 .reading .r-refs a{display:inline-block;padding:.55em .3em}}
-/* ---- Mobile reading type scale (2026-10-16 評估) ----
-   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
-   小寫字母 x-height 小，需比中文大兩號。
-   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
-   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
 html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
 html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
 html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
@@ -104,20 +131,20 @@ html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
 html[lang="en"] .lyrics p{font-size:1.25rem}
 .nailbox .n-text{font-size:1.2rem}}
 
-.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
-.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
-@media (hover:hover){.bible-grid a:hover{border-color:var(--purple)}}
-.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
-.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
-.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
-@media (hover:hover){.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}}
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--purple)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--purple);font-weight:700}}
 p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
 p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
-p.v:target{background:#f5edd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
 html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
-.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0;flex-wrap:wrap}
-.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
-.ver-toggle a.on{background:var(--purple);color:#fff}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
 @media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
 </style>
 </head>
@@ -129,7 +156,7 @@ html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
 <h1>耶利米書 51</h1><div class="sub sans">Jeremiah 51 · JPS 1917</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">JPS 1917</a><a href="/bible/cuv/jeremiah/51/index.html">和合本</a><a href="/bible/web/jeremiah/51/index.html">WEB</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>Thus saith the LORD: Behold, I will raise up against Babylon, and against them that dwell in Leb-kamai, a destroying wind.</p><p class="v" id="v2"><span class="vn sans">2</span>And I will send unto Babylon strangers, that shall fan her, and they shall empty her land; for in the day of trouble they shall be against her round about.</p><p class="v" id="v3"><span class="vn sans">3</span>Let the archer bend his bow against her, and let him lift himself up against her in his coat of mail; and spare ye not her young men, destroy ye utterly all her host.</p><p class="v" id="v4"><span class="vn sans">4</span>And they shall fall down slain in the land of the Chaldeans, and thrust through in her streets.</p><p class="v" id="v5"><span class="vn sans">5</span>For Israel is not widowed, nor Judah, of his God, of the LORD of hosts; for their land is full of guilt against the Holy One of Israel.</p><p class="v" id="v6"><span class="vn sans">6</span>Flee out of the midst of Babylon, and save every man his life, be not cut off in her iniquity; for it is the time of the LORD&#x27;S vengeance; He will render unto her a recompense.</p><p class="v" id="v7"><span class="vn sans">7</span>Babylon hath been a golden cup in LORD&#x27;S hand, that made all the earth drunken; the nations have drunk of her wine, therefore the nations are mad.</p><p class="v" id="v8"><span class="vn sans">8</span>Babylon is suddenly fallen and destroyed, wail for her; take balm for her pain, if so be she may be healed.</p><p class="v" id="v9"><span class="vn sans">9</span>We would have healed Babylon, but she is not healed; forsake her, and let us go every one into his own country; for her judgment reacheth unto heaven, and is lifted up even to the skies.</p><p class="v" id="v10"><span class="vn sans">10</span>The LORD hath brought forth our victory; come, and let us declare in Zion the work of the LORD our God.</p><p class="v" id="v11"><span class="vn sans">11</span>Make bright the arrows, fill the quivers, the LORD hath roused the spirit of the kings of the Medes; because His device is against Babylon, to destroy it; for it is the vengeance of the LORD, the vengeance of His temple.</p><p class="v" id="v12"><span class="vn sans">12</span>Set up a standard against the walls of Babylon, make the watch strong, set the watchmen, prepare the ambushes; for the LORD hath both devised and done that which He spoke concerning the inhabitants of Babylon.</p><p class="v" id="v13"><span class="vn sans">13</span>O thou that dwellest upon many waters, abundant in treasures, thine end is come, the measure of thy covetousness.</p><p class="v" id="v14"><span class="vn sans">14</span>The LORD of hosts hath sworn by Himself: Surely I will fill thee with men, as with the canker-worm, and they shall lift up a shout against thee.</p><p class="v" id="v15"><span class="vn sans">15</span>He that hath made the earth by His power, that hath established the world by His wisdom, and hath stretched out the heavens by His discernment;</p><p class="v" id="v16"><span class="vn sans">16</span>At the sound of His giving a multitude of waters in the heavens, He causeth the vapours to ascend from the ends of the earth; He maketh lightnings at the time of the rain, and bringeth forth the wind out of His treasuries;</p><p class="v" id="v17"><span class="vn sans">17</span>Every man is proved to be brutish, for the knowledge — every goldsmith is put to shame by the graven image — that his molten image is falsehood, and there is no breath in them.</p><p class="v" id="v18"><span class="vn sans">18</span>They are vanity, a work of delusion; in the time of their visitation they shall perish,</p><p class="v" id="v19"><span class="vn sans">19</span>The portion of Jacob is not like these; for He is the former of all things, and Israel is the tribe of His inheritance; the LORD of hosts is His name.</p><p class="v" id="v20"><span class="vn sans">20</span>Thou art My maul and weapons of war, and with thee will I shatter the nations, and with thee will I destroy kingdoms;</p><p class="v" id="v21"><span class="vn sans">21</span>And with thee will I shatter the horse and his rider, and with thee will I shatter the chariot and him that rideth therein;</p><p class="v" id="v22"><span class="vn sans">22</span>And with thee will I shatter man and woman, and with thee will I shatter the old man and the youth, and with thee will I shatter the young man and the maid;</p><p class="v" id="v23"><span class="vn sans">23</span>And with thee will I shatter the shepherd and his flock, and with thee will I shatter the husbandman and his yoke of oxen, and with thee will I shatter governors and deputies.</p><p class="v" id="v24"><span class="vn sans">24</span>And I will render unto Babylon and to all the inhabitants of Chaldea all their evil that they have done in Zion, in your sight; saith the LORD.</p><p class="v" id="v25"><span class="vn sans">25</span>Behold, I am against thee, O destroying mountain, saith the LORD, which destroyest all the earth; and I will stretch out My hand upon thee, and roll thee down from the rocks, and will make thee a burnt mountain.</p><p class="v" id="v26"><span class="vn sans">26</span>And they shall not take of thee a stone for a corner, nor a stone for foundations; but thou shalt be desolate for ever, saith the LORD.</p><p class="v" id="v27"><span class="vn sans">27</span>Set ye up a standard in the land, blow the horn among the nations, prepare the nations against her, call together against her the kingdoms of Ararat, Minni, and Ashkenaz; appoint a marshal against her; cause the horses to come up as the rough canker-worm.</p><p class="v" id="v28"><span class="vn sans">28</span>Prepare against her the nations, the kings of the Medes, the governors thereof, and all the deputies thereof, and all the land of his dominion.</p><p class="v" id="v29"><span class="vn sans">29</span>And the land quaketh and is in pain; for the purposes of the LORD are performed against Babylon, to make the land of Babylon a desolation, without inhabitant.</p><p class="v" id="v30"><span class="vn sans">30</span>The mighty men of Babylon have forborne to fight, they remain in their strongholds; their might hath failed, they are become as women; her dwelling-places are set on fire; her bars are broken.</p><p class="v" id="v31"><span class="vn sans">31</span>One post runneth to meet another, and one messenger to meet an other, to tell the king of Babylon that his city is taken on every quarter;</p><p class="v" id="v32"><span class="vn sans">32</span>And the fords are seized, and the castles they have burned with fire, and the men of war are affrighted.</p><p class="v" id="v33"><span class="vn sans">33</span>For thus saith the LORD of hosts, the God of Israel: The daughter of Babylon is like a threshing-floor at the time when it is trodden; yet a little while, and the time of harvest shall come for her.</p><p class="v" id="v34"><span class="vn sans">34</span>Nebuchadrezzar the king of Babylon hath devoured me, he hath crushed me, he hath set me down as an empty vessel, he hath swallowed me up like a dragon, he hath filled his maw with my delicacies; he hath washed me clean.</p><p class="v" id="v35"><span class="vn sans">35</span>&#x27;The violence done to me and to my flesh be upon Babylon&#x27;, shall the inhabitant of Zion say; and: &#x27;My blood be upon the inhabitants of Chaldea&#x27;, shall Jerusalem say.</p><p class="v" id="v36"><span class="vn sans">36</span>Therefore thus saith the LORD: Behold, I will plead thy cause, and take vengeance for thee; and I will dry up her sea, and make her fountain dry.</p><p class="v" id="v37"><span class="vn sans">37</span>And Babylon shall become heaps, a dwelling-place for jackals, an astonishment, and a hissing, without inhabitant.</p><p class="v" id="v38"><span class="vn sans">38</span>They shall roar together like young lions; they shall growl as lions&#x27; whelps.</p><p class="v" id="v39"><span class="vn sans">39</span>With their poison I will prepare their feast, and I will make them drunken, that they may be convulsed, and sleep a perpetual sleep, and not wake, saith the LORD.</p><p class="v" id="v40"><span class="vn sans">40</span>I will bring them down like lambs to the slaughter, like rams with he-goats.</p><p class="v" id="v41"><span class="vn sans">41</span>How is Sheshach taken! and the praise of the whole earth seized! How is Babylon become an astonishment among the nations!</p><p class="v" id="v42"><span class="vn sans">42</span>The sea is come up upon Babylon; she is covered with the multitude of the waves thereof.</p><p class="v" id="v43"><span class="vn sans">43</span>Her cities are become a desolation, a dry land, and a desert, a land wherein no man dwelleth, neither doth any son of man pass thereby.</p><p class="v" id="v44"><span class="vn sans">44</span>And I will punish Bel in Babylon, and I will bring forth out of his mouth that which he hath swallowed up, and the nations shall not flow any more unto him; yea, the wall of Babylon shall fall.</p><p class="v" id="v45"><span class="vn sans">45</span>My people, go ye out of the midst of her, and save yourselves every man from the fierce anger of the LORD.</p><p class="v" id="v46"><span class="vn sans">46</span>And let not your heart faint, neither fear ye, for the rumour that shall be heard in the land; for a rumour shall come one year, and after that in another year a rumour, and violence in the land, ruler against ruler.</p><p class="v" id="v47"><span class="vn sans">47</span>Therefore behold, the days come, that I will do judgment upon the graven images of Babylon, and her whole land shall be ashamed; and all her slain shall fall in the midst of her.</p><p class="v" id="v48"><span class="vn sans">48</span>Then the heaven and the earth, and all that is therein, shall sing for joy over Babylon; for the spoilers shall come unto her from the north, saith the LORD.</p><p class="v" id="v49"><span class="vn sans">49</span>As Babylon hath caused the slain of Israel to fall, so at Babylon shall fall the slain of all the land.</p><p class="v" id="v50"><span class="vn sans">50</span>Ye that have escaped the sword, go ye, stand not still; remember the LORD from afar, and let Jerusalem come into your mind.</p><p class="v" id="v51"><span class="vn sans">51</span>&#x27;We are ashamed, because we have heard reproach, confusion hath covered our faces; for strangers are come into the sanctuaries of the LORD&#x27;S house.&#x27;</p><p class="v" id="v52"><span class="vn sans">52</span>Wherefore, behold, the days come, saith the LORD, that I will do judgment upon her graven images; and through all her land the wounded shall groan.</p><p class="v" id="v53"><span class="vn sans">53</span>Though Babylon should mount up to heaven, and though she should fortify the height of her strength, yet from Me shall spoilers come unto her, saith the LORD.</p><p class="v" id="v54"><span class="vn sans">54</span>Hark! a cry from Babylon, and great destruction from the land of the Chaldeans!</p><p class="v" id="v55"><span class="vn sans">55</span>For the LORD spoileth Babylon, and destroyeth out of her the great voice; and their waves roar like many waters, the noise of their voice is uttered;</p><p class="v" id="v56"><span class="vn sans">56</span>For the spoiler is come upon her, even upon Babylon, and her mighty men are taken, their bows are shattered; for the LORD is a God of recompenses, He will surely requite.</p><p class="v" id="v57"><span class="vn sans">57</span>And I will make drunk her princes and her wise men, her governors and her deputies, and her mighty men; and they shall sleep a perpetual sleep, and not wake, saith the King, whose name is the LORD of hosts.</p><p class="v" id="v58"><span class="vn sans">58</span>Thus saith the LORD of hosts: The broad walls of Babylon shall be utterly overthrown, and her high gates shall be burned with fire; and the peoples shall labour for vanity, and the nations for the fire; and they shall be weary.</p><p class="v" id="v59"><span class="vn sans">59</span>The word which Jeremiah the prophet commanded Seraiah the son of Neriah, the son of Mahseiah, when he went with Zedekiah the king of Judah to Babylon in the fourth year of his reign. Now Seraiah was quartermaster.</p><p class="v" id="v60"><span class="vn sans">60</span>And Jeremiah wrote in one book all the evil that should come upon Babylon, even all these words that are written concerning Babylon.</p><p class="v" id="v61"><span class="vn sans">61</span>And Jeremiah said to Seraiah: &#x27;When thou comest to Babylon, then see that thou read all these words,</p><p class="v" id="v62"><span class="vn sans">62</span>and say: O LORD, Thou hast spoken concerning this place, to cut it off, that none shall dwell therein, neither man nor beast, but that it shall be desolate for ever.</p><p class="v" id="v63"><span class="vn sans">63</span>And it shall be, when thou hast made an end of reading this book, that thou shalt bind a stone to it, and cast it into the midst of the Euphrates;</p><p class="v" id="v64"><span class="vn sans">64</span>and thou shalt say: Thus shall Babylon sink, and shall not rise again because of the evil that I will bring upon her; and they shall be weary.&#x27; Thus far are the words of Jeremiah.</p></article><div class="daynav sans"><a href="/bible/jps/jeremiah/50/index.html">← 50</a><a href="/bible/jps/jeremiah/52/index.html">52 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/jps/jeremiah/index.html">← 耶利米書</a><span></span></div>
 </div>
 <footer>
-<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工 · Golden Lampstand Ministry</div>
 <div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
 </footer>
 </body>

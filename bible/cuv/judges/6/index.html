@@ -5,95 +5,122 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>士師記 6 · 和合本｜Devotions</title>
 <style>
-:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
---white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
-.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
-.toprule{height:6px;background:var(--purple)}
-.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
-.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
-letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
 .masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--purple);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
 .masthead a{color:var(--purple);text-decoration:none}
-.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
 .crumb b{color:var(--purple);font-weight:600}
 .crumb a{color:var(--purple);text-decoration:none}
-h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
-.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
-.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
-.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
-margin:0 0 3rem;font-size:1rem;line-height:1.9}
-.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
-display:block;margin-bottom:.6rem}
-.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
-font-size:.92rem;line-height:2;color:var(--gray)}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
 article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
-article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
-padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
 article strong{color:var(--purple-deep)}
-.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
-.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
-.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
-.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
 padding:2rem 2.2rem;margin:3rem 0}
-.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--purple);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
 .prayer p{font-size:1.08rem;line-height:2;margin:0}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
-.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
-@media (hover:hover){.card:hover{border-color:var(--purple)}}
-.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
-.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
-.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
-.card.gold{border-top:4px solid var(--gold)}
-.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
-margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--purple)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--purple);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
 .daynav a{color:var(--purple);text-decoration:none;font-weight:600}
-.hero{padding:5rem 0 3.5rem}
-.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
-.hero h1{font-size:3.6rem}
-.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
-.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
-.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
-.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
-text-decoration:none;font-weight:700}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--purple);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
 .btn.primary{background:var(--purple);color:#fff}
-.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
-.section{margin:4.5rem 0}
-.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
-border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
-.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
-font-size:1rem;letter-spacing:.1em}
-.season.now{color:var(--purple-deep);font-weight:900}
-.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.btn.ghost{border:1px solid var(--purple);color:var(--purple)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--purple-deep);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
 .reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
-padding:1rem .2rem;border-bottom:1px solid var(--line)}
-.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--purple);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
 .reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
-.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
 @media (hover:hover){.reading .r-refs a:hover{color:var(--purple)}}
-.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
-padding:.1em .5em;margin-left:.4em;white-space:nowrap}
-.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
-.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
-footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
-footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
 footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
 footer a{color:var(--purple)}
 @media (prefers-color-scheme:dark){
-body{background:var(--black);color:#f2f2f2}
-.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
-.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
-article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
-@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}}
+@media (max-width:640px){h1{font-size:2.1rem}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
 /* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
 .reading .r-refs a{display:inline-block;padding:.55em .3em}}
-/* ---- Mobile reading type scale (2026-10-16 評估) ----
-   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
-   小寫字母 x-height 小，需比中文大兩號。
-   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
-   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
 html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
 html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
 html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
@@ -104,20 +131,20 @@ html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
 html[lang="en"] .lyrics p{font-size:1.25rem}
 .nailbox .n-text{font-size:1.2rem}}
 
-.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
-.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
-@media (hover:hover){.bible-grid a:hover{border-color:var(--purple)}}
-.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
-.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
-.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
-@media (hover:hover){.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}}
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--purple)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--purple);font-weight:700}}
 p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
 p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
-p.v:target{background:#f5edd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
 html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
-.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0;flex-wrap:wrap}
-.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
-.ver-toggle a.on{background:var(--purple);color:#fff}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
 @media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
 </style>
 </head>
@@ -129,7 +156,7 @@ html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
 <h1>士師記 6</h1><div class="sub sans">Judges 6 · 和合本</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">和合本</a><a href="/bible/web/judges/6/index.html">WEB</a><a href="/bible/jps/judges/6/index.html">JPS 1917</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>以色列人又行耶和華眼中看為惡的事，耶和華就把他們交在米甸人手裏七年。</p><p class="v" id="v2"><span class="vn sans">2</span>米甸人壓制以色列人；以色列人因為米甸人，就在山中挖穴、挖洞、建造營寨。</p><p class="v" id="v3"><span class="vn sans">3</span>以色列人每逢撒種之後，米甸人、亞瑪力人，和東方人都上來攻打他們，</p><p class="v" id="v4"><span class="vn sans">4</span>對着他們安營，毀壞土產，直到迦薩，沒有給以色列人留下食物，牛、羊、驢也沒有留下；</p><p class="v" id="v5"><span class="vn sans">5</span>因為那些人帶着牲畜帳棚來，像蝗蟲那樣多，人和駱駝無數，都進入國內，毀壞全地。</p><p class="v" id="v6"><span class="vn sans">6</span>以色列人因米甸人的緣故，極其窮乏，就呼求耶和華。</p><p class="v" id="v7"><span class="vn sans">7</span>以色列人因米甸人的緣故，呼求耶和華，</p><p class="v" id="v8"><span class="vn sans">8</span>耶和華就差遣先知到以色列人那裏，對他們說：「耶和華－以色列的上帝如此說：『我曾領你們從埃及上來，出了為奴之家，</p><p class="v" id="v9"><span class="vn sans">9</span>救你們脫離埃及人的手，並脫離一切欺壓你們之人的手，把他們從你們面前趕出，將他們的地賜給你們』；</p><p class="v" id="v10"><span class="vn sans">10</span>又對你們說：『我是耶和華－你們的上帝。你們住在亞摩利人的地，不可敬畏他們的神。你們竟不聽從我的話。』」</p><p class="v" id="v11"><span class="vn sans">11</span>耶和華的使者到了俄弗拉，坐在亞比以謝族人約阿施的橡樹下。約阿施的兒子基甸正在酒醡那裏打麥子，為要防備米甸人。</p><p class="v" id="v12"><span class="vn sans">12</span>耶和華的使者向基甸顯現，對他說：「大能的勇士啊，耶和華與你同在！」</p><p class="v" id="v13"><span class="vn sans">13</span>基甸說：「主啊，耶和華若與我們同在，我們何致遭遇這一切事呢？我們的列祖不是向我們說『耶和華領我們從埃及上來』嗎？他那樣奇妙的作為在哪裏呢？現在他卻丟棄我們，將我們交在米甸人手裏。」</p><p class="v" id="v14"><span class="vn sans">14</span>耶和華觀看基甸，說：「你靠着你這能力去從米甸人手裏拯救以色列人，不是我差遣你去的嗎？」</p><p class="v" id="v15"><span class="vn sans">15</span>基甸說：「主啊，我有何能拯救以色列人呢？我家在瑪拿西支派中是至貧窮的。我在我父家是至微小的。」</p><p class="v" id="v16"><span class="vn sans">16</span>耶和華對他說：「我與你同在，你就必擊打米甸人，如擊打一人一樣。」</p><p class="v" id="v17"><span class="vn sans">17</span>基甸說：「我若在你眼前蒙恩，求你給我一個證據，使我知道與我說話的就是主。</p><p class="v" id="v18"><span class="vn sans">18</span>求你不要離開這裏，等我歸回將禮物帶來供在你面前。」主說：「我必等你回來。」</p><p class="v" id="v19"><span class="vn sans">19</span>基甸去預備了一隻山羊羔，用一伊法細麵做了無酵餅，將肉放在筐內，把湯盛在壺中，帶到橡樹下，獻在使者面前。</p><p class="v" id="v20"><span class="vn sans">20</span>上帝的使者吩咐基甸說：「將肉和無酵餅放在這磐石上，把湯倒出來。」他就這樣行了。</p><p class="v" id="v21"><span class="vn sans">21</span>耶和華的使者伸出手內的杖，杖頭挨了肉和無酵餅，就有火從磐石中出來，燒盡了肉和無酵餅。耶和華的使者也就不見了。</p><p class="v" id="v22"><span class="vn sans">22</span>基甸見他是耶和華的使者，就說：「哀哉！主耶和華啊，我不好了，因為我覿面看見耶和華的使者。」</p><p class="v" id="v23"><span class="vn sans">23</span>耶和華對他說：「你放心，不要懼怕，你必不致死。」</p><p class="v" id="v24"><span class="vn sans">24</span>於是基甸在那裏為耶和華築了一座壇，起名叫「耶和華沙龍」。（這壇在亞比以謝族的俄弗拉直到如今。）</p><p class="v" id="v25"><span class="vn sans">25</span>當那夜，耶和華吩咐基甸說：「你取你父親的牛來，就是那七歲的第二隻牛，並拆毀你父親為巴力所築的壇，砍下壇旁的木偶，</p><p class="v" id="v26"><span class="vn sans">26</span>在這磐石上整整齊齊地為耶和華－你的上帝築一座壇，將第二隻牛獻為燔祭，用你所砍下的木偶作柴。」</p><p class="v" id="v27"><span class="vn sans">27</span>基甸就從他僕人中挑了十個人，照着耶和華吩咐他的行了。他因怕父家和本城的人，不敢在白晝行這事，就在夜間行了。</p><p class="v" id="v28"><span class="vn sans">28</span>城裏的人清早起來，見巴力的壇拆毀，壇旁的木偶砍下，第二隻牛獻在新築的壇上，</p><p class="v" id="v29"><span class="vn sans">29</span>就彼此說：「這事是誰做的呢？」他們訪查之後，就說：「這是約阿施的兒子基甸做的。」</p><p class="v" id="v30"><span class="vn sans">30</span>城裏的人對約阿施說：「將你兒子交出來，好治死他；因為他拆毀了巴力的壇，砍下壇旁的木偶。」</p><p class="v" id="v31"><span class="vn sans">31</span>約阿施回答站着攻擊他的眾人說：「你們是為巴力爭論嗎？你們要救他嗎？誰為他爭論，趁早將誰治死！巴力若果是神，有人拆毀他的壇，讓他為自己爭論吧！」</p><p class="v" id="v32"><span class="vn sans">32</span>所以當日人稱基甸為耶路‧巴力，意思說：「他拆毀巴力的壇，讓巴力與他爭論。」</p><p class="v" id="v33"><span class="vn sans">33</span>那時，米甸人、亞瑪力人，和東方人都聚集過河，在耶斯列平原安營。</p><p class="v" id="v34"><span class="vn sans">34</span>耶和華的靈降在基甸身上，他就吹角；亞比以謝族都聚集跟隨他。</p><p class="v" id="v35"><span class="vn sans">35</span>他打發人走遍瑪拿西地，瑪拿西人也聚集跟隨他；又打發人去見亞設人、西布倫人、拿弗他利人，他們也都出來與他們會合。</p><p class="v" id="v36"><span class="vn sans">36</span>基甸對上帝說：「你若果照着所說的話，藉我手拯救以色列人，</p><p class="v" id="v37"><span class="vn sans">37</span>我就把一團羊毛放在禾場上：若單是羊毛上有露水，別的地方都是乾的，我就知道你必照着所說的話，藉我手拯救以色列人。」</p><p class="v" id="v38"><span class="vn sans">38</span>次日早晨基甸起來，見果然是這樣；將羊毛擠一擠，從羊毛中擰出滿盆的露水來。</p><p class="v" id="v39"><span class="vn sans">39</span>基甸又對上帝說：「求你不要向我發怒，我再說這一次：讓我將羊毛再試一次。但願羊毛是乾的，別的地方都有露水。」</p><p class="v" id="v40"><span class="vn sans">40</span>這夜上帝也如此行：獨羊毛上是乾的，別的地方都有露水。</p></article><div class="daynav sans"><a href="/bible/cuv/judges/5/index.html">← 5章</a><a href="/bible/cuv/judges/7/index.html">7章 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/cuv/judges/index.html">← 士師記目錄</a><span></span></div>
 </div>
 <footer>
-<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工 · Golden Lampstand Ministry</div>
 <div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
 </footer>
 </body>

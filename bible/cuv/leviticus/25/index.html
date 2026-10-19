@@ -5,95 +5,122 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>利未記 25 · 和合本｜Devotions</title>
 <style>
-:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;--black:#141414;
---white:#fff;--gray:#6b6b6b;--wash:#faf8f4;--line:#e7e7e7}
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--white);color:var(--black);font-family:"Songti TC","Noto Serif TC","SimSun",serif}
-.sans{font-family:"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
-.toprule{height:6px;background:var(--purple)}
-.wrap{max-width:46rem;margin:0 auto;padding:0 2rem}
-.masthead{display:flex;justify-content:space-between;align-items:baseline;padding:2.2rem 0 0;
-letter-spacing:.22em;font-size:.72rem;color:var(--purple)}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
 .masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--purple);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
 .masthead a{color:var(--purple);text-decoration:none}
-.crumb{margin:3rem 0 1.2rem;letter-spacing:.18em;font-size:.75rem;color:var(--gray)}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
 .crumb b{color:var(--purple);font-weight:600}
 .crumb a{color:var(--purple);text-decoration:none}
-h1{font-size:3rem;font-weight:900;letter-spacing:.05em;line-height:1.3;margin-bottom:.5rem}
-.sub{font-size:1rem;color:var(--gray);letter-spacing:.28em;margin-bottom:2rem}
-.goldrule{border:0;border-top:2px solid var(--gold);margin:0 0 2rem}
-.kairos{border-left:4px solid var(--purple);background:var(--wash);padding:1.4rem 1.6rem;
-margin:0 0 3rem;font-size:1rem;line-height:1.9}
-.kairos .k-label{letter-spacing:.3em;font-size:.75rem;color:var(--purple);font-weight:700;
-display:block;margin-bottom:.6rem}
-.meta{border-left:3px solid var(--purple);padding:.2rem 0 .2rem 1.2rem;margin-bottom:2.6rem;
-font-size:.92rem;line-height:2;color:var(--gray)}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--purple);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
 article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
-article p:first-of-type::first-letter{font-size:3.2em;float:left;line-height:1;
-padding:.06em .1em 0 0;color:var(--purple);font-weight:900}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
 article strong{color:var(--purple-deep)}
-.nailbox{background:var(--purple);color:#fff;padding:2rem 2.2rem;margin:3rem 0;text-align:center}
-.nailbox .n-label{letter-spacing:.35em;font-size:.75rem;color:var(--gold);display:block;margin-bottom:1rem}
-.nailbox .n-text{font-size:1.35rem;font-weight:900;letter-spacing:.08em;line-height:1.8}
-.prayer{background:var(--wash);border:1px solid var(--gold);border-top:4px solid var(--purple);
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
 padding:2rem 2.2rem;margin:3rem 0}
-.prayer h2{letter-spacing:.35em;font-size:.85rem;color:var(--purple);margin-bottom:1.2rem}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--purple);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
 .prayer p{font-size:1.08rem;line-height:2;margin:0}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
-.card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
-@media (hover:hover){.card:hover{border-color:var(--purple)}}
-.card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
-.card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
-.card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
-.card.gold{border-top:4px solid var(--gold)}
-.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--line);
-margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--purple)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--purple);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
 .daynav a{color:var(--purple);text-decoration:none;font-weight:600}
-.hero{padding:5rem 0 3.5rem}
-.hero .kicker{letter-spacing:.3em;font-size:.8rem;color:var(--purple);font-weight:700;margin-bottom:1.4rem}
-.hero h1{font-size:3.6rem}
-.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.15em;color:var(--purple-deep)}
-.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:900}
-.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap}
-.btn{display:inline-block;padding:1rem 2.2rem;letter-spacing:.2em;font-size:.85rem;
-text-decoration:none;font-weight:700}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--purple);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--purple-deep)}
+.hero .count b{font-size:2.2rem;color:var(--purple);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
 .btn.primary{background:var(--purple);color:#fff}
-.btn.ghost{border:2px solid var(--purple);color:var(--purple)}
-.section{margin:4.5rem 0}
-.section h2{letter-spacing:.3em;font-size:.95rem;color:var(--purple);font-weight:700;
-border-bottom:2px solid var(--gold);padding-bottom:.8rem;margin-bottom:1.6rem}
-.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;border-bottom:1px solid var(--line);
-font-size:1rem;letter-spacing:.1em}
-.season.now{color:var(--purple-deep);font-weight:900}
-.season .tag{font-size:.72rem;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.btn.ghost{border:1px solid var(--purple);color:var(--purple)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--purple-deep);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
 .reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
-padding:1rem .2rem;border-bottom:1px solid var(--line)}
-.reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--purple);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
 .reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
-.reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
 @media (hover:hover){.reading .r-refs a:hover{color:var(--purple)}}
-.reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
-padding:.1em .5em;margin-left:.4em;white-space:nowrap}
-.lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
-.lyrics p{font-size:1.1rem;line-height:2;margin-bottom:1.2rem}
-footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:6px solid var(--purple)}
-footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;margin-bottom:.8rem}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--purple);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
 footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
 footer a{color:var(--purple)}
 @media (prefers-color-scheme:dark){
-body{background:var(--black);color:#f2f2f2}
-.meta,.crumb,.sub{color:#a8a8a8}.card{color:#f2f2f2;border-color:#333;background:#1a1a1a}
-.card .c-sub{color:#a8a8a8}.prayer{background:#1e1a26}.kairos{background:#1e1a26}
-article p{color:#ececec}.season{border-color:#333}.daynav{border-color:#333}}
-@media (max-width:640px){h1{font-size:2.2rem}.hero h1{font-size:2.6rem}.wrap{padding:0 1.3rem}.cards{grid-template-columns:1fr}
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}}
+@media (max-width:640px){h1{font-size:2.1rem}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
 /* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
 .reading .r-refs a{display:inline-block;padding:.55em .3em}}
-/* ---- Mobile reading type scale (2026-10-16 評估) ----
-   英文(latin)：內文 20px / 行高 1.75 —— 長文閱讀舒適區 19–21px；
-   小寫字母 x-height 小，需比中文大兩號。
-   中文(CJK)：內文 18px / 行高 2.0 —— 方塊字視覺密度高，
-   18px 中文約等於 20px 英文的觀感；手機再各加一級。 */
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
 html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
 html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
 html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
@@ -104,20 +131,20 @@ html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
 html[lang="en"] .lyrics p{font-size:1.25rem}
 .nailbox .n-text{font-size:1.2rem}}
 
-.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
-.bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
-@media (hover:hover){.bible-grid a:hover{border-color:var(--purple)}}
-.bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
-.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
-.chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
-@media (hover:hover){.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}}
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--purple)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--purple);font-weight:700}}
 p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
 p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
-p.v:target{background:#f5edd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
 html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
-.ver-toggle{display:flex;gap:.8rem;margin:1.5rem 0;flex-wrap:wrap}
-.ver-toggle a{padding:.6rem 1.4rem;border:2px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.15em;font-size:.8rem;font-weight:700}
-.ver-toggle a.on{background:var(--purple);color:#fff}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--purple);color:var(--purple);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
 @media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
 </style>
 </head>
@@ -129,7 +156,7 @@ html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
 <h1>利未記 25</h1><div class="sub sans">Leviticus 25 · 和合本</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">和合本</a><a href="/bible/web/leviticus/25/index.html">WEB</a><a href="/bible/jps/leviticus/25/index.html">JPS 1917</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>耶和華在西奈山對摩西說：</p><p class="v" id="v2"><span class="vn sans">2</span>「你曉諭以色列人說：你們到了我所賜你們那地的時候，地就要向耶和華守安息。</p><p class="v" id="v3"><span class="vn sans">3</span>六年要耕種田地，也要修理葡萄園，收藏地的出產。</p><p class="v" id="v4"><span class="vn sans">4</span>第七年，地要守聖安息，就是向耶和華守的安息，不可耕種田地，也不可修理葡萄園。</p><p class="v" id="v5"><span class="vn sans">5</span>遺落自長的莊稼不可收割；沒有修理的葡萄樹也不可摘取葡萄。這年，地要守聖安息。</p><p class="v" id="v6"><span class="vn sans">6</span>地在安息年所出的，要給你和你的僕人、婢女、雇工人，並寄居的外人當食物。</p><p class="v" id="v7"><span class="vn sans">7</span>這年的土產也要給你的牲畜和你地上的走獸當食物。」</p><p class="v" id="v8"><span class="vn sans">8</span>「你要計算七個安息年，就是七七年。這便為你成了七個安息年，共是四十九年。</p><p class="v" id="v9"><span class="vn sans">9</span>當年七月初十日，你要大發角聲；這日就是贖罪日，要在遍地發出角聲。</p><p class="v" id="v10"><span class="vn sans">10</span>第五十年，你們要當作聖年，在遍地給一切的居民宣告自由。這年必為你們的禧年，各人要歸自己的產業，各歸本家。</p><p class="v" id="v11"><span class="vn sans">11</span>第五十年要作為你們的禧年。這年不可耕種；地中自長的，不可收割；沒有修理的葡萄樹也不可摘取[葡萄]。</p><p class="v" id="v12"><span class="vn sans">12</span>因為這是禧年，你們要當作聖年，吃地中[自出]的土產。</p><p class="v" id="v13"><span class="vn sans">13</span>「這禧年，你們各人要歸自己的地業。</p><p class="v" id="v14"><span class="vn sans">14</span>你若賣甚麼給鄰舍，或是從鄰舍的手中買甚麼，彼此不可虧負。</p><p class="v" id="v15"><span class="vn sans">15</span>你要按禧年以後的年數向鄰舍買；他也要按年數的收成賣給你。</p><p class="v" id="v16"><span class="vn sans">16</span>年歲若多，要照數加添價值；年歲若少，要照數減去價值，因為他照收成的數目賣給你。</p><p class="v" id="v17"><span class="vn sans">17</span>你們彼此不可虧負，只要敬畏你們的上帝，因為我是耶和華－你們的上帝。」</p><p class="v" id="v18"><span class="vn sans">18</span>「我的律例，你們要遵行，我的典章，你們要謹守，就可以在那地上安然居住。</p><p class="v" id="v19"><span class="vn sans">19</span>地必出土產，你們就要吃飽，在那地上安然居住。</p><p class="v" id="v20"><span class="vn sans">20</span>你們若說：『這第七年我們不耕種，也不收藏土產，吃甚麼呢？』</p><p class="v" id="v21"><span class="vn sans">21</span>我必在第六年將我所命的福賜給你們，地便生三年的土產。</p><p class="v" id="v22"><span class="vn sans">22</span>第八年，你們要耕種，也要吃陳糧，等到第九年出產收來的時候，你們還吃陳糧。」</p><p class="v" id="v23"><span class="vn sans">23</span>「地不可永賣，因為地是我的；你們在我面前是客旅，是寄居的。</p><p class="v" id="v24"><span class="vn sans">24</span>在你們所得為業的全地，也要准人將地贖回。</p><p class="v" id="v25"><span class="vn sans">25</span>你的弟兄若漸漸窮乏，賣了幾分地業，他至近的親屬就要來把弟兄所賣的贖回。</p><p class="v" id="v26"><span class="vn sans">26</span>若沒有能給他贖回的，他自己漸漸富足，能夠贖回，</p><p class="v" id="v27"><span class="vn sans">27</span>就要算出賣地的年數，把餘剩年數的價值還那買主，自己便歸回自己的地業。</p><p class="v" id="v28"><span class="vn sans">28</span>倘若不能為自己得回所賣的，仍要存在買主的手裏直到禧年；到了禧年，地業要出[買主的手]，自己便歸回自己的地業。</p><p class="v" id="v29"><span class="vn sans">29</span>「人若賣城內的住宅，賣了以後，一年之內可以贖回；在一整年，必有贖回的權柄。</p><p class="v" id="v30"><span class="vn sans">30</span>若在一整年之內不贖回，這城內的房屋就定准永歸買主，世世代代為業；在禧年也不得出[買主的手]。</p><p class="v" id="v31"><span class="vn sans">31</span>但房屋在無城牆的村莊裏，要看如鄉下的田地一樣，可以贖回；到了禧年，都要出[買主的手]。</p><p class="v" id="v32"><span class="vn sans">32</span>然而利未人所得為業的城邑，其中的房屋，利未人可以隨時贖回。</p><p class="v" id="v33"><span class="vn sans">33</span>若是一個利未人不將所賣的房屋贖回，是在所得為業的城內，到了禧年就要出[買主的手]，因為利未人城邑的房屋是他們在以色列人中的產業。</p><p class="v" id="v34"><span class="vn sans">34</span>只是他們各城郊野之地不可賣，因為是他們永遠的產業。」</p><p class="v" id="v35"><span class="vn sans">35</span>「你的弟兄在你那裏若漸漸貧窮，手中缺乏，你就要幫補他，使他與你同住，像外人和寄居的一樣。</p><p class="v" id="v36"><span class="vn sans">36</span>不可向他取利，也不可向他多要；只要敬畏你的上帝，使你的弟兄與你同住。</p><p class="v" id="v37"><span class="vn sans">37</span>你借錢給他，不可向他取利；借糧給他，也不可向他多要。</p><p class="v" id="v38"><span class="vn sans">38</span>我是耶和華－你們的上帝，曾領你們從埃及地出來，為要把迦南地賜給你們，要作你們的上帝。」</p><p class="v" id="v39"><span class="vn sans">39</span>「你的弟兄若在你那裏漸漸窮乏，將自己賣給你，不可叫他像奴僕服事你。</p><p class="v" id="v40"><span class="vn sans">40</span>他要在你那裏像雇工人和寄居的一樣，要服事你直到禧年。</p><p class="v" id="v41"><span class="vn sans">41</span>到了禧年，他和他兒女要離開你，一同出去歸回本家，到他祖宗的地業那裏去。</p><p class="v" id="v42"><span class="vn sans">42</span>因為他們是我的僕人，是我從埃及地領出來的，不可賣為奴僕。</p><p class="v" id="v43"><span class="vn sans">43</span>不可嚴嚴地轄管他，只要敬畏你的上帝。</p><p class="v" id="v44"><span class="vn sans">44</span>至於你的奴僕、婢女，可以從你四圍的國中買。</p><p class="v" id="v45"><span class="vn sans">45</span>並且那寄居在你們中間的外人和他們的家屬，在你們地上所生的，你們也可以從其中買人；他們要作你們的產業。</p><p class="v" id="v46"><span class="vn sans">46</span>你們要將他們遺留給你們的子孫為產業，要永遠從他們中間揀出奴僕；只是你們的弟兄以色列人，你們不可嚴嚴地轄管。</p><p class="v" id="v47"><span class="vn sans">47</span>「住在你那裏的外人，或是寄居的，若漸漸富足，你的弟兄卻漸漸窮乏，將自己賣給那外人，或是寄居的，或是外人的宗族，</p><p class="v" id="v48"><span class="vn sans">48</span>賣了以後，可以將他贖回。無論是他的弟兄，</p><p class="v" id="v49"><span class="vn sans">49</span>或伯叔、伯叔的兒子，本家的近支，都可以贖他。他自己若漸漸富足，也可以自贖。</p><p class="v" id="v50"><span class="vn sans">50</span>他要和買主計算，從賣自己的那年起，算到禧年；所賣的價值照着年數多少，好像工人每年的工價。</p><p class="v" id="v51"><span class="vn sans">51</span>若缺少的年數多，就要按着年數從買價中償還他的贖價。</p><p class="v" id="v52"><span class="vn sans">52</span>若到禧年只缺少幾年，就要按着年數和買主計算，償還他的贖價。</p><p class="v" id="v53"><span class="vn sans">53</span>他和買主同住，要像每年雇的工人，買主不可嚴嚴地轄管他。</p><p class="v" id="v54"><span class="vn sans">54</span>他若不這樣被贖，到了禧年，要和他的兒女一同出去。</p><p class="v" id="v55"><span class="vn sans">55</span>因為以色列人都是我的僕人，是我從埃及地領出來的。我是耶和華－你們的上帝。」</p></article><div class="daynav sans"><a href="/bible/cuv/leviticus/24/index.html">← 24章</a><a href="/bible/cuv/leviticus/26/index.html">26章 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/cuv/leviticus/index.html">← 利未記目錄</a><span></span></div>
 </div>
 <footer>
-<div class="fbrand sans">基督燈台 GOLDEN LAMPSTAND</div>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工 · Golden Lampstand Ministry</div>
 <div class="fnote sans">devotions.wordnspirit.com<br>兩根釘子，托住一切；一位君王，正在回來。</div>
 </footer>
 </body>
