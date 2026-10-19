@@ -41,7 +41,7 @@ padding:2rem 2.2rem;margin:3rem 0}
 .prayer p{font-size:1.08rem;line-height:2;margin:0}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:2.5rem 0}
 .card{border:1px solid var(--line);padding:1.6rem;text-decoration:none;color:var(--black);display:block}
-.card:hover{border-color:var(--purple)}
+@media (hover:hover){.card:hover{border-color:var(--purple)}}
 .card .c-day{letter-spacing:.25em;font-size:.72rem;color:var(--purple);font-weight:700}
 .card .c-title{font-size:1.25rem;font-weight:900;margin:.6rem 0 .4rem;letter-spacing:.04em}
 .card .c-sub{font-size:.85rem;color:var(--gray);line-height:1.7}
@@ -71,7 +71,7 @@ padding:1rem .2rem;border-bottom:1px solid var(--line)}
 .reading .r-label{letter-spacing:.2em;font-size:.75rem;color:var(--purple);font-weight:700;white-space:nowrap}
 .reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
 .reading .r-refs a{color:var(--black);text-decoration:none;border-bottom:1px solid var(--gold)}
-.reading .r-refs a:hover{color:var(--purple)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--purple)}}
 .reading .r-refs .ver{font-size:.72rem;letter-spacing:.12em;color:var(--gray);border:1px solid var(--line);
 padding:.1em .5em;margin-left:.4em;white-space:nowrap}
 .lyric-label{letter-spacing:.3em;font-size:.8rem;color:var(--gold);font-weight:700;margin:2rem 0 .8rem}
@@ -104,11 +104,11 @@ html[lang="en"] .lyrics p{font-size:1.25rem}
 
 .bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:2rem 0}
 .bible-grid a{border:1px solid var(--line);padding:.9rem 1rem;text-decoration:none;color:var(--black);font-size:.95rem}
-.bible-grid a:hover{border-color:var(--purple)}
+@media (hover:hover){.bible-grid a:hover{border-color:var(--purple)}}
 .bible-grid .en{display:block;font-size:.75rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
 .chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;margin:2rem 0}
 .chap-grid a{border:1px solid var(--line);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--black)}
-.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}
+@media (hover:hover){.chap-grid a:hover{border-color:var(--purple);color:var(--purple);font-weight:700}}
 p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
 p.v .vn{font-size:.72rem;color:var(--purple);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
 p.v:target{background:#f5edd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
