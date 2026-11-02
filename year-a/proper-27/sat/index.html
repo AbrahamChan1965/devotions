@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>走向 Proper 27 · 週六 安息日 Sabbatum｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/index.html">首頁</a> ／ <a href="/year-a/proper-27/index.html">PROPER 27</a> ／ <b>週六 對話</b></div>
+<h1>走向 Proper 27 · 週六 安息日 Sabbatum</h1>
+<div class="sub sans">週六對話 · SATURDAY Dialogue</div>
+<hr class="goldrule">
+<div class="meta sans"></div>
+<div class="section" style="margin:0 0 2.2rem"><h2 class="sans">今日經課 · TODAY'S READINGS</h2><div class="reading"><span class="r-label sans">妥拉讀經</span><span class="r-refs">撒拉的生平 Chayei Sarah · 創世記 23:1–25:18 <a href="/bible/cuv/genesis/23/index.html#v1">讀經<span class="ver sans">和合本</span></a> <a href="/bible/web/genesis/23/index.html#v1">Read<span class="ver sans">WEB</span></a> <a href="/bible/jps/genesis/23/index.html#v1">JPS<span class="ver sans">JPS 1917</span></a></span></div><div class="reading"><span class="r-label sans">先知書</span><span class="r-refs">列王紀上 1:1-31 <a href="/bible/cuv/1-kings/1/index.html#v1">讀經<span class="ver sans">和合本</span></a> <a href="/bible/web/1-kings/1/index.html#v1">Read<span class="ver sans">WEB</span></a> <a href="/bible/jps/1-kings/1/index.html#v1">JPS<span class="ver sans">JPS 1917</span></a></span></div></div>
+<article><p><strong>2026年11月7日</strong></p><p><strong>本週經課</strong> 約書亞記 24:1-3a, 14-25 詩篇 78:1-7 帖撒羅尼迦前書 4:13-18 馬太福音 25:1-13</p><p><strong>會堂同週</strong> 妥拉：Parashat Chayei Sarah（創世記 23:1–25:18） 先知書：列王紀上 1:1-31　←今日焦點</p><p>## 何謂安息日對讀</p><p>今天，世界各地的會堂誦讀妥拉和先知書。我們不越過去替他們讀，而是坐在對面，兩張桌子面對面。</p><p>我們站在基督已成就的代贖裡聆聽。安全來自代贖，不來自辯論，所以可以只聽、不爭，也不收編。</p><p>## 接住昨天的問題</p><p>昨天帶走的問題是：這週我能用哪一句話安慰一個人？</p><p>會堂這一桌也有一句安慰的話。猶太人向喪家致哀時，傳統上會說：「願無所不在者（HaMakom）安慰你們，與錫安和耶路撒冷所有哀慟的人一同。」兩張桌子都有給哀哭之人的話。今天先聽他們的。</p><p>## 時間座標</p><p>妥拉的這一段在先祖時代，地點在希伯崙。先知書的這一段在王國初期，大衛晚年。今天是赫舍汪月二十七日，會堂也在禮儀中祝福即將來臨的新月。</p><p>教會在同一週讀睡了的人與主的來臨。</p><p>## 會堂這一桌：一座墳</p><p>這段妥拉名叫「撒拉的生平」，卻從她的死開始。「亞伯拉罕來為撒拉哀慟，為她哭泣」（創23:2）。先知書的這一週，第一件事是眼淚。</p><p>然後亞伯拉罕站起來，對赫人說：「我在你們中間是寄居的、是外人，求你們在這裡給我一塊地，我好埋葬我的死人」（23:4）。原文是 גֵּר־וְתוֹשָׁב（gēr-wətôšāb）：一個寄居者，請求一塊「產業」（אֲחֻזָּה, ʾăḥuzzâ）。這正是神應許他「永遠的產業」時用的字（17:8）。</p><p>在應許之地，他擁有的第一塊產業，是一座墳。他付了四百舍客勒，商人通用的足價銀子（23:16），不搶，不佔，公開地買。後來，以撒和以實瑪利一同把他埋在那裡（25:9）。</p><p>## 會堂這一桌：一位老王</p><p>先知書這樣開始：「大衛王年紀老邁」（王上1:1），和妥拉寫亞伯拉罕用的是同一句話（創24:1）。先祖老了，君王老了。產業和王位，都要交給下一代。</p><p>亞多尼雅自高說：「我必作王」（王上1:5）。大衛卻指著「救我性命脫離一切急難的永生耶和華」起誓，立所羅門接續他（1:29-30）。「救」原文是 פָּדָה（pādâ），贖。</p><p>拔示巴俯伏在地，說：「願我主大衛王萬歲！」（1:31）這句話，是對一位垂老的王說的。</p><p>## 會堂怎樣等候</p><p>這個安息日，會堂祝福新月。禱詞記念神曾救贖列祖脫離為奴之地，又求神快快救贖，招聚分散的人。</p><p>他們等候，是在記念中等，在數算月份中等，在一個一個安息日裡等。這是週三詩篇說的：仰望神，又守祂的命令（詩78:7）。</p><p>## 教會這一桌</p><p>這一週，教會讀的是：「主必親自從天降臨」（帖前4:16），以及半夜的喊聲：「新郎來了，你們出來迎接他」（太25:6）。</p><p>我們也為睡了的人哭，只是不像沒有指望的人那樣哭（帖前4:13）。</p><p>## 兩張桌子之間</p><p>兩邊都在哀哭中等候，兩邊都相信神救贖，兩邊都在等待中守約。</p><p>分歧落在一處：救贖主是誰？祂來了沒有？會堂說，我們仍在等候祂來。教會說，祂已經來過，死了，復活了，並要親自再來。</p><p>文字停在這裡，不解決，不收束。</p><p>## 今日操練（20分鐘）</p><p>1. 慢讀創世記 23:1-20 和列王紀上 1:28-31。（6分鐘） 2. 停在創世記 23:4，讀出聲來：「我在你們中間是寄居的。」（3分鐘） 3. 固定操練：「今日我聽見一句我不能挪用的話：____」。寫下來，不解釋，不補充。（5分鐘） 4. 今晚睡前點一盞燈，讀金句，只是坐著，不加任何動作，然後親手熄滅。（6分鐘）</p><p>操練之後，安靜幾分鐘，不再加話。</p><p><strong>帶走的問題：</strong> 我手裡擁有的，是產業，還是一塊等候的地？</p><p>## 結束禱告</p><p>我們禱告的這一位，是創造天地的主。 是祂揀選了亞伯拉罕，揀選了以色列； 不是以色列擁有祂，是祂擁有以色列。 今天我們稱祂為以色列的聖者。</p><p>以色列的聖者啊， 亞伯拉罕在你面前為撒拉哭泣， 你聽見了。 寄居的人買下一座墳， 你記得你的應許。 老王指著你起誓， 說你救他脫離一切急難。 今天，會堂和教會都在等候， 你聽見兩張桌子的禱告。 奉耶穌的名，阿們。</p></article>
+
+<div class="daynav sans"><a href="/year-a/proper-27/index.html">← 週匯總 WEEK</a><a href="/year-a/proper-27/index.html">本週金句 →</a></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

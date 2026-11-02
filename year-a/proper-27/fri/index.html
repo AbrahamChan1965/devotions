@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>走向 Proper 27 · 週五 同形 Conformatio｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/index.html">首頁</a> ／ <a href="/year-a/proper-27/index.html">PROPER 27</a> ／ <b>週五 訓誨</b></div>
+<h1>走向 Proper 27 · 週五 同形 Conformatio</h1>
+<div class="sub sans">週五訓誨 · FRIDAY Instructio</div>
+<hr class="goldrule">
+<div class="meta sans"></div>
+<div class="section" style="margin:0 0 2.2rem"><h2 class="sans">今日經課 · TODAY'S READINGS</h2><div class="reading"><span class="r-label sans">書信</span><span class="r-refs">帖撒羅尼迦前書 4:13-18 <a href="/bible/cuv/1-thessalonians/4/index.html#v13">讀經<span class="ver sans">和合本</span></a> <a href="/bible/web/1-thessalonians/4/index.html#v13">Read<span class="ver sans">WEB</span></a></span></div></div>
+<article><p><strong>2026年11月6日</strong></p><p><strong>本週經課</strong> 約書亞記 24:1-3a, 14-25 詩篇 78:1-7 帖撒羅尼迦前書 4:13-18　←今日焦點 馬太福音 25:1-13</p><p>## 何謂同形</p><p>保羅說，願「效法他的死」（腓3:10）。「效法」原文是 συμμορφιζόμενος（symmorphizomenos），意思是被模成祂的形狀。但那死不停在死裡，它通向墳墓中的安息、復活，以及聖靈與再來。今天，這四面都要在場。</p><p>## 接住昨天的問題</p><p>昨天帶走的問題是：祂認識我嗎？</p><p>保羅寫這封信時，第一章就說：「被神所愛的弟兄啊，我知道你們是蒙揀選的」（帖前1:4）。「知道」原文是 εἰδότες（eidotes）。被認識，在這封信裡就是被愛、被揀選。今天我們看見，這認識托住的，連睡了的人也包括在內。</p><p>## 時間座標</p><p>保羅被迫離開帖撒羅尼迦（徒17:10），從雅典差提摩太回去（帖前3:1-2）。提摩太回到哥林多報信（3:6；徒18:5），保羅就寫了這封信，約在主後五十年。信為什麼要談死去的信徒，經文沒有明說；最自然的推想，是教會裡已有人過世。</p><p>教會在諸聖日（11月1日）記念了睡了的聖徒，今天又在年終讀這段經文，等候將臨。</p><p>## 受難：祂死了</p><p>保羅寫：「我們若信耶穌死而復活了」（4:14）。說到耶穌，他用的是 ἀπέθανεν（apethanen），「死了」。說到信徒，他用的是「睡了」。</p><p>昨天在客西馬尼，門徒睡著，耶穌獨自醒著。那一夜之後，祂真實地死了，一次就完全。「基督既然一次被獻，擔當了多人的罪」（來9:28）。週二留下的縫在這裡合上：示劍那位「必不擔當」的聖潔的神，在祂兒子身上親自擔當了。「擔當」一字取自以賽亞書 53 章 12 節。</p><p>## 聖週六：睡了的人</p><p>祂承受了真實的死，信祂的人的死就成了睡。「睡了的人」原文 κοιμηθέντας（koimēthentas），是墳墓中的安息，等候早晨。</p><p>保羅沒有說「不要憂傷」，他說不要像沒有指望的人那樣憂傷（4:13）。眼淚可以留下，絕望要放下。</p><p>## 復活：神必帶來</p><p>「神也必將在耶穌裡睡了的人與他一同帶來」（4:14）。這一節的主語是神，動詞 ἄξει（axei）是「必帶來」。週三我們說，看守的是神；今天看見，連睡了的人，神也不放手。</p><p>昨天十個童女「起來」（ἠγέρθησαν），用的是馬太寫復活的字。今天保羅說：「在基督裡死了的人必先復活」（4:16）。</p><p>## 聖靈與再來：主必親自</p><p>「主必親自從天降臨，有呼叫的聲音，和天使長的聲音，又有神的號吹響」（4:16）。週一的金句在這裡回來了。</p><p>這幅畫面，以色列早已見過：在西乃山立約時，有密雲、角聲，耶和華降臨，摩西率領百姓「出營迎接神」（出19:16-20）。立約從神降下開始，也要在神降下時完成。</p><p>「迎接」原文 ἀπάντησις（apantēsis，4:17），正是半夜那一聲「出來迎接他」（太25:6）。然後是全段最短的一句：「這樣，我們就要和主永遠同在。」σὺν κυρίῳ（syn kyriō），與主同在。</p><p>等候的這段日子，神已經「賜聖靈給你們」（帖前4:8）。聖靈就是那認識的憑據，是燈裡的火在等候中不滅的原因。</p><p>## 收攏這一週</p><p>週一，我們聽見「主必親自」；週二，聽見「你們不能」；週三，看見看守的是神；週四，站在門前，看見祂獨自醒著。今天一起合攏：</p><p>警醒最深的根，不在我醒著，而在祂死了又復活。我睡了，也在祂裡面。所以，「你們當用這些話彼此勸慰」（4:18）。</p><p>## 今日操練（20分鐘）</p><p>1. 慢讀帖撒羅尼迦前書 4:13-18，圈出每一個「同」字。（4分鐘） 2. 安靜默想：祂死了，所以我只是睡了。（4分鐘） 3. 想一位正在為人哀傷的人，從 4:13-18 選一句話，寫給他，今天送出。（6分鐘） 只作這一件小事，不要選大的。大動作往往是為了了結，不是為了愛。 4. 今晚睡前點一盞燈，讀金句，默念「我睡了，也在祂裡面」，親手熄滅。（6分鐘）</p><p>操練之後，安靜幾分鐘，不再加話。</p><p><strong>留一條思考題：</strong> 我的憂傷裡，哪一部分是眼淚，哪一部分是沒有指望？</p><p><strong>帶走的問題：</strong> 這週我能用哪一句話安慰一個人？</p><p>## 結束禱告</p><p>父啊， 你的兒子在園子裡醒著， 我們睡了。 他死了，一次就完全， 擔當了我們擔不起的。 你使他從死裡復活。 你把睡了的人 與他一同帶來。 你賜下你的靈， 叫燈在等候中不滅。 主必親自降臨， 我們必與主永遠同在。 你把勸慰的話放在我們口中。 奉耶穌的名，阿們。</p></article>
+
+<div class="daynav sans"><a href="/year-a/proper-27/index.html">← 週匯總 WEEK</a><a href="/year-a/proper-27/index.html">本週金句 →</a></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>
