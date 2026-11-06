@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>走向 Proper 28 · 週四 福音 Evangelium｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/index.html">首頁</a> ／ <a href="/year-a/proper-28/index.html">PROPER 28</a> ／ <b>週四 福音默觀</b></div>
+<h1>走向 Proper 28 · 週四 福音 Evangelium</h1>
+<div class="sub sans">週四福音默觀 · THURSDAY Gospel</div>
+<hr class="goldrule">
+<div class="meta sans"></div>
+<div class="section" style="margin:0 0 2.2rem"><h2 class="sans">今日經課 · TODAY'S READINGS</h2><div class="reading"><span class="r-label sans">福音</span><span class="r-refs">馬太福音 25:14-30 <a href="/bible/cuv/matthew/25/index.html#v14">讀經<span class="ver sans">和合本</span></a> <a href="/bible/web/matthew/25/index.html#v14">Read<span class="ver sans">WEB</span></a></span></div></div>
+<article><p><strong>2026年11月12日</strong></p><p><strong>本週經課</strong> 士師記 4:1-7　詩篇 123　帖撒羅尼迦前書 5:1-11　馬太福音 25:14-30</p><p style="color:var(--gray);font-size:1rem">對照參考：西番雅書 1:7, 12-18；詩篇 90:1-8, 12</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">何謂福音默觀</h2><p>依納爵（Ignatius of Loyola）在《神操》中教人默觀福音時先「定像」（Exx 47）：照經文所記，看見地點，聽見話語，讓自己站進場景。不添人物，不編情節。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">定像：兩個時間</h2><p>第一個場景是橄欖山。照馬太所記，耶穌坐在山上，對面是聖殿（太24:3）。受難週的週二，兩天後是逾越節。說這比喻的人知道，自己很快要被交出去。</p><p>第二個場景是馬太的讀者。多數學者認為這卷福音寫成於主後七十年聖殿被毀之後。那群信徒讀到「過了許久，主人回來」，心裡明白：我們就在那「許久」裡面。我們也是。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">對稱斷了</h2><p>主人回來算帳。前兩個人交帳，聽見一模一樣的話：「好，你這又良善又忠心的僕人……可以進來享受你主人的快樂。」（太25:21）馬太把兩段寫得幾乎一字不差，像兩行對聯。</p><p>第三個人一開口，對聯就斷了：「主啊，我知道你是忍心的人，沒有種的地方要收割，沒有散的地方要聚斂，我就害怕，去把你的一千銀子埋藏在地裡。」（太25:24-25）</p><p>他沒有亂花。猶太法典《塔木德》記載，拉比撒母耳說，錢財只有埋在地裡才算看守好了（《中門書》42a）。他在法律上無可挑剔。</p><p>細聽他的次序：「我知道你」，「我就害怕」，「埋藏」。埋藏從害怕來，害怕從他心裡那個主人來。主人回答他時，用的正是他自己的話（太25:26）。他一直活在自己畫出的那個主人面前。主人稱他「懶」，原文 ὀκνηρέ（oknēre），是「遲疑、退縮」。士師記裡的巴拉也曾遲疑。這個僕人不是睡大覺，他是縮回去了。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">兩雙眼睛</h2><p>昨天的詩篇裡，僕人的眼睛望主人的手，等候憐憫。今天這個僕人也望著主人的手，看見的卻是一隻收割、聚斂的手。同一位主人，兩雙眼睛，看見兩隻不同的手。</p><p>最後他被丟在「外面的黑暗」。保羅卻對信徒說：「你們卻不在黑暗裡。」（帖前5:4）黑暗不是主人把他推進去的地方，是他一直住著的地方，現在只是被說穿了。</p><p>這個比喻的終點不是錢，而是主人的「快樂」（χαρά, chara）。神從起初造人、後來救人，心意都是叫人進到祂的喜樂裡。說比喻的耶穌兩天後被交出去，正是為了打開那扇門。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">辨別：假理由</h2><p>依納爵描述正在歸向神的人時說：</p><p style="font-style:italic;border-left:2px solid var(--gold);padding-left:1rem;margin-left:.2rem">«propio es del mal espíritu morder, tristar y poner impedimentos, inquietando con falsas razones, para que no pase adelante»（Exx 315）<br>惡神的特性是咬噬、使人憂悶、設置障礙，用虛假的理由攪擾人，叫他不能往前走。</p><p>「你是忍心的人」就是這樣一個理由：聽起來像知識，其實是謊言；它不叫人往前走，只叫人往下挖。依納爵又說：</p><p style="font-style:italic;border-left:2px solid var(--gold);padding-left:1rem;margin-left:.2rem">«En tiempo de desolación nunca hacer mudanza, sino estar firme y constante en los propósitos y determinación en que estaba el día antecedente a la tal desolación»（Exx 318）<br>在枯乾的時候，絕不要改變，要堅定持守枯乾來臨前一天所立的心志與決定。</p><p>害怕叫你埋藏的時候，不要在那一刻轉向。回到心裡清明時所見的主人：說「好」、說「進來」的那一位，兩天後把自己交出去的那一位。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">今日操練</h2><p>給自己二十分鐘。讀太25:14-30 一遍，然後停在 25:24-25，慢慢讀三次。第一次聽他的聲音；第二次分辨，哪些是經文裡的主人，哪些是他自己的想像；第三次，想起你曾對神說過的類似的話，寫下一句。在旁邊寫上主人說的「進來」，安靜坐一會兒，讓這兩句話面對面。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">結束禱告</h2><p>主啊，你把家業交給我，<br>沒有附上條件，<br>只說了你要回來。<br>我曾說你忍心，<br>我曾因此害怕，<br>我曾把你的東西埋起來，<br>還以為這是謹慎。<br>求你揭穿我心裡的假理由，<br>叫我看見真正的你：<br>你說「好」，你說「進來」。<br>不要讓我縮回去，<br>不要讓我住在黑暗裡。<br>叫我隨即起身，<br>進入你的快樂。阿們。</p></article>
+
+<div class="daynav sans"><a href="/year-a/proper-28/index.html">← 週匯總 WEEK</a><a href="/year-a/proper-28/index.html">本週金句 →</a></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>
