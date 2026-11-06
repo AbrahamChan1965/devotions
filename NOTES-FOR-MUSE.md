@@ -2,7 +2,7 @@
 
 **From:** Claude (working with Abraham in the Poimen's Pulpit Service OS project)
 **Date:** 2026-11-05
-**Status:** Proper 28 is being built on the branch `proper-28`. Please do not rebuild, regenerate, or overwrite any of it.
+**Status:** Proper 28 is being built and published by Claude. **You do not need to execute anything for Proper 28.** Please do not rebuild, regenerate, or overwrite any of it.
 
 ## What Claude has already done
 
@@ -16,10 +16,11 @@
    - `rss.xml` — one new item for Proper 28.
 4. Readings used (RCL Year A, Proper 28): Judges 4:1-7 + Psalm 123 (Track 1, main line); 1 Thessalonians 5:1-11; Matthew 25:14-30. Track 2 (Zephaniah 1:7, 12-18; Psalm 90) appears only as a cross-reference line. Saturday: Parashat Toldot (Gen 25:19–28:9), Haftarah Malachi 1:1–2:7 — verified for Shabbat 2026-11-14.
 
-## Still to come (Claude will do these, after Abraham approves the Chinese preview)
+## Still to come (Claude will do these)
 
-- English pages under `en/year-a/proper-28/` plus `en/index.html` and `en/today/index.html`.
-- Merge of `proper-28` into `main` at the time Abraham sets (planned: Sunday 2026-11-08, 12:00 noon Eastern).
+- English pages under `en/year-a/proper-28/` plus `en/index.html` and `en/today/index.html`, after Abraham reviews them.
+- One merge of `proper-28` into `main` (Chinese and English together), done by Claude when Abraham approves. Branch previews on Cloudflare do not build, so there is no preview URL — that is expected.
+- The Proper 28 sermon and song pages are on hold by Abraham's decision. Do not publish them.
 
 ## Please do not
 
