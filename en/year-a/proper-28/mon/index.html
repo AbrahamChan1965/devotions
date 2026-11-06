@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toward Proper 28 · Monday: Lectio, Reading Through｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/en/index.html">HOME</a> ／ <a href="/en/year-a/proper-28/index.html">PROPER 28</a> ／ <b>MONDAY Lectio</b></div>
+<div class="kicker sans">Toward Proper 28 · Monday</div><h1>Lectio, Reading Through</h1>
+<div class="sub sans">MONDAY Lectio · 週一 誦讀</div>
+<hr class="goldrule">
+<div class="meta sans"></div>
+<div class="section" style="margin:0 0 2.2rem"><h2 class="sans">TODAY'S READINGS</h2><div class="reading"><span class="r-label sans">Old Testament</span><span class="r-refs">Judges 4:1-7 <a href="/bible/cuv/judges/4/index.html#v1">讀經<span class="ver sans">CUV</span></a> <a href="/bible/web/judges/4/index.html#v1">Read<span class="ver sans">WEB</span></a> <a href="/bible/jps/judges/4/index.html#v1">JPS<span class="ver sans">JPS 1917</span></a></span></div><div class="reading"><span class="r-label sans">Psalm</span><span class="r-refs">Psalm 123 <a href="/bible/cuv/psalms/123/index.html#v1">讀經<span class="ver sans">CUV</span></a> <a href="/bible/web/psalms/123/index.html#v1">Read<span class="ver sans">WEB</span></a> <a href="/bible/jps/psalms/123/index.html#v1">JPS<span class="ver sans">JPS 1917</span></a></span></div><div class="reading"><span class="r-label sans">Epistle</span><span class="r-refs">1 Thessalonians 5:1-11 <a href="/bible/cuv/1-thessalonians/5/index.html#v1">讀經<span class="ver sans">CUV</span></a> <a href="/bible/web/1-thessalonians/5/index.html#v1">Read<span class="ver sans">WEB</span></a></span></div><div class="reading"><span class="r-label sans">Gospel</span><span class="r-refs">Matthew 25:14-30 <a href="/bible/cuv/matthew/25/index.html#v14">讀經<span class="ver sans">CUV</span></a> <a href="/bible/web/matthew/25/index.html#v14">Read<span class="ver sans">WEB</span></a></span></div></div>
+<article><p><strong>November 9, 2026</strong></p><p><strong>This week&#x27;s readings</strong> Judges 4:1-7 · Psalm 123 · 1 Thessalonians 5:1-11 · Matthew 25:14-30</p><p style="color:var(--gray);font-size:1rem">For comparison: Zephaniah 1:7, 12-18; Psalm 90:1-8, 12</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">What Lectio Is</h2><p>Lectio is slow reading. Guigo II, a twelfth-century Carthusian, said to read is to put a grape in the mouth and not yet chew. Read the three passages through. Listen for the line that lights.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Five Clocks</h2><p>This week's readings keep five clocks.</p><p>A woman named Deborah sits under a palm tree and judges Israel. That clock reads about three thousand one hundred years ago.</p><p>Jesus sits on the Mount of Olives and tells a story about a man who goes away. It is the Tuesday of the last week. In two days he will say, "The Son of Man will be delivered up to be crucified" (Matt 26:2).</p><p>Twenty years later, in the Greek city of Corinth, Paul cuts and stitches tent cloth by day and writes letters by lamp. One goes north to Thessalonica.</p><p>Some thirty years after that, the Temple in Jerusalem lies in rubble. Matthew writes the story down for people who have waited a long time. For them "after a long time" (Matt 25:19) is not a line in a story. It is the weather of every day.</p><p>The fifth clock is ours. November 2026. The church year has two weeks left. Next Sunday we crown Christ King.</p><p>All five clocks stand in the same hour. The master has handed over his goods. He has not yet come back.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">The Weight of One Line</h2><p>Matthew sets this story inside a run of waiting stories: the faithful servant, the ten bridesmaids, the three servants, the sheep and the goats. Each asks one thing. How do you live while the master is away?</p><p>Stop at the first line. He "entrusted his goods to them" (Matt 25:14). The Greek verb, <em>paredōken</em>, names one finished act of handing over. What he hands over is his. He measures each share by ability, but the silver stays his silver. The smallest share, one talent, is twenty years of a laborer's pay.</p><p>The English word "talent" came out of this parable. We made it mean a gift inside us. The text points the other way. Ability is the jar. The silver belongs to the master.</p><p>When he returns, the first two servants speak and he answers, line for line, almost word for word. Then the third servant opens his mouth, and the pattern breaks. Matthew lets the shape of the story say it. The trouble is not in the man's hand. It is in the master he carries in his head.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Echoes</h2><p>Each reading holds a hand. "I will deliver him into your hand," God says in Judges. In the psalm a servant watches his master's hand. In the gospel a master fills his servants' hands.</p><p>Each reading holds light and dark. Deborah's husband is named Torch. Paul writes, "You are all children of light." The parable ends in "the outer darkness." Follow the hand and the light this week.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">The Oldest Lie</h2><p>The third servant says, "I knew you, that you are a hard man." The words are old. In the garden the serpent said the same thing in other clothes. God holds back. God is not for you (Gen 3:1-5).</p><p>The dark does its deepest work not out there but in here. It redraws the face of God.</p><p>The one who told this story would be handed over in two days. The verb is the same. He is not a hard man.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Today's Practice</h2><p>Give it twenty minutes. Read Matthew 25:14-30 aloud twice, once for the story, once for the voices. Then sit still and ask: What is God like in my heart? A master who hands over his house, or a hard man who reaps where he did not sow? Write the picture down in one plain sentence. Then read 25:21 aloud, "Enter into the joy of your lord," and carry it into the week.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Closing Prayer</h2><p>Lord, you handed over your house<br>to people who did not know your heart.<br>You left no list,<br>only what was yours<br>and your word that you would come.<br>An old voice in me<br>says you hold back, says you are hard.<br>Bring your word into that corner.<br>Show me your face.<br>You handed over yourself.<br>What is in my hand is not mine.<br>It is the sign of your trust.<br>At the end of the year, lift my eyes<br>to watch for you. Amen.</p></article>
+
+<div class="daynav sans"><a href="/en/year-a/proper-28/index.html">← WEEK</a><a href="/en/year-a/proper-28/index.html">WEEK'S NAIL →</a></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

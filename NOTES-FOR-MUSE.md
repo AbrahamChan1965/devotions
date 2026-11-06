@@ -18,7 +18,7 @@
 
 ## Still to come (Claude will do these)
 
-- English pages under `en/year-a/proper-28/` plus `en/index.html` and `en/today/index.html`, after Abraham reviews them.
+- English pages are now on the branch too (`en/year-a/proper-28/`, `en/index.html`, `en/today/index.html`), awaiting Abraham's review.
 - One merge of `proper-28` into `main` (Chinese and English together), done by Claude when Abraham approves. Branch previews on Cloudflare do not build, so there is no preview URL — that is expected.
 - The Proper 28 sermon and song pages are on hold by Abraham's decision. Do not publish them.
 
