@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>雅各書 2 · Geneva｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/gnv/index.html">聖經 Geneva</a> ／ <a href="/bible/gnv/james/index.html">雅各書</a> ／ <b>2</b></div>
+<h1>雅各書 2</h1><div class="sub sans">James 2 · Geneva</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">Geneva</a><a href="/bible/cuv/james/2/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>My brethren, haue not the faith of our glorious Lord Iesus Christ in respect of persons.</p><p class="v" id="v2"><span class="vn sans">2</span>For if there come into your company a man with a golde ring, and in goodly apparell, and there come in also a poore man in vile raiment,</p><p class="v" id="v3"><span class="vn sans">3</span>And ye haue a respect to him that weareth the gaie clothing; and say vnto him, Sit thou here in a goodly place, and say vnto the poore, Stand thou there, or sit here vnder my footestoole,</p><p class="v" id="v4"><span class="vn sans">4</span>Are yee not partiall in your selues, and are become iudges of euill thoughts?</p><p class="v" id="v5"><span class="vn sans">5</span>Hearken my beloued brethren, hath not God chosen the poore of this worlde, that they should be rich in faith, and heires of the kingdome which he promised to them that loue him?</p><p class="v" id="v6"><span class="vn sans">6</span>But ye haue despised the poore. Doe not the riche oppresse you by tyrannie, and doe not they drawe you before the iudgement seates?</p><p class="v" id="v7"><span class="vn sans">7</span>Doe nor they blaspheme the worthie Name after which yee be named?</p><p class="v" id="v8"><span class="vn sans">8</span>But if yee fulfill the royall Lawe according to the Scripture, which saith, Thou shalt loue thy neighbour as thy selfe, yee doe well.</p><p class="v" id="v9"><span class="vn sans">9</span>But if yee regarde the persons, yee commit sinne, and are rebuked of the Lawe, as transgressours.</p><p class="v" id="v10"><span class="vn sans">10</span>For whosoeuer shall keepe the whole Lawe, and yet faileth in one poynt, hee is guiltie of all.</p><p class="v" id="v11"><span class="vn sans">11</span>For he that saide, Thou shalt not commit adulterie, saide also, Thou shalt not kill. Nowe though thou doest none adulterie, yet if thou killest, thou art a transgressour of the Lawe.</p><p class="v" id="v12"><span class="vn sans">12</span>So speake ye, and so doe, as they that shall be iudged by the Lawe of libertie.</p><p class="v" id="v13"><span class="vn sans">13</span>For there shalbe condemnation merciles to him that sheweth not mercie, and mercie reioyceth against condemnation.</p><p class="v" id="v14"><span class="vn sans">14</span>What auaileth it, my brethren, though a man saith he hath faith, when he hath no workes? can that faith saue him?</p><p class="v" id="v15"><span class="vn sans">15</span>For if a brother or a sister bee naked and destitute of daily foode,</p><p class="v" id="v16"><span class="vn sans">16</span>And one of you say vnto them, Depart in peace: warme your selues, and fil your bellies, notwithstading ye giue them not those things which are needefull to the body, what helpeth it?</p><p class="v" id="v17"><span class="vn sans">17</span>Euen so the faith, if it haue no woorkes, is dead in it selfe.</p><p class="v" id="v18"><span class="vn sans">18</span>But some man might say, Thou hast the faith, and I haue woorkes: shewe me thy faith out of thy woorkes, and I will shewe thee my faith by my woorkes.</p><p class="v" id="v19"><span class="vn sans">19</span>Thou beleeuest that there is one God: thou doest well: the deuils also beleeue it, and tremble.</p><p class="v" id="v20"><span class="vn sans">20</span>But wilt thou vnderstand, O thou vaine man, that the faith which is without workes, is dead?</p><p class="v" id="v21"><span class="vn sans">21</span>Was not Abraham our father iustified through workes, when he offred Isaac his sonne vpon the altar?</p><p class="v" id="v22"><span class="vn sans">22</span>Seest thou not that the faith wrought with his workes? and through the workes was the faith made perfect.</p><p class="v" id="v23"><span class="vn sans">23</span>And the Scripture was fulfilled which sayeth, Abraham beleeued God, and it was imputed vnto him for righteousnesse: and hee was called the friende of God.</p><p class="v" id="v24"><span class="vn sans">24</span>Ye see then howe that of workes a man is iustified, and not of faith onely.</p><p class="v" id="v25"><span class="vn sans">25</span>Likewise also was not Rahab the harlot iustified through workes, when she had receiued ye messengers, and sent them out another way?</p><p class="v" id="v26"><span class="vn sans">26</span>For as the body without ye spirit is dead, euen so the faith without workes is dead.</p></article><div class="daynav sans"><a href="/bible/gnv/james/1/index.html">← 1</a><a href="/bible/gnv/james/3/index.html">3 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/gnv/james/index.html">← 雅各書</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

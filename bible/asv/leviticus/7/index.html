@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>利未記 7 · ASV｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/asv/index.html">聖經 ASV</a> ／ <a href="/bible/asv/leviticus/index.html">利未記</a> ／ <b>7</b></div>
+<h1>利未記 7</h1><div class="sub sans">Leviticus 7 · ASV</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">ASV</a><a href="/bible/cuv/leviticus/7/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>And this is the law of the trespass-offering: it is most holy.</p><p class="v" id="v2"><span class="vn sans">2</span>In the place where they kill the burnt-offering shall they kill the trespass-offering; and the blood thereof shall he sprinkle upon the altar round about.</p><p class="v" id="v3"><span class="vn sans">3</span>And he shall offer of it all the fat thereof: the fat tail, and the fat that covereth the inwards,</p><p class="v" id="v4"><span class="vn sans">4</span>and the two kidneys, and the fat that is on them, which is by the loins, and the caul upon the liver, with the kidneys, shall he take away;</p><p class="v" id="v5"><span class="vn sans">5</span>and the priest shall burn them upon the altar for an offering made by fire unto Jehovah: it is a trespass-offering.</p><p class="v" id="v6"><span class="vn sans">6</span>Every male among the priests shall eat thereof: it shall be eaten in a holy place: it is most holy.</p><p class="v" id="v7"><span class="vn sans">7</span>As is the sin-offering, so is the trespass-offering; there is one law for them: the priest that maketh atonement therewith, he shall have it.</p><p class="v" id="v8"><span class="vn sans">8</span>And the priest that offereth any man’s burnt-offering, even the priest shall have to himself the skin of the burnt-offering which he hath offered.</p><p class="v" id="v9"><span class="vn sans">9</span>And every meal-offering that is baken in the oven, and all that is dressed in the frying-pan, and on the baking-pan, shall be the priest’s that offereth it.</p><p class="v" id="v10"><span class="vn sans">10</span>And every meal-offering, mingled with oil, or dry, shall all the sons of Aaron have, one as well as another.</p><p class="v" id="v11"><span class="vn sans">11</span>And this is the law of the sacrifice of peace-offerings, which one shall offer unto Jehovah.</p><p class="v" id="v12"><span class="vn sans">12</span>If he offer it for a thanksgiving, then he shall offer with the sacrifice of thanksgiving unleavened cakes mingled with oil, and unleavened wafers anointed with oil, and cakes mingled with oil, of fine flour soaked.</p><p class="v" id="v13"><span class="vn sans">13</span>With cakes of leavened bread he shall offer his oblation with the sacrifice of his peace-offerings for thanksgiving.</p><p class="v" id="v14"><span class="vn sans">14</span>And of it he shall offer one out of each oblation for a heave-offering unto Jehovah; it shall be the priest’s that sprinkleth the blood of the peace-offerings.</p><p class="v" id="v15"><span class="vn sans">15</span>And the flesh of the sacrifice of his peace-offerings for thanksgiving shall be eaten on the day of his oblation; he shall not leave any of it until the morning.</p><p class="v" id="v16"><span class="vn sans">16</span>But if the sacrifice of his oblation be a vow, or a freewill-offering, it shall be eaten on the day that he offereth his sacrifice; and on the morrow that which remaineth of it shall be eaten:</p><p class="v" id="v17"><span class="vn sans">17</span>but that which remaineth of the flesh of the sacrifice on the third day shall be burnt with fire.</p><p class="v" id="v18"><span class="vn sans">18</span>And if any of the flesh of the sacrifice of his peace-offerings be eaten on the third day, it shall not be accepted, neither shall it be imputed unto him that offereth it: it shall be an abomination, and the soul that eateth of it shall bear his iniquity.</p><p class="v" id="v19"><span class="vn sans">19</span>And the flesh that toucheth any unclean thing shall not be eaten; it shall be burnt with fire. And as for the flesh, every one that is clean shall eat thereof:</p><p class="v" id="v20"><span class="vn sans">20</span>but the soul that eateth of the flesh of the sacrifice of peace-offerings, that pertain unto Jehovah, having his uncleanness upon him, that soul shall be cut off from his people.</p><p class="v" id="v21"><span class="vn sans">21</span>And when any one shall touch any unclean thing, the uncleanness of man, or an unclean beast, or any unclean abomination, and eat of the flesh of the sacrifice of peace-offerings, which pertain unto Jehovah, that soul shall be cut off from his people.</p><p class="v" id="v22"><span class="vn sans">22</span>And Jehovah spake unto Moses, saying,</p><p class="v" id="v23"><span class="vn sans">23</span>Speak unto the children of Israel, saying, Ye shall eat no fat, of ox, or sheep, or goat.</p><p class="v" id="v24"><span class="vn sans">24</span>And the fat of that which dieth of itself, and the fat of that which is torn of beasts, may be used for any other service; but ye shall in no wise eat of it.</p><p class="v" id="v25"><span class="vn sans">25</span>For whosoever eateth the fat of the beast, of which men offer an offering made by fire unto Jehovah, even the soul that eateth it shall be cut off from his people.</p><p class="v" id="v26"><span class="vn sans">26</span>And ye shall eat no manner of blood, whether it be of bird or of beast, in any of your dwellings.</p><p class="v" id="v27"><span class="vn sans">27</span>Whosoever it be that eateth any blood, that soul shall be cut off from his people.</p><p class="v" id="v28"><span class="vn sans">28</span>And Jehovah spake unto Moses, saying,</p><p class="v" id="v29"><span class="vn sans">29</span>Speak unto the children of Israel, saying, He that offereth the sacrifice of his peace-offerings unto Jehovah shall bring his oblation unto Jehovah out of the sacrifice of his peace-offerings:</p><p class="v" id="v30"><span class="vn sans">30</span>his own hands shall bring the offerings of Jehovah made by fire; the fat with the breast shall he bring, that the breast may be waved for a wave-offering before Jehovah.</p><p class="v" id="v31"><span class="vn sans">31</span>And the priest shall burn the fat upon the altar; but the breast shall be Aaron’s and his sons’.</p><p class="v" id="v32"><span class="vn sans">32</span>And the right thigh shall ye give unto the priest for a heave-offering out of the sacrifices of your peace-offerings.</p><p class="v" id="v33"><span class="vn sans">33</span>He among the sons of Aaron that offereth the blood of the peace-offerings, and the fat, shall have the right thigh for a portion.</p><p class="v" id="v34"><span class="vn sans">34</span>For the wave-breast and the heave-thigh have I taken of the children of Israel out of the sacrifices of their peace-offerings, and have given them unto Aaron the priest and unto his sons as [their] portion for ever from the children of Israel.</p><p class="v" id="v35"><span class="vn sans">35</span>This is the anointing-portion of Aaron, and the anointing-portion of his sons, out of the offerings of Jehovah made by fire, in the day when he presented them to minister unto Jehovah in the priest’s office;</p><p class="v" id="v36"><span class="vn sans">36</span>which Jehovah commanded to be given them of the children of Israel, in the day that he anointed them. It is [their] portion for ever throughout their generations.</p><p class="v" id="v37"><span class="vn sans">37</span>This is the law of the burnt-offering, of the meal-offering, and of the sin-offering, and of the trespass-offering, and of the consecration, and of the sacrifice of peace-offerings;</p><p class="v" id="v38"><span class="vn sans">38</span>which Jehovah commanded Moses in mount Sinai, in the day that he commanded the children of Israel to offer their oblations unto Jehovah, in the wilderness of Sinai.</p></article><div class="daynav sans"><a href="/bible/asv/leviticus/6/index.html">← 6</a><a href="/bible/asv/leviticus/8/index.html">8 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/asv/leviticus/index.html">← 利未記</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

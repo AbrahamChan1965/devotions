@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>路加福音 1 · ASV｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/asv/index.html">聖經 ASV</a> ／ <a href="/bible/asv/luke/index.html">路加福音</a> ／ <b>1</b></div>
+<h1>路加福音 1</h1><div class="sub sans">Luke 1 · ASV</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">ASV</a><a href="/bible/cuv/luke/1/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>Forasmuch as many have taken in hand to draw up a narrative concerning those matters which have been fulfilled among us,</p><p class="v" id="v2"><span class="vn sans">2</span>even as they delivered them unto us, who from the beginning were eyewitnesses and ministers of the word,</p><p class="v" id="v3"><span class="vn sans">3</span>it seemed good to me also, having traced the course of all things accurately from the first, to write unto thee in order, most excellent Theophilus;</p><p class="v" id="v4"><span class="vn sans">4</span>that thou mightest know the certainty concerning the things wherein thou wast instructed.</p><p class="v" id="v5"><span class="vn sans">5</span>There was in the days of Herod, king of Judæa, a certain priest named Zacharias, of the course of Abijah: and he had a wife of the daughters of Aaron, and her name was Elisabeth.</p><p class="v" id="v6"><span class="vn sans">6</span>And they were both righteous before God, walking in all the commandments and ordinances of the Lord blameless.</p><p class="v" id="v7"><span class="vn sans">7</span>And they had no child, because that Elisabeth was barren, and they both were [now] well stricken in years.</p><p class="v" id="v8"><span class="vn sans">8</span>Now it came to pass, while he executed the priest’s office before God in the order of his course,</p><p class="v" id="v9"><span class="vn sans">9</span>according to the custom of the priest’s office, his lot was to enter into the temple of the Lord and burn incense.</p><p class="v" id="v10"><span class="vn sans">10</span>And the whole multitude of the people were praying without at the hour of incense.</p><p class="v" id="v11"><span class="vn sans">11</span>And there appeared unto him an angel of the Lord standing on the right side of the altar of incense.</p><p class="v" id="v12"><span class="vn sans">12</span>And Zacharias was troubled when he saw [him], and fear fell upon him.</p><p class="v" id="v13"><span class="vn sans">13</span>But the angel said unto him, Fear not, Zacharias: because thy supplication is heard, and thy wife Elisabeth shall bear thee a son, and thou shalt call his name John.</p><p class="v" id="v14"><span class="vn sans">14</span>And thou shalt have joy and gladness; and many shall rejoice at his birth.</p><p class="v" id="v15"><span class="vn sans">15</span>For he shall be great in the sight of the Lord, and he shall drink no wine nor strong drink; and he shall be filled with the Holy Spirit, even from his mother’s womb.</p><p class="v" id="v16"><span class="vn sans">16</span>And many of the children of Israel shall he turn unto the Lord their God.</p><p class="v" id="v17"><span class="vn sans">17</span>And he shall go before his face in the spirit and power of Elijah, to turn the hearts of the fathers to the children, and the disobedient [to walk] in the wisdom of the just; to make ready for the Lord a people prepared [for him].</p><p class="v" id="v18"><span class="vn sans">18</span>And Zacharias said unto the angel, Whereby shall I know this? for I am an old man, and my wife well stricken in years.</p><p class="v" id="v19"><span class="vn sans">19</span>And the angel answering said unto him, I am Gabriel, that stand in the presence of God; and I was sent to speak unto thee, and to bring thee these good tidings.</p><p class="v" id="v20"><span class="vn sans">20</span>And behold, thou shalt be silent and not able to speak, until the day that these things shall come to pass, because thou believedst not my words, which shall be fulfilled in their season.</p><p class="v" id="v21"><span class="vn sans">21</span>And the people were waiting for Zacharias, and they marvelled while he tarried in the temple.</p><p class="v" id="v22"><span class="vn sans">22</span>And when he came out, he could not speak unto them: and they perceived that he had seen a vision in the temple: and he continued making signs unto them, and remained dumb.</p><p class="v" id="v23"><span class="vn sans">23</span>And it came to pass, when the days of his ministration were fulfilled, he departed unto his house.</p><p class="v" id="v24"><span class="vn sans">24</span>And after these days Elisabeth his wife conceived; and she hid herself five months, saying,</p><p class="v" id="v25"><span class="vn sans">25</span>Thus hath the Lord done unto me in the days wherein he looked upon [me], to take away my reproach among men.</p><p class="v" id="v26"><span class="vn sans">26</span>Now in the sixth month the angel Gabriel was sent from God unto a city of Galilee, named Nazareth,</p><p class="v" id="v27"><span class="vn sans">27</span>to a virgin betrothed to a man whose name was Joseph, of the house of David; and the virgin’s name was Mary.</p><p class="v" id="v28"><span class="vn sans">28</span>And he came in unto her, and said, Hail, thou that art highly favored, the Lord [is] with thee.</p><p class="v" id="v29"><span class="vn sans">29</span>But she was greatly troubled at the saying, and cast in her mind what manner of salutation this might be.</p><p class="v" id="v30"><span class="vn sans">30</span>And the angel said unto her, Fear not, Mary: for thou hast found favor with God.</p><p class="v" id="v31"><span class="vn sans">31</span>And behold, thou shalt conceive in thy womb, and bring forth a son, and shalt call his name JESUS.</p><p class="v" id="v32"><span class="vn sans">32</span>He shall be great, and shall be called the Son of the Most High: and the Lord God shall give unto him the throne of his father David:</p><p class="v" id="v33"><span class="vn sans">33</span>and he shall reign over the house of Jacob for ever; and of his kingdom there shall be no end.</p><p class="v" id="v34"><span class="vn sans">34</span>And Mary said unto the angel, How shall this be, seeing I know not a man?</p><p class="v" id="v35"><span class="vn sans">35</span>And the angel answered and said unto her, The Holy Spirit shall come upon thee, and the power of the Most High shall overshadow thee: wherefore also the holy thing which is begotten shall be called the Son of God.</p><p class="v" id="v36"><span class="vn sans">36</span>And behold, Elisabeth thy kinswoman, she also hath conceived a son in her old age; and this is the sixth month with her that was called barren.</p><p class="v" id="v37"><span class="vn sans">37</span>For no word from God shall be void of power.</p><p class="v" id="v38"><span class="vn sans">38</span>And Mary said, Behold, the handmaid of the Lord; be it unto me according to thy word. And the angel departed from her.</p><p class="v" id="v39"><span class="vn sans">39</span>And Mary arose in these days and went into the hill country with haste, into a city of Judah;</p><p class="v" id="v40"><span class="vn sans">40</span>and entered into the house of Zacharias and saluted Elisabeth.</p><p class="v" id="v41"><span class="vn sans">41</span>And it came to pass, when Elisabeth heard the salutation of Mary, the babe leaped in her womb; and Elisabeth was filled with the Holy Spirit;</p><p class="v" id="v42"><span class="vn sans">42</span>and she lifted up her voice with a loud cry, and said, Blessed [art] thou among women, and blessed [is] the fruit of thy womb.</p><p class="v" id="v43"><span class="vn sans">43</span>And whence is this to me, that the mother of my Lord should come unto me?</p><p class="v" id="v44"><span class="vn sans">44</span>For behold, when the voice of thy salutation came into mine ears, the babe leaped in my womb for joy.</p><p class="v" id="v45"><span class="vn sans">45</span>And blessed [is] she that believed; for there shall be a fulfilment of the things which have been spoken to her from the Lord.</p><p class="v" id="v46"><span class="vn sans">46</span>And Mary said, My soul doth magnify the Lord,</p><p class="v" id="v47"><span class="vn sans">47</span>And my spirit hath rejoiced in God my Saviour.</p><p class="v" id="v48"><span class="vn sans">48</span>For he hath looked upon the low estate of his handmaid: For behold, from henceforth all generations shall call me blessed.</p><p class="v" id="v49"><span class="vn sans">49</span>For he that is mighty hath done to me great things; And holy is his name.</p><p class="v" id="v50"><span class="vn sans">50</span>And his mercy is unto generations and generations On them that fear him.</p><p class="v" id="v51"><span class="vn sans">51</span>He hath showed strength with his arm; He hath scattered the proud in the imagination of their heart.</p><p class="v" id="v52"><span class="vn sans">52</span>He hath put down princes from [their] thrones, And hath exalted them of low degree.</p><p class="v" id="v53"><span class="vn sans">53</span>The hungry he hath filled with good things; And the rich he hath sent empty away.</p><p class="v" id="v54"><span class="vn sans">54</span>He hath given help to Israel his servant, That he might remember mercy</p><p class="v" id="v55"><span class="vn sans">55</span>(As he spake unto our fathers) Toward Abraham and his seed for ever.</p><p class="v" id="v56"><span class="vn sans">56</span>And Mary abode with her about three months, and returned unto her house.</p><p class="v" id="v57"><span class="vn sans">57</span>Now Elisabeth’s time was fulfilled that she should be delivered; and she brought forth a son.</p><p class="v" id="v58"><span class="vn sans">58</span>And her neighbors and her kinsfolk heard that the Lord had magnified his mercy towards her; and they rejoiced with her.</p><p class="v" id="v59"><span class="vn sans">59</span>And it came to pass on the eighth day, that they came to circumcise the child; and they would have called him Zacharias, after the name of his father.</p><p class="v" id="v60"><span class="vn sans">60</span>And his mother answered and said, Not so; but he shall be called John.</p><p class="v" id="v61"><span class="vn sans">61</span>And they said unto her, There is none of thy kindred that is called by this name.</p><p class="v" id="v62"><span class="vn sans">62</span>And they made signs to his father, what he would have him called.</p><p class="v" id="v63"><span class="vn sans">63</span>And he asked for a writing tablet, and wrote, saying, His name is John. And they marvelled all.</p><p class="v" id="v64"><span class="vn sans">64</span>And his mouth was opened immediately, and his tongue [loosed], and he spake, blessing God.</p><p class="v" id="v65"><span class="vn sans">65</span>And fear came on all that dwelt round about them: and all these sayings were noised abroad throughout all the hill country of Judæa.</p><p class="v" id="v66"><span class="vn sans">66</span>And all that heard them laid them up in their heart, saying, What then shall this child be? For the hand of the Lord was with him.</p><p class="v" id="v67"><span class="vn sans">67</span>And his father Zacharias was filled with the Holy Spirit, and prophesied, saying,</p><p class="v" id="v68"><span class="vn sans">68</span>Blessed [be] the Lord, the God of Israel; For he hath visited and wrought redemption for his people,</p><p class="v" id="v69"><span class="vn sans">69</span>And hath raised up a horn of salvation for us In the house of his servant David</p><p class="v" id="v70"><span class="vn sans">70</span>(As he spake by the mouth of his holy prophets that have been from of old),</p><p class="v" id="v71"><span class="vn sans">71</span>Salvation from our enemies, and from the hand of all that hate us;</p><p class="v" id="v72"><span class="vn sans">72</span>To show mercy towards our fathers, And to remember his holy covenant;</p><p class="v" id="v73"><span class="vn sans">73</span>The oath which he sware unto Abraham our father,</p><p class="v" id="v74"><span class="vn sans">74</span>To grant unto us that we being delivered out of the hand of our enemies Should serve him without fear,</p><p class="v" id="v75"><span class="vn sans">75</span>In holiness and righteousness before him all our days.</p><p class="v" id="v76"><span class="vn sans">76</span>Yea and thou, child, shalt be called the prophet of the Most High: For thou shalt go before the face of the Lord to make ready his ways;</p><p class="v" id="v77"><span class="vn sans">77</span>To give knowledge of salvation unto his people In the remission of their sins,</p><p class="v" id="v78"><span class="vn sans">78</span>Because of the tender mercy of our God, Whereby the dayspring from on high shall visit us,</p><p class="v" id="v79"><span class="vn sans">79</span>To shine upon them that sit in darkness and the shadow of death; To guide our feet into the way of peace.</p><p class="v" id="v80"><span class="vn sans">80</span>And the child grew, and waxed strong in spirit, and was in the deserts till the day of his showing unto Israel.</p></article><div class="daynav sans"><span></span><a href="/bible/asv/luke/2/index.html">2 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/asv/luke/index.html">← 路加福音</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>
