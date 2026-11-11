@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>列王紀上 2 · Geneva｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/gnv/index.html">聖經 Geneva</a> ／ <a href="/bible/gnv/1-kings/index.html">列王紀上</a> ／ <b>2</b></div>
+<h1>列王紀上 2</h1><div class="sub sans">1 Kings 2 · Geneva</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">Geneva</a><a href="/bible/cuv/1-kings/2/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>Then the dayes of Dauid drewe neere that he should die, and hee charged Salomon his sonne, saying,</p><p class="v" id="v2"><span class="vn sans">2</span>I go the way of all the earth: be strong therefore, and shew thy selfe a man,</p><p class="v" id="v3"><span class="vn sans">3</span>And take heede to the charge of the Lord thy God, to walke in his wayes, and keepe his statutes, and his commandements, and his iudgements, and his testimonies, as it is written in the Law of Moses, that thou mayest prosper in all that thou doest, and in euery thing whereunto thou turnest thee,</p><p class="v" id="v4"><span class="vn sans">4</span>That the Lord may confirme his worde which hee spake vnto me, saying, If thy sonnes take heede to their way, that they walke before me in trueth, with all their hearts, and with all their soules, thou shalt not (sayd he) want one of thy posteritie vpon the throne of Israel.</p><p class="v" id="v5"><span class="vn sans">5</span>Thou knowest also what Ioab the sonne of Zeruiah did to me, and what he did to the two captaines of the hostes of Israel, vnto Abner the sonne of Ner, and vnto Amasa the sonne of Iether: whome he slewe, and shed blood of battell in peace, and put the blood of warre vpon his girdle that was about his loynes, and in his shooes that were on his feete.</p><p class="v" id="v6"><span class="vn sans">6</span>Doe therefore according to thy wisdome, and let thou not his hoare head go downe to the graue in peace.</p><p class="v" id="v7"><span class="vn sans">7</span>But shew kindnes vnto the sonnes of Barzillai the Gileadite, and let them be among them that eate at thy table: for so they came to me when I fled from Absalom thy brother.</p><p class="v" id="v8"><span class="vn sans">8</span>And beholde, with thee is Shimei the sonne of Gera, the sonne of Iemini, of Bahurim, which cursed mee with an horrible curse in the day when I went to Mahanaim: but hee came downe to meete me at Iorden, and I sware to him by the Lord, saying, I will not slay thee with the sword.</p><p class="v" id="v9"><span class="vn sans">9</span>But thou shalt not count him innocent: for thou art a wise man, and knowest what thou oughtest to doe vnto him: therefore thou shalt cause his hoare head to goe downe to the graue with blood.</p><p class="v" id="v10"><span class="vn sans">10</span>So Dauid slept with his fathers, and was buried in the citie of Dauid.</p><p class="v" id="v11"><span class="vn sans">11</span>And the dayes which Dauid reigned vpon Israel, were fourtie yeeres: seuen yeeres reigned he in Hebron, and thirtie and three yeeres reigned he in Ierusalem.</p><p class="v" id="v12"><span class="vn sans">12</span>Then sate Salomon vpon the throne of Dauid his father, and his kingdome was stablished mightily.</p><p class="v" id="v13"><span class="vn sans">13</span>And Adonijah the sonne of Haggith came to Bath-sheba the mother of Salomon: and she saide, Commest thou peaceably? And hee said, Yea.</p><p class="v" id="v14"><span class="vn sans">14</span>He said moreouer, I haue a sute vnto thee. And she sayd, Say on.</p><p class="v" id="v15"><span class="vn sans">15</span>Then he said, Thou knowest that the kingdome was mine, and that all Israel set their faces on me, that I should reigne: howbeit the kingdome is turned away, and is my brothers: for it came to him by the Lord.</p><p class="v" id="v16"><span class="vn sans">16</span>Nowe therefore I aske thee one request, refuse me not. And she said vnto him, Say on.</p><p class="v" id="v17"><span class="vn sans">17</span>And he sayd, Speake, I pray thee, vnto Salomon ye King, (for he will not say thee nay) that he giue me Abishag the Shunammite to wife.</p><p class="v" id="v18"><span class="vn sans">18</span>And Bath-sheba sayd, Well, I will speake for thee vnto the King.</p><p class="v" id="v19"><span class="vn sans">19</span>Bath-sheba therefore went vnto King Salomon, to speake vnto him for Adonijah: and the King rose to meete her, and bowed himselfe vnto her, and sate downe on his throne: and he caused a seate to be set for the Kings mother, and she sate at his right hand.</p><p class="v" id="v20"><span class="vn sans">20</span>Then she sayd, I desire a small request of thee, say me not nay. Then the King sayde vnto her, Aske on, my mother: for I will not say thee nay.</p><p class="v" id="v21"><span class="vn sans">21</span>She sayd then, Let Abishag the Shunammite be giuen to Adonijah thy brother to wife.</p><p class="v" id="v22"><span class="vn sans">22</span>But King Salomon answered and sayd vnto his mother, And why doest thou aske Abishag the Shunammite for Adonijah? aske for him the kingdome also: for he is mine elder brother, and hath for him both Abiathar the Priest, and Ioab the sonne of Zeruiah.</p><p class="v" id="v23"><span class="vn sans">23</span>Then King Salomon sware by the Lord, saying, God doe so to me and more also, if Adoniiah hath not spoken this worde against his owne life.</p><p class="v" id="v24"><span class="vn sans">24</span>Now therefore as ye Lord liueth, who hath established me, and set me on the throne of Dauid my father, who also hath made me an house, as he promised, Adoniiah shall surely die this day.</p><p class="v" id="v25"><span class="vn sans">25</span>And King Salomon sent by the hand of Benaiah the sonne of Iehoiada, and hee smote him that he dyed.</p><p class="v" id="v26"><span class="vn sans">26</span>Then the King sayd vnto Abiathar the Priest, Go to Anathoth vnto thine owne fieldes: for thou art worthy of death: but I will not this day kill thee, because thou barest the Arke of the Lord God before Dauid my father, and because thou hast suffered in all, wherein my father hath bene afflicted.</p><p class="v" id="v27"><span class="vn sans">27</span>So Salomon cast out Abiathar from being Priest vnto the Lord, that he might fulfill the wordes of the Lord, which he spake against the house of Eli in Shiloh.</p><p class="v" id="v28"><span class="vn sans">28</span>Then tidings came to Ioab: (for Ioab had turned after Adoniiah, but he turned not after Absalom) and Ioab fled vnto the Tabernacle of the Lord, and caught hold on the hornes of the altar.</p><p class="v" id="v29"><span class="vn sans">29</span>And it was tolde king Salomon, that Ioab was fled vnto the Tabernacle of the Lord, and beholde, he is by the altar. Then Salomon sent Benaiah the sonne of Iehoiada, saying, Goe, fall vpon him.</p><p class="v" id="v30"><span class="vn sans">30</span>And Benaiah came to the Tabernacle of the Lord, and sayd vnto him, Thus sayth the King, Come out. And he sayde, Nay, but I will die here. Then Benaiah brought the King worde againe, saying, Thus sayd Ioab, and thus he answered me.</p><p class="v" id="v31"><span class="vn sans">31</span>And the King sayde vnto him, Doe as he hath sayd, and smite him, and bury him, that thou mayest take away the blood, which Ioab shed causelesse, from me and from the house of my father.</p><p class="v" id="v32"><span class="vn sans">32</span>And the Lord shall bring his blood vpon his owne head: for he smote two men more righteous and better then he, and slew them with the sword, and my father Dauid knew not: to wit, Abner the sonne of Ner, captaine of the hoste of Israel, and Amasa the sonne of Iether captaine of the hoste of Iudah.</p><p class="v" id="v33"><span class="vn sans">33</span>Their blood shall therefore returne vpon the head of Ioab, and on the head of his seede for euer: but vpon Dauid, and vpon his seede, and vpon his house, and vpon his throne shall there be peace for euer from the Lord.</p><p class="v" id="v34"><span class="vn sans">34</span>So Benaiah the sonne of Iehoiada went vp, and smote him, and slewe him, and he was buryed in his owne house in the wildernesse.</p><p class="v" id="v35"><span class="vn sans">35</span>And the King put Benaiah the sonne of Iehoiada in his roume ouer the hoste: and the King set Zadok the Priest in the roume of Abiathar.</p><p class="v" id="v36"><span class="vn sans">36</span>Afterwarde the King sent, and called Shimei, and sayde vnto him, Buylde thee an house in Ierusalem, and dwell there, and depart not thence any whither.</p><p class="v" id="v37"><span class="vn sans">37</span>For that day that thou goest out, and passest ouer the riuer of Kidron, knowe assuredly, that thou shalt dye the death: thy blood shall be vpon thine owne head.</p><p class="v" id="v38"><span class="vn sans">38</span>And Shimei sayd vnto the King, The thing is good: as my lord the King hath sayd, so wil thy seruant doe. So Shimei dwelt in Ierusalem many dayes.</p><p class="v" id="v39"><span class="vn sans">39</span>And after three yeres two of the seruants of Shimei fled away vnto Achish sonne of Maachah King of Gath: and they tolde Shimei, saying, Behold, thy seruants be in Gath.</p><p class="v" id="v40"><span class="vn sans">40</span>And Shimei arose, and sadled his asse, and went to Gath to Achish, to seeke his seruantes: and Shimei went, and brought his seruants from Gath.</p><p class="v" id="v41"><span class="vn sans">41</span>And it was tolde Salomon, that Shimei had gone from Ierusalem to Gath, and was come againe.</p><p class="v" id="v42"><span class="vn sans">42</span>And the King sent and called Shimei, and sayde vnto him, Did I not make thee to sweare by the Lord, and protested vnto thee, saying, That day that thou goest out, and walkest any whither, knowe assuredly that thou shalt dye the death? And thou saydest vnto mee, The thing is good, that I haue heard.</p><p class="v" id="v43"><span class="vn sans">43</span>Why then hast thou not kept the othe of the Lord, and the commandement wherewith I charged thee?</p><p class="v" id="v44"><span class="vn sans">44</span>The King sayde also to Shimei, Thou knowest all the wickednes whereunto thine heart is priuie, that thou diddest to Dauid my father: the Lord therefore shall bring thy wickednesse vpon thine owne head.</p><p class="v" id="v45"><span class="vn sans">45</span>And let King Salomon be blessed, and the throne of Dauid stablished before the Lord for euer.</p><p class="v" id="v46"><span class="vn sans">46</span>So the King comanded Benaiah the sonne of Iehoiada: who went out and smote him that he dyed. And the kingdome was established in the hand of Salomon.</p></article><div class="daynav sans"><a href="/bible/gnv/1-kings/1/index.html">← 1</a><a href="/bible/gnv/1-kings/3/index.html">3 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/gnv/1-kings/index.html">← 列王紀上</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>使徒行傳 15 · ASV｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/asv/index.html">聖經 ASV</a> ／ <a href="/bible/asv/acts/index.html">使徒行傳</a> ／ <b>15</b></div>
+<h1>使徒行傳 15</h1><div class="sub sans">Acts 15 · ASV</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">ASV</a><a href="/bible/cuv/acts/15/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>And certain men came down from Judæa and taught the brethren, [saying], Except ye be circumcised after the custom of Moses, ye cannot be saved.</p><p class="v" id="v2"><span class="vn sans">2</span>And when Paul and Barnabas had no small dissension and questioning with them, [the brethren] appointed that Paul and Barnabas, and certain other of them, should go up to Jerusalem unto the apostles and elders about this question.</p><p class="v" id="v3"><span class="vn sans">3</span>They therefore, being brought on their way by the church, passed through both Phoenicia and Samaria, declaring the conversion of the Gentiles: and they caused great joy unto all the brethren.</p><p class="v" id="v4"><span class="vn sans">4</span>And when they were come to Jerusalem, they were received of the church and the apostles and the elders, and they rehearsed all things that God had done with them.</p><p class="v" id="v5"><span class="vn sans">5</span>But there rose up certain of the sect of the Pharisees who believed, saying, It is needful to circumcise them, and to charge them to keep the law of Moses.</p><p class="v" id="v6"><span class="vn sans">6</span>And the apostles and the elders were gathered together to consider of this matter.</p><p class="v" id="v7"><span class="vn sans">7</span>And when there had been much questioning, Peter rose up, and said unto them, Brethren, ye know that a good while ago God made choice among you, that by my mouth the Gentiles should hear the word of the gospel, and believe.</p><p class="v" id="v8"><span class="vn sans">8</span>And God, who knoweth the heart, bare them witness, giving them the Holy Spirit, even as he did unto us;</p><p class="v" id="v9"><span class="vn sans">9</span>and he made no distinction between us and them, cleansing their hearts by faith.</p><p class="v" id="v10"><span class="vn sans">10</span>Now therefore why make ye trial of God, that ye should put a yoke upon the neck of the disciples which neither our fathers nor we were able to bear?</p><p class="v" id="v11"><span class="vn sans">11</span>But we believe that we shall be saved through the grace of the Lord Jesus, in like manner as they.</p><p class="v" id="v12"><span class="vn sans">12</span>And all the multitude kept silence; and they hearkened unto Barnabas and Paul rehearsing what signs and wonders God had wrought among the Gentiles through them.</p><p class="v" id="v13"><span class="vn sans">13</span>And after they had held their peace, James answered, saying, Brethren, hearken unto me:</p><p class="v" id="v14"><span class="vn sans">14</span>Symeon hath rehearsed how first God visited the Gentiles, to take out of them a people for his name.</p><p class="v" id="v15"><span class="vn sans">15</span>And to this agree the words of the prophets; as it is written,</p><p class="v" id="v16"><span class="vn sans">16</span>After these things I will return, And I will build again the tabernacle of David, which is fallen; And I will build again the ruins thereof, And I will set it up:</p><p class="v" id="v17"><span class="vn sans">17</span>That the residue of men may seek after the Lord, And all the Gentiles, upon whom my name is called,</p><p class="v" id="v18"><span class="vn sans">18</span>Saith the Lord, who maketh these things known from of old.</p><p class="v" id="v19"><span class="vn sans">19</span>Wherefore my judgment is, that we trouble not them that from among the Gentiles turn to God;</p><p class="v" id="v20"><span class="vn sans">20</span>but that we write unto them, that they abstain from the pollutions of idols, and from fornication, and from what is strangled, and from blood.</p><p class="v" id="v21"><span class="vn sans">21</span>For Moses from generations of old hath in every city them that preach him, being read in the synagogues every sabbath.</p><p class="v" id="v22"><span class="vn sans">22</span>Then it seemed good to the apostles and the elders, with the whole church, to choose men out of their company, and send them to Antioch with Paul and Barnabas; [namely], Judas called Barsabbas, and Silas, chief men among the brethren:</p><p class="v" id="v23"><span class="vn sans">23</span>and they wrote [thus] by them, The apostles and the elders, brethren, unto the brethren who are of the Gentiles in Antioch and Syria and Cilicia, greeting:</p><p class="v" id="v24"><span class="vn sans">24</span>Forasmuch as we have heard that certain who went out from us have troubled you with words, subverting your souls; to whom we gave no commandment;</p><p class="v" id="v25"><span class="vn sans">25</span>it seemed good unto us, having come to one accord, to choose out men and send them unto you with our beloved Barnabas and Paul,</p><p class="v" id="v26"><span class="vn sans">26</span>men that have hazarded their lives for the name of our Lord Jesus Christ.</p><p class="v" id="v27"><span class="vn sans">27</span>We have sent therefore Judas and Silas, who themselves also shall tell you the same things by word of mouth.</p><p class="v" id="v28"><span class="vn sans">28</span>For it seemed good to the Holy Spirit, and to us, to lay upon you no greater burden than these necessary things:</p><p class="v" id="v29"><span class="vn sans">29</span>that ye abstain from things sacrificed to idols, and from blood, and from things strangled, and from fornication; from which if ye keep yourselves, it shall be well with you. Fare ye well.</p><p class="v" id="v30"><span class="vn sans">30</span>So they, when they were dismissed, came down to Antioch; and having gathered the multitude together, they delivered the epistle.</p><p class="v" id="v31"><span class="vn sans">31</span>And when they had read it, they rejoiced for the consolation.</p><p class="v" id="v32"><span class="vn sans">32</span>And Judas and Silas, being themselves also prophets, exhorted the brethren with many words, and confirmed them.</p><p class="v" id="v33"><span class="vn sans">33</span>And after they had spent some time [there], they were dismissed in peace from the brethren unto those that had sent them forth.</p><p class="v" id="v34"><span class="vn sans">34</span></p><p class="v" id="v35"><span class="vn sans">35</span>But Paul and Barnabas tarried in Antioch, teaching and preaching the word of the Lord, with many others also.</p><p class="v" id="v36"><span class="vn sans">36</span>And after some days Paul said unto Barnabas, Let us return now and visit the brethren in every city wherein we proclaimed the word of the Lord, [and see] how they fare.</p><p class="v" id="v37"><span class="vn sans">37</span>And Barnabas was minded to take with them John also, who was called Mark.</p><p class="v" id="v38"><span class="vn sans">38</span>But Paul thought not good to take with them him who withdrew from them from Pamphylia, and went not with them to the work.</p><p class="v" id="v39"><span class="vn sans">39</span>And there arose a sharp contention, so that they parted asunder one from the other, and Barnabas took Mark with him, and sailed away unto Cyprus:</p><p class="v" id="v40"><span class="vn sans">40</span>but Paul chose Silas, and went forth, being commended by the brethren to the grace of the Lord.</p><p class="v" id="v41"><span class="vn sans">41</span>And he went through Syria and Cilicia, confirming the churches.</p></article><div class="daynav sans"><a href="/bible/asv/acts/14/index.html">← 14</a><a href="/bible/asv/acts/16/index.html">16 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/asv/acts/index.html">← 使徒行傳</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

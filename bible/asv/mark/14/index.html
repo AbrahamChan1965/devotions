@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>馬可福音 14 · ASV｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/asv/index.html">聖經 ASV</a> ／ <a href="/bible/asv/mark/index.html">馬可福音</a> ／ <b>14</b></div>
+<h1>馬可福音 14</h1><div class="sub sans">Mark 14 · ASV</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">ASV</a><a href="/bible/cuv/mark/14/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>Now after two days was [the feast of] the passover and the unleavened bread: and the chief priests and the scribes sought how they might take him with subtlety, and kill him:</p><p class="v" id="v2"><span class="vn sans">2</span>for they said, Not during the feast, lest haply there shall be a tumult of the people.</p><p class="v" id="v3"><span class="vn sans">3</span>And while he was in Bethany in the house of Simon the leper, as he sat at meat, there came a woman having an alabaster cruse of ointment of pure nard very costly; [and] she brake the cruse, and poured it over his head.</p><p class="v" id="v4"><span class="vn sans">4</span>But there were some that had indignation among themselves, [saying], To what purpose hath this waste of the ointment been made?</p><p class="v" id="v5"><span class="vn sans">5</span>For this ointment might have been sold for above three hundred shillings, and given to the poor. And they murmured against her.</p><p class="v" id="v6"><span class="vn sans">6</span>But Jesus said, Let her alone; why trouble ye her? she hath wrought a good work on me.</p><p class="v" id="v7"><span class="vn sans">7</span>For ye have the poor always with you, and whensoever ye will ye can do them good: but me ye have not always.</p><p class="v" id="v8"><span class="vn sans">8</span>She hath done what she could; she hath anointed my body beforehand for the burying.</p><p class="v" id="v9"><span class="vn sans">9</span>And verily I say unto you, Wheresoever the gospel shall be preached throughout the whole world, that also which this woman hath done shall be spoken of for a memorial of her.</p><p class="v" id="v10"><span class="vn sans">10</span>And Judas Iscariot, he that was one of the twelve, went away unto the chief priests, that he might deliver him unto them.</p><p class="v" id="v11"><span class="vn sans">11</span>And they, when they heard it, were glad, and promised to give him money. And he sought how he might conveniently deliver him [unto them].</p><p class="v" id="v12"><span class="vn sans">12</span>And on the first day of unleavened bread, when they sacrificed the passover, his disciples say unto him, Where wilt thou that we go and make ready that thou mayest eat the passover?</p><p class="v" id="v13"><span class="vn sans">13</span>And he sendeth two of his disciples, and saith unto them, Go into the city, and there shall meet you a man bearing a pitcher of water: follow him;</p><p class="v" id="v14"><span class="vn sans">14</span>and wheresoever he shall enter in, say to the master of the house, The Teacher saith, Where is my guest-chamber, where I shall eat the passover with my disciples?</p><p class="v" id="v15"><span class="vn sans">15</span>And he will himself show you a large upper room furnished [and] ready: and there make ready for us.</p><p class="v" id="v16"><span class="vn sans">16</span>And the disciples went forth, and came into the city, and found as he had said unto them: and they made ready the passover.</p><p class="v" id="v17"><span class="vn sans">17</span>And when it was evening he cometh with the twelve.</p><p class="v" id="v18"><span class="vn sans">18</span>And as they sat and were eating, Jesus said, Verily I say unto you, One of you shall betray me, [even] he that eateth with me.</p><p class="v" id="v19"><span class="vn sans">19</span>They began to be sorrowful, and to say unto him one by one, Is it I?</p><p class="v" id="v20"><span class="vn sans">20</span>And he said unto them, [It is] one of the twelve, he that dippeth with me in the dish.</p><p class="v" id="v21"><span class="vn sans">21</span>For the Son of man goeth, even as it is written of him: but woe unto that man through whom the Son of man is betrayed! good were it for that man if he had not been born.</p><p class="v" id="v22"><span class="vn sans">22</span>And as they were eating, he took bread, and when he had blessed, he brake it, and gave to them, and said, Take ye: this is my body.</p><p class="v" id="v23"><span class="vn sans">23</span>And he took a cup, and when he had given thanks, he gave to them: and they all drank of it.</p><p class="v" id="v24"><span class="vn sans">24</span>And he said unto them, This is my blood of the covenant, which is poured out for many.</p><p class="v" id="v25"><span class="vn sans">25</span>Verily I say unto you, I shall no more drink of the fruit of the vine, until that day when I drink it new in the kingdom of God.</p><p class="v" id="v26"><span class="vn sans">26</span>And when they had sung a hymn, they went out unto the mount of Olives.</p><p class="v" id="v27"><span class="vn sans">27</span>And Jesus saith unto them, All ye shall be offended: for it is written, I will smite the shepherd, and the sheep shall be scattered abroad.</p><p class="v" id="v28"><span class="vn sans">28</span>Howbeit, after I am raised up, I will go before you into Galilee.</p><p class="v" id="v29"><span class="vn sans">29</span>But Peter said unto him, Although all shall be offended, yet will not I.</p><p class="v" id="v30"><span class="vn sans">30</span>And Jesus saith unto him, Verily I say unto thee, that thou to-day, [even] this night, before the cock crow twice, shalt deny me thrice.</p><p class="v" id="v31"><span class="vn sans">31</span>But he spake exceeding vehemently, If I must die with thee, I will not deny thee. And in like manner also said they all.</p><p class="v" id="v32"><span class="vn sans">32</span>And they come unto a place which was named Gethsemane: and he saith unto his disciples, Sit ye here, while I pray.</p><p class="v" id="v33"><span class="vn sans">33</span>And he taketh with him Peter and James and John, and began to be greatly amazed, and sore troubled.</p><p class="v" id="v34"><span class="vn sans">34</span>And he saith unto them, My soul is exceeding sorrowful even unto death: abide ye here, and watch.</p><p class="v" id="v35"><span class="vn sans">35</span>And he went forward a little, and fell on the ground, and prayed that, if it were possible, the hour might pass away from him.</p><p class="v" id="v36"><span class="vn sans">36</span>And he said, Abba, Father, all things are possible unto thee; remove this cup from me: howbeit not what I will, but what thou wilt.</p><p class="v" id="v37"><span class="vn sans">37</span>And he cometh, and findeth them sleeping, and saith unto Peter, Simon, sleepest thou? couldest thou not watch one hour?</p><p class="v" id="v38"><span class="vn sans">38</span>Watch and pray, that ye enter not into temptation: the spirit indeed is willing, but the flesh is weak.</p><p class="v" id="v39"><span class="vn sans">39</span>And again he went away, and prayed, saying the same words.</p><p class="v" id="v40"><span class="vn sans">40</span>And again he came, and found them sleeping, for their eyes were very heavy; and they knew not what to answer him.</p><p class="v" id="v41"><span class="vn sans">41</span>And he cometh the third time, and saith unto them, Sleep on now, and take your rest: it is enough; the hour is come; behold, the Son of man is betrayed into the hands of sinners.</p><p class="v" id="v42"><span class="vn sans">42</span>Arise, let us be going: behold, he that betrayeth me is at hand.</p><p class="v" id="v43"><span class="vn sans">43</span>And straightway, while he yet spake, cometh Judas, one of the twelve, and with him a multitude with swords and staves, from the chief priests and the scribes and the elders.</p><p class="v" id="v44"><span class="vn sans">44</span>Now he that betrayed him had given them a token, saying, Whomsoever I shall kiss, that is he; take him, and lead him away safely.</p><p class="v" id="v45"><span class="vn sans">45</span>And when he was come, straightway he came to him, and saith, Rabbi; and kissed him.</p><p class="v" id="v46"><span class="vn sans">46</span>And they laid hands on him, and took him.</p><p class="v" id="v47"><span class="vn sans">47</span>But a certain one of them that stood by drew his sword, and smote the servant of the high priest, and struck off his ear.</p><p class="v" id="v48"><span class="vn sans">48</span>And Jesus answered and said unto them, Are ye come out, as against a robber, with swords and staves to seize me?</p><p class="v" id="v49"><span class="vn sans">49</span>I was daily with you in the temple teaching, and ye took me not: but [this is done] that the scriptures might be fulfilled.</p><p class="v" id="v50"><span class="vn sans">50</span>And they all left him, and fled.</p><p class="v" id="v51"><span class="vn sans">51</span>And a certain young man followed with him, having a linen cloth cast about him, over [his] naked [body]: and they lay hold on him;</p><p class="v" id="v52"><span class="vn sans">52</span>but he left the linen cloth, and fled naked.</p><p class="v" id="v53"><span class="vn sans">53</span>And they led Jesus away to the high priest: and there come together with him all the chief priests and the elders and the scribes.</p><p class="v" id="v54"><span class="vn sans">54</span>And Peter had followed him afar off, even within, into the court of the high priest; and he was sitting with the officers, and warming himself in the light [of the fire].</p><p class="v" id="v55"><span class="vn sans">55</span>Now the chief priests and the whole council sought witness against Jesus to put him to death; and found it not.</p><p class="v" id="v56"><span class="vn sans">56</span>For many bare false witness against him, and their witness agreed not together.</p><p class="v" id="v57"><span class="vn sans">57</span>And there stood up certain, and bare false witness against him, saying,</p><p class="v" id="v58"><span class="vn sans">58</span>We heard him say, I will destroy this temple that is made with hands, and in three days I will build another made without hands.</p><p class="v" id="v59"><span class="vn sans">59</span>And not even so did their witness agree together.</p><p class="v" id="v60"><span class="vn sans">60</span>And the high priest stood up in the midst, and asked Jesus, saying, Answerest thou nothing? what is it which these witness against thee?</p><p class="v" id="v61"><span class="vn sans">61</span>But he held his peace, and answered nothing. Again the high priest asked him, and saith unto him, Art thou the Christ, the Son of the Blessed?</p><p class="v" id="v62"><span class="vn sans">62</span>And Jesus said, I am: and ye shall see the Son of man sitting at the right hand of Power, and coming with the clouds of heaven.</p><p class="v" id="v63"><span class="vn sans">63</span>And the high priest rent his clothes, and saith, What further need have we of witnesses?</p><p class="v" id="v64"><span class="vn sans">64</span>Ye have heard the blasphemy: what think ye? And they all condemned him to be worthy of death.</p><p class="v" id="v65"><span class="vn sans">65</span>And some began to spit on him, and to cover his face, and to buffet him, and to say unto him, Prophesy: and the officers received him with blows of their hands.</p><p class="v" id="v66"><span class="vn sans">66</span>And as Peter was beneath in the court, there cometh one of the maids of the high priest;</p><p class="v" id="v67"><span class="vn sans">67</span>and seeing Peter warming himself, she looked upon him, and saith, Thou also wast with the Nazarene, [even] Jesus.</p><p class="v" id="v68"><span class="vn sans">68</span>But he denied, saying, I neither know, nor understand what thou sayest: and he went out into the porch; and the cock crew.</p><p class="v" id="v69"><span class="vn sans">69</span>And the maid saw him, and began again to say to them that stood by, This is [one] of them.</p><p class="v" id="v70"><span class="vn sans">70</span>But he again denied it. And after a little while again they that stood by said to Peter, Of a truth thou art [one] of them; for thou art a Galilæan.</p><p class="v" id="v71"><span class="vn sans">71</span>But he began to curse, and to swear, I know not this man of whom ye speak.</p><p class="v" id="v72"><span class="vn sans">72</span>And straightway the second time the cock crew. And Peter called to mind the word, how that Jesus said unto him, Before the cock crow twice, thou shalt deny me thrice. And when he thought thereon, he wept.</p></article><div class="daynav sans"><a href="/bible/asv/mark/13/index.html">← 13</a><a href="/bible/asv/mark/15/index.html">15 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/asv/mark/index.html">← 馬可福音</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

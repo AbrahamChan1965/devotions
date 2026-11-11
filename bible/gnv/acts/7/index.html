@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>使徒行傳 7 · Geneva｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/gnv/index.html">聖經 Geneva</a> ／ <a href="/bible/gnv/acts/index.html">使徒行傳</a> ／ <b>7</b></div>
+<h1>使徒行傳 7</h1><div class="sub sans">Acts 7 · Geneva</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">Geneva</a><a href="/bible/cuv/acts/7/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>Then sayd the chiefe Priest, Are these things so?</p><p class="v" id="v2"><span class="vn sans">2</span>And he sayd, Ye men, brethren and Fathers, hearken. That God of glory appeared vnto our father Abraham, while he was in Mesopotamia, before he dwelt in Charran,</p><p class="v" id="v3"><span class="vn sans">3</span>And said vnto him, Come out of thy countrey, and from thy kindred, and come into the land, which I shall shewe thee.</p><p class="v" id="v4"><span class="vn sans">4</span>Then came he out of the land of the Chaldeans, and dwelt in Charran. And after that his father was dead, God brought him from thence into this land, wherein ye now dwell,</p><p class="v" id="v5"><span class="vn sans">5</span>And hee gaue him none inheritance in it, no, not the bredth of a foote: yet he promised that he would giue it to him for a possession, and to his seede after him, when as yet hee had no childe.</p><p class="v" id="v6"><span class="vn sans">6</span>But God spake thus, that his seede should be a soiourner in a strange land: and that they should keepe it in bondage, and entreate it euill foure hundreth yeeres.</p><p class="v" id="v7"><span class="vn sans">7</span>But the nation to whome they shall be in bondage, will I iudge, sayth God: and after that, they shall come forth and serue me in this place.</p><p class="v" id="v8"><span class="vn sans">8</span>Hee gaue him also the couenant of circumcision: and so Abraham begate Isaac, and circumcised him the eight day: and Isaac begate Iacob, and Iacob the twelue Patriarkes.</p><p class="v" id="v9"><span class="vn sans">9</span>And the Patriarkes moued with enuie, solde Ioseph into Egypt: but God was with him,</p><p class="v" id="v10"><span class="vn sans">10</span>And deliuered him out of all his afflictions, and gaue him fauour and wisdome in the sight of Pharao King of Egypt, who made him gouernour ouer Egypt, and ouer his whole house.</p><p class="v" id="v11"><span class="vn sans">11</span>Then came there a famine ouer all the land of Egypt and Chanaan, and great affliction, that our fathers found no sustenance.</p><p class="v" id="v12"><span class="vn sans">12</span>But when Iacob heard that there was corne in Egypt, he sent our fathers first:</p><p class="v" id="v13"><span class="vn sans">13</span>And at the second time, Ioseph was knowen of his brethren, and Iosephs kindred was made knowen vnto Pharao.</p><p class="v" id="v14"><span class="vn sans">14</span>Then sent Ioseph and caused his father to be brought, and all his kindred, euen threescore and fifteene soules.</p><p class="v" id="v15"><span class="vn sans">15</span>So Iacob went downe into Egypt, and he dyed, and our fathers,</p><p class="v" id="v16"><span class="vn sans">16</span>And were remoued into Sychem, and were put in the sepulchre, that Abraham had bought for money of the sonnes of Emor, sonne of Sychem.</p><p class="v" id="v17"><span class="vn sans">17</span>But when the time of the promise drewe neere, which God had sworne to Abraham, the people grewe and multiplied in Egypt,</p><p class="v" id="v18"><span class="vn sans">18</span>Till another King arose, which knewe not Ioseph.</p><p class="v" id="v19"><span class="vn sans">19</span>The same dealt subtilly with our kindred, and euill entreated our fathers, and made them to cast out their yong children, that they should not remaine aliue.</p><p class="v" id="v20"><span class="vn sans">20</span>The same time was Moses borne, and was acceptable vnto God, which was nourished vp in his fathers house three moneths.</p><p class="v" id="v21"><span class="vn sans">21</span>And when he was cast out, Pharaohs daughter tooke him vp, and nourished him for her owne sonne.</p><p class="v" id="v22"><span class="vn sans">22</span>And Moses was learned in all the wisdome of the Egyptians, and was mightie in wordes and in deedes.</p><p class="v" id="v23"><span class="vn sans">23</span>Nowe when he was full fourtie yeere olde, it came into his heart to visite his brethren, the children of Israel.</p><p class="v" id="v24"><span class="vn sans">24</span>And whe he saw one of them suffer wrong, he defended him, and auenged his quarell that had the harme done to him, and smote the Egyptian.</p><p class="v" id="v25"><span class="vn sans">25</span>For hee supposed his brethren would haue vnderstand, that God by his hande should giue them deliuerance: but they vnderstoode it not.</p><p class="v" id="v26"><span class="vn sans">26</span>And the next day, he shewed himselfe vnto them as they stroue, and woulde haue set them at one againe, saying, Syrs, ye are brethren: why doe ye wrong one to another?</p><p class="v" id="v27"><span class="vn sans">27</span>But he that did his neighbour wrong, thrust him away, saying, Who made thee a prince, and a iudge ouer vs?</p><p class="v" id="v28"><span class="vn sans">28</span>Wilt thou kill mee, as thou diddest the Egyptian yesterday?</p><p class="v" id="v29"><span class="vn sans">29</span>Then fled Moses at that saying, and was a stranger in the land of Madian, where he begate two sonnes.</p><p class="v" id="v30"><span class="vn sans">30</span>And when fourtie yeres were expired, there appeared to him in the wildernes of mout Sina, an Angel of the Lord in a flame of fire, in a bush.</p><p class="v" id="v31"><span class="vn sans">31</span>And when Moses sawe it, hee wondred at the sight: and as he drew neere to consider it, the voyce of the Lord came vnto him, saying,</p><p class="v" id="v32"><span class="vn sans">32</span>I am the God of thy fathers, the God of Abraham, and the God of Isaac, and the God of Iacob. Then Moses trembled, and durst not behold it.</p><p class="v" id="v33"><span class="vn sans">33</span>Then the Lord said to him, Put off thy shoes from thy feete: for the place where thou standest, is holy ground.</p><p class="v" id="v34"><span class="vn sans">34</span>I haue seene, I haue seene the affliction of my people, which is in Egypt, and I haue heard their groning, and am come downe to deliuer them: and nowe come, and I will sende thee into Egypt.</p><p class="v" id="v35"><span class="vn sans">35</span>This Moses whome they forsooke, saying, Who made thee a prince and a iudge? the same God sent for a prince, and a deliuerer by the hand of the Angel, which appeared to him in the bush.</p><p class="v" id="v36"><span class="vn sans">36</span>Hee brought them out, doing wonders, and miracles in the land of Egypt, and in the red sea, and in the wildernes fourtie yeeres.</p><p class="v" id="v37"><span class="vn sans">37</span>This is that Moses, which saide vnto the children of Israel, A Prophet shall the Lord your God raise vp vnto you, euen of your brethren, like vnto me: him shall ye heare.</p><p class="v" id="v38"><span class="vn sans">38</span>This is he that was in the Congregation, in the wildernes with the Angell, which spake to him in mount Sina, and with our fathers, who receiued the liuely oracles to giue vnto vs.</p><p class="v" id="v39"><span class="vn sans">39</span>To whom our fathers would not obey, but refused, and in their hearts turned backe againe into Egypt:</p><p class="v" id="v40"><span class="vn sans">40</span>Saying vnto Aaron, Make vs gods that may goe before vs: for we knowe not what is become of this Moses that brought vs out of the land of Egypt.</p><p class="v" id="v41"><span class="vn sans">41</span>And they made a calfe in those dayes, and offered sacrifice vnto the idole, and reioyced in the workes of their owne handes.</p><p class="v" id="v42"><span class="vn sans">42</span>Then God turned himselfe away, and gaue them vp to serue the host of heauen, as it is written in the booke of the Prophets, O house of Israel, haue ye offred to me slaine beasts and sacrifices by the space of fourtie yeres in the wildernes?</p><p class="v" id="v43"><span class="vn sans">43</span>And ye tooke vp the tabernacle of Moloch, and the starre of your god Remphan, figures, which ye made to worship them: therefore I will carie you away beyond Babylon.</p><p class="v" id="v44"><span class="vn sans">44</span>Our fathers had the tabernacle of witnes, in the wildernes, as hee had appointed, speaking vnto Moses, that he should make it according to the fashion that he had seene.</p><p class="v" id="v45"><span class="vn sans">45</span>Which tabernacle also our fathers receiued, and brought in with Iesus into the possession of the Gentiles, which God draue out before our fathers, vnto the dayes of Dauid:</p><p class="v" id="v46"><span class="vn sans">46</span>Who found fauour before God, and desired that hee might finde a tabernacle for the God of Iacob.</p><p class="v" id="v47"><span class="vn sans">47</span>But Salomon built him an house.</p><p class="v" id="v48"><span class="vn sans">48</span>Howbeit the most High dwelleth not in temples made with handes, as saith the Prophet,</p><p class="v" id="v49"><span class="vn sans">49</span>Heauen is my throne, and earth is my footestoole: what house wil ye build for me, saith the Lord? or what place is it that I should rest in?</p><p class="v" id="v50"><span class="vn sans">50</span>Hath not mine hand made all these things?</p><p class="v" id="v51"><span class="vn sans">51</span>Ye stiffenecked and of vncircumcised heartes and eares, ye haue alwayes resisted the holy Ghost: as your fathers did, so do you.</p><p class="v" id="v52"><span class="vn sans">52</span>Which of the Prophets haue not your fathers persecuted? and they haue slaine them, which shewed before of the comming of that Iust, of whome ye are now the betrayers and murtherers,</p><p class="v" id="v53"><span class="vn sans">53</span>Which haue receiued the Lawe by the ordinance of Angels, and haue not kept it.</p><p class="v" id="v54"><span class="vn sans">54</span>But when they heard these thinges, their heartes brast for anger, and they gnashed at him with their teeth.</p><p class="v" id="v55"><span class="vn sans">55</span>But he being full of the holy Ghost, looked stedfastly into heauen, and sawe the glory of God, and Iesus standing at the right hand of God,</p><p class="v" id="v56"><span class="vn sans">56</span>And said, Beholde, I see the heauens open, and the Sonne of man standing at the right hand of God.</p><p class="v" id="v57"><span class="vn sans">57</span>Then they gaue a shoute with a loude voyce, and stopped their eares, and ranne vpon him violently all at once,</p><p class="v" id="v58"><span class="vn sans">58</span>And cast him out of the citie, and stoned him: and the witnesses layd downe their clothes at a yong mans feete, named Saul.</p><p class="v" id="v59"><span class="vn sans">59</span>And they stoned Steuen, who called on God, and said, Lord Iesus, receiue my spirit.</p><p class="v" id="v60"><span class="vn sans">60</span>And he kneeled downe, and cried with a loude voyce, Lord, laye not this sinne to their charge. And when he had thus spoken, he slept.</p></article><div class="daynav sans"><a href="/bible/gnv/acts/6/index.html">← 6</a><a href="/bible/gnv/acts/8/index.html">8 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/gnv/acts/index.html">← 使徒行傳</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

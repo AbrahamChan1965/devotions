@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>創世記 41 · Geneva｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/gnv/index.html">聖經 Geneva</a> ／ <a href="/bible/gnv/genesis/index.html">創世記</a> ／ <b>41</b></div>
+<h1>創世記 41</h1><div class="sub sans">Genesis 41 · Geneva</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">Geneva</a><a href="/bible/cuv/genesis/41/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>And two yeeres after, Pharaoh also dreamed, and beholde, he stoode by a riuer,</p><p class="v" id="v2"><span class="vn sans">2</span>And loe, there came out of the riuer seuen goodly kine and fatfleshed, and they fedde in a medowe:</p><p class="v" id="v3"><span class="vn sans">3</span>And loe, seuen other kine came vp after the out of the riuer, euill fauoured and leane fleshed, and stoode by the other kine vpon the brinke of the riuer.</p><p class="v" id="v4"><span class="vn sans">4</span>And the euilfauoured and leane fleshed kine did eate vp the seuen welfauoured and fatte kine: so Pharaoh awoke.</p><p class="v" id="v5"><span class="vn sans">5</span>Againe he slept, and dreamed the second time: and beholde, seuen eares of corne grewe vpon one stalke, ranke and goodly.</p><p class="v" id="v6"><span class="vn sans">6</span>And loe, seuen thinne eares, and blasted with the east winde, sprang vp after them:</p><p class="v" id="v7"><span class="vn sans">7</span>And the thinne eares deuoured the seuen ranke and full eares. then Pharaoh awaked, and loe, it was a dreame.</p><p class="v" id="v8"><span class="vn sans">8</span>Nowe when the morning came, his spirit was troubled: therefore he sent and called all the soothsayers of Egypt, and all the wise men thereof, and Pharaoh tolde them his dreames: but none coulde interprete them to Pharaoh.</p><p class="v" id="v9"><span class="vn sans">9</span>Then spake the chiefe butler vnto Pharaoh, saying, I call to minde my faultes this day.</p><p class="v" id="v10"><span class="vn sans">10</span>Pharaoh being angrie with his seruantes, put me in ward in the chiefe stewards house, both me and the chiefe baker.</p><p class="v" id="v11"><span class="vn sans">11</span>Then we dreamed a dreame in one night, both I, and he: we dreamed eche man according to the interpretation of his dreame.</p><p class="v" id="v12"><span class="vn sans">12</span>And there was with vs a yong man, an Ebrew, seruant vnto the chiefe steward, whome when we told, he declared our dreames to vs, to euery one he declared according to his dreame.</p><p class="v" id="v13"><span class="vn sans">13</span>And as he declared vnto vs, so it came to passe: for he restored me to mine office, and hanged him.</p><p class="v" id="v14"><span class="vn sans">14</span>Then sent Pharaoh, and called Ioseph, and they brought him hastily out of prison, and he shaued him, and chaunged his rayment, and came to Pharaoh.</p><p class="v" id="v15"><span class="vn sans">15</span>Then Pharaoh sayde to Ioseph, I haue dreamed a dreame, and no man can interprete it, and I haue hearde say of thee, that when thou hearest a dreame, thou canst interprete it.</p><p class="v" id="v16"><span class="vn sans">16</span>And Ioseph answered Pharaoh, saying, Without me God shall answere for the wealth of Pharaoh.</p><p class="v" id="v17"><span class="vn sans">17</span>And Pharaoh sayde vnto Ioseph, In my dreame, beholde, I stoode by the banke of the riuer:</p><p class="v" id="v18"><span class="vn sans">18</span>And lo, there came vp out of the riuer seuen fat fleshed, and welfauoured kine, and they fedde in the medowe.</p><p class="v" id="v19"><span class="vn sans">19</span>Also loe, seuen other kine came vp after them, poore and very euilfauoured, and leanefleshed: I neuer sawe the like in all the lande of Egypt, for euilfauoured.</p><p class="v" id="v20"><span class="vn sans">20</span>And the leane and euilfauoured kine did eate vp the first seuen fat kine.</p><p class="v" id="v21"><span class="vn sans">21</span>And when they had eaten them vp, it could not be knowen that they had eaten them, but they were still as euilfauoured, as they were at the beginning: so did I awake.</p><p class="v" id="v22"><span class="vn sans">22</span>Moreouer I sawe in my dreame, and beholde, seuen eares sprang out of one stalke, full and faire.</p><p class="v" id="v23"><span class="vn sans">23</span>And lo, seuen eares, withered, thinne, and blasted with the East winde, sprang vp after them.</p><p class="v" id="v24"><span class="vn sans">24</span>And the thinne eares deuoured the seuen good eares. Nowe I haue tolde the soothsayers, and none can declare it vnto me.</p><p class="v" id="v25"><span class="vn sans">25</span>Then Ioseph answered Pharaoh, Both Pharaohs dreames are one. God hath shewed Pharaoh, what he is about to doe.</p><p class="v" id="v26"><span class="vn sans">26</span>The seuen good kine are seuen yeres, and the seuen good eares are seuen yeeres: this is one dreame.</p><p class="v" id="v27"><span class="vn sans">27</span>Likewise the seuen thinne and euilfauoured kine, that came out after them, are seuen yeeres: and the seuen emptie eares blasted with the East winde, are seuen yeeres of famine.</p><p class="v" id="v28"><span class="vn sans">28</span>This is the thing which I haue saide vnto Pharaoh, that God hath shewed vnto Pharaoh, what he is about to doe.</p><p class="v" id="v29"><span class="vn sans">29</span>Beholde, there come seuen yeeres of great plentie in all the land of Egypt.</p><p class="v" id="v30"><span class="vn sans">30</span>Againe, there shall arise after them seuen yeeres of famine, so that all the plentie shall be forgotten in the land of Egypt, and the famine shall consume the land:</p><p class="v" id="v31"><span class="vn sans">31</span>Neither shall the plentie bee knowen in the land, by reason of this famine that shall come after: for it shalbe exceeding great.</p><p class="v" id="v32"><span class="vn sans">32</span>And therefore the dreame was doubled vnto Pharaoh the second time, because the thing is established by God, and God hasteth to performe it.</p><p class="v" id="v33"><span class="vn sans">33</span>Nowe therefore let Pharaoh prouide for a man of vnderstanding and wisedome, and set him ouer the land of Egypt.</p><p class="v" id="v34"><span class="vn sans">34</span>Let Pharaoh make and appoynt officers ouer the lande, and take vp the fift part of the land of Egypt in the seuen plenteous yeeres.</p><p class="v" id="v35"><span class="vn sans">35</span>Also let them gather all the foode of these good yeeres that come, and lay vp corne vnder the hand of Pharaoh for foode, in the cities, and let them keepe it.</p><p class="v" id="v36"><span class="vn sans">36</span>So the foode shall be for the prouision of the lande, against the seuen yeeres of famine, which shalbe in the lande of Egypt, that the land perish not by famine.</p><p class="v" id="v37"><span class="vn sans">37</span>And the saying pleased Pharaoh and all his seruants.</p><p class="v" id="v38"><span class="vn sans">38</span>Then saide Pharaoh vnto his seruants, Can we finde such a man as this, in whom is the Spirit of God?</p><p class="v" id="v39"><span class="vn sans">39</span>The Pharaoh said to Ioseph, For as much as God hath shewed thee all this, there is no man of vnderstanding, or of wisedome like vnto thee.</p><p class="v" id="v40"><span class="vn sans">40</span>Thou shalt be ouer mine house, and at thy word shall all my people be armed, onely in the kings throne will I be aboue thee.</p><p class="v" id="v41"><span class="vn sans">41</span>Moreouer Pharaoh said to Ioseph, Behold, I haue set thee ouer all the land of Egypt.</p><p class="v" id="v42"><span class="vn sans">42</span>And Pharaoh tooke off his ring from his hand, and put it vpon Iosephs hand, and arayed him in garments of fine linnen, and put a golden cheyne about his necke.</p><p class="v" id="v43"><span class="vn sans">43</span>So he set him vpon the best charet that hee had, saue one: and they cryed before him, Abrech, and placed him ouer all the land of Egypt.</p><p class="v" id="v44"><span class="vn sans">44</span>Againe Pharaoh saide vnto Ioseph, I am Pharaoh, and without thee shall no man lift vp his hand or his foote in all the land of Egypt.</p><p class="v" id="v45"><span class="vn sans">45</span>And Pharaoh called Iosephs name Zaphnath-paaneah: and he gaue him to wife Asenath the daughter of Poti-pherah prince of On. then went Ioseph abrode in the land of Egypt.</p><p class="v" id="v46"><span class="vn sans">46</span>And Ioseph was thirtie yeere old when he stood before Pharaoh king of Egypt: and Ioseph departing from the presence of Pharaoh, went throughout all the land of Egypt.</p><p class="v" id="v47"><span class="vn sans">47</span>And in the seuen plenteous yeres the earth brought foorth store.</p><p class="v" id="v48"><span class="vn sans">48</span>And hee gathered vp all the foode of the seuen plenteous yeeres, which were in the lande of Egypt, and layde vp foode in the cities: the foode of the fielde, that was round about euery citie, layde he vp in the same.</p><p class="v" id="v49"><span class="vn sans">49</span>So Ioseph gathered wheate, like vnto the sand of the sea in multitude out of measure, vntill he left numbring: for it was without number.</p><p class="v" id="v50"><span class="vn sans">50</span>Now vnto Ioseph were borne two sonnes (before the yeeres of famine came) which Asenath the daughter of Poti-pherah prince of On bare vnto him.</p><p class="v" id="v51"><span class="vn sans">51</span>And Ioseph called the name of the first borne Manasseh: for God, said he, hath made me forget all my labour and al my fathers houshold.</p><p class="v" id="v52"><span class="vn sans">52</span>Also hee called the name of the second, Ephraim: For God, sayde he hath made me fruitfull in the land of mine affliction.</p><p class="v" id="v53"><span class="vn sans">53</span>So the seuen yeeres of the plentie that was in the land of Egypt were ended.</p><p class="v" id="v54"><span class="vn sans">54</span>Then began the seuen yeeres of famine to come, according as Ioseph had saide: and the famine was in all landes, but in all the land of Egypt was bread.</p><p class="v" id="v55"><span class="vn sans">55</span>At the length all the lande of Egypt was affamished, and the people cryed to Pharaoh for bread. And Pharaoh said vnto all the Egyptians, Goe to Ioseph: what he sayth to you, doe ye.</p><p class="v" id="v56"><span class="vn sans">56</span>When the famine was vpon all the land, Ioseph opened all places, wherein the store was, and solde vnto the Egyptians: for the famine waxed sore in the land of Egypt.</p><p class="v" id="v57"><span class="vn sans">57</span>And all countries came to Egypt to bye corne of Ioseph, because the famine was sore in all landes.</p></article><div class="daynav sans"><a href="/bible/gnv/genesis/40/index.html">← 40</a><a href="/bible/gnv/genesis/42/index.html">42 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/gnv/genesis/index.html">← 創世記</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

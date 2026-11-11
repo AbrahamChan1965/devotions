@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>列王紀上 18 · Geneva｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/gnv/index.html">聖經 Geneva</a> ／ <a href="/bible/gnv/1-kings/index.html">列王紀上</a> ／ <b>18</b></div>
+<h1>列王紀上 18</h1><div class="sub sans">1 Kings 18 · Geneva</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">Geneva</a><a href="/bible/cuv/1-kings/18/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>After many dayes, the worde of the Lord came to Eliiah, in the third yeere, saying, Goe, shewe thy selfe vnto Ahab, and I will sende rayne vpon the earth.</p><p class="v" id="v2"><span class="vn sans">2</span>And Eliiah went to shew himselfe vnto Ahab, and there was a great famine in Samaria.</p><p class="v" id="v3"><span class="vn sans">3</span>And Ahab called Obadiah the gouernour of his house: (and Obadiah feared God greatly:</p><p class="v" id="v4"><span class="vn sans">4</span>For when Iezebel destroyed the Prophets of the Lord, Obadiah tooke an hundreth Prophets, and hid them, by fiftie in a caue, and he fed them with bread and water.)</p><p class="v" id="v5"><span class="vn sans">5</span>And Ahab saide vnto Obadiah, Goe into the land, vnto all the fountaines of water, and vnto all the riuers, if so be that we may finde grasse to saue the horses and the mules aliue, lest we depriue the lande of the beastes.</p><p class="v" id="v6"><span class="vn sans">6</span>And so they deuided the lande betweene them to walke thorowe it. Ahab went one way by him selfe, and Obadiah went another way by him selfe.</p><p class="v" id="v7"><span class="vn sans">7</span>And as Obadiah was in the way, behold, Eliiah met him: and he knew him, and fell on his face, and said, Art not thou my lord Eliiah?</p><p class="v" id="v8"><span class="vn sans">8</span>And he answered him, Yea, goe tell thy lord, Behold, Eliiah is here.</p><p class="v" id="v9"><span class="vn sans">9</span>And he said, What haue I sinned, that thou wouldest deliuer thy seruant into the hande of Ahab, to slay me?</p><p class="v" id="v10"><span class="vn sans">10</span>As the Lord thy God liueth, there is no nation or kingdome, whither my lorde hath not sent to seeke thee: and when they sayd, He is not here, he tooke an othe of the kingdome and nation, if they had not found thee.</p><p class="v" id="v11"><span class="vn sans">11</span>And now thou sayest, Goe, tell thy lorde, Beholde, Eliiah is here.</p><p class="v" id="v12"><span class="vn sans">12</span>And when I am gone from thee, the Spirit of the Lord shall cary thee into some place that I doe not know: so when I come and tell Ahab, if he cannot finde thee, then wil he kill me: But I thy seruant feare the Lord from my youth.</p><p class="v" id="v13"><span class="vn sans">13</span>Was it not tolde my lord, what I did when Iezebel slew the Prophets of the Lord, how I hid an hundreth men of the Lordes Prophets by fifties in a caue, and fed them with bread and water?</p><p class="v" id="v14"><span class="vn sans">14</span>And now thou sayest, Go, tel thy lord, Behold, Eliiah is here, that he may slay me.</p><p class="v" id="v15"><span class="vn sans">15</span>And Eliiah said, As the Lord of hostes liueth, before whome I stand, I will surely shewe my selfe vnto him this day.</p><p class="v" id="v16"><span class="vn sans">16</span>So Obadiah went to meete Ahab, and tolde him: And Ahab went to meete Eliiah.</p><p class="v" id="v17"><span class="vn sans">17</span>And when Ahab saw Eliiah, Ahab said vnto him, Art thou he that troubleth Israel?</p><p class="v" id="v18"><span class="vn sans">18</span>And he answered, I haue not troubled Israel, but thou, and thy fathers house, in that ye haue forsaken the commandements of the Lord, and thou hast followed Baalim.</p><p class="v" id="v19"><span class="vn sans">19</span>Now therefore send, and gather to me all Israel vnto mount Carmel, and the prophets of Baal foure hundreth and fiftie, and the prophets of the groues foure hundreth, which eate at Iezebels table.</p><p class="v" id="v20"><span class="vn sans">20</span>So Ahab sent vnto all the children of Israel, and gathered the prophets together vnto mount Carmel.</p><p class="v" id="v21"><span class="vn sans">21</span>And Eliiah came vnto all the people, and said, How long halt ye betweene two opinions? If the Lord be God, follow him: but if Baal be he, then goe after him. And the people answered him not a worde.</p><p class="v" id="v22"><span class="vn sans">22</span>Then said Eliiah vnto the people, I onely remayne a Prophet of the Lord: but Baals prophets are foure hundreth and fiftie men.</p><p class="v" id="v23"><span class="vn sans">23</span>Let them therefore giue vs two bullockes, and let them chuse the one, and cut him in pieces, and lay him on the wood, but put no fire vnder, and I will prepare the other bullocke, and lay him on the wood, and will put no fire vnder.</p><p class="v" id="v24"><span class="vn sans">24</span>Then call ye on the name of your god, and I will call on the name of the Lord: and then the God that answereth by fire, let him be God. And all the people answered, and sayde, It is well spoken.</p><p class="v" id="v25"><span class="vn sans">25</span>And Eliiah said vnto the prophets of Baal, Chuse you a bullocke, and prepare him first, (for ye are many) and call on the name of your gods, but put no fire vnder.</p><p class="v" id="v26"><span class="vn sans">26</span>So they tooke the one bullocke, that was giuen them, and they prepared it, and called on the name of Baal, from morning to noone, saying, O Baal, heare vs: but there was no voyce, nor any to answere: and they leapt vpon the altar that was made.</p><p class="v" id="v27"><span class="vn sans">27</span>And at noone Eliiah mocked them, and said, Crye loude: for he is a god: either he talketh or pursueth his enemies, or is in his iourney, or it may be that he sleepeth, and must be awaked.</p><p class="v" id="v28"><span class="vn sans">28</span>And they cryed loude, and cut them selues as their maner was, with kniues and launcers, till the blood gushed out vpon them.</p><p class="v" id="v29"><span class="vn sans">29</span>And when midday was passed, and they had prophecied vntil the offring of the euening sacrifice, there was neither voyce, nor one to answere, nor any that regarded.</p><p class="v" id="v30"><span class="vn sans">30</span>And Eliiah said vnto all the people, Come to me. And all the people came to him. And he repayred the altar of the Lord that was broken downe.</p><p class="v" id="v31"><span class="vn sans">31</span>And Eliiah tooke twelue stones, according to the nomber of the tribes of the sonnes of Iaakob, (vnto whome the worde of the Lord came, saying, Israel shalbe thy name)</p><p class="v" id="v32"><span class="vn sans">32</span>And with the stones he buylt an altar in the Name of the Lord: and he made a ditch round about the altar, as great as woulde conteine two measures of seede.</p><p class="v" id="v33"><span class="vn sans">33</span>And he put the wood in order, and hewed the bullocke in pieces, and layd him on the wood,</p><p class="v" id="v34"><span class="vn sans">34</span>And said, Fill foure barrels with water, and powre it on the burnt offring and on the wood. Againe he said, Doe so againe. And they did so the second time. And he sayde, Doe it the third time. And they did it the third time.</p><p class="v" id="v35"><span class="vn sans">35</span>And the water ran round about the altar: and he filled the ditch with water also.</p><p class="v" id="v36"><span class="vn sans">36</span>And when they should offer the euening sacrifice, Eliiah the Prophet came, and sayd, Lord God of Abraham, Izhak and of Israel, let it be knowen this day, that thou art the God of Israel, and that I am thy seruant, and that I haue done all these things at thy commandement.</p><p class="v" id="v37"><span class="vn sans">37</span>Heare me, O Lord, heare me, and let this people know that thou art the Lord God, and that thou hast turned their heart againe at the last.</p><p class="v" id="v38"><span class="vn sans">38</span>Then the fire of the Lord fell, and consumed the burnt offring, and the wood, and the stones, and the dust, and licked vp the water that was in the ditche.</p><p class="v" id="v39"><span class="vn sans">39</span>And when all the people sawe it, they fell on their faces, and saide, The Lord is God, the Lord is God.</p><p class="v" id="v40"><span class="vn sans">40</span>And Elijah said vnto them, Take the prophets of Baal, let not a man of them escape. and they tooke them, and Eliiah brought them to the brooke Kishon, and slewe them there.</p><p class="v" id="v41"><span class="vn sans">41</span>And Eliiah sayde vnto Ahab, Get thee vp, eate and drinke, for there is a sound of much rayne.</p><p class="v" id="v42"><span class="vn sans">42</span>So Ahab went vp to eate and to drinke, and Eliiah went vp to the top of Carmel: and he crouched vnto the earth, and put his face betweene his knees,</p><p class="v" id="v43"><span class="vn sans">43</span>And sayde to his seruant, Goe vp now and looke towarde the way of the Sea. And he went vp, and looked, and sayde, There is nothing. Againe he sayd, Goe againe seuen times.</p><p class="v" id="v44"><span class="vn sans">44</span>And at the seuenth time he sayd, Behold, there ariseth a litle cloude out of the sea like a mans hand. Then he sayd, Vp, and say vnto Ahab, Make readie thy charet, and get thee downe, that the raine stay thee not.</p><p class="v" id="v45"><span class="vn sans">45</span>And in the meane while the heauen was blacke with cloudes and winde, and there was a great rayne. Then Ahab went vp and came to Izreel.</p><p class="v" id="v46"><span class="vn sans">46</span>And the hand of the Lord was on Eliiah, and he girded vp his Ioynes, and ran before Ahab till he came to Izreel.</p></article><div class="daynav sans"><a href="/bible/gnv/1-kings/17/index.html">← 17</a><a href="/bible/gnv/1-kings/19/index.html">19 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/gnv/1-kings/index.html">← 列王紀上</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

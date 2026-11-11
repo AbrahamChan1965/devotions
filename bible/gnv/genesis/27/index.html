@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>創世記 27 · Geneva｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/gnv/index.html">聖經 Geneva</a> ／ <a href="/bible/gnv/genesis/index.html">創世記</a> ／ <b>27</b></div>
+<h1>創世記 27</h1><div class="sub sans">Genesis 27 · Geneva</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">Geneva</a><a href="/bible/cuv/genesis/27/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>And when Izhak was olde, and his eyes were dimme (so that he coulde not see) he called Esau his eldest sonne, and sayde vnto him, My sonne. And he answered him, I am here.</p><p class="v" id="v2"><span class="vn sans">2</span>Then he sayd, Beholde, I am nowe olde, and knowe not the day of my death:</p><p class="v" id="v3"><span class="vn sans">3</span>Wherefore nowe, I pray thee take thine instruments, thy quiuer and thy bowe, and get thee to the fielde, that thou mayest take mee some venison.</p><p class="v" id="v4"><span class="vn sans">4</span>Then make mee sauourie meate, such as I loue, and bring it me that I may eat, and that my soule may blesse thee, before I die.</p><p class="v" id="v5"><span class="vn sans">5</span>(Nowe Rebekah heard, when Izhak spake to Esau his sonne) and Esau went into the fielde to hunt for venison, and to bring it.</p><p class="v" id="v6"><span class="vn sans">6</span>Then Rebekah spake vnto Iaakob her sonne, saying, Beholde, I haue heard thy father talking with Esau thy brother, saying,</p><p class="v" id="v7"><span class="vn sans">7</span>Bring mee vension, and make mee sauourie meate, that I may eate and blesse thee before the Lord, afore my death.</p><p class="v" id="v8"><span class="vn sans">8</span>Nowe therefore, my sonne, heare my voyce in that which I command thee.</p><p class="v" id="v9"><span class="vn sans">9</span>Get thee nowe to the flocke, and bring me thence two good kids of the goates, that I may make pleasant meate of them for thy father, such as he loueth.</p><p class="v" id="v10"><span class="vn sans">10</span>Then shalt thou bring it to thy father, and he shall eate, to the intent that he may blesse thee before his death.</p><p class="v" id="v11"><span class="vn sans">11</span>But Iaakob sayde to Rebekah his mother, Beholde, Esau my brother is rough, and I am smoothe.</p><p class="v" id="v12"><span class="vn sans">12</span>My father may possibly feele me, and I shall seem to him to be a mocker: so shall I bring a curse vpon me, and not a blessing.</p><p class="v" id="v13"><span class="vn sans">13</span>But his mother sayd vnto him, vpon me be thy curse, my sonne: onely heare my voyce, and go and bring me them.</p><p class="v" id="v14"><span class="vn sans">14</span>So he went and set them, and brought them to his mother: and his mother made pleasant meat, such as his father loued.</p><p class="v" id="v15"><span class="vn sans">15</span>And Rebekah tooke faire clothes of her elder sonne Esau, which were in her house, and clothed Iaakob her yonger sonne:</p><p class="v" id="v16"><span class="vn sans">16</span>And she couered his hands and the smoothe of his necke with the skinnes of the kiddes of the goates.</p><p class="v" id="v17"><span class="vn sans">17</span>Afterward she put the pleasant meate and bread, which she had prepared, in the hand of her sonne Iaakob.</p><p class="v" id="v18"><span class="vn sans">18</span>And when he came to his father, he sayd, My father. Who answered, I am here: who art thou, my sonne?</p><p class="v" id="v19"><span class="vn sans">19</span>And Iaakob sayde to his father, I am Esau thy first borne, I haue done as thou badest me, arise, I pray thee: sit vp and eate of my venison, that thy soule may blesse me.</p><p class="v" id="v20"><span class="vn sans">20</span>Then Izhak said vnto his sonne, Howe hast thou founde it so quickly my sonne? Who sayde, Because the Lord thy God brought it to mine hande.</p><p class="v" id="v21"><span class="vn sans">21</span>Againe sayde Izhak vnto Iaakob, Come neere nowe, that I may feele thee, my sonne, whether thou be that my sonne Esau or not.</p><p class="v" id="v22"><span class="vn sans">22</span>Then Iaakob came neere to Izhak his father, and he felt him and sayd, The voyce is Iaakobs voyce, but the hands are the hands of Esau.</p><p class="v" id="v23"><span class="vn sans">23</span>(For he knewe him not, because his hands were rough as his brother Esaus hands: wherefore he blessed him)</p><p class="v" id="v24"><span class="vn sans">24</span>Againe he sayd, Art thou that my sonne Esau? Who answered, Yea.</p><p class="v" id="v25"><span class="vn sans">25</span>Then said he, Bring it me hither, and I will eate of my sonnes venison, that my soule may blesse thee. And he brought it to him, and he ate: also he brought him wine, and he dranke.</p><p class="v" id="v26"><span class="vn sans">26</span>Afterward his father Izhak sayd vnto him, Come neere nowe, and kisse me, my sonne.</p><p class="v" id="v27"><span class="vn sans">27</span>And hee came neere and kissed him. Then he smellled the sauour of his garmentes, and blessed him, and sayde, Behold, the smelll of my sonne is as the smelll of a fielde, which the Lord hath blessed.</p><p class="v" id="v28"><span class="vn sans">28</span>God giue thee therefore of the dewe of heauen, and the fatnesse of the earth, and plentie of wheate and wine.</p><p class="v" id="v29"><span class="vn sans">29</span>Let people bee thy seruantes, and nations bowe vnto thee: be Lord ouer thy brethren, and let thy mothers children honour thee. cursed be he that curseth thee, and blessed be he that blesseth thee.</p><p class="v" id="v30"><span class="vn sans">30</span>And when Izhak had made an ende of blessing Iaakob, and Iaakob was scarce gone out from the presence of Izhak his father, then came Esau his brother from his hunting,</p><p class="v" id="v31"><span class="vn sans">31</span>And hee also prepared sauourie meate and brought it to his father, and sayd vnto his father, Let my father arise, and eat of his sonnes venison, that thy soule may blesse me.</p><p class="v" id="v32"><span class="vn sans">32</span>But his father Izhak sayde vnto him, Who art thou? And he answered, I am thy sonne, euen thy first borne Esau.</p><p class="v" id="v33"><span class="vn sans">33</span>Then Izhak was stricken with a marueilous great feare, and sayde, Who and where is hee that hunted venison, and brought it mee, and I haue eate of all before thou camest? and I haue blessed him, therefore he shalbe blessed.</p><p class="v" id="v34"><span class="vn sans">34</span>When Esau heard the wordes of his father, he cryed out with a great crye and bitter, out of measure, and sayde vnto his father, Blesse me, euen me also, my father.</p><p class="v" id="v35"><span class="vn sans">35</span>Who answered, Thy brother came with subtiltie, and hath taken away thy blessing.</p><p class="v" id="v36"><span class="vn sans">36</span>Then he sayde, Was hee not iustly called Iaakob? for hee hath deceiued mee these two times: he tooke my birthright, and loe, nowe hath he taken my blessing. Also he sayd, Hast thou not reserued a blessing for me?</p><p class="v" id="v37"><span class="vn sans">37</span>Then Izhak answered, and sayd vnto Esau, Beholde, I haue made him thy lorde, and all his brethre haue I made his seruants: also with wheate and wine haue I furnished him, and vnto thee now what shall I doe, my sonne?</p><p class="v" id="v38"><span class="vn sans">38</span>Then Esau sayde vnto his father, Hast thou but one blessing my father? blesse mee, euen me also, my father: and Esau lifted vp his voyce, and wept.</p><p class="v" id="v39"><span class="vn sans">39</span>Then Izhak his father answered, and sayde vnto him, Behold, the fatnesse of the earth shall be thy dwelling place, and thou shalt haue of the dewe of heauen from aboue.</p><p class="v" id="v40"><span class="vn sans">40</span>And by thy sword shalt thou liue, and shalt be thy brothers seruant. But it shall come to passe, when thou shalt get the masterie, that thou shalt breake his yoke from thy necke.</p><p class="v" id="v41"><span class="vn sans">41</span>Therefore Esau hated Iaakob, because of the blessing, wherewith his father blessed him. And Esau thought in his minde, The dayes of mourning for my father will come shortly, then I will slay may brother Iaakob.</p><p class="v" id="v42"><span class="vn sans">42</span>And it was told to Rebekah of the wordes of Esau her elder sonne, and shee sent and called Iaakob her yonger sonne, and sayd vnto him, Beholde, thy brother Esau is comforted against thee, meaning to kill thee:</p><p class="v" id="v43"><span class="vn sans">43</span>Now therefore my sonne, heare my voyce, arise, and flee thou to Haran to my brother Laban,</p><p class="v" id="v44"><span class="vn sans">44</span>And tarie with him a while vntill thy brothers fiercenesse be swaged,</p><p class="v" id="v45"><span class="vn sans">45</span>And till thy brothers wrath turne away from thee, and hee forget the thinges, which thou hast done to him: then will I sende and take thee from thence: why shoulde I bee depriued of you both in one day?</p><p class="v" id="v46"><span class="vn sans">46</span>Also Rebekah said to Izhak, I am weary of my life, for the daughters of Heth. If Iaakob take a wife of the daughters of Heth like these of the daughters of the lande, what auaileth it me to liue?</p></article><div class="daynav sans"><a href="/bible/gnv/genesis/26/index.html">← 26</a><a href="/bible/gnv/genesis/28/index.html">28 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/gnv/genesis/index.html">← 創世記</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

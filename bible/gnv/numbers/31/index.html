@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民數記 31 · Geneva｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/gnv/index.html">聖經 Geneva</a> ／ <a href="/bible/gnv/numbers/index.html">民數記</a> ／ <b>31</b></div>
+<h1>民數記 31</h1><div class="sub sans">Numbers 31 · Geneva</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">Geneva</a><a href="/bible/cuv/numbers/31/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>And the Lord spake vnto Moses, saying,</p><p class="v" id="v2"><span class="vn sans">2</span>Reuenge the children of Israel of the Midianites, and afterwarde shalt thou be gathered vnto thy people.</p><p class="v" id="v3"><span class="vn sans">3</span>And Moses spake to the people, saying, Harnesse some of you vnto warre, and let them goe against Midian, to execute the vengeance of the Lord against Midian.</p><p class="v" id="v4"><span class="vn sans">4</span>A thousande of euery tribe throughout all the tribes of Israel, shall ye sende to the warre.</p><p class="v" id="v5"><span class="vn sans">5</span>So there were taken out of the thousands of Israel, twelue thousande prepared vnto warre, of euery tribe a thousand.</p><p class="v" id="v6"><span class="vn sans">6</span>And Moses sent them to the warre, euen a thousand of euery tribe, and sent them with Phinehas the sonne of Eleazar the Priest to the warre: and the holy instruments, that is, the trumpets to blow were in his hand.</p><p class="v" id="v7"><span class="vn sans">7</span>And they warred against Midian, as the Lord had commanded Moses, and slue all the males.</p><p class="v" id="v8"><span class="vn sans">8</span>They slue also the Kings of Midian among them that were slaine: Eui and Rekem, and Zur, and Hur and Reba fiue kings of Midian, and they slue Balaam the sonne of Beor with the sworde:</p><p class="v" id="v9"><span class="vn sans">9</span>But the children of Israel tooke the women of Midian prisoners, and their children, and spoyled all their cattell, and all their flockes, and all their goods.</p><p class="v" id="v10"><span class="vn sans">10</span>And they burnt all their cities, wherein they dwelt, and all their villages with fire.</p><p class="v" id="v11"><span class="vn sans">11</span>And they tooke all the spoyle and all the pray both of men and beastes.</p><p class="v" id="v12"><span class="vn sans">12</span>And they brought the captiues and that which they had taken, and the spoyle vnto Moses and to Eleazar the Priest, and vnto the Congregation of the children of Israel, into ye campe in the playne of Moab, which was by Iorden toward Iericho.</p><p class="v" id="v13"><span class="vn sans">13</span>Then Moses and Eleazar the Priest, and all the princes of the Congregation went out of the campe to meete them.</p><p class="v" id="v14"><span class="vn sans">14</span>And Moses was angry with the captaines of the hoste, with the captaines ouer thousands, and captaines ouer hundreds, which came from the warre and battel.</p><p class="v" id="v15"><span class="vn sans">15</span>And Moses sayde vnto them, What? haue ye saued all the women?</p><p class="v" id="v16"><span class="vn sans">16</span>Behold, these caused the children of Israel through the counsell of Balaam to commit a trespasse against the Lord, as concerning Peor, and there came a plague among the Congregation of the Lord.</p><p class="v" id="v17"><span class="vn sans">17</span>Now therefore, slay all the males among the children, and kill all the women that haue knowen man by carnall copulation.</p><p class="v" id="v18"><span class="vn sans">18</span>But all the women children that haue not knowen carnall copulation, keepe aliue for your selues.</p><p class="v" id="v19"><span class="vn sans">19</span>And ye shall remaine without the host seuen dayes, all that haue killed any person, and all that haue touched any dead, and purifie both your selues and your prisoners the third day and the seuenth.</p><p class="v" id="v20"><span class="vn sans">20</span>Also ye shall purifie euery garment and all that is made of skins and al worke of goates heare, and all things made of wood.</p><p class="v" id="v21"><span class="vn sans">21</span>And Eleazar ye Priest sayd vnto the men of warre, which went to the battel, This is the ordinance of the law which the Lord commanded Moses,</p><p class="v" id="v22"><span class="vn sans">22</span>As for gold, and siluer, brasse, yron, tynne, and lead:</p><p class="v" id="v23"><span class="vn sans">23</span>Euen all that may abide the fire, yee shall make it goe through the fire, and it shalbe cleane: yet, it shalbe purified with the water of purification: and all that suffereth not the fire, yee shall cause to passe by the water.</p><p class="v" id="v24"><span class="vn sans">24</span>Ye shall wash also your clothes the seuenth day, and ye shalbe cleane: and afterward ye shall come into the Hoste.</p><p class="v" id="v25"><span class="vn sans">25</span>And the Lord spake vnto Moses, saying,</p><p class="v" id="v26"><span class="vn sans">26</span>Take the summe of the praie that was taken, both of persons and of cattell, thou and Eleazar the Priest, and the chiefe fathers of the Congregation.</p><p class="v" id="v27"><span class="vn sans">27</span>And deuide the praye betweene the souldiers that went to the warre, and all the Congregation.</p><p class="v" id="v28"><span class="vn sans">28</span>And thou shalt take a tribute vnto ye Lord of the men of warre, which went out to battel: one person of fiue hundreth, both of the persons, and of the beeues, and of the asses, and of the sheepe.</p><p class="v" id="v29"><span class="vn sans">29</span>Yee shall take it of their halfe and giue it vnto Eleazar the Priest, as an heaue offring of the Lord.</p><p class="v" id="v30"><span class="vn sans">30</span>But of the halfe of the children of Israel thou shalt take one, taken out of fiftie, both of the persons, of the beeues, of the asses, and of the sheepe, euen of all the cattel: and thou shalt giue them vnto the Leuites, which haue the charge of the Tabernacle of the Lord.</p><p class="v" id="v31"><span class="vn sans">31</span>And Moses and Eleazar the priest did as the Lord had commanded Moses.</p><p class="v" id="v32"><span class="vn sans">32</span>And the bootie, to wit, the rest of the praie which the men of warre had spoyled, was sixe hundreth seuentie and fiue thousand sheepe,</p><p class="v" id="v33"><span class="vn sans">33</span>And seuentie and two thousand beeues,</p><p class="v" id="v34"><span class="vn sans">34</span>And three score and one thousand asses,</p><p class="v" id="v35"><span class="vn sans">35</span>And two and thirtie thousande persons in all, of women that had lyen by no man.</p><p class="v" id="v36"><span class="vn sans">36</span>And the halfe, to wit, the part of them that went out to warre touching the nomber of sheepe, was three hundreth seuen and thirtie thousand, and fiue hundreth.</p><p class="v" id="v37"><span class="vn sans">37</span>And the Lordes tribute of the sheepe was sixe hundreth and seuentie and fiue:</p><p class="v" id="v38"><span class="vn sans">38</span>And the beeues were six and thirty thousad, whereof the Lordes tribute was seuentie and two.</p><p class="v" id="v39"><span class="vn sans">39</span>And the asses were thirtie thousande and fiue hundreth, whereof the Lordes tribute was three score and one:</p><p class="v" id="v40"><span class="vn sans">40</span>And of persons sixtene thousand, whereof the Lordes tribute was two and thirtie persons.</p><p class="v" id="v41"><span class="vn sans">41</span>And Moses gaue the tribute of the Lordes offring vnto Eleazar the Priest, as the Lord had commanded Moses.</p><p class="v" id="v42"><span class="vn sans">42</span>And of the halfe of the children of Israel, which Moses deuided from the men of warre,</p><p class="v" id="v43"><span class="vn sans">43</span>(For the halfe that perteined vnto the Congregation, was three hundreth thirtie and seuen thousand sheepe and fiue hundreth,</p><p class="v" id="v44"><span class="vn sans">44</span>And sixe and thirtie thousand beeues,</p><p class="v" id="v45"><span class="vn sans">45</span>And thirtie thousand asses, and fiue hudreth,</p><p class="v" id="v46"><span class="vn sans">46</span>And sixteene thousande persons)</p><p class="v" id="v47"><span class="vn sans">47</span>Moses, I say, tooke of the halfe that perteined vnto the children of Israel, one taken out of fiftie, both of the persons, and of the cattell, and gaue them vnto the Leuites, which haue the charge of the Tabernacle of the Lord, as the Lord had commanded Moses.</p><p class="v" id="v48"><span class="vn sans">48</span>Then the captaines which were ouer thousandes of the hoste, the captaines ouer the thousandes, and the captaines ouer the hundreds came vnto Moses:</p><p class="v" id="v49"><span class="vn sans">49</span>And saide to Moses, Thy seruants haue taken the summe of the men of warre which are vnder our authoritie, and there lacketh not one man of vs.</p><p class="v" id="v50"><span class="vn sans">50</span>We haue therefore brought a present vnto the Lord, what euery man found of iewels of golde, bracelets, and cheines, rings, eare ringes, and ornaments of the legges, to make an atonement for our soules before the Lord.</p><p class="v" id="v51"><span class="vn sans">51</span>And Moses and Eleazar the Priest tooke the golde of them, and all wrought iewels,</p><p class="v" id="v52"><span class="vn sans">52</span>And all the golde of the offring that they offered vp to the Lord (of the captaines ouer thousands and hundreds) was sixteene thousande seuen hundreth and fiftie shekels,</p><p class="v" id="v53"><span class="vn sans">53</span>(For the men of warre had spoyled, euery man for him selfe)</p><p class="v" id="v54"><span class="vn sans">54</span>And Moses and Eleazar the Priest tooke the golde of the captaines ouer the thousandes, and ouer the hundreds, and brought it into the Tabernacle of the Congregation, for a memoriall of the children of Israel before the Lord.</p></article><div class="daynav sans"><a href="/bible/gnv/numbers/30/index.html">← 30</a><a href="/bible/gnv/numbers/32/index.html">32 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/gnv/numbers/index.html">← 民數記</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>
