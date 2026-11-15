@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>走向 Proper 29 · 週三 祈禱 Oratio｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+</style>
+<style id="reading-type">/* 閱讀字體：手機、平板、電腦分別校準（Proper 28 起） */
+html[lang="zh-Hant"] body{font-family:"Songti TC","Noto Serif TC","Noto Serif CJK TC","Source Han Serif TC","Source Han Serif","PMingLiU",serif}
+html[lang="en"] body{font-family:"Iowan Old Style","Charter","Bitstream Charter","Sitka Text","Cambria","Georgia","Noto Serif",serif}
+html[lang="en"] article p,html[lang="en"] .kairos{font-family:inherit}
+article p{font-weight:400;-webkit-font-smoothing:antialiased;font-kerning:normal}
+html[lang="zh-Hant"] article p{text-align:justify;letter-spacing:.02em}
+html[lang="en"] article p{text-align:left;hyphens:auto;-webkit-hyphens:auto;text-rendering:optimizeLegibility}
+article p:first-of-type::first-letter{font-size:inherit;float:none;padding:0;color:inherit;font-weight:inherit;line-height:inherit}
+article h2{font-weight:700!important;letter-spacing:.02em!important;line-height:1.45!important}
+
+/* 電腦（1025px 以上） */
+.wrap{max-width:46rem}
+html[lang="zh-Hant"] article p{font-size:1.375rem;line-height:2}
+html[lang="en"] article p{font-size:1.375rem;line-height:1.7}
+article h2{font-size:1.6rem!important;margin:2.8rem 0 1.1rem!important}
+.reading .r-refs{font-size:1.1rem}
+.reading .r-label,.crumb,.kicker,.card .c-day{font-size:.9rem}
+.sub{font-size:1rem}
+.card .c-title{font-size:1.45rem}.card .c-sub{font-size:1rem}
+.kairos{font-size:1.15rem;line-height:1.9}
+.nailbox .n-text{font-size:1.6rem}
+.daynav{font-size:.95rem}
+
+/* 平板（641–1024px） */
+@media (max-width:1024px){
+.wrap{max-width:42rem;padding:0 2.2rem}
+html[lang="zh-Hant"] article p{font-size:1.3125rem;line-height:2}
+html[lang="en"] article p{font-size:1.3125rem;line-height:1.65}
+article h2{font-size:1.5rem!important}
+}
+
+/* 手機（640px 以下） */
+@media (max-width:640px){
+.wrap{padding:0 1.25rem}
+html[lang="zh-Hant"] h1{font-size:1.85rem}
+html[lang="en"] h1{font-size:1.75rem;text-wrap:balance}
+html[lang="zh-Hant"] article p{font-size:1.3125rem;line-height:1.9;letter-spacing:.01em;text-align:start}
+article p[style*="var(--gray)"]{font-size:1.05rem!important}
+html[lang="en"] article p{font-size:1.3125rem;line-height:1.6}
+article p{margin-bottom:1.35rem}
+article h2{font-size:1.45rem!important;margin:2.4rem 0 .9rem!important}
+.reading{flex-direction:column;align-items:flex-start;gap:.2rem}
+.reading .r-refs{font-size:1.1rem;text-align:left}
+.reading .r-label,.crumb,.kicker,.card .c-day,.sub,.daynav{font-size:.875rem}
+.reading .r-refs .ver{font-size:.8rem}
+.card .c-title{font-size:1.35rem}.card .c-sub{font-size:1rem}
+.kairos{font-size:1.15rem}
+.nailbox .n-text{font-size:1.45rem}
+.masthead .brand a{font-size:.9rem}.masthead span:last-child{font-size:.85rem}
+}
+
+/* 英文首頁標題：一行 */
+html[lang="en"] .hero h1{white-space:nowrap;font-size:min(2.5rem,calc((100vw - 3rem) / 14.5));letter-spacing:0;line-height:1.3}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/index.html">首頁</a> ／ <a href="/year-a/proper-29/index.html">PROPER 29</a> ／ <b>週三 祈禱</b></div>
+<h1>走向 Proper 29 · 週三 祈禱 Oratio</h1>
+<div class="sub sans">週三祈禱 · WEDNESDAY Oratio</div>
+<hr class="goldrule">
+<div class="meta sans"></div>
+<div class="section" style="margin:0 0 2.2rem"><h2 class="sans">今日經課 · TODAY'S READINGS</h2><div class="reading"><span class="r-label sans">詩篇</span><span class="r-refs">詩篇 100 <a href="/bible/cuv/psalms/100/index.html#v1">讀經<span class="ver sans">和合本</span></a> <a href="/bible/web/psalms/100/index.html#v1">Read<span class="ver sans">WEB</span></a> <a href="/bible/jps/psalms/100/index.html#v1">JPS<span class="ver sans">JPS 1917</span></a></span></div></div>
+<article><p><strong>2026年11月18日</strong></p><p><strong>本週經課</strong> 以西結書 34:11-16, 20-24　詩篇 100　以弗所書 1:15-23　馬太福音 25:31-46</p><p style="color:var(--gray);font-size:1rem">今日焦點：詩篇 100</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">何謂祈禱</h2><p>祈禱是把讀到的話還給神。馬丁路德寫信教他的理髮師禱告，說可以把一段經文編成一個四股的花環：先當作教導，再轉成感謝、認罪、祈求（Martin Luther，《簡易禱告法》，1535）。今天用這個方法禱告詩篇100篇。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">前文後理</h2><p>詩篇93到99篇反覆宣告：「耶和華作王」（詩93:1；96:10；97:1；99:1）。詩篇100篇站在這一組詩的盡頭，像一個收尾的讚美。它的標題是 מִזְמוֹר לְתוֹדָה（mizmôr lətôdāh），「稱謝詩」；「稱謝」也是感謝祭的名字（利7:12）。這是一首向王稱謝的詩，在基督君王節的這一週讀它，正是時候。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">七個命令，兩個理由</h2><p>全詩只有五節，卻有七個命令：歡呼、事奉、來到、曉得、進入、稱謝、稱頌。詩分兩輪，每一輪先呼召，再說理由。第一輪的理由在第3節。第二輪的理由在第5節，以「因為」（כִּי，kî）開頭：「耶和華本為善，他的慈愛存到永遠，他的信實直到萬代。」</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">全地</h2><p>詩一開頭就說：「普天下當向耶和華歡呼！」原文 כָּל־הָאָרֶץ（kol-hāʾāreṣ），「全地」。這首在耶路撒冷聖殿門口唱的歌，呼召的卻是全地的人。主日福音裡，聚集在寶座前的也是「萬民」（太25:32）；保羅說，神使「萬有」服在基督的腳下（弗1:22）。這位王不是一族一國的王。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">兩種讀法</h2><p>第3節：「我們是他造的，也是屬他的。」希伯來文的抄本在這裡寫的是 וְלֹא אֲנַחְנוּ（wəlōʾ ʾănaḥnû），「不是我們自己」；會堂誦讀時卻讀作 וְלוֹ אֲנַחְנוּ（wəlô ʾănaḥnû），「我們是屬他的」。兩個寫法讀音一樣，合起來是一句完整的告白：我們不是自己造的，我們屬於他。</p><p>這句話碰到我們這個時代很深的一個想法：人要自己造自己。履歷、成績、存款、別人的眼光，都在說「你是你自己做出來的」。這股力量很安靜，卻叫人一輩子累。詩篇說：不是，你是被造的，你是屬他的。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">回聲</h2><p>以西結書第三十四章的最後一句是：「你們是我的羊，是我草場上的羊。」（結34:31）和詩篇100:3幾乎一字不差。主日的福音裡，王說「可來承受」那國（太25:34）；草場和國度，都是領受的，不是賺來的。保羅說，聖靈是信徒「得基業的憑據」，直等到神的產業被贖（弗1:14）。屬他的人，是他自己的產業。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">進門</h2><p>第4節說：「當稱謝進入他的門，當讚美進入他的院。」古時的敬拜者是一步一步走進聖殿的。主日福音裡，王對右邊的人說「可來」（太25:34），那扇門最後是王親自打開的。我們今天唱著稱謝走向的，就是那一天要進去的門。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">今日操練</h2><p>二十分鐘，照路德的方法。慢慢讀詩篇100篇。先問：這一句教我什麼？再把它轉成感謝：主，謝謝你造了我。再轉成認罪：主，我常以為我是自己造的。最後轉成祈求：叫我今天活得像屬你的人。可以在通勤的路上做，也可以在廚房裡、在病床邊。結束以前，把第3節輕聲唸給一個你照顧的人聽，或者在心裡為他唸。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">結束禱告</h2><p>耶和華啊，你作王。<br>我們不是自己造的，<br>我們是屬你的，<br>是你草場上的羊。<br>我常想靠自己站穩，<br>用成績、用別人的眼光，<br>證明我是誰。<br>求你叫我放下這個重擔，<br>帶著感謝進你的門。<br>你本為善，<br>你的慈愛存到永遠。阿們。</p></article>
+
+<div class="daynav sans"><a href="/year-a/proper-29/index.html">← 週匯總 WEEK</a><a href="/year-a/proper-29/index.html">本週金句 →</a></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>
