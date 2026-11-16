@@ -25,3 +25,7 @@ Abraham asked for Proper 29 to go live **Sunday 2026-11-15 at 6:00 pm (America/N
 ## Please do
 
 When you come into this repository, **report to Abraham in your work group** that Claude built and published Proper 29 (Chinese and English), and that you left it untouched. For anything else here, branch from `main` and stay clear of the files above.
+
+## Today router (fixed 2026-11-15)
+
+`today/index.html` and `en/today/index.html` send readers to today's page. On Sunday they used to send readers to `{week}/sermon/`, which does not exist for weeks without a sermon page, so readers saw a blank page. Now: Monday–Saturday → that day's page; Sunday → the next week's overview if it is already listed, otherwise the sermon page only when the week is marked `s:1`, otherwise the week overview. When you add a week, add `{m:"YYYY-MM-DD",p:"/year-a/proper-NN/"}` (Monday date) to both routers, and add `s:1` only if that week really has a `sermon/` page. A `404.html` now links back to the home pages.
