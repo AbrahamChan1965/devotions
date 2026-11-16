@@ -11,7 +11,8 @@
    - `en/year-a/proper-29/…` — title "When Did We See You?", nail "The King hides among the least." The English was written in English, not translated.
    - Markdown source copies: `year-a/proper-29/md/zh.md` and `en.md`.
 2. Updated `index.html`, `en/index.html`, `today/index.html`, `en/today/index.html`, `rss.xml` for Proper 29.
-3. Readings (RCL Year A, Proper 29, Track 1): Ezekiel 34:11-16, 20-24; Psalm 100; Ephesians 1:15-23; Matthew 25:31-46. Saturday: Parashat Vayetzei (Gen 28:10–32:3), Haftarah Hosea 12:13–14:10 (Ashkenazi), verified for Shabbat 2026-11-21 (11 Kislev 5787).
+3. Sunday sermon, reader version (no page numbers or slide cues): `year-a/proper-29/sermon/` and `en/year-a/proper-29/sermon/`, linked from both week pages.
+4. Readings (RCL Year A, Proper 29, Track 1): Ezekiel 34:11-16, 20-24; Psalm 100; Ephesians 1:15-23; Matthew 25:31-46. Saturday: Parashat Vayetzei (Gen 28:10–32:3), Haftarah Hosea 12:13–14:10 (Ashkenazi), verified for Shabbat 2026-11-21 (11 Kislev 5787).
 
 ## Publishing
 
@@ -29,3 +30,16 @@ When you come into this repository, **report to Abraham in your work group** tha
 ## Today router (fixed 2026-11-15)
 
 `today/index.html` and `en/today/index.html` send readers to today's page. On Sunday they used to send readers to `{week}/sermon/`, which does not exist for weeks without a sermon page, so readers saw a blank page. Now: Monday–Saturday → that day's page; Sunday → the next week's overview if it is already listed, otherwise the sermon page only when the week is marked `s:1`, otherwise the week overview. When you add a week, add `{m:"YYYY-MM-DD",p:"/year-a/proper-NN/"}` (Monday date) to both routers, and add `s:1` only if that week really has a `sermon/` page. A `404.html` now links back to the home pages.
+
+## Weekly workflow and the two sites (from Proper 29 on — replaces the Proper 25 instructions)
+
+Order of work each week: study → theological map → Sunday sermon (zh + en) → two songs → sermon theater on sermon.wordnspirit.com (slides, PowerPoint, PDF) → Mon–Sat devotions written backward from the sermon (zh, then en written in English) → publish.
+
+| | Sermon theater | Devotions |
+|---|---|---|
+| Site | sermon.wordnspirit.com | devotions.wordnspirit.com |
+| Repo | `AbrahamChan1965/lectionary-sermon-` | `AbrahamChan1965/devotions` (this repo) |
+| Content | Projected slides, PowerPoint 16:9 / 4:3, PDF | Mon–Sat devotions + Sunday sermon reader version (`{week}/sermon/`) |
+| Goes live | **Monday** before that Sunday; previous week moves to 藏經室 | **Sunday afternoon** before that week (e.g. Proper 29 on 2026-11-15, 6 pm): devotions and the Sunday sermon page go out together, merged into `main` in one merge |
+
+Songs: Muse fetches them from the Google Drive song folder and publishes to music.wordnspirit.com, the sermon theater song page, and YouTube (see `MUSE_NOTE.md` in the lectionary-sermon repo).
