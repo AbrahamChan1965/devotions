@@ -43,6 +43,8 @@ Order of work each week: study → theological map → Sunday sermon (zh + en) �
 | Ready by | **Friday** of the week before, on the `{week}-preview` branch | **Friday** of the week before, on a week branch (e.g. `proper-29`, `advent-1`) |
 | Goes live | **Monday 00:00 (America/New_York)**, merged automatically by a weekly scheduled task; previous week moves to 藏經室 | **Same moment, Monday 00:00**: devotions and the Sunday sermon page go out together in one merge |
 
+**Prayer altar (禱告祭壇), prayer.wordnspirit.com**, also goes live at Monday 00:00; its prayer texts and prayer materials link to this devotions site. Abraham is aligning the production deadlines for all weekly outputs separately.
+
 (Changed 2026-11-17: both sites now go live together at Monday 00:00 by schedule. The earlier "Sunday afternoon" release is retired. Do not add another scheduled push.)
 
 Songs: Muse fetches them from the Google Drive song folder and publishes to music.wordnspirit.com, the sermon theater song page, and YouTube (see `MUSE_NOTE.md` in the lectionary-sermon repo).
