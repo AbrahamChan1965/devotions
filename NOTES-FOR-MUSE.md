@@ -40,6 +40,9 @@ Order of work each week: study → theological map → Sunday sermon (zh + en) �
 | Site | sermon.wordnspirit.com | devotions.wordnspirit.com |
 | Repo | `AbrahamChan1965/lectionary-sermon-` | `AbrahamChan1965/devotions` (this repo) |
 | Content | Projected slides, PowerPoint 16:9 / 4:3, PDF | Mon–Sat devotions + Sunday sermon reader version (`{week}/sermon/`) |
-| Goes live | **Monday** before that Sunday; previous week moves to 藏經室 | **Sunday afternoon** before that week (e.g. Proper 29 on 2026-11-15, 6 pm): devotions and the Sunday sermon page go out together, merged into `main` in one merge |
+| Ready by | **Friday** of the week before, on the `{week}-preview` branch | **Friday** of the week before, on a week branch (e.g. `proper-29`, `advent-1`) |
+| Goes live | **Monday 00:00 (America/New_York)**, merged automatically by a weekly scheduled task; previous week moves to 藏經室 | **Same moment, Monday 00:00**: devotions and the Sunday sermon page go out together in one merge |
+
+(Changed 2026-11-17: both sites now go live together at Monday 00:00 by schedule. The earlier "Sunday afternoon" release is retired. Do not add another scheduled push.)
 
 Songs: Muse fetches them from the Google Drive song folder and publishes to music.wordnspirit.com, the sermon theater song page, and YouTube (see `MUSE_NOTE.md` in the lectionary-sermon repo).
