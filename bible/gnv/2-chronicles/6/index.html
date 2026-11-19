@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>歷代志下 6 · Geneva｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/gnv/index.html">聖經 Geneva</a> ／ <a href="/bible/gnv/2-chronicles/index.html">歷代志下</a> ／ <b>6</b></div>
+<h1>歷代志下 6</h1><div class="sub sans">2 Chronicles 6 · Geneva</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">Geneva</a><a href="/bible/cuv/2-chronicles/6/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>Then Salomon sayd, The Lord hath sayde that he would dwell in the darke cloude:</p><p class="v" id="v2"><span class="vn sans">2</span>And I haue built thee an house to dwell in, an habitation for thee to dwell in for euer.</p><p class="v" id="v3"><span class="vn sans">3</span>And the King turned his face, and blessed all the Congregation of Israel (for all the Congregation of Israel stoode there)</p><p class="v" id="v4"><span class="vn sans">4</span>And he said, Blessed be the Lord God of Israel, who spake with his mouth vnto Dauid my father, and hath with his hand fulfilled it, saying,</p><p class="v" id="v5"><span class="vn sans">5</span>Since the day that I brought my people out of the land of Egypt, I chose no citie of al the tribes of Israel to buylde an house, that my Name might be there, neyther chose I any man to be a ruler ouer my people Israel:</p><p class="v" id="v6"><span class="vn sans">6</span>But I haue chosen Ierusalem, that my Name might be there, and haue chosen Dauid to be ouer my people Israel.</p><p class="v" id="v7"><span class="vn sans">7</span>And it was in the heart of Dauid my father to builde an house vnto the Name of the Lord God of Israel,</p><p class="v" id="v8"><span class="vn sans">8</span>But the Lord sayde to Dauid my father, Whereas it was in thine heart to buylde an house vnto my Name, thou diddest well, that thou wast so minded.</p><p class="v" id="v9"><span class="vn sans">9</span>Notwithstanding thou shalt not build the house, but thy sonne which shall come out of thy loynes, he shall buylde an house vnto my Name.</p><p class="v" id="v10"><span class="vn sans">10</span>And the Lord hath performed his worde that he spake: and I am risen vp in the roume of Dauid my father, and am set on the throne of Israel as the Lord promised, and haue built an house to the Name of the Lord God of Israel.</p><p class="v" id="v11"><span class="vn sans">11</span>And I haue set the Arke there, wherein is the couenant of the Lord, that he made with the children of Israel.</p><p class="v" id="v12"><span class="vn sans">12</span>And the King stoode before the altar of the Lord, in the presence of all the Congregation of Israel, and stretched out his hands,</p><p class="v" id="v13"><span class="vn sans">13</span>(For Salomon had made a brasen skaffold and set it in the middes of the court, of fiue cubites long, and fiue cubites broade, and three cubites of height, and vpon it he stoode, and kneeled downe vpon his knees before all the Congregation of Israel, and stretched out his hands toward heauen)</p><p class="v" id="v14"><span class="vn sans">14</span>And sayd, O Lord God of Israel, there is no God like thee in heauen nor in earth, which keepest couenant, and mercie vnto thy seruants, that walke before thee with all their heart.</p><p class="v" id="v15"><span class="vn sans">15</span>Thou that hast kept with thy seruant Dauid my father, that thou hast promised him: for thou spakest with thy mouth, and hast fulfilled it with thine hand, as appeareth this day.</p><p class="v" id="v16"><span class="vn sans">16</span>Therefore now Lord God of Israel, keepe with thy seruant Dauid my father, that thou hast promised him, saying, Thou shalt not want a man in my sight, that shall sit vpon the throne of Israel: so that thy sonnes take heede to their wayes, to walke in my Lawe, as thou hast walked before me.</p><p class="v" id="v17"><span class="vn sans">17</span>And now, O Lord God of Israel, let thy worde be verified, which thou spakest vnto thy seruant Dauid.</p><p class="v" id="v18"><span class="vn sans">18</span>(Is it true in deede that God will dwell with man on earth? beholde, the heauens, and the heauens of heauens are not able to conteine thee: how much more vnable is this house, which I haue buylt?)</p><p class="v" id="v19"><span class="vn sans">19</span>But haue thou respect to the prayer of thy seruant, and to his supplication, O Lord my God, to heare the crye and prayer which thy seruant prayeth before thee,</p><p class="v" id="v20"><span class="vn sans">20</span>That thine eyes may be open toward this house day and night, euen toward the place, whereof thou hast sayde, that thou wouldest put thy Name there, that thou mayest hearken vnto the prayer, which thy seruant prayeth in this place.</p><p class="v" id="v21"><span class="vn sans">21</span>Heare thou therefore the supplication of thy seruant, and of thy people Israel, which they pray in this place: and heare thou in the place of thine habitation, euen in heauen, and when thou hearest, be mercifull.</p><p class="v" id="v22"><span class="vn sans">22</span>When a man shall sinne against his neighbour, and he laye vpon him an othe to cause him to sweare, and the swearer shall come before thine altar in this house,</p><p class="v" id="v23"><span class="vn sans">23</span>Then heare thou in heauen, and doe, and iudge thy seruants, in recompensing the wicked to bring his way vpon his head, and in iustifying the righteous, to giue him according to his righteousnes.</p><p class="v" id="v24"><span class="vn sans">24</span>And when thy people Israel shalbe ouerthrowen before the enemie, because they haue sinned against thee, and turne againe, and confesse thy Name, and pray, and make supplication before thee in this house,</p><p class="v" id="v25"><span class="vn sans">25</span>Then heare thou in heauen, and be mercifull vnto the sinne of thy people Israel, and bring them againe vnto the land which thou gauest to them and to their fathers.</p><p class="v" id="v26"><span class="vn sans">26</span>When heauen shall be shut vp, and there shalbe no rayne, because they haue sinned against thee, and shall pray in this place, and confesse thy Name, and turne from their sinne, when thou doest afflict them,</p><p class="v" id="v27"><span class="vn sans">27</span>Then heare thou in heauen, and pardon the sinne of thy seruants, and of thy people Israel (when thou hast taught them the good way wherein they may walke) and giue rayne vpon thy lande, which thou hast giuen vnto thy people for an inheritance.</p><p class="v" id="v28"><span class="vn sans">28</span>When there shalbe famine in the land, when there shalbe pestilence, blasting, or mildew, when there shall be grashopper, or caterpiller, when their enemie shall besiege them in the cities of their land, or any plague or any sickenesse,</p><p class="v" id="v29"><span class="vn sans">29</span>Then what prayer and supplication so euer shalbe made of any man, or of all thy people Israel, whe euery one shall knowe his owne plague, and his owne disease, and shall stretch forth his hands toward this house,</p><p class="v" id="v30"><span class="vn sans">30</span>Heare thou then in heauen, thy dwelling place, and be merciful, and giue euery man according vnto all his wayes, as thou doest knowe his heart (for thou onely knowest the hearts of the children of men)</p><p class="v" id="v31"><span class="vn sans">31</span>That they may feare thee, and walke in thy wayes as long as they liue in the land which thou gauest vnto our fathers.</p><p class="v" id="v32"><span class="vn sans">32</span>Moreouer, as touching ye stranger which is not of thy people Israel, who shall come out of a farre countrey for thy great Names sake, and thy mighty hande, and thy stretched out arme: when they shall come and pray in this house,</p><p class="v" id="v33"><span class="vn sans">33</span>Heare thou in heauen thy dwelling place, and doe according to all that the stranger calleth for vnto thee, that all the people of the earth may knowe thy Name, and feare thee like thy people Israel, and that they may knowe, that thy Name is called vpon in this house which I haue built.</p><p class="v" id="v34"><span class="vn sans">34</span>When thy people shall goe out to battell against their enemies, by the way that thou shalt send them, and they pray to thee, in the way towarde this citie, which thou hast chosen, euen toward the house which I haue built to thy Name,</p><p class="v" id="v35"><span class="vn sans">35</span>Then heare thou in heauen their prayer and their supplication, and iudge their cause.</p><p class="v" id="v36"><span class="vn sans">36</span>If they sinne against thee (for there is no man that sinneth not) and thou be angry with them and deliuer them vnto the enemies, and they take them and cary them away captiue vnto a land farre or neere,</p><p class="v" id="v37"><span class="vn sans">37</span>If they turne againe to their heart in the lande whither they be caryed in captiues, and turne and pray vnto thee in the lande of their captiuitie, saying, We haue sinned, we haue transgressed and haue done wickedly,</p><p class="v" id="v38"><span class="vn sans">38</span>If they turne againe to thee with all their heart, and with all their soule in the land of their captiuitie, whither they haue caryed them captiues, and pray toward their land, which thou gauest vnto their fathers, and toward the citie which thou hast chosen, and toward the house which I haue built for thy Name,</p><p class="v" id="v39"><span class="vn sans">39</span>Then heare thou in heauen, in the place of thine habitation their prayer and their supplication, and iudge their cause, and be mercifull vnto thy people, which haue sinned against thee.</p><p class="v" id="v40"><span class="vn sans">40</span>Nowe my God, I beseech thee, let thine eyes be open, and thine eares attent vnto the prayer that is made in this place.</p><p class="v" id="v41"><span class="vn sans">41</span>Nowe therefore arise, O Lord God, to come into thy rest, thou, and the Arke of thy strength: O Lord God, let thy Priestes be clothed with saluation, and let thy Saints reioyce in goodnesse.</p><p class="v" id="v42"><span class="vn sans">42</span>O Lord God, refuse not the face of thine anoynted: remember the mercies promised to Dauid thy seruant.</p></article><div class="daynav sans"><a href="/bible/gnv/2-chronicles/5/index.html">← 5</a><a href="/bible/gnv/2-chronicles/7/index.html">7 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/gnv/2-chronicles/index.html">← 歷代志下</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

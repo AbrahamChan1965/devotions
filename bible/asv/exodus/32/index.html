@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>出埃及記 32 · ASV｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/asv/index.html">聖經 ASV</a> ／ <a href="/bible/asv/exodus/index.html">出埃及記</a> ／ <b>32</b></div>
+<h1>出埃及記 32</h1><div class="sub sans">Exodus 32 · ASV</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">ASV</a><a href="/bible/cuv/exodus/32/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>And when the people saw that Moses delayed to come down from the mount, the people gathered themselves together unto Aaron, and said unto him, Up, make us gods, which shall go before us; for as for this Moses, the man that brought us up out of the land of Egypt, we know not what is become of him.</p><p class="v" id="v2"><span class="vn sans">2</span>And Aaron said unto them, Break off the golden rings, which are in the ears of your wives, of your sons, and of your daughters, and bring them unto me.</p><p class="v" id="v3"><span class="vn sans">3</span>And all the people brake off the golden rings which were in their ears, and brought them unto Aaron.</p><p class="v" id="v4"><span class="vn sans">4</span>And he received it at their hand, and fashioned it with a graving tool, and made it a molten calf: and they said, These are thy gods, O Israel, which brought thee up out of the land of Egypt.</p><p class="v" id="v5"><span class="vn sans">5</span>And when Aaron saw [this], he built an altar before it; and Aaron made proclamation, and said, To-morrow shall be a feast to Jehovah.</p><p class="v" id="v6"><span class="vn sans">6</span>And they rose up early on the morrow, and offered burnt-offerings, and brought peace-offerings; and the people sat down to eat and to drink, and rose up to play.</p><p class="v" id="v7"><span class="vn sans">7</span>And Jehovah spake unto Moses, Go, get thee down; for thy people, that thou broughtest up out of the land of Egypt, have corrupted themselves:</p><p class="v" id="v8"><span class="vn sans">8</span>they have turned aside quickly out of the way which I commanded them: they have made them a molten calf, and have worshipped it, and have sacrificed unto it, and said, These are thy gods, O Israel, which brought thee up out of the land of Egypt.</p><p class="v" id="v9"><span class="vn sans">9</span>And Jehovah said unto Moses, I have seen this people, and, behold, it is a stiffnecked people:</p><p class="v" id="v10"><span class="vn sans">10</span>now therefore let me alone, that my wrath may wax hot against them, and that I may consume them: and I will make of thee a great nation.</p><p class="v" id="v11"><span class="vn sans">11</span>And Moses besought Jehovah his God, and said, Jehovah, why doth thy wrath wax hot against thy people, that thou hast brought forth out of the land of Egypt with great power and with a mighty hand?</p><p class="v" id="v12"><span class="vn sans">12</span>Wherefore should the Egyptians speak, saying, For evil did he bring them forth, to slay them in the mountains, and to consume them from the face of the earth? Turn from thy fierce wrath, and repent of this evil against thy people.</p><p class="v" id="v13"><span class="vn sans">13</span>Remember Abraham, Isaac, and Israel, thy servants, to whom thou swarest by thine own self, and saidst unto them, I will multiply your seed as the stars of heaven, and all this land that I have spoken of will I give unto your seed, and they shall inherit it for ever.</p><p class="v" id="v14"><span class="vn sans">14</span>And Jehovah repented of the evil which he said he would do unto his people.</p><p class="v" id="v15"><span class="vn sans">15</span>And Moses turned, and went down from the mount, with the two tables of the testimony in his hand; tables that were written on both their sides; on the one side and on the other were they written.</p><p class="v" id="v16"><span class="vn sans">16</span>And the tables were the work of God, and the writing was the writing of God, graven upon the tables.</p><p class="v" id="v17"><span class="vn sans">17</span>And when Joshua heard the noise of the people as they shouted, he said unto Moses, There is a noise of war in the camp.</p><p class="v" id="v18"><span class="vn sans">18</span>And he said, It is not the voice of them that shout for mastery, neither is it the voice of them that cry for being overcome; but the noise of them that sing do I hear.</p><p class="v" id="v19"><span class="vn sans">19</span>And it came to pass, as soon as he came nigh unto the camp, that he saw the calf and the dancing: and Moses’ anger waxed hot, and he cast the tables out of his hands, and brake them beneath the mount.</p><p class="v" id="v20"><span class="vn sans">20</span>And he took the calf which they had made, and burnt it with fire, and ground it to powder, and strewed it upon the water, and made the children of Israel drink of it.</p><p class="v" id="v21"><span class="vn sans">21</span>And Moses said unto Aaron, What did this people unto thee, that thou hast brought a great sin upon them?</p><p class="v" id="v22"><span class="vn sans">22</span>And Aaron said, Let not the anger of my lord wax hot: thou knowest the people, that they are [set] on evil.</p><p class="v" id="v23"><span class="vn sans">23</span>For they said unto me, Make us gods, which shall go before us; for as for this Moses, the man that brought us up out of the land of Egypt, we know not what is become of him.</p><p class="v" id="v24"><span class="vn sans">24</span>And I said unto them, Whosoever hath any gold, let them break it off: so they gave it me; and I cast it into the fire, and there came out this calf.</p><p class="v" id="v25"><span class="vn sans">25</span>And when Moses saw that the people were broken loose, (for Aaron had let them loose for a derision among their enemies,)</p><p class="v" id="v26"><span class="vn sans">26</span>then Moses stood in the gate of the camp, and said, Whoso is on Jehovah’s side, [let him come] unto me. And all the sons of Levi gathered themselves together unto him.</p><p class="v" id="v27"><span class="vn sans">27</span>And he said unto them, Thus saith Jehovah, the God of Israel, Put ye every man his sword upon his thigh, and go to and fro from gate to gate throughout the camp, and slay every man his brother, and every man his companion, and every man his neighbor.</p><p class="v" id="v28"><span class="vn sans">28</span>And the sons of Levi did according to the word of Moses: and there fell of the people that day about three thousand men.</p><p class="v" id="v29"><span class="vn sans">29</span>And Moses said, Consecrate yourselves to-day to Jehovah, yea, every man against his son, and against his brother; that he may bestow upon you a blessing this day.</p><p class="v" id="v30"><span class="vn sans">30</span>And it came to pass on the morrow, that Moses said unto the people, Ye have sinned a great sin: and now I will go up unto Jehovah; peradventure I shall make atonement for your sin.</p><p class="v" id="v31"><span class="vn sans">31</span>And Moses returned unto Jehovah, and said, Oh, this people have sinned a great sin, and have made them gods of gold.</p><p class="v" id="v32"><span class="vn sans">32</span>Yet now, if thou wilt forgive their sin—; and if not, blot me, I pray thee, out of thy book which thou hast written.</p><p class="v" id="v33"><span class="vn sans">33</span>And Jehovah said unto Moses, Whosoever hath sinned against me, him will I blot out of my book.</p><p class="v" id="v34"><span class="vn sans">34</span>And now go, lead the people unto [the place] of which I have spoken unto thee: behold, mine angel shall go before thee; nevertheless in the day when I visit, I will visit their sin upon them.</p><p class="v" id="v35"><span class="vn sans">35</span>And Jehovah smote the people, because they made the calf, which Aaron made.</p></article><div class="daynav sans"><a href="/bible/asv/exodus/31/index.html">← 31</a><a href="/bible/asv/exodus/33/index.html">33 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/asv/exodus/index.html">← 出埃及記</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

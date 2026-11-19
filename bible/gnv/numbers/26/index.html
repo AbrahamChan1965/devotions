@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民數記 26 · Geneva｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/gnv/index.html">聖經 Geneva</a> ／ <a href="/bible/gnv/numbers/index.html">民數記</a> ／ <b>26</b></div>
+<h1>民數記 26</h1><div class="sub sans">Numbers 26 · Geneva</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">Geneva</a><a href="/bible/cuv/numbers/26/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>And so after the plague, the Lord spake vnto Moses, and to Eleazar the sonne of Aaron the Priest, saying,</p><p class="v" id="v2"><span class="vn sans">2</span>Take the nomber of all the Congregation of the children of Israel from twentie yeere olde and aboue throughout their fathers houses, all that go forth to warre in Israel.</p><p class="v" id="v3"><span class="vn sans">3</span>So Moses and Eleazar the Priest spake vnto them in the plaine of Moab, by Iorden towarde Iericho, saying,</p><p class="v" id="v4"><span class="vn sans">4</span>From twentie yeere olde and aboue ye shall nomber the people, as the Lord had commanded Moses, and the childre of Israel, when they came out of the land of Egypt.</p><p class="v" id="v5"><span class="vn sans">5</span>Reuben the first borne of Israel: the children of Reube were: Hanoch, of whom came the familie of the Hanochites, and of Pallu the familie of the Palluites:</p><p class="v" id="v6"><span class="vn sans">6</span>Of Hesron, the familie of the Hesronites: of Carmi, the familie of the Carmites.</p><p class="v" id="v7"><span class="vn sans">7</span>These are the families of the Reubenites: and they were in nomber three and fourtie thousand, seuen hundreth and thirtie.</p><p class="v" id="v8"><span class="vn sans">8</span>And the sonnes of Pallu, Eliab:</p><p class="v" id="v9"><span class="vn sans">9</span>And the sonnes of Eliab, Nemuel, and Dathan, and Abiram: this Dathan and Abiram were famous in the Congregation, and stroue against Moses and against Aaron in the assemblie of Korah, when they stroue against the Lord.</p><p class="v" id="v10"><span class="vn sans">10</span>And the earth opened her mouth, and swalowed them vp with Korah, when the Congregation died, what time the fire consumed, two hundreth and fiftie men, who were for a signe.</p><p class="v" id="v11"><span class="vn sans">11</span>Notwithstanding, all the sonnes of Korah dyed not.</p><p class="v" id="v12"><span class="vn sans">12</span>And the children of Simeon after their families were: Nemuel, of whom came the familie of the Nemuelites: of Iamin, the familie of the Iaminites: of Iachin, the familie of the Iachinites:</p><p class="v" id="v13"><span class="vn sans">13</span>Of Zerah, the familie of the Zarhites: of Shaul, the familie of the Shaulites.</p><p class="v" id="v14"><span class="vn sans">14</span>These are the families of the Simeonites: two and twentie thousand and two hundreth.</p><p class="v" id="v15"><span class="vn sans">15</span>The sonnes of Gad after their families were: Zephon, of whome came ye familie of the Zephonites: of Haggi, the familie of the Haggites: of Shuni, the familie of the Shunites:</p><p class="v" id="v16"><span class="vn sans">16</span>Of Ozni, the familie of the Oznites: of Eri, the familie of the Erites:</p><p class="v" id="v17"><span class="vn sans">17</span>Of Arod, the familie of the Arodites: of Areli, the familie of the Arelites.</p><p class="v" id="v18"><span class="vn sans">18</span>These are the families of the sonnes of Gad, according to their nombers, fourtie thousand and fiue hundreth.</p><p class="v" id="v19"><span class="vn sans">19</span>The sonnes of Iudah, Er and Onan: but Er and Onan died in the land of Canaan.</p><p class="v" id="v20"><span class="vn sans">20</span>So were the sonnes of Iudah after their families: of Shelah came the familie of ye Shelanites: of Pharez, the familie of the Pharzites, of Zerah, the familie of the Zarhites.</p><p class="v" id="v21"><span class="vn sans">21</span>And the sonnes of Pharez were: of Hesron, the familie of the Hesronites: of Hamul, the familie of the Hamulites.</p><p class="v" id="v22"><span class="vn sans">22</span>These are the families of Iudah, after their nombers, seuentie and sixe thousande and fiue hundreth.</p><p class="v" id="v23"><span class="vn sans">23</span>The sonnes of Issachar, after their families were: Tola, of whom came the familie of the Tolaites: of Pua, the familie of the Punites:</p><p class="v" id="v24"><span class="vn sans">24</span>Of Iashub the familie of the Iashubites: of Shimron, the familie of the Shimronites.</p><p class="v" id="v25"><span class="vn sans">25</span>These are the families of Issachar, after their nombers, threescore and foure thousand and three hundreth.</p><p class="v" id="v26"><span class="vn sans">26</span>The sonnes of Zebulun, after their families were: of Sered, the familie of the Sardites: of Elon, the familie of the Elonites: of Iahleel, the familie of the Iahleelites.</p><p class="v" id="v27"><span class="vn sans">27</span>These are the families of the Zebulunites, after their nombers, three score thousande and fiue hundreth.</p><p class="v" id="v28"><span class="vn sans">28</span>The sonnes of Ioseph, after their families were Manasseh and Ephraim.</p><p class="v" id="v29"><span class="vn sans">29</span>The sonnes of Manasseh were: of Machir, the familie of the Machirites: and Machir begate Gilead: of Gilead came the familie of the Gileadites.</p><p class="v" id="v30"><span class="vn sans">30</span>These are the sonnes of Gilead: of Iezer, the familie of the Iezerites: of Helek, the familie of the Helekites.</p><p class="v" id="v31"><span class="vn sans">31</span>Of Asriel, the familie of the Asrielites: of Shechem, the familie of Shichmites.</p><p class="v" id="v32"><span class="vn sans">32</span>Of Shemida, the familie of the Shemidaites: of Hepher, the familie of the Hepherites.</p><p class="v" id="v33"><span class="vn sans">33</span>And Zelophehad the sonne of Hepher had no sonnes, but daughters: and the names of the daughters of Zelophehad were Mahlah, and Noah, Hoglah, Milcah and Tirzah.</p><p class="v" id="v34"><span class="vn sans">34</span>These are the families of Manasseh, and the nomber of them, two and fiftie thousand and seuen hundreth.</p><p class="v" id="v35"><span class="vn sans">35</span>These are the sonnes of Ephraim after their families: of Shuthelah came the familie of the Shuthalhites: of Becher, the familie of the Bachrites: of Tahan, the familie of the Tahanites.</p><p class="v" id="v36"><span class="vn sans">36</span>And these are the sonnes of Shuthelah: of Eran the familie of the Eranites.</p><p class="v" id="v37"><span class="vn sans">37</span>These are the families of the sonnes of Ephraim after their nombers, two and thirtie thousand and fiue hundreth. these are the sonnes of Ioseph after their families.</p><p class="v" id="v38"><span class="vn sans">38</span>These are the sonnes of Beniamin after their families: of Bela came the familie of the Belaites: of Ashbel, the familie of the Ashbelites: of Ahiram, the familie of the Ahiramites:</p><p class="v" id="v39"><span class="vn sans">39</span>Of Shupham, the familie of the Suphamites: of Hupham, the familie of the Huphamites.</p><p class="v" id="v40"><span class="vn sans">40</span>And the sonnes of Bela were Ard and Naaman: of Ard came the familie of the Ardites, of Naaman, the familie of the Naamites.</p><p class="v" id="v41"><span class="vn sans">41</span>These are the sonnes of Beniamin after their families, and their nombers, fiue and fourtie thousand and sixe hundreth.</p><p class="v" id="v42"><span class="vn sans">42</span>These are the sonnes of Dan after their families: of Shuham came the familie of the Shuhamites: these are the families of Dan after their housholdes.</p><p class="v" id="v43"><span class="vn sans">43</span>All the families of the Shuhamites were after their nombers, threescore and foure thousand, and foure hundreth.</p><p class="v" id="v44"><span class="vn sans">44</span>The sonnes of Asher after their families were: of Iimnah, the familie of the Iimnites: of Isui, the familie of the Isuites: of Beriah, the familie of the Berijtes.</p><p class="v" id="v45"><span class="vn sans">45</span>The sonnes of Beriah were, of Heber the familie of the Heberites: of Malchiel, the familie of the Malchielites.</p><p class="v" id="v46"><span class="vn sans">46</span>And the name of the daughter of Asher was Sarah.</p><p class="v" id="v47"><span class="vn sans">47</span>These are the families of the sonnes of Asher after their nombers, three and fifty thousand and foure hundreth.</p><p class="v" id="v48"><span class="vn sans">48</span>The sonnes of Naphtali, after their families were: of Iahzeel, the families of the Iahzeelites: of Guni, the familie of the Gunites.</p><p class="v" id="v49"><span class="vn sans">49</span>Of Iezer, the familie of the Izrites: of Shillem, the familie of the Shillemites.</p><p class="v" id="v50"><span class="vn sans">50</span>These are the families of Naphtali according to their housholdes, and their nomber, fiue and fourtie thousande and foure hundreth.</p><p class="v" id="v51"><span class="vn sans">51</span>These are the nombers of the children of Israel: sixe hundreth and one thousand, seuen hundreth and thirtie.</p><p class="v" id="v52"><span class="vn sans">52</span>And the Lord spake vnto Moses, saying,</p><p class="v" id="v53"><span class="vn sans">53</span>Vnto these the land shalbe deuided for an inheritance, according to the nomber of names.</p><p class="v" id="v54"><span class="vn sans">54</span>To many thou shalt giue the more inheritance, and to fewe thou shalt giue lesse inheritance: to euery one according to his nomber shalbe giuen his inheritance.</p><p class="v" id="v55"><span class="vn sans">55</span>Notwithstanding, the land shalbe deuided by lot: according to the names of the tribes of their fathers they shall inherite:</p><p class="v" id="v56"><span class="vn sans">56</span>According to the lot shall the possession thereof be deuided betweene many and fewe.</p><p class="v" id="v57"><span class="vn sans">57</span>These also are the nobers of ye Leuites, after their families: of Gershon came ye familie of the Gershonites: of Kohath, ye familie of the Kohathites: of Merari, the familie of the Merarites.</p><p class="v" id="v58"><span class="vn sans">58</span>These are the families of Leui, the familie of the Libnites: the familie of the Hebronites: the familie of the Mahlites: the familie of the Mushites: the familie of the Korhites: and Kohath begate Amram.</p><p class="v" id="v59"><span class="vn sans">59</span>And Amrams wife was called Iochebed the daughter of Leui, which was borne vnto Leui in Egypt: and she bare vnto Amram Aaron, and Moses, and Miriam their sister.</p><p class="v" id="v60"><span class="vn sans">60</span>And vnto Aaron were borne Nadab, and Abihu, Eleazar, and Ithamar.</p><p class="v" id="v61"><span class="vn sans">61</span>And Nadab and Abihu dyed, because they offred strange fire before the Lord.</p><p class="v" id="v62"><span class="vn sans">62</span>And their nombers were three and twentie thousand, all males from a moneth old and aboue: for they were not nombred among the children of Israel, because there was none inheritance giuen them among the children of Israel.</p><p class="v" id="v63"><span class="vn sans">63</span>These are the nombers of Moses and Eleazar the Priest which nombred the children of Israel in the plaine of Moab, neere Iorden, towarde Iericho.</p><p class="v" id="v64"><span class="vn sans">64</span>And among these there was not a man of them, whome Moses and Aaron the Priest nobred, when they tolde the children of Israel in the wildernes of Sinai.</p><p class="v" id="v65"><span class="vn sans">65</span>For the Lord said of them, They shall die in the wildernes: so there was not left a man of them, saue Caleb the sonne of Iephunneh, and Ioshua the sonne of Nun.</p></article><div class="daynav sans"><a href="/bible/gnv/numbers/25/index.html">← 25</a><a href="/bible/gnv/numbers/27/index.html">27 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/gnv/numbers/index.html">← 民數記</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

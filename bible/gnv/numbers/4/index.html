@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民數記 4 · Geneva｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/gnv/index.html">聖經 Geneva</a> ／ <a href="/bible/gnv/numbers/index.html">民數記</a> ／ <b>4</b></div>
+<h1>民數記 4</h1><div class="sub sans">Numbers 4 · Geneva</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">Geneva</a><a href="/bible/cuv/numbers/4/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>And the Lord spake vnto Moses, and to Aaron, saying,</p><p class="v" id="v2"><span class="vn sans">2</span>Take the summe of the sonnes of Kohath from among the sonnes of Leui, after their families, and houses of their fathers,</p><p class="v" id="v3"><span class="vn sans">3</span>From thirtie yeere olde and aboue, euen vntill fiftie yeere olde, all that enter into the assemblie to do the worke in the Tabernacle of the Congregation.</p><p class="v" id="v4"><span class="vn sans">4</span>This shall be the office of the sonnes of Kohath in the Tabernacle of the Congregation about the Holiest of all.</p><p class="v" id="v5"><span class="vn sans">5</span>When the hoste remoueth, then Aaron and his sonnes shall come and take downe the couering vaile, and shall couer the Arke of the Testimonie therewith.</p><p class="v" id="v6"><span class="vn sans">6</span>And they shall put thereon a couering of badgers skinnes, and shall spread vpon it a cloth altogether of blewe silke, and put to the barres thereof:</p><p class="v" id="v7"><span class="vn sans">7</span>And vpon ye table of shew bread they shall spread a cloth of blewe silke, and put thereon the dishes, and the incense cups, and goblets, and couerings to couer it with, and the bread shall be thereon continually:</p><p class="v" id="v8"><span class="vn sans">8</span>And they shall spread vpon them a couering of skarlet, and couer the same with a couering of badgers skinnes, and put to the barres thereof.</p><p class="v" id="v9"><span class="vn sans">9</span>Then they shall take a cloth of blewe silke, and couer the candlesticke of light with his lampes and his snuffers, and his snuffedishes, and al the oyle vessels thereof, which they occupie about it.</p><p class="v" id="v10"><span class="vn sans">10</span>So they shall put it, and all the instruments thereof in a couering of badgers skinnes, and put it vpon the barres.</p><p class="v" id="v11"><span class="vn sans">11</span>Also vpon the golden altar they shall spread a cloth of blewe silke, and couer it with a couering of badgers skinnes, and put to the barres thereof.</p><p class="v" id="v12"><span class="vn sans">12</span>And they shall take all the instruments of the ministerie wherewith they minister in the Sanctuarie, and put them in a cloth of blew silke, and couer the with a couering of badgers skinnes, and put them on the barres.</p><p class="v" id="v13"><span class="vn sans">13</span>Also they shall take away the ashes from the altar, and spread a purple cloth vpon it,</p><p class="v" id="v14"><span class="vn sans">14</span>And shall put vpon it all the instruments thereof, which they occupie about it: the censers, the fleshhookes and the besomes, and the basens, euen al the instruments of the altar and they shall spread vpon it a couering of badgers skinnes, and put to the barres of it.</p><p class="v" id="v15"><span class="vn sans">15</span>And when Aaron and his sonnes haue made an ende of couering the Sanctuarie, and al the instruments of the Sanctuarie, at the remouing of the host, afterward the sonnes of Kohath shall come to beare it, but they shall not touch any holy thing, lest they dye. This is the charge of the sonnes of Kohath in the Tabernacle of the Congregation.</p><p class="v" id="v16"><span class="vn sans">16</span>And to the office of Eleazar the sonne of Aaron the Priest pertaineth the oyle for the light, and the sweete incense and the dayly meat offring, and the anointing oyle, with the ouersight of all the Tabernacle, and of all that therein is, both in the Sanctuarie and in all the instruments thereof.</p><p class="v" id="v17"><span class="vn sans">17</span>And the Lord spake vnto Moses and to Aaron, saying,</p><p class="v" id="v18"><span class="vn sans">18</span>Ye shall not cut off the tribe of the families of the Kohathites from among the Leuites:</p><p class="v" id="v19"><span class="vn sans">19</span>But thus do vnto them, that they may liue and not die, when they come neere to the most holy things: let Aaron and his sonnes come and appoynt them, euery one to his office, and to his charge.</p><p class="v" id="v20"><span class="vn sans">20</span>But let them not goe in, to see when the Sanctuarie is folden vp, lest they die.</p><p class="v" id="v21"><span class="vn sans">21</span>And the Lord spake vnto Moses, saying,</p><p class="v" id="v22"><span class="vn sans">22</span>Take also ye summe of the sonnes of Gershon, euery one by the houses of their fathers throughout their families:</p><p class="v" id="v23"><span class="vn sans">23</span>From thirtie yere old and aboue, vntil fiftie yere old shalt thou nomber them, al that enter into the assemblie for to do seruice in the Tabernacle of the Congregation.</p><p class="v" id="v24"><span class="vn sans">24</span>This shall be the seruice of the families of the Gershonites, to serue and to beare.</p><p class="v" id="v25"><span class="vn sans">25</span>They shall beare the curtaines of the Tabernacle, and the Tabernacle of the Congregation, his couering, and the couering of badgers skinnes, that is on hie vpon it, and the vayle of the doore of the Tabernacle of the Congregation:</p><p class="v" id="v26"><span class="vn sans">26</span>The curtaines also of the court, and the vaile of the entring in of the gate of the court, which is neere the Tabernacle and neere the altar round about, with their cordes, and all the instruments for their seruice, and all that is made for them: so shall they serue.</p><p class="v" id="v27"><span class="vn sans">27</span>At the commandement of Aaron and his sonnes shall all the seruice of the sonnes of ye Gershonites bee done, in all their charges and in all their seruice, and ye shall appoynt them to keepe all their charges.</p><p class="v" id="v28"><span class="vn sans">28</span>This is the seruice of the families of the sonnes of the Gershonites in the Tabernacle of the Congregation, and their watch shall be vnder the hande of Ithamar the sonne of Aaron the Priest.</p><p class="v" id="v29"><span class="vn sans">29</span>Thou shalt nomber the sonnes of Merari by their families, and by the houses of their fathers:</p><p class="v" id="v30"><span class="vn sans">30</span>From thirty yere olde and aboue, euen vnto fiftie yere olde shalt thou nomber the, all that enter into the assemblie, to doe the seruice of the Tabernacle of the Congregation.</p><p class="v" id="v31"><span class="vn sans">31</span>And this is their office and charge according to all their seruice in the Tabernacle of the Congregation: the boardes of the Tabernacle with the barres thereof, and his pillars, and his sockets,</p><p class="v" id="v32"><span class="vn sans">32</span>And the pillars rounde about the court, with their sockets and their pinnes, and their cords, with all their instruments, euen for all their seruice: and by name ye shall recken the instruments of their office and charge.</p><p class="v" id="v33"><span class="vn sans">33</span>This is the seruice of the families of the sonnes of Merari, according to all their seruice in the Tabernacle of the Congregation vnder the hand of Ithamar the sonne of Aaron the Priest.</p><p class="v" id="v34"><span class="vn sans">34</span>Then Moses and Aaron and the princes of the Congregation nombred the sonnes of the Kohathites, by their families and by the houses of their fathers,</p><p class="v" id="v35"><span class="vn sans">35</span>From thirtie yeere olde and aboue, euen vnto fiftie yere olde, all that enter into the assemblie for the seruice of the Tabernacle of ye Congregation.</p><p class="v" id="v36"><span class="vn sans">36</span>So the nombers of the throughout their families were two thousande, seuen hundreth and fiftie.</p><p class="v" id="v37"><span class="vn sans">37</span>These are the nombers of the families of the Kohathites, al that serue in the Tabernacle of the Congregation, which Moses and Aaron did nomber according to the commandement of the Lord by the hand of Moses.</p><p class="v" id="v38"><span class="vn sans">38</span>Also the nombers of the sonnes of Gershon throughout their families and houses of their fathers,</p><p class="v" id="v39"><span class="vn sans">39</span>From thirtie yere olde and vpwarde, euen vnto fiftie yere olde: all that enter into the assemblie for the seruice of the Tabernacle of the Cogregation.</p><p class="v" id="v40"><span class="vn sans">40</span>So the nombers of them by their families, and by the houses of their fathers were two thousand sixe hundreth and thirtie.</p><p class="v" id="v41"><span class="vn sans">41</span>These are the nombers of the families of the sonnes of Gershon: of all that did seruice in the Tabernacle of the Congregation, whom Moses and Aaron did nomber according to the commandement of the Lord.</p><p class="v" id="v42"><span class="vn sans">42</span>The nombers also of the families of the sonnes of Merari by their families, and by the houses of their fathers,</p><p class="v" id="v43"><span class="vn sans">43</span>From thirtie yeere olde and vpwarde, euen vnto fiftie yeere olde: all that enter into the assemblie for the seruice of the Tabernacle of the Congregation.</p><p class="v" id="v44"><span class="vn sans">44</span>So the nombers of them by their families were three thousand, and two hundreth.</p><p class="v" id="v45"><span class="vn sans">45</span>These are the summes of ye families of the sonnes of Merari, whom Moses and Aaron nombred according to the commandement of the Lord, by the hand of Moses.</p><p class="v" id="v46"><span class="vn sans">46</span>So all the nombers of the Leuites, which Moses, and Aaron, and the princes of Israel nombred by their families and by the houses of their fathers,</p><p class="v" id="v47"><span class="vn sans">47</span>From thirtie yere olde and vpward, euen to fiftie yeere olde, euery one that came to doe his duetie, office, seruice and charge in the Tabernacle of the Congregation.</p><p class="v" id="v48"><span class="vn sans">48</span>So the nombers of them were eight thousand, fiue hundreth and foure score.</p><p class="v" id="v49"><span class="vn sans">49</span>According to the commandement of the Lord by the hand of Moses did Aaron nomber them, euery one according to his seruice, and according to his charge. Thus were they of that tribe nombred, as the Lord commanded Moses.</p></article><div class="daynav sans"><a href="/bible/gnv/numbers/3/index.html">← 3</a><a href="/bible/gnv/numbers/5/index.html">5 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/gnv/numbers/index.html">← 民數記</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

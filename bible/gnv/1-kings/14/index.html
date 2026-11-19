@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>列王紀上 14 · Geneva｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/gnv/index.html">聖經 Geneva</a> ／ <a href="/bible/gnv/1-kings/index.html">列王紀上</a> ／ <b>14</b></div>
+<h1>列王紀上 14</h1><div class="sub sans">1 Kings 14 · Geneva</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">Geneva</a><a href="/bible/cuv/1-kings/14/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>At that time Abiiah the sonne of Ieroboam fell sicke.</p><p class="v" id="v2"><span class="vn sans">2</span>And Ieroboam saide vnto his wife, Vp, I pray thee, and disguise thy selfe, that they know not that thou art the wife of Ieroboam, and goe to Shiloh: for there is Ahiiah the Prophet, which tolde mee that I shoulde bee King ouer this people,</p><p class="v" id="v3"><span class="vn sans">3</span>And take with thee tenne loaues and craknels, and a bottell of honie, and go to him: hee shall tell thee what shall become of the yong man.</p><p class="v" id="v4"><span class="vn sans">4</span>And Ieroboams wife did so, and arose, and went to Shiloh, and came to the house of Ahiiah: but Ahiiah could not see, for his sight was decayed for his age.</p><p class="v" id="v5"><span class="vn sans">5</span>Then the Lord saide vnto Ahiiah, Beholde, the wife of Ieroboam commeth to aske a thing of thee for her sonne, for he is sicke: thus and thus shalt thou say vnto her: for when shee commeth in, shee shall feine her selfe to be another.</p><p class="v" id="v6"><span class="vn sans">6</span>Therefore when Ahiiah heard the sounde of her feete as shee came in at the doore, hee saide, Come in, thou wife of Ieroboam: why feinest thou thus thy selfe to bee an other? I am sent to thee with heauie tidings.</p><p class="v" id="v7"><span class="vn sans">7</span>Goe, tel Ieroboam, Thus saith the Lord God of Israel, Forasmuch as I haue exalted thee from among the people, and haue made thee prince ouer my people Israel,</p><p class="v" id="v8"><span class="vn sans">8</span>And haue rent the kingdome away from the house of Dauid, and haue giuen it thee, and thou hast not bene as my seruant Dauid, which kept my commandements, and followed mee with all his heart, and did onely that which was right in mine eyes,</p><p class="v" id="v9"><span class="vn sans">9</span>But hast done euil aboue al that were before thee (for thou hast gone and made thee other gods, and molten images, to prouoke me, and hast cast me behinde thy backe)</p><p class="v" id="v10"><span class="vn sans">10</span>Therefore beholde, I will bring euill vpon the house of Ieroboam, and will cut off from Ieroboam him that pisseth against the wall, aswell him that is shut vp, as him that is left in Israel, and will sweepe away the remnant of the house of Ieroboam, as a man sweepeth away doung, till it be all gone.</p><p class="v" id="v11"><span class="vn sans">11</span>The dogges shall eate him of Ieroboams stocke that dyeth in the citie, and the foules of the aire shall eate him that dyeth in the fielde: for the Lord hath said it.</p><p class="v" id="v12"><span class="vn sans">12</span>Vp therefore and get thee to thine house: for when thy feete enter into the citie, the childe shall die.</p><p class="v" id="v13"><span class="vn sans">13</span>And al Israel shall mourne for him, and burie him: for he onely of Ieroboam shall come to the graue, because in him there is found some goodnes towarde the Lord God of Israel in the house of Ieroboam.</p><p class="v" id="v14"><span class="vn sans">14</span>Moreouer, the Lord shall stirre him vp a King ouer Israel, which shall destroy the house of Ieroboam in that day: what? yea, euen nowe.</p><p class="v" id="v15"><span class="vn sans">15</span>For the Lord shall smite Israel, as when a reede is shaken in the water, and hee shall weede Israel out of his good lad, which he gaue to their fathers, and shall scatter them beyond the Riuer, because they haue made them groues, prouoking the Lord to anger.</p><p class="v" id="v16"><span class="vn sans">16</span>And he shall giue Israel vp, because of the sinnes of Ieroboam, who did sinne, and made Israel to sinne.</p><p class="v" id="v17"><span class="vn sans">17</span>And Ieroboams wife arose, and departed, and came to Tirzah, and when shee came to the threshold of the house, the yong man dyed,</p><p class="v" id="v18"><span class="vn sans">18</span>And they buried him, and all Israel lamented him; according to the word of the Lord, which hee spake by the hand of his seruant Ahiiah the Prophet.</p><p class="v" id="v19"><span class="vn sans">19</span>And the rest of Ieroboams actes, how hee warred, and howe hee reigned, beholde, they are written in the booke of the Chronicles of the Kings of Israel.</p><p class="v" id="v20"><span class="vn sans">20</span>And the dayes which Ieroboam reigned, were two and twentie yeere: and he slept with his fathers, and Nadab his sonne reigned in his steade.</p><p class="v" id="v21"><span class="vn sans">21</span>Also Rehoboam the sonne of Salomon reigned in Iudah. Rehoboam was one and fourtie yere olde, when he began to reigne, and reigned seuenteene yere in Ierusalem, the citie which the Lord did chuse out of al the tribes of Israel, to put his Name there: and his mothers name was Naamah an Ammonite.</p><p class="v" id="v22"><span class="vn sans">22</span>And Iudah wrought wickednesse in the sight of the Lord: and they prouoked him more with their sinnes, which they had committed, then all that which their fathers had done.</p><p class="v" id="v23"><span class="vn sans">23</span>For they also made them hie places, and images, and groues on euery hie hill, and vnder euery greene tree.</p><p class="v" id="v24"><span class="vn sans">24</span>There were also Sodomites in the lande, they did according to all the abominations of the nations, which the Lord had cast out before the children of Israel.</p><p class="v" id="v25"><span class="vn sans">25</span>And in the fift yere of King Rehoboam, Shishak King of Egypt came vp against Ierusale,</p><p class="v" id="v26"><span class="vn sans">26</span>And tooke the treasures of the house of the Lord, and the treasures of the Kings house, and tooke away all: also he caried away all the shields of golde which Salomon had made.</p><p class="v" id="v27"><span class="vn sans">27</span>And King Rehoboam made for them brasen shieldes, and committed them vnto ye hands of the chiefe of the garde, which wayted at the doore of the Kings house.</p><p class="v" id="v28"><span class="vn sans">28</span>And when the King went into the house of the Lord, the garde bare them, and brought them againe into the gard chamber.</p><p class="v" id="v29"><span class="vn sans">29</span>And the rest of the actes of Rehoboam, and all that hee did, are they not written in the booke of the Chronicles of the Kings of Iudah?</p><p class="v" id="v30"><span class="vn sans">30</span>And there was warre betweene Rehoboam and Ieroboam continually.</p><p class="v" id="v31"><span class="vn sans">31</span>And Rehoboam slept with his fathers, and was buried with his fathers in the citie of Dauid: his mothers name was Naamah an Ammonite. And Abiiam his sonne reigned in his stead.</p></article><div class="daynav sans"><a href="/bible/gnv/1-kings/13/index.html">← 13</a><a href="/bible/gnv/1-kings/15/index.html">15 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/gnv/1-kings/index.html">← 列王紀上</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>歷代志上 9 · Geneva｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/gnv/index.html">聖經 Geneva</a> ／ <a href="/bible/gnv/1-chronicles/index.html">歷代志上</a> ／ <b>9</b></div>
+<h1>歷代志上 9</h1><div class="sub sans">1 Chronicles 9 · Geneva</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">Geneva</a><a href="/bible/cuv/1-chronicles/9/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>Thus all Israel were nombred by their genealogies: and beholde, they are written in the booke of the Kings of Israel and of Iudah, and they were caried away to Babel for their transgression.</p><p class="v" id="v2"><span class="vn sans">2</span>And the chiefe inhabitants that dwelt in their owne possessions, and in their owne cities, euen Israel the Priestes, the Leuites, and the Nethinims.</p><p class="v" id="v3"><span class="vn sans">3</span>And in Ierusalem dwelt of the children of Iudah, and of the children of Beniamin, and of the children of Ephraim, and Manasseh.</p><p class="v" id="v4"><span class="vn sans">4</span>Vthai the sonne of Amihud the sonne of Omri, the sonne of Imri, the sonne of Bani: of the children of Pharez, the sonne of Iudah.</p><p class="v" id="v5"><span class="vn sans">5</span>And of Shiloni, Asaiah the eldest, and his sonnes.</p><p class="v" id="v6"><span class="vn sans">6</span>And the sonnes of Zerah, Ieuel, and their brethren sixe hundreth and ninetie.</p><p class="v" id="v7"><span class="vn sans">7</span>And of the sonnes of Beniamin, Sallu the sonne of Meshullam, the sonne of Hodauiah, the sonne of Hasenuah,</p><p class="v" id="v8"><span class="vn sans">8</span>And Ibneiah the sonne of Ieroham, and Elah the sonne of Vzzi, the sonne of Michri, and Meshullam the sonne of Shephatiah, the sonne of Reuel, the sonne of Ibniiah.</p><p class="v" id="v9"><span class="vn sans">9</span>And their brethren according to their generations nine hundreth, fiftie and sixe: all these men were chiefe fathers in the housholdes of their fathers.</p><p class="v" id="v10"><span class="vn sans">10</span>And of the Priestes, Iedaiah, and Iehoiarib, and Iachin,</p><p class="v" id="v11"><span class="vn sans">11</span>And Azariah the sonne of Hilkiah, ye sonne of Meshullam, the sonne of Zadok, the sonne of Meraioth, the sonne of Ahitub the chiefe of the house of God,</p><p class="v" id="v12"><span class="vn sans">12</span>And Adaiah the sonne of Ieroham, ye sonne of Pashur, the sonne of Malchiiah, and Maasai the sonne of Adiel, the sonne of Iahzerah, the sonne of Meshullam, the sonne of Meshillemith, the sonne of Immer.</p><p class="v" id="v13"><span class="vn sans">13</span>And their brethre the chiefe of the households of their fathers a thousand, seuen hundreth and three score valiant men, for the worke of the seruice of the house of God.</p><p class="v" id="v14"><span class="vn sans">14</span>And of the Leuites, Shemaiah the sonne of Hasshub, the sonne of Azrikam, the sonne of Hashabiah of the sonnes of Merari,</p><p class="v" id="v15"><span class="vn sans">15</span>And Bakbakkar, Heresh and Galal, and Mattaniah the sonne of Micha, the sonne of Zichri, the sonne of Asaph,</p><p class="v" id="v16"><span class="vn sans">16</span>And Obadiah the sonne of Shemaiah, the sonne of Galal, the sonne of Ieduthun, and Berechiah, the sonne of Asa, the sonne of Elkanah, that dwelt in the villages of the Netophathites.</p><p class="v" id="v17"><span class="vn sans">17</span>And the porters were Shallum, and Akkub, and Talmon, and Ahiman, and their brethren: Shallum was the chiefe.</p><p class="v" id="v18"><span class="vn sans">18</span>For they were porters to this time by companies of the children of Leui vnto the Kinges gate eastward.</p><p class="v" id="v19"><span class="vn sans">19</span>And Shallum the sonne of Kore the sonne of Ebiasaph the sonne of Korah, and his brethren the Korathites (of the house of their father) were ouer the worke, and office to keepe the gates of the Tabernacle: so their families were ouer the hoste of the Lord, keeping the entrie.</p><p class="v" id="v20"><span class="vn sans">20</span>And Phinehas ye sonne of Eleazar was their guide, and the Lord was with him.</p><p class="v" id="v21"><span class="vn sans">21</span>Zechariah the sonne of Meshelemiah was the porter of the doore of the Tabernacle of the Congregation.</p><p class="v" id="v22"><span class="vn sans">22</span>All these were chosen for porters of the gates, two hundreth and twelue, which were nombred according to their genealogies by their townes. Dauid established these and Samuel the Seer in their perpetuall office.</p><p class="v" id="v23"><span class="vn sans">23</span>So they and their children had the ouersight of the gates of the house of the Lord, euen of the house of the Tabernacle by wardes.</p><p class="v" id="v24"><span class="vn sans">24</span>The porters were in foure quarters Eastward, Westward, Northward and Southward.</p><p class="v" id="v25"><span class="vn sans">25</span>And their brethren, which were in their townes, came at seuen dayes from time to time with them.</p><p class="v" id="v26"><span class="vn sans">26</span>For these foure chiefe porters were in perpetuall office, and were of the Leuites and had charge of the chambers, and of the treasures in the house of God.</p><p class="v" id="v27"><span class="vn sans">27</span>And they lay rounde about the house of God, because the charge was theirs, and they caused it to be opened euery morning.</p><p class="v" id="v28"><span class="vn sans">28</span>And certaine of them had the rule of the ministring vessels: for they brought them in by tale, and brought them out by tale.</p><p class="v" id="v29"><span class="vn sans">29</span>Some of them also were appoynted ouer the instruments, and ouer all the vessels of the Sanctuarie, and of the floure, and the wine, and the oyle, and the incense, and the sweete odours.</p><p class="v" id="v30"><span class="vn sans">30</span>And certaine of the sonnes of the Priestes made oyntments of sweete odours.</p><p class="v" id="v31"><span class="vn sans">31</span>And Mattithiah one of the Leuites which was the eldest sonne of Shallum the Korhite, had the charge of the things that were made in the frying panne.</p><p class="v" id="v32"><span class="vn sans">32</span>And other of their brethren the sonnes of Kohath had the ouersight of the shewbread to prepare it euery Sabbath.</p><p class="v" id="v33"><span class="vn sans">33</span>And these are the singers, the chiefe fathers of the Leuites, which dwelt in the chambers, and had none other charge: for they had to do in that busines day and night:</p><p class="v" id="v34"><span class="vn sans">34</span>These were the chiefe fathers of the Leuites according to their generations, and the principall which dwelt at Ierusalem.</p><p class="v" id="v35"><span class="vn sans">35</span>And in Gibeon dwelt ye father of Gibeon, Ieiel, and the name of his wife was Maachah.</p><p class="v" id="v36"><span class="vn sans">36</span>And his eldest sonne was Abdon, then Zur, and Kish, and Baal, and Ner, and Nadab,</p><p class="v" id="v37"><span class="vn sans">37</span>And Gedor, and Ahio, and Zechariah, and Mikloth.</p><p class="v" id="v38"><span class="vn sans">38</span>And Mikloth begate Shimeam: they also dwelt with their brethren at Ierusalem, euen by their brethren.</p><p class="v" id="v39"><span class="vn sans">39</span>And Ner begate Kish, and Kish begate Saul, and Saul begate Ionathan and Malchishua, and Abinadab and Eshbaal.</p><p class="v" id="v40"><span class="vn sans">40</span>And the sonne of Ionathan was Merib-baal: and Merib-baal begate Micah.</p><p class="v" id="v41"><span class="vn sans">41</span>And the sonnes of Micah were Pithon, and Melech and Tahrea.</p><p class="v" id="v42"><span class="vn sans">42</span>And Ahaz begate Iarah, and Iarah begat Alemeth, and Azmaueth, and Zimri, and Zimri begate Moza.</p><p class="v" id="v43"><span class="vn sans">43</span>And Moza begate Binea, whose sonne was Rephaiah, and his sonne was Eleasah, and his sonne Azel.</p><p class="v" id="v44"><span class="vn sans">44</span>And Azel had sixe sonnes, whose names are these, Azrikam, Bocheru, and Ismael, and Sheariah, and Obadiah, and Hanan: these are the sonnes of Azel.</p></article><div class="daynav sans"><a href="/bible/gnv/1-chronicles/8/index.html">← 8</a><a href="/bible/gnv/1-chronicles/10/index.html">10 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/gnv/1-chronicles/index.html">← 歷代志上</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>利未記 13 · Geneva｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/gnv/index.html">聖經 Geneva</a> ／ <a href="/bible/gnv/leviticus/index.html">利未記</a> ／ <b>13</b></div>
+<h1>利未記 13</h1><div class="sub sans">Leviticus 13 · Geneva</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">Geneva</a><a href="/bible/cuv/leviticus/13/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>Moreouer the Lord spake vnto Moses, and to Aaron, saying,</p><p class="v" id="v2"><span class="vn sans">2</span>The man that shall haue in the skin of his flesh a swelling or a skab, or a white spot, so that in the skinne of his flesh it be like the plague of leprosie, then he shalbe brought vnto Aaron the Priest, or vnto one of his sonnes the Priestes,</p><p class="v" id="v3"><span class="vn sans">3</span>And the Priest shall looke on the sore in the skinne of his flesh: if the heare in the sore be turned into white, and the sore seeme to be lower then the skinne of his flesh, it is a plague of leprosie. therefore the Priest shall looke on him, and pronounce him vncleane:</p><p class="v" id="v4"><span class="vn sans">4</span>But if the white spot be in the skinne of his flesh, and seeme not to bee lower then the skin, nor the heare thereof be turned vnto white, then the Priest shall shut vp him that hath the plague, seuen dayes.</p><p class="v" id="v5"><span class="vn sans">5</span>After, the Priest shall looke vpon him the seuenth day: and if the plague seeme to him to abide still, and the plague growe not in the skin, the Priest shall shut him vp yet seuen dayes more.</p><p class="v" id="v6"><span class="vn sans">6</span>Then the Priest shall looke on him againe the seuenth day, and if the plague be darke, and the sore grow not in the skinne, then the Priest shall pronounce him cleane, for it is a skab: therefore he shall washe his clothes and be cleane.</p><p class="v" id="v7"><span class="vn sans">7</span>But if the skab growe more in the skinne, after that he is seene of ye Priest for to be purged, he shall be seene of the Priest yet againe.</p><p class="v" id="v8"><span class="vn sans">8</span>Then the Priest shall consider, and if the skab growe in the skin, then the Priest shall pronounce him vncleane: for it is leprosie.</p><p class="v" id="v9"><span class="vn sans">9</span>When the plague of leprosie is in a man, he shalbe brought vnto the Priest,</p><p class="v" id="v10"><span class="vn sans">10</span>And the Priest shall see him: and if the swelling be white in ye skin, and haue made ye heare white, and there be rawe flesh in the swelling,</p><p class="v" id="v11"><span class="vn sans">11</span>It is an old leprosie in the skin of his flesh: and the Priest shall pronounce him vncleane, and shall not shut him vp, for he is vncleane.</p><p class="v" id="v12"><span class="vn sans">12</span>Also if the leprosie breake out in the skin, and the leprosie couer all the skin of the plague, from his head euen to his feete, wheresoeuer the Priest looketh,</p><p class="v" id="v13"><span class="vn sans">13</span>Then the Priest shall consider: and if the leprosie couer all his flesh, he shall pronounce the plague to bee cleane, because it is all turned into whitenesse: so he shalbe cleane.</p><p class="v" id="v14"><span class="vn sans">14</span>But if there be raw flesh on him when he is seene, he shalbe vncleane.</p><p class="v" id="v15"><span class="vn sans">15</span>For the Priest shall see the rawe flesh, and declare him to be vncleane: for the rawe flesh is vncleane, therefore it is the leprosie.</p><p class="v" id="v16"><span class="vn sans">16</span>Or if the rawe flesh change and be turned into white, then he shall come to the Priest,</p><p class="v" id="v17"><span class="vn sans">17</span>And the Priest shall beholde him and if the sore be changed into white, then the Priest shall pronounce the plague cleane, for it is cleane.</p><p class="v" id="v18"><span class="vn sans">18</span>The flesh also in whose skin there is a bile and is healed,</p><p class="v" id="v19"><span class="vn sans">19</span>And in ye place of the bile there be a white swelling, or a white spot somewhat reddish, it shall be seene of the Priest.</p><p class="v" id="v20"><span class="vn sans">20</span>And when the Priest seeth it, if it appeare lower then the skinne, and the heare thereof bee changed into white, ye Priest then shall pronounce him vncleane: for it is a plague of leprosie, broken out in the bile.</p><p class="v" id="v21"><span class="vn sans">21</span>But if the Priest looke on it, and there be no white heares therein, and if it bee not lower then the skin, but be darker, then the Priest shall shut him vp seuen dayes.</p><p class="v" id="v22"><span class="vn sans">22</span>And if it spred abroad in the flesh, ye Priest shall pronounce him vncleane, for it is a sore.</p><p class="v" id="v23"><span class="vn sans">23</span>But if the spot continue in his place, and growe not, it is a burning bile: therefore the Priest shall declare him to be cleane.</p><p class="v" id="v24"><span class="vn sans">24</span>If there be any flesh, in whose skin there is an hote burning, and the quick flesh of ye burning haue a white spot, somewhat reddish or pale,</p><p class="v" id="v25"><span class="vn sans">25</span>Then the Priest shall looke vpon it: and if the heare in that spot be changed into white, and it appeare lower then the skin, it is a leprosie broken out in the burning therefore the Priest shall pronounce him vncleane: for it is the plague of leprosie.</p><p class="v" id="v26"><span class="vn sans">26</span>But if the Priest looke on it, and there be no white heare in the spot, and be no lower then the other skinne, but be darker, then the Priest shall shut him vp seuen dayes.</p><p class="v" id="v27"><span class="vn sans">27</span>After, the Priest shall looke on him the seuenth day: if it be growen abroad in the skinne, then the Priest shall pronounce him vncleane: for it is the plague of leprosie.</p><p class="v" id="v28"><span class="vn sans">28</span>And if the spot abide in his place, not growing in the skin, but is darke, it is a rising of the burning: the Priest shall therefore declare him cleane, for it is the drying vp of the burning.</p><p class="v" id="v29"><span class="vn sans">29</span>If also a man or woman hath a sore on the head or in the beard,</p><p class="v" id="v30"><span class="vn sans">30</span>Then the Priest shall see his sore: and if it appeare lower then the skin, and there be in it a small yellow haire, then the Priest shall pronouce him vncleane: for it is a blacke spot, and leprosie of the head or of the beard.</p><p class="v" id="v31"><span class="vn sans">31</span>And if the Priest looke on the sore of the blacke spotte, and if it seeme not lower then the skinne, nor haue any blacke heare in it, then the Priest shall shut vp him, that hath the sore of the blacke spot, seuen dayes.</p><p class="v" id="v32"><span class="vn sans">32</span>After, in the seuenth day the Priest shall looke on the sore: and if the blacke spot growe not, and there be in it no yelowe heare, and the blacke spot seeme not lower then the skinne,</p><p class="v" id="v33"><span class="vn sans">33</span>Then he shalbe shauen, but the place of the blacke spot shall he not shaue: but the Priest shall shut vp him, that hath the blacke spot, seuen dayes more.</p><p class="v" id="v34"><span class="vn sans">34</span>And the seuenth day the Priest shall looke on the blacke spot: and if the blacke spot growe not in the skinne, nor seeme lower then the other skinne, then the Priest shall clense him, and hee shall wash his clothes, and be cleane.</p><p class="v" id="v35"><span class="vn sans">35</span>But if the blacke spot growe abroad in the flesh after his clensing,</p><p class="v" id="v36"><span class="vn sans">36</span>Then the Priest shall looke on it: and if the blacke spot grow in the skin, the Priest shall not seeke for the yelowe heare: for he is vncleane.</p><p class="v" id="v37"><span class="vn sans">37</span>But if ye blacke spot seeme to him to abide, and that blacke heare growe therein, the blacke spot is healed, he is cleane, and the Priest shall declare him to be cleane.</p><p class="v" id="v38"><span class="vn sans">38</span>Furthermore if there bee many white spots in the skin of the flesh of man or woman,</p><p class="v" id="v39"><span class="vn sans">39</span>Then the Priest shall consider: and if the spots in the skin of their flesh be somewhat darke and white withall, it is but a white spot broken out in the skin: therefore he is cleane.</p><p class="v" id="v40"><span class="vn sans">40</span>And the man whose heare is fallen off his head, and is balde, is cleane.</p><p class="v" id="v41"><span class="vn sans">41</span>And if his head lose the heare on the forepart, and be balde before, he is cleane.</p><p class="v" id="v42"><span class="vn sans">42</span>But if there be in the balde head, or in the balde forehead a white reddish sore, it is a leprosie springing in his balde head, or in his balde forehead.</p><p class="v" id="v43"><span class="vn sans">43</span>Therefore the Priest shall looke vpon it, and if the rising of the sore bee white reddish in his balde head, or in his bald forehead, appearing like leprosie in the skin of the flesh,</p><p class="v" id="v44"><span class="vn sans">44</span>He is a leper and vncleane: therefore the Priest shall pronounce him altogether vncleane: for the sore is in his head.</p><p class="v" id="v45"><span class="vn sans">45</span>The leper also in whom the plague is, shall haue his clothes rent, and his head bare, and shall put a couering vpon his lips, and shall cry, I am vncleane, I am vncleane.</p><p class="v" id="v46"><span class="vn sans">46</span>As long as the disease shall be vpon him, he shalbe polluted, for he is vncleane: he shall dwell alone, without the campe shall his habitation be.</p><p class="v" id="v47"><span class="vn sans">47</span>Also the garment that the plague of leprosie is in, whether it be a wollen garment or a linen garment,</p><p class="v" id="v48"><span class="vn sans">48</span>Whether it bee in the warpe or in ye woofe of linen or of wollen, either in a skin, or in any thing made of skin,</p><p class="v" id="v49"><span class="vn sans">49</span>And if the sore be greene or somewhat reddish in the garment or in ye skin, or in the warpe, or in the woofe, or in any thing that is made of skin, it is a plague of leprosie and shalbe shewed vnto the Priest.</p><p class="v" id="v50"><span class="vn sans">50</span>Then the Priest shall see the plague, and shut vp it that hath the plague, seuen dayes,</p><p class="v" id="v51"><span class="vn sans">51</span>And shall looke on the plague the seuenth day: if the plague growe in the garment or in the warpe, or in the woofe, or in the skinne, or in any thing that is made of skin, that plague is a fretting leprosie and vncleane.</p><p class="v" id="v52"><span class="vn sans">52</span>And hee shall burne the garment, or the warpe, or the woofe, whether it bee wollen or linen, or any thing that is made of skin, wherein the plague is: for it is a freating leprosie, therefore it shalbe burnt in the fire.</p><p class="v" id="v53"><span class="vn sans">53</span>If the Priest yet see that the plague grow not in the garment, or in the woofe, or in whatsoeuer thing of skin it be,</p><p class="v" id="v54"><span class="vn sans">54</span>Then the Priest shall commaund them to wash the thing wherein the plague is, and he shall shut it vp seuen dayes more.</p><p class="v" id="v55"><span class="vn sans">55</span>Againe ye Priest shall looke on the plague, after it is washed: and if the plague haue not changed his colour, though the plague haue spred no further, it is vncleane: thou shalt burne it in the fire, for it is a fret inwarde, whether the spot bee in the bare place of the whole, or in part thereof.</p><p class="v" id="v56"><span class="vn sans">56</span>And if the Priest see that the plague bee darker, after that it is washed, he shall cut it out of the garment, or out of the skin, or out of the warpe, or out of the woofe.</p><p class="v" id="v57"><span class="vn sans">57</span>And if it appeare stil in ye garment or in the warpe, or in the woofe, or in any thing made of skin, it is a spreading leprie: thou shalt burne the thing wherein the plague is, in the fire.</p><p class="v" id="v58"><span class="vn sans">58</span>If thou hast washed ye garment or ye warpe, or ye woofe, or whatsouer thing of skin it be, if the plague be departed therefrom, then shall it be washed the second time, and be cleane.</p><p class="v" id="v59"><span class="vn sans">59</span>This is the lawe of the plague of leprosie in a garment of wollen or linnen, or in the warpe, or in the woofe, or in any thing of skin, to make it cleane or vncleane.</p></article><div class="daynav sans"><a href="/bible/gnv/leviticus/12/index.html">← 12</a><a href="/bible/gnv/leviticus/14/index.html">14 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/gnv/leviticus/index.html">← 利未記</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>

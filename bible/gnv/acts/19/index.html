@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>使徒行傳 19 · Geneva｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+
+.bible-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.2rem 1.4rem;margin:2rem 0}
+.bible-grid a{border-bottom:1px solid var(--hairline);padding:.85rem .2rem;text-decoration:none;color:var(--ink);font-size:.95rem}
+@media (hover:hover){.bible-grid a:hover{color:var(--gold)}}
+.bible-grid .en{display:block;font-size:.72rem;color:var(--gray);letter-spacing:.06em;margin-top:.2rem}
+.chap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.2rem .6rem;margin:2rem 0}
+.chap-grid a{border-bottom:1px solid var(--hairline);text-align:center;padding:.7rem 0;text-decoration:none;color:var(--ink)}
+@media (hover:hover){.chap-grid a:hover{color:var(--gold);font-weight:700}}
+p.v{font-size:1.1rem;line-height:2;margin-bottom:.4rem;text-align:justify}
+p.v .vn{font-size:.72rem;color:var(--gold);font-weight:700;letter-spacing:.05em;margin-right:.6em;vertical-align:super}
+p.v:target{background:#f3ecd9;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem}
+@media (prefers-color-scheme:dark){p.v:target{background:#2a2438}}
+@media (prefers-color-scheme:dark){.bible-grid a,.chap-grid a{color:#f2f2f2;border-color:#3a3a3a}.bible-grid .en{color:#a8a8a8}}
+html[lang="en"] p.v{font-size:1.2rem;line-height:1.8}
+.ver-toggle{display:flex;gap:2.2rem;margin:1.6rem 0;flex-wrap:wrap;justify-content:center}
+.ver-toggle a{padding:.4rem 0;border-bottom:1px solid var(--gold);color:var(--gold);text-decoration:none;letter-spacing:.18em;font-size:.78rem;font-weight:700;font-variant:small-caps}
+.ver-toggle a.on{border-bottom:3px solid var(--purple)}
+@media (max-width:640px){.bible-grid{grid-template-columns:repeat(2,1fr)}.chap-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/bible/gnv/index.html">聖經 Geneva</a> ／ <a href="/bible/gnv/acts/index.html">使徒行傳</a> ／ <b>19</b></div>
+<h1>使徒行傳 19</h1><div class="sub sans">Acts 19 · Geneva</div><hr class="goldrule"><div class="ver-toggle sans"><a class="on">Geneva</a><a href="/bible/cuv/acts/19/index.html">和合本</a></div><article><p class="v" id="v1"><span class="vn sans">1</span>And it came to passe, while Apollos was at Corinthus, that Paul when he passed thorow the vpper coasts, came to Ephesus, and found certaine disciples,</p><p class="v" id="v2"><span class="vn sans">2</span>And saide vnto them, Haue ye receiued the holy Ghost since ye beleeued? And they saide vnto him, Wee haue not so much as heard whether there be an holy Ghost.</p><p class="v" id="v3"><span class="vn sans">3</span>And he said vnto them, Vnto what were ye then baptized? And they saide, Vnto Iohns baptisme.</p><p class="v" id="v4"><span class="vn sans">4</span>Then saide Paul, Iohn verely baptized with the baptisme of repentance, saying vnto the people, that they shoulde beleeue in him, which should come after him, that is, in Christ Iesus.</p><p class="v" id="v5"><span class="vn sans">5</span>And when they heard it, they were baptized in the Name of the Lord Iesus.</p><p class="v" id="v6"><span class="vn sans">6</span>So Paul layde his handes vpon them, and the holy Ghost came on them, and they spake the tongues, and prophecied.</p><p class="v" id="v7"><span class="vn sans">7</span>And all the men were about twelue.</p><p class="v" id="v8"><span class="vn sans">8</span>Moreouer he went into the Synagogue, and spake boldly for the space of three moneths, disputing and exhorting to the things that appertaine to the kingdome of God.</p><p class="v" id="v9"><span class="vn sans">9</span>But when certaine were hardened, and disobeyed, speaking euill of the way of God before the multitude, hee departed from them, and separated the disciples, and disputed dayly in the schoole of one Tyrannus.</p><p class="v" id="v10"><span class="vn sans">10</span>And this was done by the space of two yeeres, so that all they which dwelt in Asia, heard the word of ye Lord Iesus, both Iewes and Grecians.</p><p class="v" id="v11"><span class="vn sans">11</span>And God wrought no small miracles by the handes of Paul,</p><p class="v" id="v12"><span class="vn sans">12</span>So that from his body were brought vnto the sicke, kerchefs or handkerchefs, and the diseases departed from them, and the euill spirits went out of them.</p><p class="v" id="v13"><span class="vn sans">13</span>Then certaine of the vagabond Iewes, exorcistes, tooke in hand to name ouer them which had euil spirits, the Name of the Lord Iesus, saying, We adiure you by Iesus, whom Paul preacheth.</p><p class="v" id="v14"><span class="vn sans">14</span>(And there were certaine sonnes of Sceua a Iewe, the Priest, about seuen which did this)</p><p class="v" id="v15"><span class="vn sans">15</span>And the euil spirit answered, and said, Iesus I acknowledge, and Paul I know: but who are ye?</p><p class="v" id="v16"><span class="vn sans">16</span>And the man in whome the euil spirit was, ranne on them, and ouercame them, and preuailed against them, so that they fledde out of that house, naked, and wounded.</p><p class="v" id="v17"><span class="vn sans">17</span>And this was knowen to all the Iewes and Grecians also, which dwelt at Ephesus, and feare came on them all, and the Name of the Lord Iesus was magnified,</p><p class="v" id="v18"><span class="vn sans">18</span>And many that beleeued, came and confessed, and shewed their workes.</p><p class="v" id="v19"><span class="vn sans">19</span>Many also of them which vsed curious artes, brought their bookes, and burned them before all men: and they counted the price of them, and found it fiftie thousand pieces of siluer.</p><p class="v" id="v20"><span class="vn sans">20</span>So the worde of God grewe mightily, and preuailed.</p><p class="v" id="v21"><span class="vn sans">21</span>Nowe when these things were accomplished, Paul purposed by the Spirite to passe through Macedonia and Achaia, and to goe to Hierusalem, saying, After I haue bene there, I must also see Rome.</p><p class="v" id="v22"><span class="vn sans">22</span>So sent hee into Macedonia two of them that ministred vnto him, Timotheus and Erastus, but he remained in Asia for a season.</p><p class="v" id="v23"><span class="vn sans">23</span>And the same time there arose no small trouble about that way.</p><p class="v" id="v24"><span class="vn sans">24</span>For a certaine man named Demetrius a siluersmith, which made siluer temples of Diana, brought great gaines vnto the craftesmen,</p><p class="v" id="v25"><span class="vn sans">25</span>Whom he called together, with the workemen of like things, and saide, Syrs, ye knowe that by this craft we haue our goods:</p><p class="v" id="v26"><span class="vn sans">26</span>Moreouer ye see and heare, that not alone at Ephesus, but almost throughout all Asia this Paul hath perswaded, and turned away much people, saying, That they be not gods which are made with handes.</p><p class="v" id="v27"><span class="vn sans">27</span>So that not onely this thing is dangerous vnto vs, that this our portion shall be reproued, but also that the temple of the great goddesse Diana should be nothing esteemed, and that it would come to passe that her magnificence, which all Asia and the world worshippeth, should be destroyed.</p><p class="v" id="v28"><span class="vn sans">28</span>Now when they heard it, they were full of wrath, and cried out, saying, Great is Diana of the Ephesians.</p><p class="v" id="v29"><span class="vn sans">29</span>And the whole citie was full of confusion, and they rushed into the common place with one assent, and caught Gaius, and Aristarchus, men of Macedonia, and Pauls companions of his iourney.</p><p class="v" id="v30"><span class="vn sans">30</span>And when Paul would haue entred in vnto the people, the disciples suffred him not.</p><p class="v" id="v31"><span class="vn sans">31</span>Certaine also of the chiefe of Asia which were his friendes, sent vnto him, desiring him that hee woulde not present him selfe in the Common place.</p><p class="v" id="v32"><span class="vn sans">32</span>Some therefore cried one thing, and some another: for the assemblie was out of order, and the more part knewe not wherefore they were come together.</p><p class="v" id="v33"><span class="vn sans">33</span>And some of the company drew foorth Alexander, the Iewes thrusting him forwards. Alexander then beckened with the hande, and woulde haue excused the matter to the people.</p><p class="v" id="v34"><span class="vn sans">34</span>But when they knew that he was a Iewe, there arose a shoute almost for the space of two houres, of all men crying, Great is Diana of the Ephesians.</p><p class="v" id="v35"><span class="vn sans">35</span>Then the towne clearke when hee had stayed the people, saide, Ye men of Ephesus, what man is it that knoweth not howe that the citie of the Ephesians is a worshipper of the great goddesse Diana, and of the image, which came downe from Iupiter?</p><p class="v" id="v36"><span class="vn sans">36</span>Seeing then that no man can speake against these things, ye ought to be appeased, and to doe nothing rashly.</p><p class="v" id="v37"><span class="vn sans">37</span>For yee haue brought hither these men, which haue neither committed sacrilege, neither doe blaspheme your goddesse.</p><p class="v" id="v38"><span class="vn sans">38</span>Wherefore, if Demetrius and the craftes men which are with him, haue a matter against any man, the lawe is open, and there are Deputies: let them accuse one another.</p><p class="v" id="v39"><span class="vn sans">39</span>But if ye inquire any thing cocerning other matters, it may be determined in a lawful assembly.</p><p class="v" id="v40"><span class="vn sans">40</span>For we are euen in ieopardie to be accused of this dayes sedition, for as much as there is no cause, whereby we may giue a reason of this concourse of people.</p><p class="v" id="v41"><span class="vn sans">41</span>And when he had thus spoken, hee let the assembly depart.</p></article><div class="daynav sans"><a href="/bible/gnv/acts/18/index.html">← 18</a><a href="/bible/gnv/acts/20/index.html">20 →</a></div><div class="daynav sans" style="margin-top:0"><a href="/bible/gnv/acts/index.html">← 使徒行傳</a><span></span></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+</body>
+</html>
