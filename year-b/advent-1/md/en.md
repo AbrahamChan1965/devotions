@@ -394,7 +394,7 @@ because you kept me first. Amen.
 
 **November 28, 2026**
 Readings: Isaiah 64:1-9 / Psalm 80:1-7, 17-19 / 1 Corinthians 1:3-9 / Mark 13:24-37
-In the synagogue this week: Torah portion *Vayishlach*, "And He Sent" (Genesis 32:4–36:43; English Bibles 32:3–36:43) / Haftarah: Obadiah (to be confirmed before publication)
+In the synagogue this week: Torah portion *Vayishlach*, "And He Sent" (Genesis 32:4–36:43; English Bibles 32:3–36:43) / Haftarah: Obadiah 1:1–21
 
 ## What Sabbath Meditation Is
 
