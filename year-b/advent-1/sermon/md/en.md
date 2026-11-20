@@ -1,7 +1,7 @@
 # Before the Heavens Tear
 ### The First Sunday of Advent · Year B · November 29, 2026
 Readings: Isaiah 64:1-9 / Psalm 80:1-7, 17-19 / 1 Corinthians 1:3-9 / Mark 13:24-37
-Rev. Dr. Abraham Chan
+Rev. Dr. Abraham Chan, 北美基督燈台協會
 
 Key words: Tear the Heavens, Come Down · We Are the Clay · Keep What He Entrusted · He Keeps Watch for Me
 
