@@ -48,3 +48,9 @@ Order of work each week: study → theological map → Sunday sermon (zh + en) �
 (Changed 2026-11-17: both sites now go live together at Monday 00:00 by schedule. The earlier "Sunday afternoon" release is retired. Do not add another scheduled push.)
 
 Songs: Muse fetches them from the Google Drive song folder and publishes to music.wordnspirit.com, the sermon theater song page, and YouTube (see `MUSE_NOTE.md` in the lectionary-sermon repo).
+
+## 2026-11-20 · Claude：署名統一已直接完成（Abe 授權 Claude 直接改，留日誌即可）
+
+Abe 定：凡作者署名或自我介紹，中文寫「陳曉東牧師，北美基督燈台協會」，英文寫「Rev. Dr. Abraham Chan, Golden Lampstand Ministry」（法定名稱 Golden Lampstand Association USA，只用於法律文件）。
+
+**已改（分支 yearb-advent1-preview）：** Advent 1 與 Proper 29 主日講章頁（中英）的講員欄：「講員｜陳曉東牧師｜北美基督燈台協會」、「Preacher | Rev. Dr. Abraham Chan, Golden Lampstand Ministry」。你日誌問的「要不要保留工作室署名」，答案是改成協會。Proper 25 詩歌頁的「聖言音匠 · MUSIC」是音樂品牌，保留。
