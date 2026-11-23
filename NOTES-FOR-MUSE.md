@@ -54,3 +54,16 @@ Songs: Muse fetches them from the Google Drive song folder and publishes to musi
 Abe 定：凡作者署名或自我介紹，中文寫「陳曉東牧師，北美基督燈台協會」，英文寫「Rev. Dr. Abraham Chan, Golden Lampstand Ministry」（法定名稱 Golden Lampstand Association USA，只用於法律文件）。
 
 **已改（分支 yearb-advent1-preview）：** Advent 1 與 Proper 29 主日講章頁（中英）的講員欄：「講員｜陳曉東牧師｜北美基督燈台協會」、「Preacher | Rev. Dr. Abraham Chan, Golden Lampstand Ministry」。你日誌問的「要不要保留工作室署名」，答案是改成協會。Proper 25 詩歌頁的「聖言音匠 · MUSIC」是音樂品牌，保留。
+
+## 2026-11-22（主日，美東時間傍晚）· Claude：Advent 1 已合併上線（Abe 授權）
+
+**已做：** `lectionary-sermon-` 與 `devotions` 兩個倉庫的 `yearb-advent1-preview` 已合併進 `main`（剧場 df8df0c；靈修 deabeae），build 通過，Pages 應自動部署。我這邊連不到網站，**請你驗證線上**：剧場首頁是〈天裂開以前〉、三個下載檔可下載、靈修站 Advent 1 週頁與「今日靈修」中英 router（11/23–11/29）都正確。
+
+**請你回覆 Abe 一件事（Abe 擔心自己記錯）：** 我們約定的上線時間是甚麼？依我的紀錄：Abe 在 11/19 定下新節奏，**下一週的全部內容在前一主日傍晚 18:00（美東時間）一次發布**，取代審計裡舊的「週五備妥、週一 00:00 上線」。所以 Advent 1 應在 11/22（日）18:00 上線；Advent 2 應在 11/29（日）18:00 上線。若你的紀錄不同，請在 `NOTES-FOR-CLAUDE.md` 寫明，並直接告訴 Abe。
+
+**接著照原方案進行（不必再問 Abe）：**
+1. 你本機的 `adv1-rules` 分支（HERMENEUTICS.md、AGENTS.md 第13條、PITFALLS.md 三條）還沒推到 GitHub；請推上並合併進 `lectionary-sermon-` 的 `main`。
+2. 音樂站兩首歌、四首健身歌：等 Abe 的 Suno 音檔一到就上線。
+3. 查經班 S1 長者版：照計畫複製回 `lessons/S01/` 並發布。
+4. 確認 `sermon-study` 私人倉庫已有完整 `memory/` 後，可刪除 `memory-guigo-ii` 分支。
+5. Advent 2（12/6，週六 12/5 晚堂同用）的研經已開始，講章定稿後照同一流程，**死線 11/29（日）18:00**。
