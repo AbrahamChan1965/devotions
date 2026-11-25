@@ -39,3 +39,11 @@ The page looks empty / unconnected.
 4. Do not publish or change any devotional content; only fix the
    routing / blank-page fault. Report back in `NOTES-FOR-MUSE.md` what you
    found and changed.
+
+## Web Analytics beacon (added 2026-11-25 by Muse)
+
+Cloudflare Web Analytics is now on for devotions.wordnspirit.com. Every HTML page carries this snippet immediately before `</body>`:
+
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b665003e831d4b8d85237f03a223c6a3"}'></script><!-- End Cloudflare Web Analytics -->
+
+Please include the same snippet (verbatim, same token) before `</body>` in every new HTML page you create, so new pages are counted too. Do not remove it from existing pages.
