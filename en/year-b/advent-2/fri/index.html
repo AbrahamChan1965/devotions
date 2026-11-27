@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toward Advent 2 · Friday: Confirmatio, He Waits for You｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+</style>
+<style id="reading-type">/* 閱讀字體：手機、平板、電腦分別校準（Proper 28 起） */
+html[lang="zh-Hant"] body{font-family:"Songti TC","Noto Serif TC","Noto Serif CJK TC","Source Han Serif TC","Source Han Serif","PMingLiU",serif}
+html[lang="en"] body{font-family:"Iowan Old Style","Charter","Bitstream Charter","Sitka Text","Cambria","Georgia","Noto Serif",serif}
+html[lang="en"] article p,html[lang="en"] .kairos{font-family:inherit}
+article p{font-weight:400;-webkit-font-smoothing:antialiased;font-kerning:normal}
+html[lang="zh-Hant"] article p{text-align:justify;letter-spacing:.02em}
+html[lang="en"] article p{text-align:left;hyphens:auto;-webkit-hyphens:auto;text-rendering:optimizeLegibility}
+article p:first-of-type::first-letter{font-size:inherit;float:none;padding:0;color:inherit;font-weight:inherit;line-height:inherit}
+article h2{font-weight:700!important;letter-spacing:.02em!important;line-height:1.45!important}
+
+/* 電腦（1025px 以上） */
+.wrap{max-width:46rem}
+html[lang="zh-Hant"] article p{font-size:1.375rem;line-height:2}
+html[lang="en"] article p{font-size:1.375rem;line-height:1.7}
+article h2{font-size:1.6rem!important;margin:2.8rem 0 1.1rem!important}
+.reading .r-refs{font-size:1.1rem}
+.reading .r-label,.crumb,.kicker,.card .c-day{font-size:.9rem}
+.sub{font-size:1rem}
+.card .c-title{font-size:1.45rem}.card .c-sub{font-size:1rem}
+.kairos{font-size:1.15rem;line-height:1.9}
+.nailbox .n-text{font-size:1.6rem}
+.daynav{font-size:.95rem}
+
+/* 平板（641–1024px） */
+@media (max-width:1024px){
+.wrap{max-width:42rem;padding:0 2.2rem}
+html[lang="zh-Hant"] article p{font-size:1.3125rem;line-height:2}
+html[lang="en"] article p{font-size:1.3125rem;line-height:1.65}
+article h2{font-size:1.5rem!important}
+}
+
+/* 手機（640px 以下） */
+@media (max-width:640px){
+.wrap{padding:0 1.25rem}
+html[lang="zh-Hant"] h1{font-size:1.85rem}
+html[lang="en"] h1{font-size:1.75rem;text-wrap:balance}
+html[lang="zh-Hant"] article p{font-size:1.3125rem;line-height:1.9;letter-spacing:.01em;text-align:start}
+article p[style*="var(--gray)"]{font-size:1.05rem!important}
+html[lang="en"] article p{font-size:1.3125rem;line-height:1.6}
+article p{margin-bottom:1.35rem}
+article h2{font-size:1.45rem!important;margin:2.4rem 0 .9rem!important}
+.reading{flex-direction:column;align-items:flex-start;gap:.2rem}
+.reading .r-refs{font-size:1.1rem;text-align:left}
+.reading .r-label,.crumb,.kicker,.card .c-day,.sub,.daynav{font-size:.875rem}
+.reading .r-refs .ver{font-size:.8rem}
+.card .c-title{font-size:1.35rem}.card .c-sub{font-size:1rem}
+.kairos{font-size:1.15rem}
+.nailbox .n-text{font-size:1.45rem}
+.masthead .brand a{font-size:.9rem}.masthead span:last-child{font-size:.85rem}
+}
+
+/* 英文首頁標題：一行 */
+html[lang="en"] .hero h1{white-space:nowrap;font-size:min(2.5rem,calc((100vw - 3rem) / 14.5));letter-spacing:0;line-height:1.3}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/en/index.html">HOME</a> ／ <a href="/en/year-b/advent-2/index.html">ADVENT 2</a> ／ <b>FRIDAY Confirmatio</b></div>
+<div class="kicker sans">Toward Advent 2 · Friday</div><h1>Confirmatio, He Waits for You</h1>
+<div class="sub sans">FRIDAY Confirmatio · 週五 效法</div>
+<hr class="goldrule">
+<div class="meta sans"></div>
+<div class="section" style="margin:0 0 2.2rem"><h2 class="sans">TODAY'S READINGS</h2><div class="reading"><span class="r-label sans">Old Testament</span><span class="r-refs">Isaiah 40:1-11 <a href="/bible/cuv/isaiah/40/index.html#v1">讀經<span class="ver sans">CUV</span></a> <a href="/bible/web/isaiah/40/index.html#v1">Read<span class="ver sans">WEB</span></a> <a href="/bible/jps/isaiah/40/index.html#v1">JPS<span class="ver sans">JPS 1917</span></a></span></div><div class="reading"><span class="r-label sans">Psalm</span><span class="r-refs">Psalm 85:1-2, 8-13 <a href="/bible/cuv/psalms/85/index.html#v1">讀經<span class="ver sans">CUV</span></a> <a href="/bible/web/psalms/85/index.html#v1">Read<span class="ver sans">WEB</span></a> <a href="/bible/jps/psalms/85/index.html#v1">JPS<span class="ver sans">JPS 1917</span></a></span></div><div class="reading"><span class="r-label sans">Epistle</span><span class="r-refs">2 Peter 3:8-15a <a href="/bible/cuv/2-peter/3/index.html#v8">讀經<span class="ver sans">CUV</span></a> <a href="/bible/web/2-peter/3/index.html#v8">Read<span class="ver sans">WEB</span></a></span></div><div class="reading"><span class="r-label sans">Gospel</span><span class="r-refs">Mark 1:1-8 <a href="/bible/cuv/mark/1/index.html#v1">讀經<span class="ver sans">CUV</span></a> <a href="/bible/web/mark/1/index.html#v1">Read<span class="ver sans">WEB</span></a></span></div></div><article><p><strong>December 4, 2026</strong></p><p><strong>This week's readings</strong> Isaiah 40:1-11 · Psalm 85:1-2, 8-13 · 2 Peter 3:8-15a · Mark 1:1-8</p><p style="color:var(--gray);font-size:1rem">Focus: 2 Peter 3:1-18 (with Romans 3:21-26)</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">He Waits for You</h2><p>Today's key word is He Waits for You: "The Lord is not slow to fulfill his promise as some count slowness, but is patient toward you, not wishing that any should perish, but that all should reach repentance" (2 Pet 3:9). "Patient" is <em>makrothymeō</em>, long-tempered: holding anger back a very long time.</p><p>"He waits for you" sounds warm. It is also easy to misread. So read it with two other phrases.</p><p>The first is <strong>a thousand years as one day</strong>: "With the Lord one day is as a thousand years, and a thousand years as one day" (3:8). The line comes from the prayer of Moses: "A thousand years in your sight are but as yesterday when it is past, or as a watch in the night" (Ps 90:4). It cuts both ways. A thousand years as one day: what feels endless to us is like yesterday to God. He is not late. One day as a thousand years: God takes each of our days seriously. A single turning of the heart today carries a thousand years' weight in his eyes.</p><p>The second is <strong>he is not slow</strong>. God has not forgotten. He is not powerless. He does not shrug at sin. His patience has a ground and an end. Paul says God passed over former sins "in his divine forbearance" because he "put forward" Jesus "as a propitiation by his blood," "so that he might be just and the justifier of the one who has faith in Jesus" (Rom 3:25-26). God can be patient because of the cross. Every extra day he waits is held up by his Son's blood.</p><p>Put the three together. He waits for you, not like a soft old man who looks the other way, but with a patience that was paid for. Not late, but on his own clock. And not forever: "The day of the Lord will come like a thief" (3:10).</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">What Is Confirmatio?</h2><p>Paul says, "Be imitators of me, as I am of Christ" (1 Cor 11:1). To imitate Christ is to live his life in the Holy Spirit, in fellowship with the Father, the Son, and the Spirit. The road has two battles: one against the desires of the flesh, one against this present age. Today we learn from 2 Peter.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Written to the Second Generation</h2><p>When 2 Peter was written, the apostles were dying one by one. People mocked: "Where is the promise of his coming? For ever since the fathers fell asleep, all things are continuing as they were from the beginning of creation" (3:4).</p><p>"Fell asleep" means died. Parents waited all their lives and died without seeing it. Their children asked: do we keep waiting?</p><p>Peter reminds them of two things. First, the world has not always "continued as it was": God once judged it by water (3:6). Second, God does not see time the way we do.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">How People Who Wait Should Live</h2><p>"What sort of people ought you to be in lives of holiness and godliness, waiting for and hastening the coming of the day of God" (3:11-12).</p><p>Waiting is not sitting idle. It is living in a way that welcomes him. Peter says, "Be diligent to be found by him without spot or blemish, and at peace. And count the patience of our Lord as salvation" (3:14-15).</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Two Battles</h2><p><strong>Against the flesh:</strong> the flesh says "later." Apologize later, pray later, change later. But one day is as a thousand years. Today's turning matters. To imitate Christ is to turn today.</p><p><strong>Against this age:</strong> the age says "all things continue as they were." That's just how the world is; it won't change; the strong always win. To imitate Christ is to believe that "according to his promise we are waiting for new heavens and a new earth in which righteousness dwells" (3:13), and to live that righteousness now.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">In the Spirit, with the Triune God</h2><p>John said the one coming would "baptize you with the Holy Spirit" (Mark 1:8). We do not wait alone. The Father sent the Son. The Son paid the price. The Spirit lives in us and gives us strength while we wait. Peter's last words: "But grow in the grace and knowledge of our Lord and Savior Jesus Christ" (3:18). Waiting is time for growing.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Today's Practice</h2><p>Twenty minutes. Read all of 2 Peter 3, then Romans 3:21-26.</p><p>Take this week's fourth step: He Waits for You.</p><p>Think of one thing you keep putting off with "later." Take one small step today: a phone call, an apology, a prayer.</p><p>Tonight, ask: where did I feel God's patience today? And with whom was I impatient?</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Closing Prayer</h2><p>Long-suffering God,<br>with you a day is as a thousand years, and a thousand years as a day.<br>I think you are slow,<br>and you are waiting for me to come home.<br>Your patience is not cheap.<br>It is held up by your Son's blood.<br>Holy Spirit, help me<br>stop saying "later"<br>and turn today.<br>According to your promise, I wait for new heavens and a new earth. Amen.</p></article>
+
+<div class="daynav sans"><a href="/en/year-b/advent-2/index.html">← WEEK</a><a href="/en/year-b/advent-2/index.html">WEEK'S NAIL →</a></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b665003e831d4b8d85237f03a223c6a3"}'></script><!-- End Cloudflare Web Analytics --></body>
+</html>

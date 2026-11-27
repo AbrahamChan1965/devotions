@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toward Advent 2 · Saturday: Sabbatum, Hanukkah at the Table｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+</style>
+<style id="reading-type">/* 閱讀字體：手機、平板、電腦分別校準（Proper 28 起） */
+html[lang="zh-Hant"] body{font-family:"Songti TC","Noto Serif TC","Noto Serif CJK TC","Source Han Serif TC","Source Han Serif","PMingLiU",serif}
+html[lang="en"] body{font-family:"Iowan Old Style","Charter","Bitstream Charter","Sitka Text","Cambria","Georgia","Noto Serif",serif}
+html[lang="en"] article p,html[lang="en"] .kairos{font-family:inherit}
+article p{font-weight:400;-webkit-font-smoothing:antialiased;font-kerning:normal}
+html[lang="zh-Hant"] article p{text-align:justify;letter-spacing:.02em}
+html[lang="en"] article p{text-align:left;hyphens:auto;-webkit-hyphens:auto;text-rendering:optimizeLegibility}
+article p:first-of-type::first-letter{font-size:inherit;float:none;padding:0;color:inherit;font-weight:inherit;line-height:inherit}
+article h2{font-weight:700!important;letter-spacing:.02em!important;line-height:1.45!important}
+
+/* 電腦（1025px 以上） */
+.wrap{max-width:46rem}
+html[lang="zh-Hant"] article p{font-size:1.375rem;line-height:2}
+html[lang="en"] article p{font-size:1.375rem;line-height:1.7}
+article h2{font-size:1.6rem!important;margin:2.8rem 0 1.1rem!important}
+.reading .r-refs{font-size:1.1rem}
+.reading .r-label,.crumb,.kicker,.card .c-day{font-size:.9rem}
+.sub{font-size:1rem}
+.card .c-title{font-size:1.45rem}.card .c-sub{font-size:1rem}
+.kairos{font-size:1.15rem;line-height:1.9}
+.nailbox .n-text{font-size:1.6rem}
+.daynav{font-size:.95rem}
+
+/* 平板（641–1024px） */
+@media (max-width:1024px){
+.wrap{max-width:42rem;padding:0 2.2rem}
+html[lang="zh-Hant"] article p{font-size:1.3125rem;line-height:2}
+html[lang="en"] article p{font-size:1.3125rem;line-height:1.65}
+article h2{font-size:1.5rem!important}
+}
+
+/* 手機（640px 以下） */
+@media (max-width:640px){
+.wrap{padding:0 1.25rem}
+html[lang="zh-Hant"] h1{font-size:1.85rem}
+html[lang="en"] h1{font-size:1.75rem;text-wrap:balance}
+html[lang="zh-Hant"] article p{font-size:1.3125rem;line-height:1.9;letter-spacing:.01em;text-align:start}
+article p[style*="var(--gray)"]{font-size:1.05rem!important}
+html[lang="en"] article p{font-size:1.3125rem;line-height:1.6}
+article p{margin-bottom:1.35rem}
+article h2{font-size:1.45rem!important;margin:2.4rem 0 .9rem!important}
+.reading{flex-direction:column;align-items:flex-start;gap:.2rem}
+.reading .r-refs{font-size:1.1rem;text-align:left}
+.reading .r-label,.crumb,.kicker,.card .c-day,.sub,.daynav{font-size:.875rem}
+.reading .r-refs .ver{font-size:.8rem}
+.card .c-title{font-size:1.35rem}.card .c-sub{font-size:1rem}
+.kairos{font-size:1.15rem}
+.nailbox .n-text{font-size:1.45rem}
+.masthead .brand a{font-size:.9rem}.masthead span:last-child{font-size:.85rem}
+}
+
+/* 英文首頁標題：一行 */
+html[lang="en"] .hero h1{white-space:nowrap;font-size:min(2.5rem,calc((100vw - 3rem) / 14.5));letter-spacing:0;line-height:1.3}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/en/index.html">HOME</a> ／ <a href="/en/year-b/advent-2/index.html">ADVENT 2</a> ／ <b>SATURDAY Sabbatum</b></div>
+<div class="kicker sans">Toward Advent 2 · Saturday</div><h1>Sabbatum, Hanukkah at the Table</h1>
+<div class="sub sans">SATURDAY Sabbatum · 週六 安息日</div>
+<hr class="goldrule">
+<div class="meta sans"></div>
+<div class="section" style="margin:0 0 2.2rem"><h2 class="sans">TODAY'S READINGS</h2><div class="reading"><span class="r-label sans">Torah</span><span class="r-refs">Vayeshev · Genesis 37:1–40:23 <a href="/bible/cuv/genesis/37/index.html#v1">讀經<span class="ver sans">CUV</span></a> <a href="/bible/web/genesis/37/index.html#v1">Read<span class="ver sans">WEB</span></a> <a href="/bible/jps/genesis/37/index.html#v1">JPS<span class="ver sans">JPS 1917</span></a></span></div><div class="reading"><span class="r-label sans">Hanukkah</span><span class="r-refs">Numbers 7:1-17 <a href="/bible/cuv/numbers/7/index.html#v1">讀經<span class="ver sans">CUV</span></a> <a href="/bible/web/numbers/7/index.html#v1">Read<span class="ver sans">WEB</span></a> <a href="/bible/jps/numbers/7/index.html#v1">JPS<span class="ver sans">JPS 1917</span></a></span></div><div class="reading"><span class="r-label sans">Prophets</span><span class="r-refs">Zechariah 2:10–4:7 (Hebrew 2:14–4:7) <a href="/bible/cuv/zechariah/2/index.html#v10">讀經<span class="ver sans">CUV</span></a> <a href="/bible/web/zechariah/2/index.html#v10">Read<span class="ver sans">WEB</span></a> <a href="/bible/jps/zechariah/2/index.html#v14">JPS<span class="ver sans">JPS 1917</span></a></span></div></div><article><p><strong>December 5, 2026</strong></p><p><strong>This week's readings</strong> Isaiah 40:1-11 · Psalm 85:1-2, 8-13 · 2 Peter 3:8-15a · Mark 1:1-8</p><p><strong>In the synagogue today</strong> Torah portion <em>Vayeshev</em>, "And he settled" (Genesis 37:1–40:23); for Shabbat Hanukkah, Numbers 7:1-17; the prophetic reading is replaced by Zechariah 2:10–4:7 (Hebrew 2:14–4:7)</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">What Is a Sabbath Meditation?</h2><p>Today is the Sabbath, the 25th of Kislev on the Jewish calendar, and the first day of Hanukkah. Last night at sundown, Jewish households around the world lit the first candle.</p><p>We sit at the same table. First we listen to what they read; then we say what we hear. The table belongs to the Lord who made heaven and earth. The Old Testament in our hands came to us from our Jewish elder brothers and sisters. We are the grafted branches; they are the cultivated olive tree (Rom 11:17-18).</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">A Festival Added Later</h2><p>Hanukkah is not in the five books of Moses. It was added later.</p><p>In 167 BC the Syrian king Antiochus IV took Jerusalem. He sacrificed pigs on the temple altar, set up a pagan idol, and banned the Sabbath and circumcision. Many were killed for keeping the covenant. Mattathias and his sons, led by Judah Maccabee, rose up. On the 25th of Kislev, 164 BC, they cleansed the temple, dedicated the altar again, and kept a festival for eight days (1 Maccabees 4:52-59). <em>Hanukkah</em> in Hebrew means "dedication."</p><p>Later rabbis handed on a story: only one small jar of pure oil was found in the temple, enough for one day, and the lamp burned for eight (Babylonian Talmud, <em>Shabbat</em> 21b).</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">What It Means to Them</h2><p>For our Jewish neighbors, Hanukkah remembers three things.</p><p><strong>After defilement, dedication again.</strong> A desecrated temple is not the end. It can be cleansed and given back to God.</p><p><strong>A few kept the covenant.</strong> Most people went along with the Greek tide. A few would rather die than give up the Sabbath.</p><p><strong>The light should grow.</strong> The Talmud records a debate between two teachers. Shammai said: light eight candles the first night, one fewer each night. Hillel said: light one the first night, one more each night. The practice follows Hillel, for this reason: "In matters of holiness we go up, not down." So the menorah grows brighter every night.</p><p>They also set the menorah in a window so the street can see it, "to publicize the miracle."</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">What the Synagogue Reads Today</h2><p><strong>Torah:</strong> Joseph is sold by his brothers and thrown into prison on a false charge. He interprets the cupbearer's dream and asks him, "Only remember me, when it is well with you" (Gen 40:14). The portion ends with this line: "Yet the chief cupbearer did not remember Joseph, but forgot him" (40:23).</p><p><strong>Prophets:</strong> Zechariah sees a golden lampstand with two olive trees beside it, oil flowing into the lamps without stopping. The angel says, "Not by might, nor by power, but by my Spirit, says the LORD of hosts" (Zech 4:6).</p><p>Hanukkah takes this reading because it speaks of lamp and oil, and because it reminds everyone that what lit the temple again was not the Maccabees' swords but God's Spirit.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">What We Hear from Our Side of the Table</h2><p>John's Gospel tells us Jesus kept this feast too: "At that time the Feast of Dedication took place at Jerusalem. It was winter, and Jesus was walking in the temple, in the colonnade of Solomon" (John 10:22-23). The Feast of Dedication is Hanukkah. Winter; a cold colonnade; lamps burning. People gathered around him: "How long will you keep us in suspense? If you are the Christ, tell us plainly." Jesus said, "My sheep hear my voice... I give them eternal life, and they will never perish" (John 10:24-28).</p><p>At the feast of the temple's dedication, Jesus stood in the temple. We believe he is himself the temple (John 2:19-21).</p><p>We take three things from this festival.</p><p><strong>He has not forgotten.</strong> The cupbearer forgot Joseph for two years. Exiled Zion said, "The LORD has forsaken me; my Lord has forgotten me." God answered, "Can a woman forget her nursing child...? Even these may forget, yet I will not forget you" (Isa 49:14-15). That echoes this week's Isaiah 40: "Comfort, comfort my people."</p><p><strong>What was defiled can be given back.</strong> This week we have read about sin: chasing lovers, selling the next generation for our own quiet. Hanukkah says a defiled temple can be cleansed. John's baptism carries the same hope.</p><p><strong>Not by might.</strong> The Maccabees' descendants became kings, and they became corrupt. What is won by the sword is often lost by the sword. Zechariah's word speaks to both sides of the table: the light is lit by God's Spirit.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Two Thousand Years of Grace and Grief</h2><p>We cannot pretend this table has no scars. In history, Christians persecuted Jews in the name of the cross, sometimes on their very festivals. That is the church's sin, and we confess it.</p><p>But two thousand years also hold grace. The psalms, Isaiah, the story of Joseph in our hands: they copied, memorized, and guarded them. Tonight, as they light their candles, we can pray for them as the psalm says: "Pray for the peace of Jerusalem" (Ps 122:6).</p><p>Neither side will argue the other round. But we can sit together, hear the same Scriptures, and watch the same kind of light on a winter night.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Today's Practice</h2><p>Rest. No hurry.</p><p>1. Read Genesis 40 and Zechariah 4.</p><p>2. Recall a time you felt forgotten. Tell God about it. Then read Isaiah 49:15.</p><p>3. At dusk, set a candle in your window. Pray for a Jewish friend, neighbor, or coworker, and ask God to give them peace.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Closing Prayer</h2><p>God of Abraham, Isaac, and Jacob,<br>you did not forget Joseph,<br>and you did not forget Zion.<br>The temple that was defiled, you made holy again;<br>not by might, nor by power,<br>but by your Spirit.<br>Remember our Jewish brothers and sisters,<br>and give them peace.<br>Lord Jesus, you walked the temple colonnade in winter.<br>Walk through our winter too. Amen.</p></article>
+
+<div class="daynav sans"><a href="/en/year-b/advent-2/index.html">← WEEK</a><a href="/en/year-b/advent-2/index.html">WEEK'S NAIL →</a></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b665003e831d4b8d85237f03a223c6a3"}'></script><!-- End Cloudflare Web Analytics --></body>
+</html>

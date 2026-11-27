@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toward Advent 2 · Tuesday: Meditatio, He Speaks to the Heart｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+</style>
+<style id="reading-type">/* 閱讀字體：手機、平板、電腦分別校準（Proper 28 起） */
+html[lang="zh-Hant"] body{font-family:"Songti TC","Noto Serif TC","Noto Serif CJK TC","Source Han Serif TC","Source Han Serif","PMingLiU",serif}
+html[lang="en"] body{font-family:"Iowan Old Style","Charter","Bitstream Charter","Sitka Text","Cambria","Georgia","Noto Serif",serif}
+html[lang="en"] article p,html[lang="en"] .kairos{font-family:inherit}
+article p{font-weight:400;-webkit-font-smoothing:antialiased;font-kerning:normal}
+html[lang="zh-Hant"] article p{text-align:justify;letter-spacing:.02em}
+html[lang="en"] article p{text-align:left;hyphens:auto;-webkit-hyphens:auto;text-rendering:optimizeLegibility}
+article p:first-of-type::first-letter{font-size:inherit;float:none;padding:0;color:inherit;font-weight:inherit;line-height:inherit}
+article h2{font-weight:700!important;letter-spacing:.02em!important;line-height:1.45!important}
+
+/* 電腦（1025px 以上） */
+.wrap{max-width:46rem}
+html[lang="zh-Hant"] article p{font-size:1.375rem;line-height:2}
+html[lang="en"] article p{font-size:1.375rem;line-height:1.7}
+article h2{font-size:1.6rem!important;margin:2.8rem 0 1.1rem!important}
+.reading .r-refs{font-size:1.1rem}
+.reading .r-label,.crumb,.kicker,.card .c-day{font-size:.9rem}
+.sub{font-size:1rem}
+.card .c-title{font-size:1.45rem}.card .c-sub{font-size:1rem}
+.kairos{font-size:1.15rem;line-height:1.9}
+.nailbox .n-text{font-size:1.6rem}
+.daynav{font-size:.95rem}
+
+/* 平板（641–1024px） */
+@media (max-width:1024px){
+.wrap{max-width:42rem;padding:0 2.2rem}
+html[lang="zh-Hant"] article p{font-size:1.3125rem;line-height:2}
+html[lang="en"] article p{font-size:1.3125rem;line-height:1.65}
+article h2{font-size:1.5rem!important}
+}
+
+/* 手機（640px 以下） */
+@media (max-width:640px){
+.wrap{padding:0 1.25rem}
+html[lang="zh-Hant"] h1{font-size:1.85rem}
+html[lang="en"] h1{font-size:1.75rem;text-wrap:balance}
+html[lang="zh-Hant"] article p{font-size:1.3125rem;line-height:1.9;letter-spacing:.01em;text-align:start}
+article p[style*="var(--gray)"]{font-size:1.05rem!important}
+html[lang="en"] article p{font-size:1.3125rem;line-height:1.6}
+article p{margin-bottom:1.35rem}
+article h2{font-size:1.45rem!important;margin:2.4rem 0 .9rem!important}
+.reading{flex-direction:column;align-items:flex-start;gap:.2rem}
+.reading .r-refs{font-size:1.1rem;text-align:left}
+.reading .r-label,.crumb,.kicker,.card .c-day,.sub,.daynav{font-size:.875rem}
+.reading .r-refs .ver{font-size:.8rem}
+.card .c-title{font-size:1.35rem}.card .c-sub{font-size:1rem}
+.kairos{font-size:1.15rem}
+.nailbox .n-text{font-size:1.45rem}
+.masthead .brand a{font-size:.9rem}.masthead span:last-child{font-size:.85rem}
+}
+
+/* 英文首頁標題：一行 */
+html[lang="en"] .hero h1{white-space:nowrap;font-size:min(2.5rem,calc((100vw - 3rem) / 14.5));letter-spacing:0;line-height:1.3}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/en/index.html">HOME</a> ／ <a href="/en/year-b/advent-2/index.html">ADVENT 2</a> ／ <b>TUESDAY Meditatio</b></div>
+<div class="kicker sans">Toward Advent 2 · Tuesday</div><h1>Meditatio, He Speaks to the Heart</h1>
+<div class="sub sans">TUESDAY Meditatio · 週二 默想</div>
+<hr class="goldrule">
+<div class="meta sans"></div>
+<div class="section" style="margin:0 0 2.2rem"><h2 class="sans">TODAY'S READINGS</h2><div class="reading"><span class="r-label sans">Old Testament</span><span class="r-refs">Isaiah 40:1-11 <a href="/bible/cuv/isaiah/40/index.html#v1">讀經<span class="ver sans">CUV</span></a> <a href="/bible/web/isaiah/40/index.html#v1">Read<span class="ver sans">WEB</span></a> <a href="/bible/jps/isaiah/40/index.html#v1">JPS<span class="ver sans">JPS 1917</span></a></span></div><div class="reading"><span class="r-label sans">Psalm</span><span class="r-refs">Psalm 85:1-2, 8-13 <a href="/bible/cuv/psalms/85/index.html#v1">讀經<span class="ver sans">CUV</span></a> <a href="/bible/web/psalms/85/index.html#v1">Read<span class="ver sans">WEB</span></a> <a href="/bible/jps/psalms/85/index.html#v1">JPS<span class="ver sans">JPS 1917</span></a></span></div><div class="reading"><span class="r-label sans">Epistle</span><span class="r-refs">2 Peter 3:8-15a <a href="/bible/cuv/2-peter/3/index.html#v8">讀經<span class="ver sans">CUV</span></a> <a href="/bible/web/2-peter/3/index.html#v8">Read<span class="ver sans">WEB</span></a></span></div><div class="reading"><span class="r-label sans">Gospel</span><span class="r-refs">Mark 1:1-8 <a href="/bible/cuv/mark/1/index.html#v1">讀經<span class="ver sans">CUV</span></a> <a href="/bible/web/mark/1/index.html#v1">Read<span class="ver sans">WEB</span></a></span></div></div><article><p><strong>December 1, 2026</strong></p><p><strong>This week's readings</strong> Isaiah 40:1-11 · Psalm 85:1-2, 8-13 · 2 Peter 3:8-15a · Mark 1:1-8</p><p style="color:var(--gray);font-size:1rem">Focus: Isaiah 40:1-11 (with 39:1-8; 40:27-31; Lamentations 1)</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">He Speaks to the Heart</h2><p>Today's key word is He Speaks to the Heart.</p><p>Set it back in its verse: "Comfort, comfort my people, says your God. Speak tenderly to Jerusalem" (Isa 40:1-2). "Speak tenderly" in Hebrew is "speak to her heart."</p><p>Read it with two other phrases, or it will tilt. The first is <strong>comfort my people</strong>. He says "my" people. She was unfaithful, and he still calls her his own. The second is <strong>her iniquity is pardoned</strong>: "her warfare is ended, her iniquity is pardoned" (40:2).</p><p>Without "her iniquity is pardoned," "he speaks to the heart" shrinks into a warm feeling, as if God only says "never mind." Without "he speaks to the heart," "her iniquity is pardoned" is just a court ruling, cold on the page. Without "comfort my people," we forget that this comfort is covenant love, not a stranger's sympathy. Put the three together: to a people who sinned and were punished, God first settles the debt, then bends down and speaks to her heart.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">What Is Meditatio?</h2><p>Psalm 1 says the blessed person meditates on God's law day and night (Ps 1:2). The Hebrew word, <em>hagah</em>, is also used for a lion growling over its prey (Isa 31:4) and a dove moaning (Isa 38:14). The ancients meditated with their lips, murmuring a line again and again, the way a cow chews the cud.</p><p>In the twelfth century, the Carthusian monk Guigo II wrote <em>The Ladder of Monks</em>. Reading puts food in the mouth, he said; meditation chews it; prayer tastes it; contemplation is the delight of the taste. Today we practice chewing.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Before the Reading: The Chapter They Cut</h2><p>The lectionary starts at chapter 40. But just before it sits a heavy story.</p><p>King Hezekiah recovered from an illness, and the king of Babylon sent envoys to visit. Hezekiah showed them his treasure house, his armory, "all that was found in his storehouses" (Isa 39:2). Isaiah told him the day would come when everything, even his own sons, would be carried off to Babylon. Hezekiah answered: "The word of the LORD that you have spoken is good." For he thought, "There will be peace and security in my days" (39:8).</p><p>The king made sure of a quiet life for himself and signed away his children's future. That is the last line of chapter 39. The next line is "Comfort, comfort my people."</p><p>Between them lie a hundred and fifty years. Children grew up by the rivers of Babylon and hung their harps on the willows (Ps 137:1-2).</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Why No One Comforted Her</h2><p>Lamentations says, "Among all her lovers she has none to comfort her; all her friends have dealt treacherously with her" (Lam 1:2).</p><p>The prophets told it as a marriage story. Israel was a wife who left her husband to court Egypt, Assyria, and Babylon (Ezek 23). She thought the great powers would protect her. In the end, the Babylon she chased burned her city.</p><p>That is what the Bible calls sin. The Hebrew <em>chata</em> means an arrow that misses the mark. What she missed was God's covenant love, his <em>chesed</em>. And an arrow that misses hits someone else. The fathers broke faith; the children suffered. They said, "My way is hidden from the LORD, and my right is disregarded by my God" (Isa 40:27).</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Chew on Three Verbs</h2><p>Say each line slowly, three times.</p><p><strong>"Comfort"</strong> (40:1): <em>nachamu</em>, said twice. Lamentations said "none to comfort" five times. Here God answers.</p><p><strong>"Speak"</strong> (40:2): speak to the heart. Hosea uses the same phrase: "I will allure her, and bring her into the wilderness, and speak tenderly to her" (Hos 2:14). It is a husband leading a runaway wife into the desert to court her again.</p><p><strong>"Pardoned"</strong> (40:2): the Hebrew says her iniquity has been paid off. The debt is truly settled. She "has received from the LORD's hand double for all her sins."</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Look Ahead: Today's Lovers</h2><p>What are our "lovers" today? Savings, a title, a relationship, a reputation. We think they will keep us safe. Sometimes they turn and burn our city, and our children's city too.</p><p>Some of us will think of our parents here, and of choices we inherited. Lamentations says that too: "Our fathers sinned, and are no more; and we bear their iniquities" (Lam 5:7). To people like that, God also says, "Comfort my people."</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Today's Practice</h2><p>Twenty minutes.</p><p>1. Read Isaiah 39, then 40:1-11. Feel the drop between the two chapters.</p><p>2. Choose one verb (comfort, speak, pardoned). Murmur it over and over. Chew it.</p><p>3. Ask: on which "lover" have I staked my safety? Write it down.</p><p>4. Be still for one minute. Let God speak one sentence to your heart. Don't rush to fill the silence.</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">Closing Prayer</h2><p>Lord,<br>I have chased other lovers too.<br>For my own quiet, I let others pay.<br>You did not send me a notice.<br>You bent down and spoke to my heart.<br>You said, Comfort, comfort my people.<br>You said, Her iniquity is pardoned.<br>I am one of your people.<br>Say it to me again. Amen.</p></article>
+
+<div class="daynav sans"><a href="/en/year-b/advent-2/index.html">← WEEK</a><a href="/en/year-b/advent-2/index.html">WEEK'S NAIL →</a></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b665003e831d4b8d85237f03a223c6a3"}'></script><!-- End Cloudflare Web Analytics --></body>
+</html>

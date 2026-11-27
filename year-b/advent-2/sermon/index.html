@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>主日講章：曠野的呼聲｜Devotions</title>
+<style>
+:root{--purple:#5b2a86;--purple-deep:#3d1c5e;--gold:#c6a13b;
+--paper:#fdfcf8;--wash:#f6f1e6;--ink:#1a1a1a;--gray:#6b6b6b;--hairline:#e3ddcf}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);
+font-family:"Noto Serif CJK TC","Songti TC","SimSun","Noto Serif",Georgia,serif}
+.sans{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,"PingFang TC",sans-serif}
+.toprule{border-top:4px solid var(--ink);border-bottom:2px solid var(--gold);height:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 2rem}
+.masthead{display:block;text-align:center;padding:2rem 0 1.3rem;border-bottom:1px solid var(--ink)}
+.masthead .brand{font-weight:700}
+.masthead .brand a{font-variant:small-caps;letter-spacing:.26em;font-size:.88rem;color:var(--gold);text-decoration:none}
+.masthead span:last-child{display:block;margin-top:.7rem;font-size:.7rem;letter-spacing:.32em;color:var(--gray)}
+.masthead a{color:var(--gold);text-decoration:none}
+.crumb{margin:2.4rem 0 1.2rem;letter-spacing:.18em;font-size:.74rem;color:var(--gray);
+text-align:center;font-variant:small-caps}
+.crumb b{color:var(--gold);font-weight:600}
+.crumb a{color:var(--gold);text-decoration:none}
+h1{font-size:2.9rem;font-weight:700;letter-spacing:.04em;line-height:1.35;
+margin-bottom:.7rem;text-align:center}
+.sub{font-size:.95rem;color:var(--gray);letter-spacing:.24em;margin-bottom:2.2rem;
+text-align:center;font-variant:small-caps}
+.goldrule{border:0;border-top:2px solid var(--gold);margin:0 auto 2.4rem;width:64px}
+.kicker{text-align:center;letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;margin:0 0 1.1rem;font-variant:small-caps}
+.kairos{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:1.3rem .4rem;margin:0 0 3rem;font-size:1rem;line-height:1.9;font-style:italic}
+.kairos .k-label{letter-spacing:.32em;font-size:.72rem;color:var(--gold);font-weight:700;
+display:block;margin-bottom:.6rem;font-style:normal;font-variant:small-caps}
+.meta{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);
+padding:1rem .2rem;margin-bottom:2.6rem;font-size:.88rem;line-height:2;color:var(--gray);
+letter-spacing:.1em;font-variant:small-caps;text-align:center}
+article p{font-size:1.12rem;line-height:2.05;margin-bottom:1.5rem;text-align:justify}
+article p:first-of-type::first-letter{font-size:3.1em;float:left;line-height:1;
+padding:.05em .12em 0 0;color:var(--purple);font-weight:700}
+article strong{}
+.nailbox{border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2.2rem 1rem;margin:3rem 0;text-align:center}
+.nailbox .n-label{letter-spacing:.35em;font-size:.72rem;color:var(--gold);display:block;
+margin-bottom:1rem;font-variant:small-caps;font-weight:700}
+.nailbox .n-text{font-size:1.38rem;font-weight:700;letter-spacing:.06em;line-height:1.85}
+.prayer{background:var(--wash);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);
+padding:2rem 2.2rem;margin:3rem 0}
+.prayer h2{letter-spacing:.35em;font-size:.8rem;color:var(--gold);margin-bottom:1.2rem;
+font-variant:small-caps;text-align:center}
+.prayer p{font-size:1.08rem;line-height:2;margin:0}
+.cards{display:block;margin:2.5rem 0;border-top:1px solid var(--hairline)}
+.card{display:block;padding:1.5rem .2rem;border-bottom:1px solid var(--hairline);
+text-decoration:none;color:var(--ink)}
+@media (hover:hover){.card:hover .c-title{color:var(--gold)}}
+.card .c-day{letter-spacing:.25em;font-size:.7rem;color:var(--gold);font-weight:700;font-variant:small-caps}
+.card .c-title{font-size:1.3rem;font-weight:700;margin:.5rem 0 .4rem;letter-spacing:.03em}
+.card .c-sub{font-size:.88rem;color:var(--gray);line-height:1.7}
+.card.gold .c-day{color:var(--gold)}
+.daynav{display:flex;justify-content:space-between;border-top:1px solid var(--ink);
+margin-top:3.5rem;padding:1.6rem 0;letter-spacing:.12em;font-size:.82rem;font-variant:small-caps}
+.daynav a{color:var(--gold);text-decoration:none;font-weight:600}
+.hero{padding:4.5rem 0 3rem;text-align:center}
+.hero .kicker{letter-spacing:.32em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:1.4rem;font-variant:small-caps}
+.hero h1{font-size:3.4rem}
+.hero .deck{font-style:italic;font-size:1.15rem;line-height:1.9;color:var(--gray);margin-top:1.2rem}
+.hero .count{margin:1.8rem 0;font-size:1rem;letter-spacing:.14em;color:var(--gold)}
+.hero .count b{font-size:2.2rem;color:var(--gold);font-weight:700}
+.btnrow{display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.95rem 2.2rem;letter-spacing:.2em;font-size:.82rem;
+text-decoration:none;font-weight:700;font-variant:small-caps}
+.btn.primary{background:var(--purple);color:#fff}
+.btn.ghost{border:1px solid var(--gold);color:var(--gold)}
+.section{margin:4rem 0}
+.section h2{text-align:center;letter-spacing:.32em;font-size:.9rem;color:var(--ink);
+font-weight:700;font-variant:small-caps;margin-bottom:1.8rem}
+.section h2::after{content:"";display:block;width:48px;border-top:2px solid var(--gold);margin:1rem auto 0}
+.season{display:flex;justify-content:space-between;padding:1.1rem .2rem;
+border-bottom:1px solid var(--hairline);font-size:1rem;letter-spacing:.06em}
+.season.now{color:var(--gold);font-weight:700}
+.season .tag{font-size:.7rem;letter-spacing:.2em;color:var(--gold);font-weight:700;font-variant:small-caps}
+.reading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+padding:1rem .2rem;border-bottom:1px solid var(--hairline)}
+.reading .r-label{letter-spacing:.16em;font-size:.74rem;color:var(--gold);font-weight:700;
+white-space:nowrap;font-variant:small-caps}
+.reading .r-refs{font-size:1rem;text-align:right;line-height:1.9}
+.reading .r-refs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold)}
+@media (hover:hover){.reading .r-refs a:hover{color:var(--gold)}}
+.reading .r-refs .ver{font-size:.7rem;letter-spacing:.1em;color:var(--gray);
+border:1px solid var(--hairline);padding:.1em .5em;margin-left:.4em;white-space:nowrap}
+.lyric-label{text-align:center;letter-spacing:.3em;font-size:.78rem;color:var(--gold);
+font-weight:700;margin:2rem 0 .8rem;font-variant:small-caps}
+.lyrics{text-align:center}
+.lyrics p{font-size:1.1rem;line-height:2.1;margin-bottom:1.2rem}
+footer{margin-top:3rem;padding:2.5rem 0 3.5rem;text-align:center;border-top:4px double var(--ink)}
+.forn{text-align:center;margin-bottom:1rem}
+.forn::before{content:"";display:inline-block;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+footer .fbrand{letter-spacing:.3em;font-size:.78rem;color:var(--gold);font-weight:700;
+margin-bottom:.8rem;font-variant:small-caps}
+footer .fnote{font-size:.78rem;color:var(--gray);letter-spacing:.08em;line-height:2}
+footer a{color:var(--gold)}
+@media (prefers-color-scheme:dark){
+body{background:#141414;color:#f2f2f2}
+.toprule{border-color:#f2f2f2}
+.masthead{border-color:#3a3a3a}
+.meta,.crumb,.sub{color:#a8a8a8}
+.meta{border-color:#3a3a3a}
+.card{color:#f2f2f2;border-color:#3a3a3a}
+.cards{border-color:#3a3a3a}
+.card .c-sub{color:#a8a8a8}
+.prayer{background:#1e1a26;border-color:#3a3a3a}
+.kairos{border-color:#555}
+article p{color:#ececec}
+.season{border-color:#3a3a3a}
+.daynav{border-color:#555}
+.reading{border-color:#3a3a3a}
+.nailbox{border-color:#555}
+footer{border-color:#777}
+.section h2{color:#f2f2f2}}
+@media (max-width:640px){html[lang="zh-Hant"] h1{font-size:1.7rem}html[lang="en"] h1{font-size:1.4rem;text-wrap:balance}.hero h1{font-size:2.5rem}.wrap{padding:0 1.3rem}
+/* 手機點按區：經文連結加到 ~44px 高，各種觸控手機都好點 */
+.reading .r-refs a{display:inline-block;padding:.55em .3em}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[lang="en"] body{font-family:"Noto Serif",Georgia,"Helvetica Neue",Helvetica,Arial,sans-serif}
+html[lang="en"] article p{font-size:1.25rem;line-height:1.75}
+html[lang="en"] .lyrics p{font-size:1.2rem;line-height:1.8}
+html[lang="en"] .prayer p{font-size:1.18rem;line-height:1.8}
+html[lang="en"] .kairos{font-size:1.05rem;line-height:1.85}
+@media (max-width:640px){
+article p{font-size:1.18rem;line-height:1.95}
+html[lang="en"] article p{font-size:1.32rem;line-height:1.7}
+html[lang="en"] .lyrics p{font-size:1.25rem}
+.nailbox .n-text{font-size:1.2rem}}
+</style>
+<style id="reading-type">/* 閱讀字體：手機、平板、電腦分別校準（Proper 28 起） */
+html[lang="zh-Hant"] body{font-family:"Songti TC","Noto Serif TC","Noto Serif CJK TC","Source Han Serif TC","Source Han Serif","PMingLiU",serif}
+html[lang="en"] body{font-family:"Iowan Old Style","Charter","Bitstream Charter","Sitka Text","Cambria","Georgia","Noto Serif",serif}
+html[lang="en"] article p,html[lang="en"] .kairos{font-family:inherit}
+article p{font-weight:400;-webkit-font-smoothing:antialiased;font-kerning:normal}
+html[lang="zh-Hant"] article p{text-align:justify;letter-spacing:.02em}
+html[lang="en"] article p{text-align:left;hyphens:auto;-webkit-hyphens:auto;text-rendering:optimizeLegibility}
+article p:first-of-type::first-letter{font-size:inherit;float:none;padding:0;color:inherit;font-weight:inherit;line-height:inherit}
+article h2{font-weight:700!important;letter-spacing:.02em!important;line-height:1.45!important}
+
+/* 電腦（1025px 以上） */
+.wrap{max-width:46rem}
+html[lang="zh-Hant"] article p{font-size:1.375rem;line-height:2}
+html[lang="en"] article p{font-size:1.375rem;line-height:1.7}
+article h2{font-size:1.6rem!important;margin:2.8rem 0 1.1rem!important}
+.reading .r-refs{font-size:1.1rem}
+.reading .r-label,.crumb,.kicker,.card .c-day{font-size:.9rem}
+.sub{font-size:1rem}
+.card .c-title{font-size:1.45rem}.card .c-sub{font-size:1rem}
+.kairos{font-size:1.15rem;line-height:1.9}
+.nailbox .n-text{font-size:1.6rem}
+.daynav{font-size:.95rem}
+
+/* 平板（641–1024px） */
+@media (max-width:1024px){
+.wrap{max-width:42rem;padding:0 2.2rem}
+html[lang="zh-Hant"] article p{font-size:1.3125rem;line-height:2}
+html[lang="en"] article p{font-size:1.3125rem;line-height:1.65}
+article h2{font-size:1.5rem!important}
+}
+
+/* 手機（640px 以下） */
+@media (max-width:640px){
+.wrap{padding:0 1.25rem}
+html[lang="zh-Hant"] h1{font-size:1.85rem}
+html[lang="en"] h1{font-size:1.75rem;text-wrap:balance}
+html[lang="zh-Hant"] article p{font-size:1.3125rem;line-height:1.9;letter-spacing:.01em;text-align:start}
+article p[style*="var(--gray)"]{font-size:1.05rem!important}
+html[lang="en"] article p{font-size:1.3125rem;line-height:1.6}
+article p{margin-bottom:1.35rem}
+article h2{font-size:1.45rem!important;margin:2.4rem 0 .9rem!important}
+.reading{flex-direction:column;align-items:flex-start;gap:.2rem}
+.reading .r-refs{font-size:1.1rem;text-align:left}
+.reading .r-label,.crumb,.kicker,.card .c-day,.sub,.daynav{font-size:.875rem}
+.reading .r-refs .ver{font-size:.8rem}
+.card .c-title{font-size:1.35rem}.card .c-sub{font-size:1rem}
+.kairos{font-size:1.15rem}
+.nailbox .n-text{font-size:1.45rem}
+.masthead .brand a{font-size:.9rem}.masthead span:last-child{font-size:.85rem}
+}
+
+/* 英文首頁標題：一行 */
+html[lang="en"] .hero h1{white-space:nowrap;font-size:min(2.5rem,calc((100vw - 3rem) / 14.5));letter-spacing:0;line-height:1.3}
+</style>
+</head>
+<body>
+<div class="toprule"></div>
+<div class="wrap">
+<div class="masthead sans"><span class="brand"><a href="/index.html">聖言靈禱 DEVOTIONS · WORDNSPIRIT</a></span><span><a href="/index.html">中文</a> · <a href="/en/index.html">EN</a></span></div>
+<div class="crumb sans"><a href="/index.html">首頁</a> ／ <a href="/year-b/advent-2/index.html">ADVENT 2</a> ／ <b>主日講章</b></div>
+<div class="kicker sans">主日講章</div><h1>曠野的呼聲</h1>
+<div class="sub sans">主日講章 · 將臨期第二主日 · 2026年12月6日</div>
+<hr class="goldrule">
+<div class="nailbox"><span class="n-label sans">講道金句</span><div class="n-text">慈愛和誠實彼此相遇，公義和平安彼此相親。</div></div>
+<div class="meta sans"><div>本主日｜RCL 將臨期第二主日 · 乙年（2026年12月6日；週六 12/5 晚堂同用）</div><div>讀經｜馬可福音 1:1-8（另參以賽亞書 40:1-11；彼得後書 3:8-15a；詩篇 85:1-2, 8-13）</div><div>關鍵詞｜祂對心說話・公義親平安・轉身預備路・祂忍耐等你</div><div>講員｜陳曉東牧師｜北美基督燈台協會</div></div>
+<article><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">序幕：沒有人安慰她</h2><p>葬禮那一週，電話響個不停。第二週，少了一半。一個月以後，家裡很靜，只聽見時鐘走的聲音。她坐在飯桌旁，對面的椅子空著。</p><p>這樣的安靜，聖經裡也有。主前 587 年，巴比倫的軍隊攻破耶路撒冷，燒了聖殿，把人擄走。有人在廢墟裡寫了一首哀歌，同一句話哭了五次：「沒有人安慰她」（哀1:2, 9, 16, 17, 21）。</p><p>現在是將臨期，教會在聖誕節前用四個主日等候主來。今天的四段經文，都在回答同一個問題：沒有人安慰的時候，神在哪裡？</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">第一幕：祂對心說話</h2><p>先要問：為甚麼沒有人安慰她？</p><p>哀歌說：「在一切所親愛的中間，沒有一個安慰她的。她的朋友都以詭詐待她，成為她的仇敵」（哀1:2）。那些「所親愛的」，就是她背著神去追求的列國。</p><p>先知說得很重：以色列像一個離開丈夫的婦人，去和強國交往。希西家王把寶庫打開給巴比倫的使者看；聽見子孫將來要被擄，他只說：「在我的年日中，既有太平，這豈不是好嗎？」（賽39:2-8）王為自己一時的太平，押上了子孫的將來。後來，她追求的巴比倫，親手燒了她的城。</p><p>這就是聖經說的「罪」。原文的意思是射箭偏了靶，偏離了神立約的慈愛。偏了的箭會射中別人。父輩背約，孩子在巴比倫的河邊長大，把琴掛在柳樹上，一想起家就哭（詩137:1-2）。</p><p>將近五十年，他們心裡說：「我的道路向耶和華隱藏」（賽40:27）。</p><p>就在這裡，神開口了：「你們要安慰，安慰我的百姓。要對耶路撒冷說安慰的話」（賽40:1-2）。「說安慰的話」，原文是「對她的心說話」。不是發公文，是一個被背棄的丈夫，對一個受傷、不敢抬頭的妻子，輕聲說話。</p><p>祂說：「她爭戰的日子已滿了，她的罪孽赦免了。」債還清了。這是第一個關鍵詞：祂對心說話。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">第二幕：我喊叫甚麼呢</h2><p>可是報信的人自己也累了。</p><p>「有人聲說：你喊叫吧！有一個說：我喊叫甚麼呢？凡有血氣的盡都如草」（賽40:6）。死海古卷在這裡寫作「我說」，這是先知自己的嘆息。他看見人的忠誠像野地的花，早上開，晚上謝。</p><p>神沒有說「其實沒那麼糟」。祂說：「草必枯乾，花必凋殘，惟有我們神的話必永遠立定」（賽40:8）。然後，祂親自來：「他必像牧人牧養自己的羊群，用膀臂聚集羊羔抱在懷中，慢慢引導那乳養小羊的」（賽40:11）。祂按最慢、最累的那一隻的步伐走。</p><p>詩篇 85 篇是回家以後唱的。地回來了，心還沒有回來；他們仍然求神「使我們回轉」。可是詩人看見一個畫面：「慈愛和誠實彼此相遇，公義和平安彼此相親」（詩85:10）。「相親」，原文就是親吻。</p><p>這是第二個關鍵詞：公義親平安。神沒有為了平安放下公義，也沒有為了公義不要平安。兩樣在祂裡面相擁。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">第三幕：曠野的呼聲</h2><p>今天的講道經文，是馬可福音的第一句：「神的兒子，耶穌基督福音的起頭」（可1:1）。</p><p>「福音」這個詞，當時是帝國的用語。主前 9 年，小亞細亞的一塊石碑，把凱撒奧古斯都的生日稱為「福音的開始」。馬可用同一個詞說：真正的王來了。</p><p>馬可寫的時候，窗外是甚麼？羅馬的基督徒被尼祿點成火把（塔西佗《編年史》15.44）；耶路撒冷的聖殿被圍、被燒。福音不是在太平中開始的，是在廢墟裡開始的。</p><p>然後，一個聲音響起：「在曠野有人聲喊著說：預備主的道，修直他的路」（可1:3）。這正是以賽亞那句話（賽40:3）。約翰穿駱駝毛的衣服，吃蝗蟲野蜜，像古時的先知以利亞。</p><p>最奇怪的是方向：「猶太全地和耶路撒冷的人都出去到約翰那裡，承認他們的罪」（可1:5）。人離開有聖殿的城，走到曠野，在約旦河邊，把罪公開說出來。</p><p>「悔改」，原文是轉身。這是第三個關鍵詞：轉身預備路。預備路，就是以賽亞說的：山窪填滿，山岡削平，彎曲的修直，崎嶇的變平。絕望的人被扶起，驕傲的人降下來，不誠實的改為誠實，粗暴的變溫和。</p><p>約翰說：「有一位在我以後來的，能力比我更大，我就是彎腰給他解鞋帶也是不配的。我是用水給你們施洗，他卻要用聖靈給你們施洗」（可1:7-8）。解鞋帶是奴僕的工作。約翰說：我連當祂的奴僕都不配。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">第四幕：被砍頭的聲音</h2><p>這個聲音後來怎樣了？</p><p>約翰對希律王說：「你娶你兄弟的妻子是不合理的」（可6:18）。他被關進監獄。在希律的生日宴席上，一個女孩跳舞，王起了誓，約翰的頭被放在盤子裡端出來。他的門徒來，把屍首領去埋了（可6:27-29）。</p><p>曠野的呼聲，被權勢的酒席砍斷了。</p><p>馬可說約翰「下監」，原文是「被交出去」。後來他用同一個詞說耶穌「被交在人手裡」（可9:31）。先鋒走過的路，主也要走。安慰我們的那一位，親自走進了被出賣、被殺害的痛裡。</p><p>古時的教父說：約翰是聲音，基督是道（奧古斯丁《講道集》293）。聲音響一下就過去，道永遠長存。今天的經文停在約翰的話。再往下讀兩節，耶穌來受洗，「從水裡一上來，就看見天裂開了，聖靈彷彿鴿子，降在他身上」（可1:10）。聲音之後，天開了。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">第五幕：祂忍耐等你</h2><p>可是兩千年過去了，祂還沒有再來。有人譏笑說：「從列祖睡了以來，萬物仍是一樣」（彼後3:4）。父母等到死，都沒有看見。</p><p>彼得改正我們看時間的眼睛：「主看一日如千年，千年如一日」（彼後3:8）。</p><p>千年如一日：我們嫌太久的，在祂像昨天。祂沒有遲到。</p><p>一日如千年：空屋裡時鐘走的每一秒，祂都看得很重。你今天一次轉身，在祂眼中有千年的分量。</p><p>「不是耽延，乃是寬容你們……乃願人人都悔改」（彼後3:9）。「寬容」，原文是長久忍耐。</p><p>神不是老好人。保羅說，神寬容人的罪，因為祂設立耶穌作挽回祭，「使人知道他自己為義，也稱信耶穌的人為義」（羅3:25-26）。</p><p>這也回答了：公義怎能親吻平安？「因他受的刑罰，我們得平安」（賽53:5）。這裡的「平安」，和詩篇 85 篇是同一個字。刑罰落在兒子身上，平安臨到我們。和好不是一筆勾銷，是兒子付上了自己的血。祂多等的每一天，都是十字架撐著的。</p><p>第四個關鍵詞：祂忍耐等你。</p><p>忍耐有盡頭。那一天會像火，把一切攤開（彼後3:10）。這一週，就從每天走的路預備：向那個你一直不肯道歉的人，說一聲對不起。</p><h2 style="font-size:1.35rem;font-weight:700;letter-spacing:.04em;line-height:1.6;margin:2.4rem 0 1rem;text-align:left">尾聲：在曠野相遇</h2><p>沒有人安慰的時候，神沒有缺席。但這安慰不便宜：聲音被砍斷以後，兒子被交在人手裡；在十字架上，公義和平安相親。</p><p>把四個關鍵詞帶回家：</p><p>祂對心說話：情人走了，祂來了。</p><p>公義親平安：兒子付了代價。</p><p>轉身預備路：在河邊轉身回來。</p><p>祂忍耐等你：千年如一日，一日如千年。</p><p>「慈愛和誠實彼此相遇，公義和平安彼此相親。」願這相遇發生在你的曠野裡。阿們。</p></article>
+
+<div class="daynav sans"><a href="/year-b/advent-2/index.html">← 週匯總 WEEK</a><a href="https://sermon.wordnspirit.com/">講道投影 →</a></div>
+</div>
+<footer>
+<div class="forn"></div><div class="fbrand sans">基督燈台事工｜聖言靈禱<br>Golden Lampstand Ministry: Word and Spirit</div>
+<div class="fnote sans">devotions.wordnspirit.com</div>
+</footer>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b665003e831d4b8d85237f03a223c6a3"}'></script><!-- End Cloudflare Web Analytics --></body>
+</html>
